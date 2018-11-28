@@ -1,118 +1,85 @@
 <template>
-  <div>
-    <h1>Zutre</h1>
-    <h2>Lightweight UI components for Vue.js based on Spectre CSS Framework</h2>
+  <div class="docs-container">
+    <z-container>
 
-    <strong>In Development</strong>
+      <header class="navbar">
+        <section class="navbar-section">
+          <small>Status: <strong>In Development</strong></small>
+        </section>
+        <section class="navbar-center"></section>
+        <section class="navbar-section">
+          <a href="https://twitter.com/maclisowski" class="btn btn-link">Twitter</a>
+          <a href="https://github.com/maclisowski/zutre" class="btn btn-link">GitHub</a>
+        </section>
+      </header>
+
+      <h1 class="logo">Zutre</h1>
+      <h2 class="logo-subtitle">Lightweight UI components for Vue.js based on <a href="https://picturepan2.github.io/spectre/" target="_blank">Spectre CSS Framework</a></h2>
+      
+      <header class="docs-navbar navbar">
+        <section class="navbar-section"></section>
+        <section class="navbar-center">
+          <router-link :to="{ name: 'home'}">Home</router-link> &nbsp;|&nbsp; 
+          <router-link :to="{ name: 'about'}">About</router-link>
+        </section>
+        <section class="navbar-section"></section>
+      </header>
+      <br>
+    </z-container>
 
     <z-container>
-      <z-columns>
-        <z-column>
-          <z-breadcrumbs :items="[{ name: 'Dashboard', href: '/'}, { name: 'Settings', href: '/settings'}]" />
-
-          <z-breadcrumbs>
-            <z-breadcrumbs-item name="Test" href="/test" />
-            <!-- <z-breadcrumbs-item name="Test 2" :link="{ to: 's'}" /> -->
-            <z-breadcrumbs-item name="Test 2" href="/all-good" />
-            <z-breadcrumbs-item href="/custom">custom</z-breadcrumbs-item>
-          </z-breadcrumbs>
-          
-        </z-column>
-      </z-columns>
-
-      <z-columns>
-        
-        <z-column>
-          <z-card></z-card>
-        </z-column>
-        <z-column>
-          <z-columns>
-            <z-column>
-              <z-button>button</z-button> &nbsp;
-              <z-button type="primary">primary</z-button> &nbsp;
-              <z-button type="link">link</z-button> &nbsp;
-              <z-button type="success">success</z-button> &nbsp;
-              <z-button type="error">error</z-button>
-            </z-column>
-          </z-columns>
-
-          <z-columns>
-            <z-column>
-              
-              <z-button size="lg" type="primary">large</z-button> &nbsp;
-              <z-button>normal</z-button> &nbsp;
-              <z-button size="sm" type="success">small</z-button> &nbsp;
-            </z-column>
-          </z-columns>
-
-          <z-columns>
-            <z-column>
-              
-              <z-button :disabled="true">disabled</z-button> &nbsp;
-              <z-button :loading="true" type="error">loading</z-button> &nbsp;
-              <z-button :loading="true" :disabled="true">loading disabled</z-button> &nbsp;
-              <z-button :loading="true" type="primary">small</z-button> &nbsp;
-            </z-column>
-          </z-columns>
-
-          <z-columns>
-
-            <z-column>
-              <z-button-group>
-                <z-button type="primary">button</z-button>
-                <z-button type="primary" :active="true">button</z-button>
-                <z-button type="primary">button</z-button>
-              </z-button-group>
-            </z-column>
-
-            <z-column>
-              <z-button-group :block="true">
-                <z-button type="primary" size="sm">button</z-button>
-                <z-button type="primary" size="sm" :active="true">button</z-button>
-                <z-button type="primary" size="sm">button</z-button>
-              </z-button-group>
-            </z-column>
-          </z-columns>
-
-        </z-column>
-
-      </z-columns>
-
-      <z-columns :oneline="false" :gapless="false">
-        
-        <z-column :size=3 :mxAuto="false" :mlAuto="false" :mrAuto="false">
-          <z-card></z-card>
-        </z-column>
-
-        <z-column :size=3>
-          TEST
-        </z-column>
-
-        <z-column :size=3>
-          <z-card></z-card>
-        </z-column>
-        <z-column :size=3>
-          TEST
-        </z-column>
-
-      </z-columns>
-
+      <router-view />
     </z-container>
   </div>
 </template>
 <script>
-import { ZButton, ZButtonGroup } from './components'
-import { ZBreadcrumbs, ZBreadcrumbsItem } from './components'
-import { ZCard } from './components'
-import { ZContainer, ZColumns, ZColumn } from './components'
+import { ZContainer } from './components'
 
 export default {
   name: 'Demo',
   components: {
-    ZButton, ZButtonGroup, 
-    ZBreadcrumbs, ZBreadcrumbsItem,
-    ZCard,
-    ZContainer, ZColumns, ZColumn
+    ZContainer
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+$font-logo: 'Lobster', 'Tmes New Roman';
+$primary: #EF2390;
+
+.logo {
+  color: $primary;
+  font-family: $font-logo;
+  font-size: 5rem;
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+}
+
+.logo-subtitle {
+  font-weight: 100;
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+}
+
+.docs-container {
+  > .container {
+    max-width: 966px;
+  }
+}
+
+.navbar.docs-navbar {
+  padding: 10px;
+  color: #fff;
+  background: $primary;
+  border-radius: 20px;
+  margin: 10px 0;
+
+  a {
+    color: #fff;
+  }
+}
+</style>

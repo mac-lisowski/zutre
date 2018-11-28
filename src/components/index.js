@@ -5,6 +5,7 @@ import ZButtonGroup from './ButtonGroup'
 import ZBreadcrumbs from './Breadcrumbs'
 import ZBreadcrumbsItem from './BreadcrumbsItem'
 import ZCard from './Card'
+import ZCode from './Code'
 import ZContainer from './Container'
 import ZColumns from './Columns'
 import ZColumn from './Column'
@@ -15,6 +16,7 @@ const Components = {
   ZBreadcrumbs, 
   ZBreadcrumbsItem,
   ZCard,
+  ZCode,
   ZContainer,
   ZColumns,
   ZColumn
@@ -26,6 +28,7 @@ export {
   ZBreadcrumbs,
   ZBreadcrumbsItem,
   ZCard,
+  ZCode,
   ZContainer,
   ZColumns,
   ZColumn
