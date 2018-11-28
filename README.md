@@ -4,6 +4,11 @@
 
 **zutre** is an implementation of [Spectre CSS Framework](https://github.com/picturepan2/spectre) into Vue compontents. 
 
+### Install
+```
+npm install --save zutre
+```
+
 ---
 
 ## Project setup
