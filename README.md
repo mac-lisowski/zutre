@@ -24,7 +24,7 @@ npm install --save zutre
 
 | Name | Status |
 |---|---|
-| Flexbox grid | in progress |
+| Flexbox grid | done |
 | Responsive |  |
 | Hero | |
 | Navbar | in progress |
