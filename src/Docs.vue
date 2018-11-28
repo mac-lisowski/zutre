@@ -26,7 +26,54 @@
           <z-card></z-card>
         </z-column>
         <z-column>
-          TEST
+          <z-columns>
+            <z-column>
+              <z-button>button</z-button> &nbsp;
+              <z-button type="primary">primary</z-button> &nbsp;
+              <z-button type="link">link</z-button> &nbsp;
+              <z-button type="success">success</z-button> &nbsp;
+              <z-button type="error">error</z-button>
+            </z-column>
+          </z-columns>
+
+          <z-columns>
+            <z-column>
+              
+              <z-button size="lg" type="primary">large</z-button> &nbsp;
+              <z-button>normal</z-button> &nbsp;
+              <z-button size="sm" type="success">small</z-button> &nbsp;
+            </z-column>
+          </z-columns>
+
+          <z-columns>
+            <z-column>
+              
+              <z-button :disabled="true">disabled</z-button> &nbsp;
+              <z-button :loading="true" type="error">loading</z-button> &nbsp;
+              <z-button :loading="true" :disabled="true">loading disabled</z-button> &nbsp;
+              <z-button :loading="true" type="primary">small</z-button> &nbsp;
+            </z-column>
+          </z-columns>
+
+          <z-columns>
+
+            <z-column>
+              <z-button-group>
+                <z-button type="primary">button</z-button>
+                <z-button type="primary" :active="true">button</z-button>
+                <z-button type="primary">button</z-button>
+              </z-button-group>
+            </z-column>
+
+            <z-column>
+              <z-button-group :block="true">
+                <z-button type="primary" size="sm">button</z-button>
+                <z-button type="primary" size="sm" :active="true">button</z-button>
+                <z-button type="primary" size="sm">button</z-button>
+              </z-button-group>
+            </z-column>
+          </z-columns>
+
         </z-column>
 
       </z-columns>
@@ -54,6 +101,7 @@
   </div>
 </template>
 <script>
+import { ZButton, ZButtonGroup } from './components'
 import { ZBreadcrumbs, ZBreadcrumbsItem } from './components'
 import { ZCard } from './components'
 import { ZContainer, ZColumns, ZColumn } from './components'
@@ -61,6 +109,7 @@ import { ZContainer, ZColumns, ZColumn } from './components'
 export default {
   name: 'Demo',
   components: {
+    ZButton, ZButtonGroup, 
     ZBreadcrumbs, ZBreadcrumbsItem,
     ZCard,
     ZContainer, ZColumns, ZColumn
