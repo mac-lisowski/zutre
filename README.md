@@ -9,6 +9,32 @@
 npm install --save zutre
 ```
 
+## Components
+
+
+| Name | Status |
+|---|---|
+| Accordions |  |
+| Avatars | |
+| Badges | |
+| Bars | |
+| Breadcrumbs | done | 
+| Cards | in progress |
+| Chips | |
+| Empty states | |
+| Menu | |
+| Modals | |
+| Nav | |
+| Pagination | |
+| Panels | |
+| Popovers | |
+| Steps | |
+| Tabs | |
+| Tiles | |
+| Toasts | |
+| Tooltips | |
+
+
 ---
 
 ## Project setup
