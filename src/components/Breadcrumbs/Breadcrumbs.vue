@@ -1,10 +1,12 @@
 <template>
-  <ul class="breadcrumb" v-if="breadcrumbsItems.length > 0">
+  <ul class="breadcrumb">
+    <template v-if="hasDefaultSlot">
+      <slot></slot>
+    </template>
 
-    <li class="breadcrumb-item" v-bind:key="item.name" v-for="item in breadcrumbsItems">
-      <router-link v-if="item.link" :to=item.link>{{ item.name }}</router-link>
-      <a v-if="!item.link" :href="item.href">{{ item.name }}</a>
-    </li>
+    <template v-if="!hasDefaultSlot && breadcrumbsItems.length > 0">
+      <z-breadcrumbs-item v-bind:key="item.name" v-for="item in breadcrumbsItems" :name="item.name" :link="item.link" :href="item.href" />
+    </template>
 
   </ul>
 </template>
@@ -17,8 +19,13 @@
  * 
  * @param {Array} items each item is an JSON object with: name, link/href. <router-link :to="item.link" /> instaed of <a :href="item.href" />
  */
+import ZBreadcrumbsItem from './../BreadcrumbsItem'
+
 export default {
   name: 'ZBreadcrumbs',
+  components: {
+    ZBreadcrumbsItem
+  },
   props: {
     items: {
       type: Array,
@@ -28,6 +35,9 @@ export default {
   computed: {
     breadcrumbsItems () {
       return this.items;
+    },
+    hasDefaultSlot () {
+      return !!this.$slots.default
     }
   }
 }

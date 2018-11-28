@@ -1,14 +1,16 @@
-import Vue from 'vue'
 import './../scss/main.scss'
 
 import ZBreadcrumbs from './Breadcrumbs'
+import ZBreadcrumbsItem from './BreadcrumbsItem'
 
 const Components = {
-  ZBreadcrumbs
+  ZBreadcrumbs, 
+  ZBreadcrumbsItem
 }
 
 export {
-  ZBreadcrumbs
+  ZBreadcrumbs,
+  ZBreadcrumbsItem
 }
 
 export default Components
