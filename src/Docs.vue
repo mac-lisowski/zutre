@@ -14,14 +14,18 @@
       <z-breadcrumbs-item href="/custom">custom</z-breadcrumbs-item>
     </z-breadcrumbs>
     
+    <z-card></z-card>
   </div>
 </template>
 <script>
 import { ZBreadcrumbs, ZBreadcrumbsItem } from './components'
+import { ZCard } from './components'
+
 export default {
   name: 'Demo',
   components: {
-    ZBreadcrumbs, ZBreadcrumbsItem
+    ZBreadcrumbs, ZBreadcrumbsItem,
+    ZCard
   }
 }
 </script>

@@ -2,15 +2,18 @@ import './../scss/main.scss'
 
 import ZBreadcrumbs from './Breadcrumbs'
 import ZBreadcrumbsItem from './BreadcrumbsItem'
+import ZCard from './Card'
 
 const Components = {
   ZBreadcrumbs, 
-  ZBreadcrumbsItem
+  ZBreadcrumbsItem,
+  ZCard
 }
 
 export {
   ZBreadcrumbs,
-  ZBreadcrumbsItem
+  ZBreadcrumbsItem,
+  ZCard
 }
 
 export default Components
