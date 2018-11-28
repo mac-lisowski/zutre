@@ -1,16 +1,16 @@
 {
   "name": "zutre",
-  "version": "dev",
-  "private": true,
+  "version": "0.1.0",
+  "private": false,
   "author": "Maciej Lisowski <maciej.lisowski.elk@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name Zutre ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name zutre ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
-  "main": "./dist/Zutre.common.js",
+  "main": "./dist/zutre.common.js",
   "files": [
     "dist/*",
     "src/*",
