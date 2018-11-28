@@ -1,6 +1,6 @@
 # Zutre
 
-## NOTE: Project is in development, not ready for production usage
+## NOTE: Project in development, do not use at production
 
 **zutre** is an implementation of [Spectre CSS Framework](https://github.com/picturepan2/spectre) into Vue compontents. 
 
@@ -18,7 +18,7 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run build-bundle
 ```
 
 ### Run your tests
