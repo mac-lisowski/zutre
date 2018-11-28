@@ -10,6 +10,10 @@ export function registerPlugin(plugin) {
   if (vue) {
     vue.use(plugin)
   }
+}
 
-  
+export function installPlugin(Vue, component) {
+	if (installPlugin.installed) return;
+	installPlugin.installed = true;
+	Vue.component(component.name, component);
 }
