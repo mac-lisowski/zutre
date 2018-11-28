@@ -1,10 +1,14 @@
 <template>
 
-  <z-breadcrumbs />
+  <z-breadcrumbs :items="[{ name: 'Home', href: '/'}]" />
 
 </template>
 <script>
+import { ZBreadcrumbs } from './components'
 export default {
-  name: 'Demo'
+  name: 'Demo',
+  components: {
+    ZBreadcrumbs
+  }
 }
 </script>

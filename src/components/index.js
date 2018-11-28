@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import './../scss/main.scss'
 
-import Breadcrumbs from './Breadcrumbs'
+import ZBreadcrumbs from './Breadcrumbs'
 
 const Components = {
-  Breadcrumbs
+  ZBreadcrumbs
 }
 
-Object.keys(Components).forEach(name => {
-  Vue.component(Components[name].name, Components[name])
-})
+export {
+  ZBreadcrumbs
+}
 
 export default Components
