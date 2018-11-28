@@ -1,4 +1,4 @@
-import component from './BreadcrumbsItem'
+import component from './Columns'
 import { registerPlugin, installPlugin } from './../../utils'
 
 export var install = installPlugin

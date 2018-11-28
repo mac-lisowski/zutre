@@ -8,6 +8,26 @@
 ```
 npm install --save zutre
 ```
+## Elements
+
+| Name | Status |
+|---|---|
+| Tables |  |
+| Buttons | in progress |
+| Forms | |
+| Icons | |
+| Labels | |
+| Code | in progress |
+| Media | |
+
+## Layout
+
+| Name | Status |
+|---|---|
+| Flexbox grid | done |
+| Responsive |  |
+| Hero | |
+| Navbar | in progress |
 
 ## Components
 
