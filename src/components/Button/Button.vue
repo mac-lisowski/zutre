@@ -21,6 +21,10 @@ export default {
       type: String,
       default: () => ''
     },
+    active: {
+      type: Boolean,
+      default: () => false
+    },
     action: {
       type: Boolean,
       default: () => false
@@ -71,6 +75,10 @@ export default {
             cssClass += ' btn-error'
             break
         }
+      }
+
+      if (this.active === true) {
+        cssClass += ' active'
       }
 
       if (this.action === true) {

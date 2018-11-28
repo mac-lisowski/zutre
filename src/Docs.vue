@@ -55,6 +55,25 @@
             </z-column>
           </z-columns>
 
+          <z-columns>
+
+            <z-column>
+              <z-button-group>
+                <z-button type="primary">button</z-button>
+                <z-button type="primary" :active="true">button</z-button>
+                <z-button type="primary">button</z-button>
+              </z-button-group>
+            </z-column>
+
+            <z-column>
+              <z-button-group :block="true">
+                <z-button type="primary" size="sm">button</z-button>
+                <z-button type="primary" size="sm" :active="true">button</z-button>
+                <z-button type="primary" size="sm">button</z-button>
+              </z-button-group>
+            </z-column>
+          </z-columns>
+
         </z-column>
 
       </z-columns>
@@ -82,7 +101,7 @@
   </div>
 </template>
 <script>
-import { ZButton } from './components'
+import { ZButton, ZButtonGroup } from './components'
 import { ZBreadcrumbs, ZBreadcrumbsItem } from './components'
 import { ZCard } from './components'
 import { ZContainer, ZColumns, ZColumn } from './components'
@@ -90,7 +109,7 @@ import { ZContainer, ZColumns, ZColumn } from './components'
 export default {
   name: 'Demo',
   components: {
-    ZButton, 
+    ZButton, ZButtonGroup, 
     ZBreadcrumbs, ZBreadcrumbsItem,
     ZCard,
     ZContainer, ZColumns, ZColumn
