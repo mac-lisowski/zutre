@@ -1,6 +1,7 @@
 <template>
   <div class="docs-container">
     <z-container>
+
       <header class="navbar">
         <section class="navbar-section">
           <small>Status: <strong>In Development</strong></small>
