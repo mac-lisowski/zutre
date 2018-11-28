@@ -2,6 +2,9 @@
   "name": "zutre",
   "version": "0.1.0",
   "private": false,
+  "homepage": "https://github.com/maclisowski/zutre",
+  "description": "UI components for Vue.js based on Spectre CSS Framework",
+  "license": "MIT",
   "author": "Maciej Lisowski <maciej.lisowski.elk@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
