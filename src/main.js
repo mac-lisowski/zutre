@@ -15,17 +15,17 @@ let router = new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/zutre',
       name: 'home',
       component: DocsHome
     },
     {
-      path: '/about',
+      path: '/zutre/about',
       name: 'about',
       component: DocsAbout
     },
     {
-      path: '/components/breadcrumbs',
+      path: '/zutre/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')
     },
