@@ -1,8 +1,39 @@
 # Zutre
 
-## NOTE: Project is in development, not ready for production usage
+## NOTE: Project in development, do not use at production
 
 **zutre** is an implementation of [Spectre CSS Framework](https://github.com/picturepan2/spectre) into Vue compontents. 
+
+### Install
+```
+npm install --save zutre
+```
+
+## Components
+
+
+| Name | Status |
+|---|---|
+| Accordions |  |
+| Avatars | |
+| Badges | |
+| Bars | |
+| Breadcrumbs | done | 
+| Cards | in progress |
+| Chips | |
+| Empty states | |
+| Menu | |
+| Modals | |
+| Nav | |
+| Pagination | |
+| Panels | |
+| Popovers | |
+| Steps | |
+| Tabs | |
+| Tiles | |
+| Toasts | |
+| Tooltips | |
+
 
 ---
 
@@ -18,7 +49,7 @@ npm run serve
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run build-bundle
 ```
 
 ### Run your tests
