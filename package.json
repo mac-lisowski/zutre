@@ -15,7 +15,7 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build-demo": "vue-cli-service build --dest ./docs",
+    "build-docs": "vue-cli-service build --dest ./docs",
     "build-bundle": "vue-cli-service build --target lib --name zutre ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
