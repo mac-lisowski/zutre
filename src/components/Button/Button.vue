@@ -1,0 +1,92 @@
+<template>
+  <button :class="btnClass" :disabled="isDisabled">
+    <slot></slot>
+  </button>
+</template>
+
+<script>
+/**
+ * ZButton  
+ * 
+ * Spectre: https://picturepan2.github.io/spectre/elements/buttons.html
+ */
+export default {
+  name: 'ZButton',
+  props: {
+    size: {
+      type: String,
+      default: () => ''
+    },
+    type: {
+      type: String,
+      default: () => ''
+    },
+    action: {
+      type: Boolean,
+      default: () => false
+    },
+    circle: {
+      type: Boolean,
+      default: () => false
+    },
+    loading: {
+      type: Boolean,
+      default: () => false
+    },
+    disabled: {
+      type: Boolean,
+      default: () => false
+    }
+  },
+  computed: {
+    isDisabled: function() {
+      return this.disabled
+    },
+    btnClass: function() {
+      let cssClass = 'btn'
+
+      if (this.size !== '') {
+        switch (this.size) {
+          case 'sm':
+            cssClass += ' btn-sm'
+            break
+          case 'lg':
+            cssClass += ' btn-lg'
+            break
+        }
+      }
+
+      if (this.type !== '') {
+        switch (this.type) {
+          case 'primary':
+            cssClass += ' btn-primary'
+            break
+          case 'link':
+            cssClass += ' btn-link'
+            break
+          case 'success':
+            cssClass += ' btn-success'
+            break
+          case 'error':
+            cssClass += ' btn-error'
+            break
+        }
+      }
+
+      if (this.action === true) {
+        cssClass += ' btn-action'
+      }
+
+      if (this.circle === true) {
+        cssClass += ' s-circle'
+      }
+
+      if (this.loading === true) {
+        cssClass += ' loading'
+      }
+
+      return cssClass
+    }
+  }
+}
+</script>

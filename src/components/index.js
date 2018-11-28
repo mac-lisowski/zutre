@@ -1,5 +1,6 @@
 import './../scss/main.scss'
 
+import ZButton from './Button'
 import ZBreadcrumbs from './Breadcrumbs'
 import ZBreadcrumbsItem from './BreadcrumbsItem'
 import ZCard from './Card'
@@ -8,6 +9,7 @@ import ZColumns from './Columns'
 import ZColumn from './Column'
 
 const Components = {
+  ZButton,
   ZBreadcrumbs, 
   ZBreadcrumbsItem,
   ZCard,
@@ -17,6 +19,7 @@ const Components = {
 }
 
 export {
+  ZButton,
   ZBreadcrumbs,
   ZBreadcrumbsItem,
   ZCard,
