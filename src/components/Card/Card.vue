@@ -1,7 +1,7 @@
 <template>
   <div class="card">
   <div class="card-image">
-    <img src="img/osx-el-capitan.jpg" class="img-responsive">
+    <!-- <img src="img/osx-el-capitan.jpg" class="img-responsive"> -->
   </div>
   <div class="card-header">
     <div class="card-title h5">...</div>
