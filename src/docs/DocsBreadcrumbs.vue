@@ -15,8 +15,8 @@
         </z-breadcrumbs>
 
 <z-code lang="Vue">&lt;z-breadcrumbs&gt;
-&lt;z-breadcrumbs-item name="Dashboard" href="/" /&gt;
-&lt;z-breadcrumbs-item name="Settings" href="/settings" /&gt;
+  &lt;z-breadcrumbs-item na me="Dashboard" href="/" /&gt;
+  &lt;z-breadcrumbs-item name="Settings" href="/settings" /&gt;
 &lt;/z-breadcrumbs&gt;</z-code>
 
       </z-column>
@@ -31,8 +31,8 @@
 
         <z-code lang="Vue">&lt;z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'About', link: { name: 'about' }}]" /&gt;</z-code>
 <z-code lang="Vue">&lt;z-breadcrumbs&gt;
-&lt;z-breadcrumbs-item name="Dashboard" href="/" /&gt;
-&lt;z-breadcrumbs-item name="Settings" href="/settings" /&gt;
+  &lt;z-breadcrumbs-item name="Dashboard" href="/" /&gt;
+  &lt;z-breadcrumbs-item name="Settings" href="/settings" /&gt;
 &lt;z-breadcrumbs&gt;</z-code>
 
       </z-column>
