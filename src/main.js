@@ -25,6 +25,16 @@ let router = new Router({
       component: DocsAbout
     },
     {
+      path: '/zutre/installation',
+      name: 'installation',
+      component: () => import('./docs/DocsInstallation.vue')
+    },
+    {
+      path: '/zutre/components/buttons',
+      name: 'docsButtons',
+      component: () => import('./docs/DocsButtons.vue')
+    },
+    {
       path: '/zutre/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')

@@ -1,52 +1,78 @@
 <template>
   <div class="docs-container">
-    <z-container>
+    
+    <header class="navbar bg-primary text-secondary">
+      <section class="navbar-section">
+        <small>Status: <strong>In Development</strong></small>
+      </section>
+      <section class="navbar-center"></section>
+      <section class="navbar-section">
+        <router-link :to="{ name: 'home'}" class="btn btn-link text-secondary">Home</router-link> &nbsp;|&nbsp; 
+        <router-link :to="{ name: 'about'}" class="btn btn-link text-secondary">About</router-link> &nbsp;|&nbsp; 
 
-      <header class="navbar">
-        <section class="navbar-section">
-          <small>Status: <strong>In Development</strong></small>
-        </section>
-        <section class="navbar-center"></section>
-        <section class="navbar-section">
-          <a href="https://twitter.com/maclisowski" class="btn btn-link">Twitter</a>
-          <a href="https://github.com/maclisowski/zutre" class="btn btn-link">GitHub</a>
-        </section>
-      </header>
-
-      <h1 class="logo">Zutre</h1>
-      <h2 class="logo-subtitle">Lightweight UI components for Vue.js based on <a href="https://picturepan2.github.io/spectre/" target="_blank">Spectre CSS Framework</a></h2>
+        <a href="https://twitter.com/maclisowski" class="btn btn-link text-secondary">Twitter</a> &nbsp;|&nbsp; 
+        <a href="https://github.com/maclisowski/zutre" class="btn btn-link text-secondary">GitHub</a>
+      </section>
+    </header>
       
-      <header class="docs-navbar navbar">
-        <section class="navbar-section"></section>
-        <section class="navbar-center">
-          <router-link :to="{ name: 'home'}">Home</router-link> &nbsp;|&nbsp; 
-          <router-link :to="{ name: 'about'}">About</router-link>
-        </section>
-        <section class="navbar-section"></section>
-      </header>
-      <br>
-    </z-container>
+    <z-hero type="primary" size="sm">
+      <z-hero-body>
+        
+        <h1 class="logo">Zutre</h1>
+        <h2 class="logo-subtitle">Lightweight UI components for <a href="https://vuejs.org" class="text-secondary" target="_blank"><strong>Vue.js</strong></a> based on <a href="https://picturepan2.github.io/spectre/" class="text-secondary" target="_blank"><strong>Spectre CSS Framework</strong></a></h2>
+
+      </z-hero-body>
+    </z-hero>
+
+    <header class="docs-navbar navbar text-secondary"></header>
 
     <z-container>
-      <router-view />
+      <z-columns>
+        <z-column size="3">
+          <h6>Menu</h6>
+          <ul>
+            <li>
+              <router-link :to="{ name: 'home' }">Home</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'installation' }">Installation</router-link>
+            </li>
+          </ul>
+
+          <h6>Components</h6>
+          <ul>
+            <li>
+              <router-link :to="{ name: 'docsButtons' }">Buttons</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'docsBreadcrumbs' }">Breadcrumbs</router-link>
+            </li>
+          </ul>
+
+        </z-column>
+        <z-column size="9">
+          <router-view />
+        </z-column>
+      </z-columns>
     </z-container>
   </div>
 </template>
 <script>
-import { ZContainer } from './components'
+import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody } from './components'
 
 export default {
   name: 'Demo',
   components: {
-    ZContainer
+    ZContainer, ZHero, ZHeroBody, ZColumns, ZColumn
   }
 }
 </script>
 
-<style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+<style lang="scss" >
+@import url('https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700');
 
-$font-logo: 'Lobster', 'Tmes New Roman';
+
+$font-logo: 'Lobster', 'Tmes New Roman', Times, serif;
 $primary: #EF2390;
 
 .logo {
@@ -67,7 +93,7 @@ $primary: #EF2390;
 
 .docs-container {
   > .container {
-    max-width: 966px;
+    max-width: 1199px;
   }
 }
 
@@ -75,8 +101,7 @@ $primary: #EF2390;
   padding: 10px;
   color: #fff;
   background: $primary;
-  border-radius: 20px;
-  margin: 10px 0;
+  margin: 0 0 10px;
 
   a {
     color: #fff;

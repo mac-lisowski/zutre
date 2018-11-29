@@ -17,14 +17,14 @@ npm install --save zutre
 | Forms | |
 | Icons | |
 | Labels | |
-| Code | in progress |
+| Code | Done |
 | Media | |
 
 ## Layout
 
 | Name | Status |
 |---|---|
-| Flexbox grid | done |
+| Flexbox grid | Done |
 | Responsive |  |
 | Hero | |
 | Navbar | in progress |
