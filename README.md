@@ -1,4 +1,5 @@
 # Zutre
+[https://maclisowski.github.io/zutre/](https://maclisowski.github.io/zutre/)
 
 ## NOTE: Project in development, do not use at production
 
@@ -26,8 +27,8 @@ npm install --save zutre
 |---|---|
 | Flexbox grid | Done |
 | Responsive |  |
-| Hero | |
-| Navbar | in progress |
+| Hero | Done |
+| Navbar | In progress |
 
 ## Components
 
@@ -39,7 +40,7 @@ npm install --save zutre
 | Badges | |
 | Bars | |
 | Breadcrumbs | done | 
-| Cards | in progress |
+| Cards | In progress |
 | Chips | |
 | Empty states | |
 | Menu | |
