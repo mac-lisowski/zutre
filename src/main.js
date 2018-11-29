@@ -14,34 +14,34 @@ Vue.use(Router)
 let router = new Router({
   routes: [
     {
-      path: '/zutre',
+      path: '/',
       name: 'home',
       component: DocsHome
     },
     {
-      path: '/zutre/about',
+      path: '/about',
       name: 'about',
       component: DocsAbout
     },
     {
-      path: '/zutre/installation',
+      path: '/installation',
       name: 'installation',
       component: () => import('./docs/DocsInstallation.vue')
     },
 
     {
-      path: '/zutre/layout/hero',
+      path: '/layout/hero',
       name: 'docsHero',
       component: () => import('./docs/DocsHero.vue')
     },
 
     {
-      path: '/zutre/components/buttons',
+      path: '/components/buttons',
       name: 'docsButtons',
       component: () => import('./docs/DocsButtons.vue')
     },
     {
-      path: '/zutre/components/breadcrumbs',
+      path: '/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')
     },
