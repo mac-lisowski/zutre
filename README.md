@@ -73,6 +73,11 @@ npm run serve
 npm run build-bundle
 ```
 
+### Compiles documentation
+```
+npm run build-docs
+```
+
 ### Run your tests
 ```
 npm run test

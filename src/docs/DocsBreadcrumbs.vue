@@ -21,6 +21,10 @@
 
       </z-column>
     </z-columns>
+    
+      <div class="divider text-center" data-content="OR"></div>
+      <br>
+
     <z-columns>
       <z-column>
         <p>If you are using <a href="https://router.vuejs.org/" target="_blank"><strong>vue-router</strong></a> 

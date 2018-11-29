@@ -18,7 +18,11 @@
   &lt;/z-hero-body&gt;
 &lt;/z-hero&gt;
 </z-code>
-      <hr/>
+      
+      <br>
+      <div class="divider text-center" data-content="OR"></div>
+      <br>
+
       <z-hero type="dark" size="sm">
         <z-hero-body>
           <h1>Hero title</h1>
@@ -35,7 +39,10 @@
 &lt;/z-hero&gt;
 </z-code>
 
-      <hr/>
+      <br>
+      <div class="divider text-center" data-content="OR"></div>
+      <br>
+      
       <z-hero type="primary" size="lg">
         <z-hero-body>
           <h1>Hero title</h1>
