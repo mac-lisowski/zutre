@@ -12,7 +12,6 @@ Vue.config.productionTip = false
 
 Vue.use(Router)
 let router = new Router({
-  mode: 'history',
   routes: [
     {
       path: '/zutre',
@@ -29,6 +28,13 @@ let router = new Router({
       name: 'installation',
       component: () => import('./docs/DocsInstallation.vue')
     },
+
+    {
+      path: '/zutre/layout/hero',
+      name: 'docsHero',
+      component: () => import('./docs/DocsHero.vue')
+    },
+
     {
       path: '/zutre/components/buttons',
       name: 'docsButtons',

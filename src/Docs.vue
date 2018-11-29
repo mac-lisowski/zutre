@@ -39,6 +39,16 @@
             </li>
           </ul>
 
+          <h6>Layout</h6>
+          <ul>
+            <li>
+              <router-link :to="{ name: 'docsFlexbox' }">Flexbox grid</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'docsHero' }">Hero</router-link>
+            </li>
+          </ul>
+
           <h6>Components</h6>
           <ul>
             <li>
