@@ -15,7 +15,7 @@
       </section>
     </header>
       
-    <z-hero type="primary" size="sm">
+    <z-hero type="primary" :size="size">
       <z-hero-body>
         
         <h1 class="logo">Zutre</h1>
@@ -28,7 +28,7 @@
 
     <z-container>
       <z-columns>
-        <z-column size="3">
+        <z-column :size="3">
           <h6>Menu</h6>
           <ul>
             <li>
@@ -57,10 +57,23 @@
             <li>
               <router-link :to="{ name: 'docsBreadcrumbs' }">Breadcrumbs</router-link>
             </li>
+            <li>
+              <router-link :to="{ name: 'docsMenu' }">Menu</router-link>
+            </li>
+          </ul>
+
+          <h6>Utilities</h6>
+          <ul>
+            <li>
+              <router-link :to="{ name: 'docsDivider' }">Divider</router-link>
+            </li>
+            <li>
+              <router-link :to="{ name: 'docsLink' }">Link</router-link>
+            </li>
           </ul>
 
         </z-column>
-        <z-column size="9">
+        <z-column :size="9">
           <router-view />
         </z-column>
       </z-columns>
@@ -72,21 +85,33 @@ import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody } from './components'
 
 export default {
   name: 'Demo',
+  data () {
+    return {
+      size: ''
+    }
+  },
   components: {
     ZContainer, ZHero, ZHeroBody, ZColumns, ZColumn
+  },
+  created () {
+    this.size = (this.$router.currentRoute.name == 'home') ? 'lg' : 'sm'
+  },
+  watch: {
+    $route (){
+        this.size = (this.$router.currentRoute.name == 'home') ? 'lg' : 'sm'
+    }
   }
 }
 </script>
 
-<style lang="scss" >
-@import url('https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700');
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
-
-$font-logo: 'Lobster', 'Tmes New Roman', Times, serif;
-$primary: #EF2390;
+$font-logo: 'Kaushan Script', 'Tmes New Roman', Times, serif;
+$primary: #498EFF;
 
 .logo {
-  color: $primary;
+  color: #fff;
   font-family: $font-logo;
   font-size: 5rem;
   margin: 20px 0;

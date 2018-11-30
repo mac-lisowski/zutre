@@ -45,6 +45,22 @@ let router = new Router({
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')
     },
+    {
+      path: '/components/menu',
+      name: 'docsMenu',
+      component: () => import('./docs/DocsMenu.vue')
+    },
+
+    {
+      path: '/utilities/divider',
+      name: 'docsDivider',
+      component: () => import('./docs/DocsDivider.vue')
+    },
+    {
+      path: '/utilities/link',
+      name: 'docsLink',
+      component: () => import('./docs/DocsLink.vue')
+    }
   ]
 })
 

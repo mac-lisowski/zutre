@@ -32,7 +32,6 @@ npm install --save zutre
 
 ## Components
 
-
 | Name | Status |
 |---|---|
 | Accordions |  |
@@ -55,6 +54,12 @@ npm install --save zutre
 | Toasts | |
 | Tooltips | |
 
+## Utilities
+
+| Name | Status |
+|---|---|
+| Divider | Done |
+| Link | Done |
 
 ---
 

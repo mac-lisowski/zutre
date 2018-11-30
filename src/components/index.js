@@ -9,9 +9,12 @@ import ZCode from './Code'
 import ZContainer from './Container'
 import ZColumns from './Columns'
 import ZColumn from './Column'
+import ZDivider from './Divider'
 
 import ZHero from './Hero'
 import ZHeroBody from './HeroBody'
+
+import ZLink from './Link'
 
 const Components = {
   ZButton,
@@ -23,8 +26,10 @@ const Components = {
   ZContainer,
   ZColumns,
   ZColumn,
+  ZDivider,
   ZHero,
-  ZHeroBody
+  ZHeroBody,
+  ZLink
 }
 
 export {
@@ -37,8 +42,10 @@ export {
   ZContainer,
   ZColumns,
   ZColumn,
+  ZDivider,
   ZHero,
-  ZHeroBody
+  ZHeroBody,
+  ZLink
 }
 
 export default Components

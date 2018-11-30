@@ -20,7 +20,7 @@
 </z-code>
       
       <br>
-      <div class="divider text-center" data-content="OR"></div>
+      <z-divider content="OR" />
       <br>
 
       <z-hero type="dark" size="sm">
@@ -40,7 +40,7 @@
 </z-code>
 
       <br>
-      <div class="divider text-center" data-content="OR"></div>
+      <z-divider content="OR" />
       <br>
       
       <z-hero type="primary" size="lg">
@@ -61,12 +61,12 @@
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody } from './../components'
+import { ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider } from './../components'
 
 export default {
   name: 'DocsHero',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody
+    ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider
   }
 }
 </script>

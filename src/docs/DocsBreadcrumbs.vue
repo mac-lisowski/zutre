@@ -22,7 +22,7 @@
       </z-column>
     </z-columns>
     
-      <div class="divider text-center" data-content="OR"></div>
+      <z-divider content="OR" />
       <br>
 
     <z-columns>
@@ -45,14 +45,14 @@
 </template>
 <script>
 import { ZCode, ZBreadcrumbs, ZBreadcrumbsItem } from './../components'
-import { ZContainer, ZColumns, ZColumn } from './../components'
+import { ZContainer, ZColumns, ZColumn, ZDivider } from './../components'
 
 export default {
   name: 'DocsAbout',
   components: {
     ZCode, 
     ZBreadcrumbs, ZBreadcrumbsItem,
-    ZContainer, ZColumns, ZColumn
+    ZContainer, ZColumns, ZColumn, ZDivider
   }
 }
 </script>
