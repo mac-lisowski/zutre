@@ -17,6 +17,7 @@
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} color Values: primary, secondary, dark, gray, light, success, warning, error
+ * @prop {String} content
  */
 export default {
   name: 'ZCardSubtitle',

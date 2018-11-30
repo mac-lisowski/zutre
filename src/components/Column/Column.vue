@@ -9,6 +9,12 @@
  * ZColumn
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/grid.html
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Number} size
+ * @prop {Boolean} mxAuto
+ * @prop {Boolean} mlAuto
+ * @prop {Boolean} mrAuto
  */
 export default {
   name: 'ZColumn',

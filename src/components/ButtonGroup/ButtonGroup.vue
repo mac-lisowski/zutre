@@ -9,6 +9,9 @@
  * ZButtonGroup  
  * 
  * Spectre: https://picturepan2.github.io/spectre/elements/buttons.html
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Boolean} block
  */
 export default {
   name: 'ZButtonGroup',

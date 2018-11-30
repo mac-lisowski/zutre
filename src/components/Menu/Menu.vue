@@ -9,6 +9,8 @@
  * ZMenu
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/menu.html#menus
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
   name: 'ZMenu'

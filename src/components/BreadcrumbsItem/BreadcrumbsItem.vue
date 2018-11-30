@@ -23,9 +23,10 @@
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/breadcrumbs.html
  * 
- * @param {String} name
- * @param {JSON} link
- * @param {String} href 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} name
+ * @prop {JSON} link
+ * @prop {String} href 
  */
 export default {
   name: 'ZBreadcrumbsItem',

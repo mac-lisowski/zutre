@@ -19,6 +19,14 @@
 <script>
 /**
  * ZLink
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} href
+ * @prop {Object} link
+ * @prop {String} name
+ * @prop {String} activeClass
+ * @prop {Boolean} active
+ * @prop {Boolean} exact
  */
 export default {
   name: 'ZLink',

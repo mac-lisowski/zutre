@@ -18,19 +18,13 @@
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/menu.html#menus
  * 
- * 
- * <z-menu>
-            <z-menu-divider content="MENU" />
-            
-            <z-menu-item href="/test" name="Home" />
-            <z-menu-item href="/test2">TEST</z-menu-item>
-
-            <z-menu-item :link="{ name: 'docsDivider' }" name="Divider" />
-            <z-menu-item :link="{ name: 'docsLink' }">Link</z-menu-item>
-            
-            <z-menu-item :link="{ name: 'about' }" name="About" />
-
-          </z-menu>
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} href
+ * @prop {Object} link
+ * @prop {String} name
+ * @prop {String} activeClass
+ * @prop {Boolean} active
+ * @prop {Boolean} exact
  */
 import ZLink from './../Link'
 

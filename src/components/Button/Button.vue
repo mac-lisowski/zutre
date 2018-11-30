@@ -9,6 +9,16 @@
  * ZButton  
  * 
  * Spectre: https://picturepan2.github.io/spectre/elements/buttons.html
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} size Values: sm, lg
+ * @prop {String} type
+ * @prop {Boolean} active
+ * @prop {Boolean} action
+ * @prop {Boolean} circle
+ * @prop {Boolean} loading
+ * @prop {Boolean} disabled
+ * @prop {Boolean} right
  */
 export default {
   name: 'ZButton',

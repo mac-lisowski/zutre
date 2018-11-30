@@ -10,6 +10,7 @@
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
  * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} src path to image
  */
 export default {
