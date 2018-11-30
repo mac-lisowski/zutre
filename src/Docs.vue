@@ -29,48 +29,30 @@
     <z-container>
       <z-columns>
         <z-column :size="3">
-          <h6>Menu</h6>
-          <ul>
-            <li>
-              <router-link :to="{ name: 'home' }">Home</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'installation' }">Installation</router-link>
-            </li>
-          </ul>
 
-          <h6>Layout</h6>
-          <ul>
-            <li>
-              <router-link :to="{ name: 'docsFlexbox' }">Flexbox grid</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'docsHero' }">Hero</router-link>
-            </li>
-          </ul>
+          <z-menu>
+            <z-menu-divider content="MENU" />
+            
+            <z-menu-item :link="{ name: 'home' }" name="Home" activeClass="active" exact/>
+            <z-menu-item :link="{ name: 'installation' }" activeClass="active">Installation</z-menu-item>
 
-          <h6>Components</h6>
-          <ul>
-            <li>
-              <router-link :to="{ name: 'docsButtons' }">Buttons</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'docsBreadcrumbs' }">Breadcrumbs</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'docsMenu' }">Menu</router-link>
-            </li>
-          </ul>
+            <z-menu-divider content="LAYOUT" />
 
-          <h6>Utilities</h6>
-          <ul>
-            <li>
-              <router-link :to="{ name: 'docsDivider' }">Divider</router-link>
-            </li>
-            <li>
-              <router-link :to="{ name: 'docsLink' }">Link</router-link>
-            </li>
-          </ul>
+            <z-menu-item :link="{ name: 'docsFlexbox' }" name="Flexbox grid" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsHero' }" name="Hero" activeClass="active" />
+
+            <z-menu-divider content="COMPONENTS" />
+
+            <z-menu-item :link="{ name: 'docsButtons' }" name="Buttons" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsCard' }" name="Card" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsMenu' }" name="Menu" activeClass="active" />
+
+            <z-menu-divider content="UTILITIES" />
+
+            <z-menu-item :link="{ name: 'docsDivider' }" name="Divider" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsLink' }" name="Link" activeClass="active" />
+          </z-menu>
 
         </z-column>
         <z-column :size="9">
@@ -81,7 +63,7 @@
   </div>
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody } from './components'
+import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody, ZMenu, ZMenuItem, ZMenuDivider } from './components'
 
 export default {
   name: 'Demo',
@@ -91,7 +73,7 @@ export default {
     }
   },
   components: {
-    ZContainer, ZHero, ZHeroBody, ZColumns, ZColumn
+    ZContainer, ZHero, ZHeroBody, ZColumns, ZColumn, ZMenu, ZMenuItem, ZMenuDivider
   },
   created () {
     this.size = (this.$router.currentRoute.name == 'home') ? 'lg' : 'sm'
@@ -109,7 +91,9 @@ export default {
 
 $font-logo: 'Kaushan Script', 'Tmes New Roman', Times, serif;
 $primary: #498EFF;
-
+body {
+  margin-bottom: 100px;
+}
 .logo {
   color: #fff;
   font-family: $font-logo;

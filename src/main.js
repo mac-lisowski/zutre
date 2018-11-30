@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 
 Vue.use(Router)
 let router = new Router({
+  // mode:'history',
   routes: [
     {
       path: '/',
@@ -34,6 +35,11 @@ let router = new Router({
       name: 'docsHero',
       component: () => import('./docs/DocsHero.vue')
     },
+    {
+      path: '/layout/flexbox',
+      name: 'docsFlexbox',
+      component: () => import('./docs/DocsFlexbox.vue')
+    },
 
     {
       path: '/components/buttons',
@@ -44,6 +50,11 @@ let router = new Router({
       path: '/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')
+    },
+    {
+      path: '/components/card',
+      name: 'docsCard',
+      component: () => import('./docs/DocsCards.vue')
     },
     {
       path: '/components/menu',
