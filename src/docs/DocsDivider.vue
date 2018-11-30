@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Utilities' }, { name: 'Divider', link: { name: 'docsDivider' }}]" />
-      <h5>Divider</h5>
+      <h4>Divider</h4>
 
       The Divider is used for separating elements.
 
@@ -49,16 +49,40 @@ import { ZColumn, ZDivider } from 'zutre'
         </z-column>
 
       </z-columns>
+      
+      <z-divider content="API" />
+      <h4>API</h4>
+
+      <h5>Divider <code>&lt;z-divider /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>content</code></z-td>
+            <z-td>centered text on divider</z-td>
+            <z-td>String</z-td>
+            <z-td>--</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+
     </z-container>
     
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZBreadcrumbs, ZCode, ZDivider } from './../components'
+import { ZContainer, ZColumns, ZColumn, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
 
 export default {
   name: 'DocsDivider',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn
+    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
   }
 }
 </script>

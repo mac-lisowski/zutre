@@ -2,7 +2,7 @@
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Elements' }, { name: 'Buttons', link: { name: 'docsButtons' }}]" />
 
-      <h5>Buttons</h5>
+      <h4>Buttons</h4>
       <p>Buttons include simple button styles for actions in different types and sizes.</p>
 
       <z-button>button</z-button> &nbsp;

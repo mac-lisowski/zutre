@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Layout' }, { name: 'Hero', link: { name: 'docsHero' }}]" />
-      <h5>Hero</h5>
+      <h4>Hero</h4>
 
       <z-hero type="gray">
         <z-hero-body>

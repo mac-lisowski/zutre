@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Elements' }, { name: 'Code', link: { name: 'docsCode' }}]" />
-      <h5>Code</h5>
+      <h4>Code</h4>
 
       <p>Code is used for styling inline and multiline code snippets.</p>
 

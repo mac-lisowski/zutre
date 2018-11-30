@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Components' }, { name: 'Menu', link: { name: 'docsMenu' }}]" />
-      <h5>Menu</h5>
+      <h4>Menu</h4>
 
       <p>Menus are vertical list of links or buttons for actions and navigation.</p>
 
@@ -61,15 +61,95 @@ import { ZMenu, ZMenuItem, ZMenuDivider } from 'zutre'
 &lt;/z-menu&gt;
       </z-code>
 
+      <z-divider content="API" />
+      <h4>API</h4>
+
+      <h5>MenuDivider <code>&lt;z-menu-divider /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>content</code></z-td>
+            <z-td>centered text on divider</z-td>
+            <z-td>String</z-td>
+            <z-td>--</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+      <br>
+
+      <h5>MenuItem <code>&lt;z-menu-item /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>name</code></z-td>
+            <z-td>menu item name (link name)</z-td>
+            <z-td>String</z-td>
+            <z-td>--</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>href</code></z-td>
+            <z-td>href link, use if you are not using vue-router</z-td>
+            <z-td>String</z-td>
+            <z-td>--</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>link</code></z-td>
+            <z-td>object, as you would be passing one to vue-router <br>component <code>&lt;router-link :to="{}"/&gt;</code></z-td>
+            <z-td>Object</z-td>
+            <z-td>--</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>exact</code></z-td>
+            <z-td>have effect when used with <code>link</code> and <code>activeClass</code>, match exact route</z-td>
+            <z-td>Boolean</z-td>
+            <z-td>false</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>activeClass</code></z-td>
+            <z-td>name of css class for active menu item, have effect when used with <code>link</code> or <code>active</code></z-td>
+            <z-td>String</z-td>
+            <z-td>--</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>active</code></z-td>
+            <z-td>applies css class from <code>activeClass</code></z-td>
+            <z-td>Boolean</z-td>
+            <z-td>false</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+      
+      
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZMenuDivider, ZMenu, ZMenuItem } from './../components'
+import { ZContainer, ZBreadcrumbs, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd, ZCode, ZDivider, ZMenuDivider, ZMenu, ZMenuItem } from './../components'
 
 export default {
   name: 'DocsMenu',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZMenu, ZMenuItem, ZMenuDivider
+    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZMenu, ZMenuItem, ZMenuDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
   }
 }
 </script>

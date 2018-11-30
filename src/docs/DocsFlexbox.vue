@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Layout' }, { name: 'Flexbox grid', link: { name: 'docsFlexbox' }}]" />
-      <h5>Flexbox grid</h5>
+      <h4>Flexbox grid</h4>
 
       <p>Layout includes flexbox based responsive grid system with 12 columns.</p>
 
@@ -96,7 +96,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

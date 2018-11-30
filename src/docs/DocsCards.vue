@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Components' }, { name: 'Card', link: { name: 'docsCard' }}]" />
-      <h5>Card</h5>
+      <h4>Card</h4>
       
       <p>
         Cards are flexible content containers.

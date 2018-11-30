@@ -1,5 +1,5 @@
 <template>
-  <li class="menu-item">
+  <li :class="itemClass">
     <z-link v-if="hasHref && !hasLink && !hasDefaultSlot" :href="linkHref" :name="linkName" v-bind:activeClass="activeClass" />
     <z-link v-else-if="hasHref && !hasLink && hasDefaultSlot" :href="linkHref" v-bind:activeClass="activeClass">
       <slot></slot>
@@ -57,6 +57,14 @@ export default {
     }
   },
   computed: {
+    itemClass: function() {
+      let css = 'menu-item'
+
+      if (this.active === true && typeof this.activeClass === 'string') {
+        css += this.activeClass
+      }
+      return css
+    },
     hasName: function() {
       return (typeof this.name !== 'undefined') ? true : false
     },

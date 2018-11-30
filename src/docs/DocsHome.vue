@@ -1,6 +1,6 @@
 <template>
     <z-container>
-      <h5>Home</h5>
+      <h4>Home</h4>
 
     </z-container>
 </template>

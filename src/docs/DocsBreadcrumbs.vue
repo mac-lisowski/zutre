@@ -2,7 +2,7 @@
   <z-container>
     <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Components' }, { name: 'Breadcrumbs', link: { name: 'docsBreadcrumbs' }}]" />
 
-    <h5>Breadcrumbs</h5>
+    <h4>Breadcrumbs</h4>
     <z-columns>
       <z-column>
         <z-breadcrumbs :items="[{ name: 'Dashboard', href: '/'}, { name: 'Settings', href: '/settings'}]" />

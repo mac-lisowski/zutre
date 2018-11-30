@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Elements' }, { name: 'Label', link: { name: 'docsLabel' }}]" />
-      <h5>Label</h5>
+      <h4>Label</h4>
 
       <p>Labels are formatted text tags for highlighted, informative information.</p>
 
