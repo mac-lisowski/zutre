@@ -9,6 +9,10 @@
  * ZColumns
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/grid.html
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Boolean} gapless
+ * @prop {Boolean} oneline
  */
 export default {
   name: 'ZColumns',

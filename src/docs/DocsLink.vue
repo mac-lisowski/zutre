@@ -3,7 +3,7 @@
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Utilities' }, { name: 'Link', link: { name: 'docsLink' }}]" />
       <h5>Link</h5>
 
-      The Link is used for generating <mark>&lt;a href=""&gt;&lt;/a&gt;</mark> tags or <mark>&lt;router-link :to=""&gt;&lt;/router-link&gt;</mark>.
+      The Link is used for generating <code>&lt;a href=""&gt;&lt;/a&gt;</code> tags or <code>&lt;router-link :to=""&gt;&lt;/router-link&gt;</code>.
 
       <z-divider />
 
@@ -35,6 +35,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

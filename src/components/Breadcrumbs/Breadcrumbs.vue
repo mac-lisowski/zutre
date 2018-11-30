@@ -17,7 +17,8 @@
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/breadcrumbs.html
  * 
- * @param {Array} items each item is an JSON object with: name, link/href. <router-link :to="item.link" /> instaed of <a :href="item.href" />
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Array} items each item is an JSON object with: name, link/href. <router-link :to="item.link" /> instaed of <a :href="item.href" />
  */
 import ZBreadcrumbsItem from './../BreadcrumbsItem'
 

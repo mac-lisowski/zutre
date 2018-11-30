@@ -7,6 +7,10 @@
  * ZDivider
  * 
  * Spectre: https://picturepan2.github.io/spectre/utilities/divider.html
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} content
+ * @prop {Boolean} vert
  */
 export default {
   name: 'ZDivider',

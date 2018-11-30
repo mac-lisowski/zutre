@@ -11,6 +11,8 @@
       </z-hero>
       <br>
 <z-code lang="Vue">
+import { ZHero } from 'zutre'
+
 &lt;z-hero type="gray" &gt;
   &lt;z-hero-body&gt;
     &lt;h1&gt;Hero title&lt;/h1&gt;
@@ -31,6 +33,8 @@
       </z-hero>
       <br>
 <z-code lang="Vue">
+import { ZHero } from 'zutre'
+
 &lt;z-hero type="dark" size="sm" &gt;
   &lt;z-hero-body&gt;
     &lt;h1&gt;Hero title&lt;/h1&gt;
@@ -50,6 +54,8 @@
         </z-hero-body>
       </z-hero>
 <z-code lang="Vue">
+import { ZHero } from 'zutre'
+
 &lt;z-hero type="primary" size="lg" &gt;
   &lt;z-hero-body&gt;
     &lt;h1&gt;Hero title&lt;/h1&gt;
@@ -70,6 +76,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

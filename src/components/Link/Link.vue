@@ -7,7 +7,7 @@
       <template v-else-if="!hasDefaultSlot">{{ linkName }}</template>
     </a>
 
-    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter">
+    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" v-bind:active-class="activeClass" v-bind:exact="exact">
       <template v-if="hasDefaultSlot">
         <slot></slot>
       </template>
@@ -19,6 +19,14 @@
 <script>
 /**
  * ZLink
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} href
+ * @prop {Object} link
+ * @prop {String} name
+ * @prop {String} activeClass
+ * @prop {Boolean} active
+ * @prop {Boolean} exact
  */
 export default {
   name: 'ZLink',
@@ -31,6 +39,18 @@ export default {
     },
     name: {
       type: String
+    },
+    activeClass: {
+      type: String,
+      default: () => ''
+    },
+    active: {
+      type: Boolean,
+      default: () => false
+    },
+    exact: {
+      type: Boolean,
+      default: () => false
     }
   },
   computed: {

@@ -9,6 +9,10 @@
  * ZHero
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/hero.html
+ * 
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} type
+ * @prop {String} size
  */
 export default {
   name: 'ZHero',
