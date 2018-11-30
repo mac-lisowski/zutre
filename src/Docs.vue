@@ -117,6 +117,15 @@ body {
   > .container {
     max-width: 1199px;
   }
+
+  .column {
+    padding: 0.4rem;
+  }
+
+  .docs-block {
+    border-radius: .1rem;
+    padding: .4rem;
+  }
 }
 
 .navbar.docs-navbar {

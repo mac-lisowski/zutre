@@ -40,6 +40,11 @@ let router = new Router({
       name: 'docsLabel',
       component: () => import('./docs/DocsLabel.vue')
     },
+    {
+      path: '/elements/code',
+      name: 'docsCode',
+      component: () => import('./docs/DocsCode.vue')
+    },
 
     {
       path: '/layout/hero',

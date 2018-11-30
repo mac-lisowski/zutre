@@ -35,7 +35,7 @@ npm install --save zutre
 | Name | Status |
 |---|---|
 | Accordions |  |
-| Avatars | |
+| Avatars | In progress |
 | Badges | |
 | Bars | |
 | Breadcrumbs | done | 
@@ -50,7 +50,7 @@ npm install --save zutre
 | Popovers | |
 | Steps | |
 | Tabs | |
-| Tiles | |
+| Tiles | In progress |
 | Toasts | |
 | Tooltips | |
 
