@@ -13,13 +13,13 @@ npm install --save zutre
 
 | Name | Status |
 |---|---|
-| Tables |  |
+| Tables | In progress |
 | Buttons | Done |
 | Forms | |
 | Icons | |
-| Labels | |
+| Labels | Done |
 | Code | Done |
-| Media | |
+| Media | In progress |
 
 ## Layout
 

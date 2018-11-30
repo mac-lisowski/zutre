@@ -20,6 +20,7 @@ import ZDivider from './Divider'
 import ZHero from './Hero'
 import ZHeroBody from './HeroBody'
 
+import ZLabel from './Label'
 import ZLink from './Link'
 
 import ZMenu from './Menu'
@@ -46,6 +47,7 @@ const Components = {
   ZHero,
   ZHeroBody,
   ZLink,
+  ZLabel,
   ZMenu,
   ZMenuDivider,
   ZMenuItem
@@ -71,6 +73,7 @@ export {
   ZHero,
   ZHeroBody,
   ZLink,
+  ZLabel,
   ZMenu,
   ZMenuDivider,
   ZMenuItem

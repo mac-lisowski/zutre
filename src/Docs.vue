@@ -36,14 +36,17 @@
             <z-menu-item :link="{ name: 'home' }" name="Home" activeClass="active" exact/>
             <z-menu-item :link="{ name: 'installation' }" activeClass="active">Installation</z-menu-item>
 
+            <z-menu-divider content="ELEMENTS" />
+            <z-menu-item :link="{ name: 'docsButtons' }" name="Buttons" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsLabel' }" name="Labels" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsCode' }" name="Code" activeClass="active" />
+
             <z-menu-divider content="LAYOUT" />
 
             <z-menu-item :link="{ name: 'docsFlexbox' }" name="Flexbox grid" activeClass="active" />
             <z-menu-item :link="{ name: 'docsHero' }" name="Hero" activeClass="active" />
 
             <z-menu-divider content="COMPONENTS" />
-
-            <z-menu-item :link="{ name: 'docsButtons' }" name="Buttons" activeClass="active" />
             <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCard' }" name="Card" activeClass="active" />
             <z-menu-item :link="{ name: 'docsMenu' }" name="Menu" activeClass="active" />
