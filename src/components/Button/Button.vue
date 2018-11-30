@@ -40,6 +40,9 @@ export default {
     disabled: {
       type: Boolean,
       default: () => false
+    },
+    right: {
+      type: Boolean
     }
   },
   computed: {
@@ -91,6 +94,10 @@ export default {
 
       if (this.loading === true) {
         cssClass += ' loading'
+      }
+
+      if (this.right === true) {
+        cssClass += ' float-right'
       }
 
       return cssClass

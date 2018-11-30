@@ -5,6 +5,12 @@ import ZButtonGroup from './ButtonGroup'
 import ZBreadcrumbs from './Breadcrumbs'
 import ZBreadcrumbsItem from './BreadcrumbsItem'
 import ZCard from './Card'
+import ZCardTitle from './CardTitle'
+import ZCardSubtitle from './CardSubtitle'
+import ZCardHeader from './CardHeader'
+import ZCardBody from './CardBody'
+import ZCardFooter from './CardFooter'
+import ZCardImage from './CardImage'
 import ZCode from './Code'
 import ZContainer from './Container'
 import ZColumns from './Columns'
@@ -16,12 +22,22 @@ import ZHeroBody from './HeroBody'
 
 import ZLink from './Link'
 
+import ZMenu from './Menu'
+import ZMenuDivider from './MenuDivider'
+import ZMenuItem from './MenuItem'
+
 const Components = {
   ZButton,
   ZButtonGroup,
   ZBreadcrumbs, 
   ZBreadcrumbsItem,
   ZCard,
+  ZCardHeader,
+  ZCardTitle,
+  ZCardSubtitle,
+  ZCardBody,
+  ZCardFooter,
+  ZCardImage,
   ZCode,
   ZContainer,
   ZColumns,
@@ -29,7 +45,10 @@ const Components = {
   ZDivider,
   ZHero,
   ZHeroBody,
-  ZLink
+  ZLink,
+  ZMenu,
+  ZMenuDivider,
+  ZMenuItem
 }
 
 export {
@@ -38,6 +57,12 @@ export {
   ZBreadcrumbs,
   ZBreadcrumbsItem,
   ZCard,
+  ZCardTitle,
+  ZCardSubtitle,
+  ZCardHeader,
+  ZCardBody,
+  ZCardFooter,
+  ZCardImage,
   ZCode,
   ZContainer,
   ZColumns,
@@ -45,7 +70,10 @@ export {
   ZDivider,
   ZHero,
   ZHeroBody,
-  ZLink
+  ZLink,
+  ZMenu,
+  ZMenuDivider,
+  ZMenuItem
 }
 
 export default Components
