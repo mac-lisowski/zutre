@@ -3,96 +3,62 @@
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Elements' }, { name: 'Buttons', link: { name: 'docsButtons' }}]" />
 
       <h5>Buttons</h5>
+      <p>Buttons include simple button styles for actions in different types and sizes.</p>
+
+      <z-button>button</z-button> &nbsp;
+      <z-button type="primary">primary</z-button> &nbsp;
+      <z-button type="link">link</z-button>
+<z-code lang="Vue">
+import { ZButton } from 'zutre'
+
+&lt;z-button&gt;button&lt;/z-button&gt;
+&lt;z-button type="primary"&gt;primary&lt;/z-button&gt;
+&lt;z-button type="link"&gt;link&lt;/z-button&gt;
+</z-code>
+
+      <z-divider />
+
       <z-columns>
-        
         <z-column>
-          <z-card></z-card>
+          <z-button type="success" size="lg">success</z-button> &nbsp;
+          <z-button type="error">error</z-button> &nbsp;
+          <z-button size="sm">default</z-button>
         </z-column>
         <z-column>
-          <z-columns>
-            <z-column>
-              <z-button>button</z-button> &nbsp;
-              <z-button type="primary">primary</z-button> &nbsp;
-              <z-button type="link">link</z-button> &nbsp;
-              <z-button type="success">success</z-button> &nbsp;
-              <z-button type="error">error</z-button>
-            </z-column>
-          </z-columns>
-
-          <z-columns>
-            <z-column>
-              
-              <z-button size="lg" type="primary">large</z-button> &nbsp;
-              <z-button>normal</z-button> &nbsp;
-              <z-button size="sm" type="success">small</z-button> &nbsp;
-            </z-column>
-          </z-columns>
-
-          <z-columns>
-            <z-column>
-              
-              <z-button :disabled="true">disabled</z-button> &nbsp;
-              <z-button :loading="true" type="error">loading</z-button> &nbsp;
-              <z-button :loading="true" :disabled="true">loading disabled</z-button> &nbsp;
-              <z-button :loading="true" type="primary">small</z-button> &nbsp;
-            </z-column>
-          </z-columns>
-
-          <z-columns>
-
-            <z-column>
-              <z-button-group>
-                <z-button type="primary">button</z-button>
-                <z-button type="primary" :active="true">button</z-button>
-                <z-button type="primary">button</z-button>
-              </z-button-group>
-            </z-column>
-
-            <z-column>
-              <z-button-group :block="true">
-                <z-button type="primary" size="sm">button</z-button>
-                <z-button type="primary" size="sm" :active="true">button</z-button>
-                <z-button type="primary" size="sm">button</z-button>
-              </z-button-group>
-            </z-column>
-          </z-columns>
-
+          <z-button-group block>
+            <z-button >button</z-button>
+            <z-button type="primary" :active="true">button</z-button>
+            <z-button type="primary">button</z-button>
+          </z-button-group>
         </z-column>
-
+        <z-column>
+          <z-button type="primary" right>right</z-button> 
+        </z-column>
       </z-columns>
 
-      <z-columns :oneline="false" :gapless="false">
-        
-        <z-column :size=3 :mxAuto="false" :mlAuto="false" :mrAuto="false">
-          <z-card></z-card>
-        </z-column>
+<z-code lang="Vue">
+import { ZButton } from 'zutre'
 
-        <z-column :size=3>
-          TEST
-        </z-column>
+&lt;z-button-group block&gt;
+  &lt;z-button&gt;button&lt;/z-button&gt;
+  &lt;z-button type="primary" :active="true"&gt;button&lt;/z-button&gt;
+  &lt;z-button type="primary"&gt;button&lt;/z-button&gt;
+&lt;/z-button-group&gt;
 
-        <z-column :size=3>
-          <z-card></z-card>
-        </z-column>
-        <z-column :size=3>
-          TEST
-        </z-column>
-
-      </z-columns>
+&lt;z-button type="primary" right&gt;right&lt;/z-button&gt;
+</z-code>
 
     </z-container>
 </template>
 <script>
 import { ZButton, ZButtonGroup } from './../components'
-import { ZCard } from './../components'
-import { ZContainer, ZColumns, ZColumn, ZBreadcrumbs } from './../components'
+import { ZContainer, ZColumns, ZCode, ZColumn, ZBreadcrumbs, ZDivider } from './../components'
 
 export default {
   name: 'DocsButtons',
   components: {
     ZButton, ZButtonGroup, 
-    ZCard,
-    ZContainer, ZColumns, ZColumn, ZBreadcrumbs
+    ZContainer, ZColumns, ZColumn, ZCode, ZBreadcrumbs, ZDivider
   }
 }
 </script>
