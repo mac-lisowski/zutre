@@ -1,16 +1,16 @@
 <template>
-  <div class="card">
+  <div class="card-body">
     <slot></slot>
   </div>
 </template>
 
 <script>
 /**
- * ZCard
+ * ZCardBody
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
  */
 export default {
-  name: 'ZCard'
+  name: 'ZCardBody'
 }
 </script>
