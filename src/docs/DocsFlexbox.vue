@@ -92,6 +92,7 @@ export default {
   name: 'DocsFlexbox',
   components: {
     ZContainer, ZBreadcrumbs, ZCode, ZColumns, ZColumn, ZDivider
+
   }
 }
 </script>

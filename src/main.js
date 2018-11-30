@@ -58,6 +58,12 @@ let router = new Router({
     },
 
     {
+      path: '/layout/flexbox',
+      name: 'docsFlexbox',
+      component: () => import('./docs/DocsFlexbox.vue')
+    },
+
+    {
       path: '/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')
