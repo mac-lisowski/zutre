@@ -31,6 +31,22 @@ let router = new Router({
     },
 
     {
+      path: '/elements/buttons',
+      name: 'docsButtons',
+      component: () => import('./docs/DocsButtons.vue')
+    },
+    {
+      path: '/elements/label',
+      name: 'docsLabel',
+      component: () => import('./docs/DocsLabel.vue')
+    },
+    {
+      path: '/elements/code',
+      name: 'docsCode',
+      component: () => import('./docs/DocsCode.vue')
+    },
+
+    {
       path: '/layout/hero',
       name: 'docsHero',
       component: () => import('./docs/DocsHero.vue')
@@ -42,10 +58,11 @@ let router = new Router({
     },
 
     {
-      path: '/components/buttons',
-      name: 'docsButtons',
-      component: () => import('./docs/DocsButtons.vue')
+      path: '/layout/flexbox',
+      name: 'docsFlexbox',
+      component: () => import('./docs/DocsFlexbox.vue')
     },
+
     {
       path: '/components/breadcrumbs',
       name: 'docsBreadcrumbs',
