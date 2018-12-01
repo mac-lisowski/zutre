@@ -5,6 +5,11 @@
 
       <p>Menus are vertical list of links or buttons for actions and navigation.</p>
 
+      <p>
+        Components:
+        <code>&lt;z-menu&gt;</code>,<code>&lt;z-menu-divider /&gt;</code>, <code>&lt;z-menu-item&gt;</code>
+      </p>
+
       <z-divider />
 
       <z-menu>

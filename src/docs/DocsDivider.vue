@@ -3,7 +3,11 @@
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Utilities' }, { name: 'Divider', link: { name: 'docsDivider' }}]" />
       <h4>Divider</h4>
 
-      The Divider is used for separating elements.
+      <p>The Divider is used for separating elements.</p>
+
+      <p>
+        Components: <code>&lt;z-divider /&gt;</code>
+      </p>
 
       <z-divider  />
 

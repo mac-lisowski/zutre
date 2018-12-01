@@ -7,7 +7,7 @@
         Cards are flexible content containers.
       </p>
       <p>
-        Cards components includes:<br>
+        Components: 
         <code>&lt;z-card&gt;</code>,<code>&lt;z-card-image&gt;</code>, <code>&lt;z-card-header&gt;</code>, <code>&lt;z-card-body&gt;</code>, <code>&lt;z-card-footer&gt;</code>, 
         <code>&lt;z-card-title&gt;</code>, <code>&lt;z-card-subtitle&gt;</code>
       </p>
@@ -149,15 +149,94 @@ import { ZCard, ZCardImage, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardBody, Z
 &lt;/z-card&gt;
       </z-code>
 
+      <z-divider content="API" />
+      <h4>API</h4>
+
+      <h5>CardImage <code>&lt;z-card-image /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>src</code></z-td>
+            <z-td>path to image</z-td>
+            <z-td>String</z-td>
+            <z-td><code>required</code></z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+      <br>
+
+      <h5>CardTitle <code>&lt;z-card-title /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>size</code></z-td>
+            <z-td>tilte size</z-td>
+            <z-td>Number</z-td>
+            <z-td><code>1</code> to <code>6</code> where <code>1</code> is the biggest size</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>content</code></z-td>
+            <z-td>tilte content</z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+      <br>
+
+      <h5>CardSubtitle <code>&lt;z-card-subtitle /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>color</code></z-td>
+            <z-td>subtitle color</z-td>
+            <z-td>String</z-td>
+            <z-td>Values: <code>primary</code>, <code>secondary</code>, <code>gark</code>, <code>gray</code>, <code>light</code>, <code>success</code>, <code>warning</code>, <code>error</code></z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>content</code></z-td>
+            <z-td>subtilte content</z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+
     </z-container>
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZButton, ZButtonGroup, ZBreadcrumbs, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardFooter, ZCardBody, ZCardImage } from './../components'
+import { ZContainer, ZColumns, ZColumn, ZButton, ZButtonGroup, ZBreadcrumbs, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardFooter, ZCardBody, ZCardImage, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
 
 export default {
   name: 'DocsCards',
   components: {
-    ZContainer, ZBreadcrumbs, ZButton, ZButtonGroup, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZColumns, ZColumn, ZCardImage, ZCardFooter, ZCardBody
+    ZContainer, ZBreadcrumbs, ZButton, ZButtonGroup, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZColumns, ZColumn, ZCardImage, ZCardFooter, ZCardBody, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
   }
 }
 </script>

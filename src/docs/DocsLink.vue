@@ -3,7 +3,13 @@
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Utilities' }, { name: 'Link', link: { name: 'docsLink' }}]" />
       <h4>Link</h4>
 
-      The Link is used for generating <code>&lt;a href=""&gt;&lt;/a&gt;</code> tags or <code>&lt;router-link :to=""&gt;&lt;/router-link&gt;</code>.
+      <p>
+        The Link is used for generating <code>&lt;a href=""&gt;&lt;/a&gt;</code> tags or <code>&lt;router-link :to=""&gt;&lt;/router-link&gt;</code>.
+      </p>
+      <p>
+        Components: <code>&lt;z-link /&gt;</code>
+      </p>
+
 
       <z-divider />
 

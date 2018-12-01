@@ -5,6 +5,10 @@
 
       <p>Tables include default styles for tables and data sets.</p>
 
+      <p>
+        Components: <code>&lt;z-table/&gt;</code>, <code>&lt;z-thead/&gt;</code>, <code>&lt;z-tbody/&gt;</code>, 
+        <code>&lt;z-tr/&gt;</code>, <code>&lt;z-th/&gt;</code>, <code>&lt;z-td/&gt;</code>,
+      </p>
       <z-divider content="EXAMPLE" />
 
       <z-table stripped hover>

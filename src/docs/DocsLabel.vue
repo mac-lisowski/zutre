@@ -5,6 +5,10 @@
 
       <p>Labels are formatted text tags for highlighted, informative information.</p>
 
+      <p>
+        Components: <code>&lt;z-label /&gt;</code>
+      </p>
+
       <z-divider content="EXAMPLE" />
       <br>
 
@@ -38,15 +42,58 @@ import { ZLabel } from 'zutre'
 &lt;z-label type="primary" content="primary label" rounded /&gt; 
 </z-code>
 
+    <z-divider content="API" />
+      <h4>API</h4>
+
+      <h5>Label <code>&lt;z-label /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
+            <z-td><code>content</code></z-td>
+            <z-td>
+              label content body
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>type</code></z-td>
+            <z-td>
+              label color scheme
+            </z-td>
+            <z-td>String</z-td>
+            <z-td><code>primary</code>, <code>secondary</code>, <code>success</code>, <code>warning</code>, <code>error</code></z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>rounded</code></z-td>
+            <z-td>
+              set <code>true</code> for rounded label
+            </z-td>
+            <z-td>Boolean</z-td>
+            <z-td><code>true</code>/<code>false</code></z-td>
+            <z-td>false</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider } from './../components'
+import { ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
 
 export default {
   name: 'DocsHero',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider
+    ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
   }
 }
 </script>
