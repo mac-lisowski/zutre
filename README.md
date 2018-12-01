@@ -13,7 +13,7 @@ npm install --save zutre
 
 | Name | Status |
 |---|---|
-| Tables | In progress |
+| Tables | Done |
 | Buttons | Done |
 | Forms | |
 | Icons | |
@@ -51,8 +51,8 @@ npm install --save zutre
 | Steps | |
 | Tabs | |
 | Tiles | In progress |
-| Toasts | |
-| Tooltips | |
+| Toasts | In progress |
+| Tooltips | In progress |
 
 ## Utilities
 
