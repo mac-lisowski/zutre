@@ -53,6 +53,9 @@ export default {
     },
     right: {
       type: Boolean
+    },
+    clear: {
+      type: Boolean
     }
   },
   computed: {
@@ -88,6 +91,10 @@ export default {
             cssClass += ' btn-error'
             break
         }
+      }
+
+      if (this.clear === true) {
+        cssClass += ' btn-clear'
       }
 
       if (this.active === true) {
