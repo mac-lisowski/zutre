@@ -1,13 +1,13 @@
 <template>
 
-    <a v-if="hasHref && !hasLink" :href="linkHref">
+    <a v-if="hasHref && !hasLink" :href="linkHref" :class="linkClass">
       <template v-if="hasDefaultSlot">
         <slot></slot>
       </template>
       <template v-else-if="!hasDefaultSlot">{{ linkName }}</template>
     </a>
 
-    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" v-bind:active-class="activeClass" v-bind:exact="exact">
+    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-bind:active-class="activeClass" v-bind:exact="exact">
       <template v-if="hasDefaultSlot">
         <slot></slot>
       </template>
@@ -54,6 +54,14 @@ export default {
     }
   },
   computed: {
+    linkClass: function() {
+      let css = 'menu-item'
+
+      if (this.active === true && typeof this.activeClass === 'string') {
+        css += this.activeClass
+      }
+      return css
+    },
     hasHref () {
       return (typeof this.href !== 'undefined') ? true : false
     },

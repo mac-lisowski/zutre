@@ -27,6 +27,13 @@ import ZMenu from './Menu'
 import ZMenuDivider from './MenuDivider'
 import ZMenuItem from './MenuItem'
 
+import ZTable from './Table'
+import ZThead from './Thead'
+import ZTbody from './Tbody'
+import ZTr from './Tr'
+import ZTd from './Td'
+import ZTh from './Th'
+
 const Components = {
   ZButton,
   ZButtonGroup,
@@ -50,7 +57,13 @@ const Components = {
   ZLabel,
   ZMenu,
   ZMenuDivider,
-  ZMenuItem
+  ZMenuItem,
+  ZTable,
+  ZThead,
+  ZTbody,
+  ZTr,
+  ZTd,
+  ZTh
 }
 
 export {
@@ -76,7 +89,13 @@ export {
   ZLabel,
   ZMenu,
   ZMenuDivider,
-  ZMenuItem
+  ZMenuItem,
+  ZTable,
+  ZThead,
+  ZTbody,
+  ZTr,
+  ZTd,
+  ZTh
 }
 
 export default Components

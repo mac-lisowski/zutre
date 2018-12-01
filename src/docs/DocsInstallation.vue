@@ -2,7 +2,7 @@
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Installation', link: { name: 'installation' }}]" />
 
-      <h5>Installation</h5>
+      <h4>Installation</h4>
 
       <p>
         In order to use <strong>Zutre</strong> in your Vue project, install <strong>npm</strong> package:
