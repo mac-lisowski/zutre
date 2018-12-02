@@ -84,6 +84,11 @@ let router = new Router({
       component: () => import('./docs/DocsMenu.vue')
     },
     {
+      path: '/components/tile',
+      name: 'docsTile',
+      component: () => import('./docs/DocsTile.vue')
+    },
+    {
       path: '/components/toast',
       name: 'docsToast',
       component: () => import('./docs/DocsToast.vue')

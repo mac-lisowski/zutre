@@ -49,7 +49,7 @@ export default {
   name: 'ComponentName',
   methods: {
     openToastTop () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'top',
         type: 'success',
         title: 'Custom success toast',
@@ -59,7 +59,7 @@ export default {
       })
     },
     openToastBottomLeft () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'bottom left',
         type: 'primary',
         title: 'Custom error toast',
@@ -189,7 +189,7 @@ export default {
 import { ZContainer, ZButton, ZButtonGroup, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZToast, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsToast',
   components: {
     ZContainer, ZButton, ZButtonGroup, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZToast, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
   },
@@ -198,7 +198,7 @@ export default {
       alert('close event triggered')
     },
     openToastTop () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'top',
         type: 'success',
         title: 'Custom success toast',
@@ -208,7 +208,7 @@ export default {
       })
     },
     openToastTopLeft () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'top left',
         type: 'warning',
         title: 'Custom warning toast',
@@ -218,7 +218,7 @@ export default {
       })
     },
     openToastTopRight () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'top right',
         type: 'warning',
         title: 'Custom warning toast',
@@ -228,7 +228,7 @@ export default {
       })
     },
     openToastBottom () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'bottom',
         type: 'error',
         title: 'Custom error toast',
@@ -238,7 +238,7 @@ export default {
       })
     },
     openToastBottomLeft () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'bottom left',
         type: 'primary',
         title: 'Custom primary persistent toast',
@@ -247,7 +247,7 @@ export default {
       })
     },
     openToastBottomRight () {
-      this.$_zutre.toast({
+      this.$zutre.toast({
         position: 'bottom right',
         title: 'Custom bottom right toast',
         content: 'Seems like everything is fine. Vue is cool!',

@@ -52,6 +52,7 @@
             <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCard' }" name="Card" activeClass="active" />
             <z-menu-item :link="{ name: 'docsMenu' }" name="Menu" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsTile' }" name="Tile" activeClass="active" />
             <z-menu-item :link="{ name: 'docsToast' }" name="Toast" activeClass="active" />
 
             <z-menu-divider content="UTILITIES" />

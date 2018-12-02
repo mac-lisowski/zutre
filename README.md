@@ -50,7 +50,7 @@ npm install --save zutre
 | Popovers | |
 | Steps | |
 | Tabs | |
-| Tiles | In progress |
+| Tiles | Done |
 | Toasts | Done |
 | Tooltips | In progress |
 
