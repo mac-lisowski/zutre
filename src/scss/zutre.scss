@@ -1,1 +1,6 @@
-@import "components/_breadcrumbs";
+@import "components/breadcrumbs";
+@import "components/toast";
+
+.hide {
+  display: none;
+}

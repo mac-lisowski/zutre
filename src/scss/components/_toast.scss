@@ -1,0 +1,37 @@
+.toast-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 700;
+  width: 320px;
+  left: 50%;
+  margin-left: calc( -320px / 2);
+
+  &.top {
+    top: 10px;
+  }
+
+  &.bottom {
+    bottom: 10px;
+  }
+
+  &.right {
+    left: initial;
+    margin-left: initial;
+    right: 10px;
+  }
+
+  &.left {
+    left: initial;
+    margin-left: initial;
+    left: 10px;
+  }
+}
+.toast.toast-notify {
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
