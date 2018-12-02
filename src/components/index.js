@@ -35,6 +35,13 @@ import ZTr from './Tr'
 import ZTd from './Td'
 import ZTh from './Th'
 
+import ZTile from './Tile'
+import ZTileIcon from './TileIcon'
+import ZTileContent from './TileContent'
+import ZTileAction from './TileAction'
+import ZTileTitle from './TileTitle'
+import ZTileSubtitle from './TileSubtitle'
+
 import ZToast from './Toast'
 import ZToastTitle from './ToastTitle'
 import ZToastBody from './ToastBody'
@@ -44,7 +51,7 @@ Vue.extend({
   mixins: [ZToast]
 })
 
-Vue.prototype.$_zutre = {
+Vue.prototype.$zutre = {
 
   toast (options) {
     let $elNotify = document.getElementById('zutre-toast')
@@ -127,6 +134,12 @@ const Components = {
   ZTr,
   ZTd,
   ZTh,
+  ZTile,
+  ZTileIcon,
+  ZTileContent,
+  ZTileAction,
+  ZTileTitle,
+  ZTileSubtitle,
   ZToast,
   ZToastTitle,
   ZToastBody
@@ -162,6 +175,12 @@ export {
   ZTr,
   ZTd,
   ZTh,
+  ZTile,
+  ZTileIcon,
+  ZTileContent,
+  ZTileAction,
+  ZTileTitle,
+  ZTileSubtitle,
   ZToast,
   ZToastTitle,
   ZToastBody
