@@ -111,14 +111,14 @@ import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
         <z-column :size="6">
           <z-tile centered>
             <z-tile-icon>
-              <figure class="avatar avatar-lg"><img src="./avatar.png" alt="Avatar"></figure>
+              <figure class="avatar avatar-lg"><i class="material-icons">email</i></figure>
             </z-tile-icon>
             <z-tile-content>
               <z-tile-title>Pokemons</z-tile-title>
               <z-tile-subtitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</z-tile-subtitle>
             </z-tile-content>
             <z-tile-action>
-              <z-button>Call</z-button>&nbsp;
+              <z-button>Open</z-button>&nbsp;
             </z-tile-action>
           </z-tile>
         </z-column>
