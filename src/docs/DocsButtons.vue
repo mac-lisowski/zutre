@@ -159,6 +159,16 @@ import { ZButton } from 'zutre'
             <z-td><code>true</code>/<code>false</code></z-td>
             <z-td>false</z-td>
           </z-tr>
+
+          <z-tr>
+            <z-td><code>clear</code></z-td>
+            <z-td>
+              set <code>true</code> to generate close button
+            </z-td>
+            <z-td>Boolean</z-td>
+            <z-td><code>true</code>/<code>false</code></z-td>
+            <z-td>false</z-td>
+          </z-tr>
         </z-tbody>
       </z-table>
       <br>

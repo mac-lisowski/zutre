@@ -1,5 +1,5 @@
 <template>
-  <button :class="btnClass" :disabled="isDisabled">
+  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick">
     <slot></slot>
   </button>
 </template>
@@ -22,7 +22,19 @@
  */
 export default {
   name: 'ZButton',
+  methods: {
+    onClick (...args) {
+      if (typeof this.click === 'function') {
+        return this.click(...args)
+      }
+      return
+    }
+  },
+  watch: {
+
+  },
   props: {
+    click: Function,
     size: {
       type: String,
       default: () => ''
@@ -52,6 +64,9 @@ export default {
       default: () => false
     },
     right: {
+      type: Boolean
+    },
+    clear: {
       type: Boolean
     }
   },
@@ -88,6 +103,10 @@ export default {
             cssClass += ' btn-error'
             break
         }
+      }
+
+      if (this.clear === true) {
+        cssClass += ' btn-clear'
       }
 
       if (this.active === true) {
