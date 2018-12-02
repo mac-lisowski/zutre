@@ -38,10 +38,10 @@ npm install --save zutre
 | Avatars | In progress |
 | Badges | |
 | Bars | |
-| Breadcrumbs | done | 
+| Breadcrumbs | Done | 
 | Cards | Done |
 | Chips | |
-| Empty states | |
+| Empty states | Done |
 | Menu | Done |
 | Modals | |
 | Nav | |

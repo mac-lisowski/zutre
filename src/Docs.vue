@@ -51,6 +51,7 @@
             <z-menu-divider content="COMPONENTS" />
             <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCard' }" name="Card" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsEmptyStates' }" name="Empty states" activeClass="active" />
             <z-menu-item :link="{ name: 'docsMenu' }" name="Menu" activeClass="active" />
             <z-menu-item :link="{ name: 'docsTile' }" name="Tile" activeClass="active" />
             <z-menu-item :link="{ name: 'docsToast' }" name="Toast" activeClass="active" />

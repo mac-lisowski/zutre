@@ -18,6 +18,12 @@ import ZColumns from './Columns'
 import ZColumn from './Column'
 import ZDivider from './Divider'
 
+import ZEmpty from './Empty'
+import ZEmptyIcon from './EmptyIcon'
+import ZEmptyAction from './EmptyAction'
+import ZEmptyTitle from './EmptyTitle'
+import ZEmptySubtitle from './EmptySubtitle'
+
 import ZHero from './Hero'
 import ZHeroBody from './HeroBody'
 
@@ -45,6 +51,7 @@ import ZTileSubtitle from './TileSubtitle'
 import ZToast from './Toast'
 import ZToastTitle from './ToastTitle'
 import ZToastBody from './ToastBody'
+
 
 
 Vue.extend({
@@ -121,6 +128,13 @@ const Components = {
   ZColumns,
   ZColumn,
   ZDivider,
+
+  ZEmpty,
+  ZEmptyIcon,
+  ZEmptyAction,
+  ZEmptyTitle,
+  ZEmptySubtitle,
+
   ZHero,
   ZHeroBody,
   ZLink,
@@ -161,6 +175,13 @@ export {
   ZContainer,
   ZColumns,
   ZColumn,
+
+  ZEmpty,
+  ZEmptyIcon,
+  ZEmptyAction,
+  ZEmptyTitle,
+  ZEmptySubtitle,
+
   ZDivider,
   ZHero,
   ZHeroBody,

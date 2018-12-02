@@ -79,6 +79,11 @@ let router = new Router({
       component: () => import('./docs/DocsCards.vue')
     },
     {
+      path: '/components/empty-states',
+      name: 'docsEmptyStates',
+      component: () => import('./docs/DocsEmptyStates.vue')
+    },
+    {
       path: '/components/menu',
       name: 'docsMenu',
       component: () => import('./docs/DocsMenu.vue')
