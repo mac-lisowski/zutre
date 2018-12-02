@@ -72,6 +72,23 @@ import { ZButton } from 'zutre'
 &lt;/z-button-group&gt;
 </z-code>
 
+      <z-divider content="BUTTON BADGES" />
+      <h4>Button badges</h4>
+
+      <z-button badge="click">Button badge</z-button> 
+      <br><br>
+      <z-button type="error" badge="5">System alerts</z-button>
+      <br><br>
+      <z-button badge="">Button</z-button> 
+
+<z-code lang="Vue">
+import { ZButton } from 'zutre'
+
+&lt;z-button badge="click"&gt;Button badge&lt;/z-button&gt;
+&lt;z-button type="error" badge="5"&gt;System alerts&lt;/z-button&gt;
+&lt;z-button badge=""&gt;Button&lt;/z-button&gt;
+</z-code>
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -168,6 +185,16 @@ import { ZButton } from 'zutre'
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
             <z-td>false</z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td><code>badge</code></z-td>
+            <z-td>
+              button badge content
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
           </z-tr>
         </z-tbody>
       </z-table>

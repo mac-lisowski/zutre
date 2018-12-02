@@ -184,7 +184,7 @@ import { ZAvatar } from 'zutre'
 // import avatar2 from './avatar2.png'
 
 import { 
-  ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
   ZAvatar
   } from './../components'
 
@@ -194,7 +194,7 @@ export default {
     // avatar2: avatar2
   // },
   components: {
-    ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+    ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
     ZAvatar
   },
   methods: {

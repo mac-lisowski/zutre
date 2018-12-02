@@ -3,6 +3,7 @@ import './../scss/main.scss'
 
 import ZAvatar from './Avatar'
 import ZButton from './Button'
+import ZBadge from './Badge'
 import ZButtonGroup from './ButtonGroup'
 import ZBreadcrumbs from './Breadcrumbs'
 import ZBreadcrumbsItem from './BreadcrumbsItem'
@@ -114,6 +115,7 @@ Vue.prototype.$zutre = {
 
 const Components = {
   ZAvatar,
+  ZBadge,
   ZButton,
   ZButtonGroup,
   ZBreadcrumbs, 
@@ -163,6 +165,7 @@ const Components = {
 
 export {
   ZAvatar,
+  ZBadge,
   ZButton,
   ZButtonGroup,
   ZBreadcrumbs,

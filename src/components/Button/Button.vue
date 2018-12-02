@@ -1,5 +1,5 @@
 <template>
-  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick">
+  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick" v-bind:data-badge="badge">
     <slot></slot>
   </button>
 </template>
@@ -19,6 +19,7 @@
  * @prop {Boolean} loading
  * @prop {Boolean} disabled
  * @prop {Boolean} right
+ * @prop {String} badge
  */
 export default {
   name: 'ZButton',
@@ -68,6 +69,9 @@ export default {
     },
     clear: {
       type: Boolean
+    },
+    badge: {
+      type: String
     }
   },
   computed: {
@@ -75,15 +79,15 @@ export default {
       return this.disabled
     },
     btnClass: function() {
-      let cssClass = 'btn'
+      let css = 'btn'
 
       if (this.size !== '') {
         switch (this.size) {
           case 'sm':
-            cssClass += ' btn-sm'
+            css += ' btn-sm'
             break
           case 'lg':
-            cssClass += ' btn-lg'
+            css += ' btn-lg'
             break
         }
       }
@@ -91,45 +95,49 @@ export default {
       if (this.type !== '') {
         switch (this.type) {
           case 'primary':
-            cssClass += ' btn-primary'
+            css += ' btn-primary'
             break
           case 'link':
-            cssClass += ' btn-link'
+            css += ' btn-link'
             break
           case 'success':
-            cssClass += ' btn-success'
+            css += ' btn-success'
             break
           case 'error':
-            cssClass += ' btn-error'
+            css += ' btn-error'
             break
         }
       }
 
+      if (typeof this.badge !== 'undefined') {
+        css += ' badge'
+      }
+
       if (this.clear === true) {
-        cssClass += ' btn-clear'
+        css += ' btn-clear'
       }
 
       if (this.active === true) {
-        cssClass += ' active'
+        css += ' active'
       }
 
       if (this.action === true) {
-        cssClass += ' btn-action'
+        css += ' btn-action'
       }
 
       if (this.circle === true) {
-        cssClass += ' s-circle'
+        css += ' s-circle'
       }
 
       if (this.loading === true) {
-        cssClass += ' loading'
+        css += ' loading'
       }
 
       if (this.right === true) {
-        cssClass += ' float-right'
+        css += ' float-right'
       }
 
-      return cssClass
+      return css
     }
   }
 }
