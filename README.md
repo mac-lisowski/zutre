@@ -16,7 +16,7 @@ npm install --save zutre
 | Tables | Done |
 | Buttons | Done |
 | Forms | |
-| Icons | |
+| Icons | Done |
 | Labels | Done |
 | Code | Done |
 | Media |  |
@@ -26,7 +26,7 @@ npm install --save zutre
 | Name | Status |
 |---|---|
 | Flexbox grid | Done |
-| Responsive |  |
+| Responsive | Done |
 | Hero | Done |
 | Navbar |  |
 

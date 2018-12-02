@@ -29,6 +29,8 @@ import ZEmptySubtitle from './EmptySubtitle'
 import ZHero from './Hero'
 import ZHeroBody from './HeroBody'
 
+import ZIcon from './Icon'
+
 import ZLabel from './Label'
 import ZLink from './Link'
 
@@ -141,6 +143,7 @@ const Components = {
 
   ZHero,
   ZHeroBody,
+  ZIcon,
   ZLink,
   ZLabel,
   ZMenu,
@@ -191,6 +194,7 @@ export {
   ZDivider,
   ZHero,
   ZHeroBody,
+  ZIcon,
   ZLink,
   ZLabel,
   ZMenu,

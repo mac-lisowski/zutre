@@ -36,6 +36,11 @@ let router = new Router({
       component: () => import('./docs/DocsButtons.vue')
     },
     {
+      path: '/elements/icons',
+      name: 'docsIcons',
+      component: () => import('./docs/DocsIcons.vue')
+    },
+    {
       path: '/elements/label',
       name: 'docsLabel',
       component: () => import('./docs/DocsLabel.vue')

@@ -39,9 +39,9 @@
             <z-menu-divider content="ELEMENTS" />
             <z-menu-item :link="{ name: 'docsTable' }" name="Tables" activeClass="active" />
             <z-menu-item :link="{ name: 'docsButtons' }" name="Buttons" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsIcons' }" name="Icons" activeClass="active" />
             <z-menu-item :link="{ name: 'docsLabel' }" name="Labels" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCode' }" name="Code" activeClass="active" />
-
 
             <z-menu-divider content="LAYOUT" />
 

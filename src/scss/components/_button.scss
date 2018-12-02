@@ -1,0 +1,11 @@
+.btn {
+  
+
+  &:not(.btn-action) {
+    .material-icons {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  
+}
