@@ -36,7 +36,7 @@ npm install --save zutre
 |---|---|
 | Accordions |  |
 | Avatars | Done |
-| Badges | |
+| Badges | Done |
 | Bars | |
 | Breadcrumbs | Done | 
 | Cards | Done |
