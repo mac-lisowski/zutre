@@ -1,11 +1,20 @@
 {
   "name": "zutre",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "homepage": "https://github.com/maclisowski/zutre",
   "description": "UI components for Vue.js based on Spectre CSS Framework",
   "license": "MIT",
   "author": "Maciej Lisowski <maciej.lisowski.elk@gmail.com>",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "zutre",
+    "spectre",
+    "vue-spectre",
+    "components",
+    "vue-ui"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/maclisowski/zutre.git"
