@@ -101,7 +101,7 @@ import {
   } from './../components'
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsEmptyStates',
   components: {
     ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
     ZEmpty, ZEmptyIcon, ZEmptyAction, ZEmptyTitle, ZEmptySubtitle

@@ -49,6 +49,7 @@
             <z-menu-item :link="{ name: 'docsHero' }" name="Hero" activeClass="active" />
 
             <z-menu-divider content="COMPONENTS" />
+            <z-menu-item :link="{ name: 'docsAvatars' }" name="Avatars" activeClass="active" />
             <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCard' }" name="Card" activeClass="active" />
             <z-menu-item :link="{ name: 'docsEmptyStates' }" name="Empty states" activeClass="active" />

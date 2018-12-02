@@ -69,6 +69,11 @@ let router = new Router({
     },
 
     {
+      path: '/components/avatars',
+      name: 'docsAvatars',
+      component: () => import('./docs/DocsAvatars.vue')
+    },
+    {
       path: '/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('./docs/DocsBreadcrumbs.vue')
