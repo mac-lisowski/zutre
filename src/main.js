@@ -67,7 +67,12 @@ let router = new Router({
       name: 'docsFlexbox',
       component: () => import('./docs/DocsFlexbox.vue')
     },
-
+    {
+      path: '/layout/responsive',
+      name: 'docsFlexboxResponsive',
+      component: () => import('./docs/DocsFlexboxResponsive.vue')
+    },
+    
     {
       path: '/components/avatars',
       name: 'docsAvatars',

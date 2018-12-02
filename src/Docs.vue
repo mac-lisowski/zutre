@@ -26,9 +26,9 @@
 
     <header class="docs-navbar navbar text-secondary"></header>
 
-    <z-container>
+    <z-container size="xl">
       <z-columns>
-        <z-column :size="3">
+        <z-column :sizeLG="12" :size="3">
 
           <z-menu>
             <z-menu-divider content="MENU" />
@@ -46,6 +46,7 @@
             <z-menu-divider content="LAYOUT" />
 
             <z-menu-item :link="{ name: 'docsFlexbox' }" name="Flexbox grid" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsFlexboxResponsive' }" name="Responsive" activeClass="active" />
             <z-menu-item :link="{ name: 'docsHero' }" name="Hero" activeClass="active" />
 
             <z-menu-divider content="COMPONENTS" />
@@ -65,11 +66,23 @@
           </z-menu>
 
         </z-column>
-        <z-column :size="9">
+        <z-column :sizeLG="12" :size="9">
           <router-view />
         </z-column>
       </z-columns>
     </z-container>
+    <footer class="bg-gray">
+      <z-container size="xl">
+        <z-columns>
+          <z-column :sizeLG="12" :size="6">
+            Made by <a href="http://twitter.com/maclisowski">Maciej Lisowski</a>. <strong>Zutre</strong>&nbsp;<a href="https://github.com/maclisowski/zutre">source code</a> is licensed under <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+          </z-column>
+          <z-column :sizeLG="12" :size="6">
+            
+          </z-column>
+        </z-columns>
+      </z-container>
+    </footer>
   </div>
 </template>
 <script>
@@ -101,8 +114,10 @@ export default {
 
 $font-logo: 'Kaushan Script', 'Tmes New Roman', Times, serif;
 $primary: #498EFF;
-body {
-  margin-bottom: 100px;
+
+footer {
+  margin-top: 50px;
+
 }
 .logo {
   color: #fff;
@@ -121,9 +136,9 @@ body {
 }
 
 .docs-container {
-  > .container {
-    max-width: 1199px;
-  }
+  // > .container {
+  //   max-width: 1199px;
+  // }
 
   .column {
     padding: 0.4rem;
