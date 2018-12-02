@@ -1,5 +1,5 @@
 <template>
-  <figure :class="avatarClass" v-bind:data-initial="dataInitial">
+  <figure :class="avatarClass" v-bind:data-initial="dataInitial" v-bind:data-badge="badge">
     <!-- <slot></slot> -->
     <template v-if="hasSrc">
       <img :src="srcPath">
@@ -25,6 +25,7 @@
  * @prop {String} size values: xl, lg, sm, xs
  * @prop {String} presence values: online, busy, away, offline
  * @prop {String} presenceSrc
+ * @prop {String} badge
  */
 export default {
   name: 'ZAvatar',
@@ -43,6 +44,9 @@ export default {
       type: String
     },
     presenceSrc: {
+      type: String
+    },
+    badge: {
       type: String
     }
   },
@@ -95,6 +99,10 @@ export default {
         case 'xs': 
           css += ' avatar-xs'
           break
+      }
+
+      if (typeof this.badge !== 'undefined') {
+        css += ' badge'
       }
 
       return css

@@ -89,6 +89,23 @@ import { ZAvatar } from 'zutre'
 </z-code>
 
 
+      <z-divider />
+      <h4>Avatar badges</h4>
+
+      <z-columns>
+        <z-column>
+          <z-avatar size="lg" presence="online" dataInitial="ML" badge="1" /> &nbsp;
+          <z-avatar size="lg" presence="busy" :src="require('./avatar.png')" badge="999" /> &nbsp;
+        </z-column>
+      </z-columns>
+
+      <z-code lang="Vue">
+import { ZAvatar } from 'zutre'
+
+&lt;z-avatar size="lg" presence="online" dataInitial="ML" badge="1" /&gt;
+&lt;z-avatar size="lg" presence="busy" :src="require('./avatar.png')" badge="999" /&gt;
+</z-code>
+
 
       <z-divider content="API" />
       <h4>API</h4>
@@ -143,6 +160,16 @@ import { ZAvatar } from 'zutre'
             <z-td><code>presenceSrc</code></z-td>
             <z-td>
               path to presence indicator image
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td><code>badge</code></z-td>
+            <z-td>
+              avatar badge content
             </z-td>
             <z-td>String</z-td>
             <z-td>---</z-td>
