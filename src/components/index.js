@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import './../scss/main.scss'
 
+import ZAvatar from './Avatar'
 import ZButton from './Button'
 import ZButtonGroup from './ButtonGroup'
 import ZBreadcrumbs from './Breadcrumbs'
@@ -112,6 +113,7 @@ Vue.prototype.$zutre = {
 }
 
 const Components = {
+  ZAvatar,
   ZButton,
   ZButtonGroup,
   ZBreadcrumbs, 
@@ -160,6 +162,7 @@ const Components = {
 }
 
 export {
+  ZAvatar,
   ZButton,
   ZButtonGroup,
   ZBreadcrumbs,
