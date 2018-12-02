@@ -54,7 +54,8 @@ export default {
         type: 'success',
         title: 'Custom success toast',
         content: 'Seems like everything is fine. Vue is cool!',
-        closeBtn: true
+        closeBtn: true,
+        duration: 4000
       })
     },
     openToastBottomLeft () {
@@ -95,6 +96,15 @@ export default {
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
             <z-td>true</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>duration</code></z-td>
+            <z-td>
+              set duration in ms after which toast component will be destroyed, <code>0</code> - persistent toast
+            </z-td>
+            <z-td>Number</z-td>
+            <z-td>---</z-td>
+            <z-td>0</z-td>
           </z-tr>
 
           <z-tr>
