@@ -51,7 +51,7 @@ npm install --save zutre
 | Steps | |
 | Tabs | |
 | Tiles | In progress |
-| Toasts | In progress |
+| Toasts | Done |
 | Tooltips | In progress |
 
 ## Utilities
