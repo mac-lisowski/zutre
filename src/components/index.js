@@ -14,6 +14,7 @@ import ZCardHeader from './CardHeader'
 import ZCardBody from './CardBody'
 import ZCardFooter from './CardFooter'
 import ZCardImage from './CardImage'
+import ZChip from './Chip'
 import ZCode from './Code'
 import ZContainer from './Container'
 import ZColumns from './Columns'
@@ -134,6 +135,7 @@ const Components = {
   ZCardBody,
   ZCardFooter,
   ZCardImage,
+  ZChip,
   ZCode,
   ZContainer,
   ZColumns,
@@ -188,6 +190,7 @@ export {
   ZCardBody,
   ZCardFooter,
   ZCardImage,
+  ZChip,
   ZCode,
   ZContainer,
   ZColumns,

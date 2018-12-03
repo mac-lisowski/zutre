@@ -98,10 +98,16 @@ let router = new Router({
       component: () => import('./docs/DocsBreadcrumbs.vue')
     },
     {
-      path: '/components/card',
+      path: '/components/cards',
       name: 'docsCard',
       component: () => import('./docs/DocsCards.vue')
     },
+    {
+      path: '/components/chips',
+      name: 'docsChip',
+      component: () => import('./docs/DocsChip.vue')
+    },
+    
     {
       path: '/components/empty-states',
       name: 'docsEmptyStates',

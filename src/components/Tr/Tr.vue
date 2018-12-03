@@ -4,13 +4,13 @@
 
 <script>
 /**
- * Tr
+ * ZTr
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} active
  */
 export default {
-  name: 'Tr',
+  name: 'ZTr',
   props: {
     active: {
       type: Boolean

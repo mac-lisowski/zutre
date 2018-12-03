@@ -55,7 +55,8 @@
             <z-menu-item :link="{ name: 'docsAvatars' }" name="Avatars" activeClass="active" />
             <z-menu-item :link="{ name: 'docsBadges' }" name="Badges" activeClass="active" />
             <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
-            <z-menu-item :link="{ name: 'docsCard' }" name="Card" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsCard' }" name="Cards" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsChip' }" name="Chips" activeClass="active" />
             <z-menu-item :link="{ name: 'docsEmptyStates' }" name="Empty states" activeClass="active" />
             <z-menu-item :link="{ name: 'docsMenu' }" name="Menu" activeClass="active" />
             <z-menu-item :link="{ name: 'docsTile' }" name="Tile" activeClass="active" />
