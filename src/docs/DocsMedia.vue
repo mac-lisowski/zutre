@@ -68,6 +68,56 @@ import { ZMedia } from 'zutre'
 &lt;z-media responsive caption="responsive image with caption on the right" captionPosition="right" src="..." /&gt;
 </z-code>
 
+      <z-divider />
+      <h4>Video</h4>
+
+      <z-columns>
+        <z-column :size="12">
+          
+          <z-media video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </z-media>
+          
+        </z-column>
+      </z-columns>
+<z-code lang="Vue">
+import { ZMedia } from 'zutre'
+
+&lt;z-media video&gt;
+  &lt;iframe width="320" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/z-media&gt;
+
+OR 
+
+&lt;z-media video src="..."&gt;
+  ...
+&lt;/z-media&gt;
+
+to generate: 
+
+&lt;video src="..."&gt;...&lt;/video&gt;
+</z-code>
+
+      <z-divider content="RESPONSIVE VIDEO" />
+
+      <z-columns>
+        <z-column :size="9" mxAuto>
+          
+          <z-media video responsive>
+            <iframe width="320" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </z-media>
+          
+        </z-column>
+      </z-columns>
+<z-code lang="Vue">
+import { ZMedia } from 'zutre'
+
+&lt;z-media video responsive&gt;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/z-media&gt;
+</z-code>
+
+
 
       <z-divider content="API" />
       <h4>API</h4>
@@ -140,6 +190,15 @@ import { ZMedia } from 'zutre'
             <z-td><code>contain</code></z-td>
             <z-td>
               apply contain style
+            </z-td>
+            <z-td>Boolean</z-td>
+            <z-td><code>true</code>/<code>false</code></z-td>
+            <z-td>false</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>video</code></z-td>
+            <z-td>
+              if media is a video 
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>

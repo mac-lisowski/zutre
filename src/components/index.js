@@ -80,8 +80,8 @@ Vue.prototype.$zutre = {
       $listNotify.className = 'toast-list '+ pos;
     } else {
       if (pos === 'bottom' || pos === 'top') {
-        var i = 0
-        var exist = false
+        let i = 0
+        let exist = false
 
         for(; i < $listNotify.length; i++) {
           if ($listNotify[i].classList.contains('left') || $listNotify[i].classList.contains('right')) continue;
@@ -110,8 +110,8 @@ Vue.prototype.$zutre = {
       $listNotify.appendChild($elNotify)
     }
 
-    var componentClass = Vue.extend(ZToast)
-    var $toast = new componentClass( { propsData: options } )
+    let componentClass = Vue.extend(ZToast)
+    let $toast = new componentClass( { propsData: options } )
     
     $toast.$mount('#zutre-toast')
   }

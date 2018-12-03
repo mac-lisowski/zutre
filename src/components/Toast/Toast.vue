@@ -38,8 +38,6 @@ export default {
         this.destroy()
       }
     })
-
-    //   this.$root.$el.append(this.$el);
   },
   destroyed: function() {
     this.$el.parentNode.removeChild(this.$el)
