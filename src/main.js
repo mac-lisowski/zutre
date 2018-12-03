@@ -119,6 +119,11 @@ let router = new Router({
       component: () => import('./docs/DocsMenu.vue')
     },
     {
+      path: '/components/nav',
+      name: 'docsNav',
+      component: () => import('./docs/DocsNav.vue')
+    },
+    {
       path: '/components/tile',
       name: 'docsTile',
       component: () => import('./docs/DocsTile.vue')
