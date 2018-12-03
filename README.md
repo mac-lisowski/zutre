@@ -19,7 +19,7 @@ npm install --save zutre
 | Icons | Done |
 | Labels | Done |
 | Code | Done |
-| Media |  |
+| Media | Done |
 
 ## Layout
 
