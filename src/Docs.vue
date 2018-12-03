@@ -42,6 +42,7 @@
             <z-menu-item :link="{ name: 'docsIcons' }" name="Icons" activeClass="active" />
             <z-menu-item :link="{ name: 'docsLabel' }" name="Labels" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCode' }" name="Code" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsMedia' }" name="Media" activeClass="active" />
 
             <z-menu-divider content="LAYOUT" />
 

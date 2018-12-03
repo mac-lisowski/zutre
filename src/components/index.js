@@ -34,6 +34,8 @@ import ZIcon from './Icon'
 import ZLabel from './Label'
 import ZLink from './Link'
 
+import ZMedia from './Media'
+
 import ZMenu from './Menu'
 import ZMenuDivider from './MenuDivider'
 import ZMenuItem from './MenuItem'
@@ -146,6 +148,7 @@ const Components = {
   ZIcon,
   ZLink,
   ZLabel,
+  ZMedia,
   ZMenu,
   ZMenuDivider,
   ZMenuItem,
@@ -197,6 +200,7 @@ export {
   ZIcon,
   ZLink,
   ZLabel,
+  ZMedia,
   ZMenu,
   ZMenuDivider,
   ZMenuItem,

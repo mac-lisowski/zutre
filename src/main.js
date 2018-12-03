@@ -51,6 +51,11 @@ let router = new Router({
       component: () => import('./docs/DocsCode.vue')
     },
     {
+      path: '/elements/media',
+      name: 'docsMedia',
+      component: () => import('./docs/DocsMedia.vue')
+    },
+    {
       path: '/elements/table',
       name: 'docsTable',
       component: () => import('./docs/DocsTable.vue')

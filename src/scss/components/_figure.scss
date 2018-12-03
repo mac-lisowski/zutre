@@ -1,0 +1,6 @@
+figure.figure {
+  > .img-fit-cover, > .img-fit-contain {
+    width: 100%;
+    background: $gray-color;
+  }
+}
