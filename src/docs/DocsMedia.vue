@@ -84,7 +84,7 @@ import { ZMedia } from 'zutre'
 import { ZMedia } from 'zutre'
 
 &lt;z-media video&gt;
-  &lt;iframe width="320" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/z-media&gt;
 
 OR 

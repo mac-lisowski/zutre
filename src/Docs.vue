@@ -49,6 +49,7 @@
             <z-menu-item :link="{ name: 'docsFlexbox' }" name="Flexbox grid" activeClass="active" />
             <z-menu-item :link="{ name: 'docsFlexboxResponsive' }" name="Responsive" activeClass="active" />
             <z-menu-item :link="{ name: 'docsHero' }" name="Hero" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsNavbar' }" name="Navbar" activeClass="active" />
 
             <z-menu-divider content="COMPONENTS" />
             <z-menu-item :link="{ name: 'docsAvatars' }" name="Avatars" activeClass="active" />

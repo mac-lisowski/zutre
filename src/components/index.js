@@ -40,6 +40,9 @@ import ZMenu from './Menu'
 import ZMenuDivider from './MenuDivider'
 import ZMenuItem from './MenuItem'
 
+import ZNavbar from './Navbar'
+import ZNavbarSection from './NavbarSection'
+
 import ZTable from './Table'
 import ZThead from './Thead'
 import ZTbody from './Tbody'
@@ -152,6 +155,8 @@ const Components = {
   ZMenu,
   ZMenuDivider,
   ZMenuItem,
+  ZNavbar,
+  ZNavbarSection,
   ZTable,
   ZThead,
   ZTbody,
@@ -204,6 +209,8 @@ export {
   ZMenu,
   ZMenuDivider,
   ZMenuItem,
+  ZNavbar,
+  ZNavbarSection,
   ZTable,
   ZThead,
   ZTbody,
