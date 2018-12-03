@@ -28,17 +28,19 @@ export default {
   },
   computed: {
     columnsClass: function() {
-      let cssClass = 'columns'
+      let css = {
+        columns: true
+      }
 
       if (this.gapless === true) {
-        cssClass += ' col-gapless'
+        css['col-gapless'] = true
       }
 
       if (this.oneline === true) {
-        cssClass += ' col-oneline'
+        css['col-oneline'] = true
       }
 
-      return cssClass
+      return css
     }
   }
 }

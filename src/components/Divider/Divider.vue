@@ -24,13 +24,20 @@ export default {
   },
   computed: {
     dividerClass: function() {
-      let cssClass = (this.vert === true) ? 'divider-vert' : 'divider'
-
-      if (!this.vert && this.content) {
-        cssClass += ' text-center'
+      let css = {
+        divider: true
       }
 
-      return cssClass
+      if (this.vert === true) {
+        css['divider-vert'] = true
+        css.divider = false
+      }
+
+      if (!this.vert && this.content) {
+        css['text-center'] = true
+      }
+
+      return css
     }
   }
 }

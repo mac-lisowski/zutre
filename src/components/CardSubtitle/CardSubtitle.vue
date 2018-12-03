@@ -37,36 +37,38 @@ export default {
       return (typeof this.content !== 'undefined') ? this.content : ''
     },
     subtitleClass: function() {
-      let cssClass = 'card-subtitle'
+      let css = {
+        'card-subtitle': true
+      }
 
       switch(this.color) {
         case 'primary':
-          cssClass += ' text-primary'
+          css['text-primary'] = true
           break
         case 'secondary':
-          cssClass += ' text-secondary'
+          css['text-secondary'] = true
           break
         case 'dark':
-          cssClass += ' text-dark'
+          css['text-dark'] = true
           break
         case 'gray':
-          cssClass += ' text-gray'
+          css['text-gray'] = true
           break
         case 'light':
-          cssClass += ' text-light'
+          css['text-light'] = true
           break
         case 'success':
-          cssClass += ' text-success'
+          css['text-success'] = true
           break
         case 'warning':
-          cssClass += ' text-warning'
+          css['text-warning'] = true
           break
         case 'error':
-          cssClass += ' text-error'
+          css['text-error'] = true
           break
       }
 
-      return cssClass
+      return css
     }
   }
 }

@@ -22,14 +22,16 @@ export default {
   },
   computed: {
     tableClass () {
-      let css = 'table'
+      let css = {
+        table: true
+      }
       
       if (this.stripped) {
-        css += ' table-striped'
+        css['table-striped'] = true
       }
 
       if (this.hover) {
-        css += ' table-hover'
+        css['table-hover'] = true
       }
 
       return css

@@ -31,13 +31,15 @@ export default {
   },
   computed: {
     titleClass: function() {
-      let cssClass = 'card-title'
-
-      if (this.size > 0 && this.size <= 6) {
-        cssClass += ' h' + this.size
+      let css = {
+        'card-title': true
       }
 
-      return cssClass
+      if (this.size > 0 && this.size <= 6) {
+        css['h' + this.size] = true
+      }
+
+      return css
     },
     titleContent: function() {
       return (typeof this.content !== 'undefined') ? this.content : ''

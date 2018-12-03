@@ -28,7 +28,7 @@ npm install --save zutre
 | Flexbox grid | Done |
 | Responsive | Done |
 | Hero | Done |
-| Navbar |  |
+| Navbar | Done |
 
 ## Components
 

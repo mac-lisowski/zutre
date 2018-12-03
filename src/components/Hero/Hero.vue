@@ -28,42 +28,44 @@ export default {
   },
   computed: {
     heroClass: function() {
-      var cssClass = 'hero'
+      var css = {
+        hero: true
+      }
 
       switch(this.size) {
         case 'sm':
-          cssClass += ' hero-sm'
+          css['hero-sm'] = true
           break
         case 'lg':
-          cssClass += ' hero-lg'
+          css['hero-lg'] = true
           break
       }
 
       switch(this.type) {
         case 'primary':
-          cssClass += ' bg-primary'
+          css['bg-primary'] = true
           break
         case 'secondary':
-          cssClass += ' bg-secondary'
+          css['bg-secondary'] = true
           break
         case 'dark':
-          cssClass += ' bg-dark'
+          css['bg-dark'] = true
           break
         case 'gray':
-          cssClass += ' bg-gray'
+          css['bg-gray'] = true
           break
         case 'success':
-          cssClass += ' bg-success'
+          css['bg-success'] = true
           break
         case 'warning':
-          cssClass += ' bg-warning'
+          css['bg-warning'] = true
           break
         case 'error':
-          cssClass += ' bg-error'
+          css['bg-error'] = true
           break
       }
 
-      return cssClass
+      return css
     }
   }
 }

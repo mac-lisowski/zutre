@@ -23,13 +23,15 @@ export default {
   },
   computed: {
     groupClass: function() {
-      let cssClass = 'btn-group'
-
-      if (this.block === true) {
-        cssClass += ' btn-group-block'
+      let css = {
+        'btn-group': true
       }
 
-      return cssClass
+      if (this.block === true) {
+        css['btn-group-block'] = true
+      }
+
+      return css
     }
   }
 }

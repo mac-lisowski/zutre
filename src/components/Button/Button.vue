@@ -79,15 +79,17 @@ export default {
       return this.disabled
     },
     btnClass: function() {
-      let css = 'btn'
+      let css = { 
+        btn: true
+      }
 
       if (this.size !== '') {
         switch (this.size) {
           case 'sm':
-            css += ' btn-sm'
+            css['btn-sm'] = true
             break
           case 'lg':
-            css += ' btn-lg'
+            css['btn-lg'] = true
             break
         }
       }
@@ -95,46 +97,46 @@ export default {
       if (this.type !== '') {
         switch (this.type) {
           case 'primary':
-            css += ' btn-primary'
+            css['btn-primary'] = true
             break
           case 'link':
-            css += ' btn-link'
+            css['btn-link'] = true
             break
           case 'success':
-            css += ' btn-success'
+            css['btn-success'] = true
             break
           case 'error':
-            css += ' btn-error'
+            css['btn-error'] = true
             break
         }
       }
 
       if (typeof this.badge !== 'undefined') {
-        css += ' badge'
+        css['badge'] = true
       }
 
       if (this.clear === true) {
-        css += ' btn-clear'
+        css['btn-clear'] = true
       }
 
       if (this.active === true) {
-        css += ' active'
+        css['active'] = true
       }
 
       if (this.action === true) {
-        css += ' btn-action'
+        css['btn-action'] = true
       }
 
       if (this.circle === true) {
-        css += ' s-circle'
+        css['s-circle'] = true
       }
 
       if (this.loading === true) {
-        css += ' loading'
+        css['loading'] = true
       }
 
       if (this.right === true) {
-        css += ' float-right'
+        css['float-right'] = true
       }
 
       return css

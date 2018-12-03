@@ -20,20 +20,22 @@ export default {
   },
   computed: {
     containerClass () {
-      let css = 'container'
+      let css = {
+        container: true
+      }
 
       switch(this.size) {
         case 'xs':
-          css += ' grid-xs'
+          css['grid-xs'] = true
           break
         case 'sm':
-          css += ' grid-sm'
+          css['grid-sm'] = true
           break
         case 'lg':
-          css += ' grid-lg'
+          css['grid-lg'] = true
           break
         case 'xl':
-          css += ' grid-xl'
+          css['grid-xl'] = true
           break
       }
 

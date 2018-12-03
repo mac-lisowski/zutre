@@ -98,34 +98,36 @@ export default {
       return css;
     },
     mediaClass () {
-      let css = ''
+      let css = {}
 
       if (this.responsive === true) {
-        css += ' img-responsive'
+        css['img-responsive'] = true
       }
 
       if (this.cover === true) {
-        css += ' img-fit-cover  '
+        css['img-fit-cover'] = true
       }
 
       if (this.contain === true) {
-        css += ' img-fit-contain'
+        css['img-fit-contain'] = true
       }
 
       return css
     },
     captionClass () {
-      let css = 'figure-caption'
+      let css = {
+        'figure-caption': true
+      }
 
       switch(this.captionPosition) {
         case 'left':
-          css += ' text-left'
+          css['text-left'] = true
           break
         case 'right':
-          css += ' text-right'
+          css['text-right'] = true
           break
         default: 
-          css += ' text-center'
+          css['text-center'] = true
       }
       return css
     }

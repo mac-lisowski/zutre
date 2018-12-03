@@ -13,17 +13,6 @@ export default {
   props: {
     badge: {
       type: String
-    },
-  },
-  computed: {
-    trClass: function() {
-      let css = ''
-
-      if (this.active === true) {
-        css += ' active'
-      }
-
-      return css
     }
   }
 }

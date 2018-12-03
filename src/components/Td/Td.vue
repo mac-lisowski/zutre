@@ -18,10 +18,10 @@ export default {
   },
   computed: {
     tdClass: function() {
-      let css = ''
+      let css = {}
 
       if (this.active === true) {
-        css += ' active'
+        css.active = true
       }
 
       return css
