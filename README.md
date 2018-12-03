@@ -40,7 +40,7 @@ npm install --save zutre
 | Bars | |
 | Breadcrumbs | Done | 
 | Cards | Done |
-| Chips | |
+| Chips | Done |
 | Empty states | Done |
 | Menu | Done |
 | Modals | |
