@@ -1,27 +1,25 @@
 <template>
-  <td :class="tdClass"><slot></slot></td>
+  <li :class="itemClass"><slot></slot></li>
 </template>
 
 <script>
 /**
- * Td
+ * ZNavItem
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
- * @prop {Boolean} active
  */
 export default {
-  name: 'Td',
+  name: 'ZNavItem',
   props: {
     active: {
       type: Boolean
     }
   },
   computed: {
-    tdClass: function() {
-      let css = {}
-
-      if (this.active === true) {
-        css.active = true
+    itemClass: function() {
+      let css = {
+        'nav-item': true,
+        active: (this.active === true) ? true : false
       }
 
       return css

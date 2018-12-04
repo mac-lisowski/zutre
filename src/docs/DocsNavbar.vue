@@ -20,12 +20,12 @@
           <z-link :link="{ name: 'home'}">ZUTRE</z-link>
         </z-navbar-section>
         <z-navbar-section>
-          <z-button size="sm">Log In</z-button> &nbsp; <z-button size="sm" type="primary">Sign Up</z-button> 
+          <z-button size="sm"><z-icon name="account_circle" /> Log In</z-button> &nbsp; <z-button size="sm" type="primary"><z-icon name="how_to_reg" /> Sign Up</z-button> 
         </z-navbar-section>
       </z-navbar>
       
 <z-code lang="Vue">
-import { ZNavbar, ZNavbarSection, ZLink, ZButton } from 'zutre'
+import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
 
 &lt;z-navbar&gt;
   &lt;z-navbar-section&gt;
@@ -39,8 +39,12 @@ import { ZNavbar, ZNavbarSection, ZLink, ZButton } from 'zutre'
   &lt;/z-navbar-section&gt;
 
   &lt;z-navbar-section&gt;
-    &lt;z-button size="sm"&gt;Log In&lt;/z-button&gt;
-    &lt;z-button size="sm" type="primary"&gt;Sign Up&lt;/z-button&gt;
+    &lt;z-button size="sm"&gt;
+      &lt;-icon name="account_circle"/&gt; Log In
+    &lt;/z-button&gt;
+    &lt;z-button size="sm" type="primary"&gt;
+      &lt;z-icon name="how_to_reg" /&gt; Sign Up
+    &lt;/z-button&gt;
   &lt;/z-navbar-section&gt;
 &lt;/z-navbar&gt;
 </z-code>

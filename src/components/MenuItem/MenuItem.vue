@@ -58,10 +58,12 @@ export default {
   },
   computed: {
     itemClass: function() {
-      let css = 'menu-item'
+      let css = {
+        'menu-item': true
+      }
 
       if (this.active === true && typeof this.activeClass === 'string') {
-        css += this.activeClass
+        css[this.activeClass] = true
       }
       return css
     },

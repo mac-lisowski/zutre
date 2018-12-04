@@ -20,10 +20,12 @@ export default {
   },
   computed: {
     tileClass() {
-      let css = 'tile'
+      let css = {
+        tile: true
+      }
 
       if (this.centered === true) {
-        css += ' tile-centered'
+        css['tile-centered'] = true
       }
       return css
     }

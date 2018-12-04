@@ -40,31 +40,33 @@ export default {
       return (typeof this.content !== 'undefined') ? this.content : ''
     },
     labelClass: function() {
-      let cssClass = 'label'
+      let css = {
+        label: true
+      }
 
       switch(this.type) {
         case 'primary':
-          cssClass += ' label-primary'
+          css['label-primary'] = true
           break
         case 'secondary':
-          cssClass += ' label-secondary'
+          css['label-secondary'] = true
           break
         case 'success':
-          cssClass += ' label-success'
+          css['label-success'] = true
           break
         case 'warning':
-          cssClass += ' label-warning'
+          css['label-warning'] = true
           break
         case 'error':
-          cssClass += ' label-error'
+          css['label-error'] = true
           break
       }
 
       if (this.rounded === true) {
-        cssClass += ' label-rounded'
+        css['label-rounded'] = true
       }
 
-      return cssClass
+      return css
     }
   }
 }

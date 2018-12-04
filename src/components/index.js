@@ -14,6 +14,7 @@ import ZCardHeader from './CardHeader'
 import ZCardBody from './CardBody'
 import ZCardFooter from './CardFooter'
 import ZCardImage from './CardImage'
+import ZChip from './Chip'
 import ZCode from './Code'
 import ZContainer from './Container'
 import ZColumns from './Columns'
@@ -39,6 +40,11 @@ import ZMedia from './Media'
 import ZMenu from './Menu'
 import ZMenuDivider from './MenuDivider'
 import ZMenuItem from './MenuItem'
+
+import ZModal from './Modal'
+
+import ZNav from './Nav'
+import ZNavItem from './NavItem'
 
 import ZNavbar from './Navbar'
 import ZNavbarSection from './NavbarSection'
@@ -134,6 +140,7 @@ const Components = {
   ZCardBody,
   ZCardFooter,
   ZCardImage,
+  ZChip,
   ZCode,
   ZContainer,
   ZColumns,
@@ -155,6 +162,9 @@ const Components = {
   ZMenu,
   ZMenuDivider,
   ZMenuItem,
+  ZModal,
+  ZNav,
+  ZNavItem,
   ZNavbar,
   ZNavbarSection,
   ZTable,
@@ -188,6 +198,7 @@ export {
   ZCardBody,
   ZCardFooter,
   ZCardImage,
+  ZChip,
   ZCode,
   ZContainer,
   ZColumns,
@@ -209,6 +220,9 @@ export {
   ZMenu,
   ZMenuDivider,
   ZMenuItem,
+  ZModal,
+  ZNav,
+  ZNavItem,
   ZNavbar,
   ZNavbarSection,
   ZTable,

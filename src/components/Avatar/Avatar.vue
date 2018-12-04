@@ -67,42 +67,46 @@ export default {
       return this.src
     },
     presenceClass () {
-      let css = 'avatar-presence'
+      let css = { 
+        'avatar-presence': true
+      }
 
       switch(this.presence) {
         case 'online':
-          css += ' online'
+          css.online = true
           break
         case 'busy':
-          css += ' busy'
+          css.busy = true
           break
         case 'away':
-          css += ' away'
+          css.away = true
           break
       }
 
       return css
     },
     avatarClass () {
-      let css = 'avatar'
+      let css = {
+        avatar: true
+      }
 
       switch(this.size) {
         case 'xl': 
-          css += ' avatar-xl'
+          css['avatar-xl'] = true
           break
         case 'lg': 
-          css += ' avatar-lg'
+          css['avatar-lg'] = true
           break
         case 'sm': 
-          css += ' avatar-sm'
+          css['avatar-sm'] = true
           break
         case 'xs': 
-          css += ' avatar-xs'
+          css['avatar-xs'] = true
           break
       }
 
       if (typeof this.badge !== 'undefined') {
-        css += ' badge'
+        css.badge = true
       }
 
       return css

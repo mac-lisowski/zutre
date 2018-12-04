@@ -98,10 +98,16 @@ let router = new Router({
       component: () => import('./docs/DocsBreadcrumbs.vue')
     },
     {
-      path: '/components/card',
+      path: '/components/cards',
       name: 'docsCard',
       component: () => import('./docs/DocsCards.vue')
     },
+    {
+      path: '/components/chips',
+      name: 'docsChip',
+      component: () => import('./docs/DocsChip.vue')
+    },
+    
     {
       path: '/components/empty-states',
       name: 'docsEmptyStates',
@@ -111,6 +117,16 @@ let router = new Router({
       path: '/components/menu',
       name: 'docsMenu',
       component: () => import('./docs/DocsMenu.vue')
+    },
+    {
+      path: '/components/modals',
+      name: 'docsModal',
+      component: () => import('./docs/DocsModal.vue')
+    },
+    {
+      path: '/components/nav',
+      name: 'docsNav',
+      component: () => import('./docs/DocsNav.vue')
     },
     {
       path: '/components/tile',

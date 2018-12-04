@@ -28,7 +28,7 @@ npm install --save zutre
 | Flexbox grid | Done |
 | Responsive | Done |
 | Hero | Done |
-| Navbar |  |
+| Navbar | Done |
 
 ## Components
 
@@ -40,11 +40,11 @@ npm install --save zutre
 | Bars | |
 | Breadcrumbs | Done | 
 | Cards | Done |
-| Chips | |
+| Chips | Done |
 | Empty states | Done |
 | Menu | Done |
-| Modals | |
-| Nav | |
+| Modals | Done |
+| Nav | Done |
 | Pagination | |
 | Panels | |
 | Popovers | |

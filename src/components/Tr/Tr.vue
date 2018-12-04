@@ -4,13 +4,13 @@
 
 <script>
 /**
- * Tr
+ * ZTr
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} active
  */
 export default {
-  name: 'Tr',
+  name: 'ZTr',
   props: {
     active: {
       type: Boolean
@@ -18,10 +18,10 @@ export default {
   },
   computed: {
     trClass: function() {
-      let css = ''
+      let css = {}
 
       if (this.active === true) {
-        css += ' active'
+        css.active = true
       }
 
       return css

@@ -124,43 +124,54 @@ export default {
       return (typeof this.title === 'string') ? true : false
     },
     toastClass: function() {
-      let css = 'toast'
+      let css = {
+        toast: true
+      }
 
       switch (this.type) {
         case 'primary':
-          css += ' toast-primary'
+          css['toast-primary'] = true
           break
         case 'success':
-          css += ' toast-success'
+          css['toast-success'] = true
           break
         case 'warning':
-          css += ' toast-warning'
+          css['toast-warning'] = true
           break
         case 'error':
-          css += ' toast-error'
+          css['toast-error'] = true
           break
       }
 
       switch(this.position) {
         case 'top': 
-          css += ' toast-notify toast-top'
+          css['toast-notify'] = true 
+          css['toast-top'] = true
           break
         case 'top left': 
-          css += ' toast-notify toast-top toast-left'
+          css['toast-notify'] = true 
+          css['toast-top'] = true
+          css['toast-left'] = true
           break
         case 'top right': 
-          css += ' toast-notify toast-top toast-right'
+          css['toast-notify'] = true 
+          css['toast-top'] = true
+          css['toast-right'] = true
           break
         case 'bottom': 
-          css += ' toast-notify toast-bottom'
+          css['toast-notify'] = true 
+          css['toast-bottom'] = true
           break
         case 'bottom right': 
-          css += ' toast-notify toast-bottom toast-right'
+          css['toast-notify'] = true 
+          css['toast-bottom'] = true 
+          css['toast-right'] = true
           break
         case 'bottom left': 
-          css += ' toast-notify toast-bottom toast-left'
+          css['toast-notify'] = true 
+          css['toast-bottom'] = true 
+          css['toast-left'] = true
           break
-        
       }
 
       return css

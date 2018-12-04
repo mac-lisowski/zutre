@@ -58,41 +58,43 @@ export default {
   },
   computed: {
     columnClass: function() {
-      let cssClass = 'column'
+      let css = {
+        column: true
+      }
 
       if (this.size > 0 && this.size <= 12) {
-        cssClass += ' col-'+ this.size
+        css['col-'+ this.size] = true
       }
 
       if (this.sizeXS > 0 && this.sizeXS <= 12) {
-        cssClass += ' col-xs-'+ this.sizeXS
+        css['col-xs-'+ this.sizeXS] = true
       }
 
       if (this.sizeSM > 0 && this.sizeSM <= 12) {
-        cssClass += ' col-sm-'+ this.sizeSM
+        css['col-sm-'+ this.sizeSM] = true
       }
 
       if (this.sizeLG > 0 && this.sizeLG <= 12) {
-        cssClass += ' col-lg-'+ this.sizeLG
+        css['col-lg-'+ this.sizeLG] = true
       }
 
       if (this.sizeXL > 0 && this.sizeXL <= 12) {
-        cssClass += ' col-xl-'+ this.sizeXL
+        css['col-xl-'+ this.sizeXL] = true
       }
 
       if (this.mxAuto === true) {
-        cssClass += ' col-mx-auto'
+        css['col-mx-auto'] = true
       }
 
       if (this.mlAuto === true) {
-        cssClass += ' col-ml-auto'
+        css['col-ml-auto'] = true
       }
 
       if (this.mrAuto === true) {
-        cssClass += ' col-mr-auto'
+        css['col-mr-auto'] = true
       }
 
-      return cssClass
+      return css
     }
   }
 }
