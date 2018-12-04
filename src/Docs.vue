@@ -59,6 +59,7 @@
             <z-menu-item :link="{ name: 'docsChip' }" name="Chips" activeClass="active" />
             <z-menu-item :link="{ name: 'docsEmptyStates' }" name="Empty states" activeClass="active" />
             <z-menu-item :link="{ name: 'docsMenu' }" name="Menu" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsModal' }" name="Modals" activeClass="active" />
             <z-menu-item :link="{ name: 'docsNav' }" name="Nav" activeClass="active" />
             <z-menu-item :link="{ name: 'docsTile' }" name="Tile" activeClass="active" />
             <z-menu-item :link="{ name: 'docsToast' }" name="Toast" activeClass="active" />

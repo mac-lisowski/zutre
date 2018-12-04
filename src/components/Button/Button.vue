@@ -1,6 +1,6 @@
 <template>
-  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick" v-bind:data-badge="badge">
-    <slot></slot>
+  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick" v-bind:data-badge="badge" >
+    <slot />
   </button>
 </template>
 

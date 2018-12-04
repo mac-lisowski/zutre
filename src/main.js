@@ -119,6 +119,11 @@ let router = new Router({
       component: () => import('./docs/DocsMenu.vue')
     },
     {
+      path: '/components/modals',
+      name: 'docsModal',
+      component: () => import('./docs/DocsModal.vue')
+    },
+    {
       path: '/components/nav',
       name: 'docsNav',
       component: () => import('./docs/DocsNav.vue')

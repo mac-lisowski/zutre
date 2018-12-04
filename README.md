@@ -43,7 +43,7 @@ npm install --save zutre
 | Chips | Done |
 | Empty states | Done |
 | Menu | Done |
-| Modals | |
+| Modals | Done |
 | Nav | Done |
 | Pagination | |
 | Panels | |
