@@ -76,7 +76,7 @@ export default {
       this.close()
     },
     keyPress (key) {
-      if (this.isActive && event.keyCode === 27) this.cancel('esc')
+      if (this.isActive && key.keyCode === 27) this.cancel('esc')
     },
     hasCloseType(type) {
       return (this.closeOptions.indexOf(type) < 0) ? false : true
