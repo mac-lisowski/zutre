@@ -48,7 +48,7 @@ npm install --save zutre
 | Pagination | |
 | Panels | |
 | Popovers | |
-| Steps | |
+| Steps | Done |
 | Tabs | |
 | Tiles | Done |
 | Toasts | Done |
