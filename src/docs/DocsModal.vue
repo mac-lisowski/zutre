@@ -180,12 +180,12 @@ import { ZModal } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZModal, ZLink, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import { ZContainer, ZModal, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
 
 export default {
   name: 'DocsModal',
   components: {
-    ZContainer, ZBreadcrumbs, ZModal, ZLink, ZButton, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
+    ZContainer, ZBreadcrumbs, ZModal, ZButton, ZCode, ZDivider,  ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
   },
   data () {
     return {
