@@ -13,6 +13,27 @@
       <z-columns>
         <z-column :sizeLG="12">
           
+          <z-nav :items="[
+            {}
+          ]"/>
+
+        </z-column>
+        <z-column :sizeLG="12">
+
+<z-code lang="Vue">
+import { ZNav } from 'zutre'
+
+&lt;z-nav /&gt;
+</z-code>
+
+        </z-column>
+      </z-columns>
+
+      <z-divider />
+
+      <z-columns>
+        <z-column :sizeLG="12">
+          
           <z-nav>
             <z-nav-item>
               <z-link href="">Element 1</z-link>
@@ -49,7 +70,7 @@ import { ZNav, ZNavItem, ZLink } from 'zutre'
 
       <z-divider />
 
-<z-columns>
+      <z-columns>
         <z-column :sizeLG="12">
           
           <z-nav>

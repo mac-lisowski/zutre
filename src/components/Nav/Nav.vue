@@ -10,6 +10,12 @@
  */
 export default {
   name: 'ZNav',
+  props: {
+    items: {
+      type: Array,
+      default: () => []
+    }
+  },
   computed: {
     navClass: function() {
       let css = {
