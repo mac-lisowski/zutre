@@ -63,23 +63,23 @@ import { ZBadge } from 'zutre'
 
       <z-columns>
         <z-column>
-          <z-avatar size="lg" presence="offline" dataInitial="ML" badge="" /> 
+          <z-avatar size="lg" presence="offline" data="ML" badge="" /> 
         </z-column>
         <z-column>
-           <z-avatar size="lg" presence="online" dataInitial="ML" badge="3" /> 
+           <z-avatar size="lg" presence="online" data="ML" badge="3" /> 
         </z-column>
         <z-column>
-           <z-avatar size="lg" dataInitial="ML" badge="97" /> 
+           <z-avatar size="lg" data="ML" badge="97" /> 
         </z-column>
         <z-column>
-           <z-avatar size="lg" dataInitial="ML" badge="9999" /> 
+           <z-avatar size="lg" data="ML" badge="9999" /> 
         </z-column>
       </z-columns>
 <z-code lang="Vue">
 import { ZBadge } from 'zutre'
 
-&lt;z-avatar size="lg" presence="offline" dataInitial="ML" badge="" /&gt;
-&lt;z-avatar size="lg" dataInitial="ML" badge="9999"&gt;
+&lt;z-avatar size="lg" presence="offline" data="ML" badge="" /&gt;
+&lt;z-avatar size="lg" data="ML" badge="9999"&gt;
 </z-code>
 
 
