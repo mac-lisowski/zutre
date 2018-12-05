@@ -1,5 +1,5 @@
 <template>
-  <figure :class="avatarClass" v-bind:data-initial="dataInitial" v-bind:data-badge="badge">
+  <figure :class="avatarClass" v-bind:data-initial="data" v-bind:data-badge="badge">
     <!-- <slot></slot> -->
     <template v-if="hasSrc">
       <img :src="srcPath">
@@ -20,7 +20,7 @@
  * ZAvatar
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
- * @prop {String} dataInitial
+ * @prop {String} data
  * @prop {String} src  
  * @prop {String} size values: xl, lg, sm, xs
  * @prop {String} presence values: online, busy, away, offline
@@ -30,7 +30,7 @@
 export default {
   name: 'ZAvatar',
   props: {
-    dataInitial: {
+    data: {
       type: String,
       default: () => ''
     },

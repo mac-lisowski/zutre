@@ -107,7 +107,6 @@ let router = new Router({
       name: 'docsChip',
       component: () => import('./docs/DocsChip.vue')
     },
-    
     {
       path: '/components/empty-states',
       name: 'docsEmptyStates',
@@ -127,6 +126,12 @@ let router = new Router({
       path: '/components/nav',
       name: 'docsNav',
       component: () => import('./docs/DocsNav.vue')
+    },
+
+    {
+      path: '/components/steps',
+      name: 'docsStep',
+      component: () => import('./docs/DocsStep.vue')
     },
     {
       path: '/components/tile',
