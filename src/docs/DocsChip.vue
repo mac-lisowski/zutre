@@ -20,7 +20,7 @@
       <br>
       <z-columns>
         <z-column>
-          <z-chip><z-avatar dataInitial="ML" size="sm" presence="online" />Maciej Lisowski</z-chip> <z-chip><z-avatar presence="offline" :src="require('./avatar.png')" size="sm" />Brian Doe</z-chip> <z-chip><z-avatar size="sm" :src="require('./avatar2.png')" /> Steve Rogers <z-button clear/></z-chip>
+          <z-chip><z-avatar data="ML" size="sm" presence="online" />Maciej Lisowski</z-chip> <z-chip><z-avatar presence="offline" :src="require('./avatar.png')" size="sm" />Brian Doe</z-chip> <z-chip><z-avatar size="sm" :src="require('./avatar2.png')" /> Steve Rogers <z-button clear/></z-chip>
         </z-column>
       </z-columns>
 
@@ -31,7 +31,7 @@ import { ZChip, ZButton, ZAvatar } from 'zutre'
 &lt;z-chip&gt;Action&lt;/z-chip&gt;
 &lt;z-chip&gt;Fantasy &lt;z-button clear/&gt;&lt;/z-chip&gt;
 
-&lt;z-chip dataInitial="ML" size="sm" presence="online" &gt;Maciej Lisowski&lt;/z-chip&gt;
+&lt;z-chip data="ML" size="sm" presence="online" &gt;Maciej Lisowski&lt;/z-chip&gt;
 &lt;z-chip presence="offline" :src="require('./avatar.png')" size="sm"&gt;Brian Doe&lt;/z-chip&gt;
 &lt;z-chip size="sm" :src="require('./avatar2.png')"&gt;Steve Rogers &lt;z-button clear/&gt;&lt;/z-chip&gt;
 </z-code>

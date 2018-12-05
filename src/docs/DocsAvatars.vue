@@ -19,11 +19,11 @@
       <z-columns>
         <z-column>
           
-          <z-avatar size="xl" dataInitial="ML" /> &nbsp;
-          <z-avatar size="lg" dataInitial="ML" /> &nbsp;
-          <z-avatar dataInitial="ML" /> &nbsp;
-          <z-avatar size="sm" dataInitial="ML" /> &nbsp;
-          <z-avatar size="xs" dataInitial="ML" />
+          <z-avatar size="xl" data="ML" /> &nbsp;
+          <z-avatar size="lg" data="ML" /> &nbsp;
+          <z-avatar data="ML" /> &nbsp;
+          <z-avatar size="sm" data="ML" /> &nbsp;
+          <z-avatar size="xs" data="ML" />
 
         </z-column>
       </z-columns>
@@ -31,11 +31,11 @@
 <z-code lang="Vue">
 import { ZAvatar } from 'zutre'
 
-&lt;z-avatar size="xl" dataInitial="ML" /&gt;
-&lt;z-avatar size="lg" dataInitial="ML" /&gt;
-&lt;z-avatar dataInitial="ML" /&gt;
-&lt;z-avatar size="sm" dataInitial="ML" /&gt;
-&lt;z-avatar size="xs" dataInitial="ML" /&gt;
+&lt;z-avatar size="xl" data="ML" /&gt;
+&lt;z-avatar size="lg" data="ML" /&gt;
+&lt;z-avatar data="ML" /&gt;
+&lt;z-avatar size="sm" data="ML" /&gt;
+&lt;z-avatar size="xs" data="ML" /&gt;
 </z-code>
       
       <z-divider />
@@ -44,11 +44,11 @@ import { ZAvatar } from 'zutre'
       <z-columns>
         <z-column>
           
-          <z-avatar size="xl" dataInitial="ML" presence="online" /> &nbsp;
-          <z-avatar size="lg" dataInitial="ML" presence="busy" /> &nbsp;
-          <z-avatar dataInitial="ML" presence="away" /> &nbsp;
-          <z-avatar size="sm" dataInitial="ML" presence="offline" /> &nbsp;
-          <z-avatar size="xs" dataInitial="ML" presence="offline" />
+          <z-avatar size="xl" data="ML" presence="online" /> &nbsp;
+          <z-avatar size="lg" data="ML" presence="busy" /> &nbsp;
+          <z-avatar data="ML" presence="away" /> &nbsp;
+          <z-avatar size="sm" data="ML" presence="offline" /> &nbsp;
+          <z-avatar size="xs" data="ML" presence="offline" />
 
         </z-column>
       </z-columns>
@@ -56,11 +56,11 @@ import { ZAvatar } from 'zutre'
 <z-code lang="Vue">
 import { ZAvatar } from 'zutre'
 
-&lt;z-avatar size="xl" dataInitial="ML" presence="online" /&gt;
-&lt;z-avatar size="lg" dataInitial="ML" presence="busy" /&gt;
-&lt;z-avatar dataInitial="ML" presence="away" /&gt;
-&lt;z-avatar size="sm" dataInitial="ML" presence="offline" /&gt;
-&lt;z-avatar size="xs" dataInitial="ML" presence="offline" /&gt;
+&lt;z-avatar size="xl" data="ML" presence="online" /&gt;
+&lt;z-avatar size="lg" data="ML" presence="busy" /&gt;
+&lt;z-avatar data="ML" presence="away" /&gt;
+&lt;z-avatar size="sm" data="ML" presence="offline" /&gt;
+&lt;z-avatar size="xs" data="ML" presence="offline" /&gt;
 </z-code>
 
       <z-divider />
@@ -94,7 +94,7 @@ import { ZAvatar } from 'zutre'
 
       <z-columns>
         <z-column>
-          <z-avatar size="lg" presence="online" dataInitial="ML" badge="1" /> &nbsp;
+          <z-avatar size="lg" presence="online" data="ML" badge="1" /> &nbsp;
           <z-avatar size="lg" presence="busy" :src="require('./avatar.png')" badge="999" /> &nbsp;
         </z-column>
       </z-columns>
@@ -102,7 +102,7 @@ import { ZAvatar } from 'zutre'
       <z-code lang="Vue">
 import { ZAvatar } from 'zutre'
 
-&lt;z-avatar size="lg" presence="online" dataInitial="ML" badge="1" /&gt;
+&lt;z-avatar size="lg" presence="online" data="ML" badge="1" /&gt;
 &lt;z-avatar size="lg" presence="busy" :src="require('./avatar.png')" badge="999" /&gt;
 </z-code>
 
@@ -121,7 +121,7 @@ import { ZAvatar } from 'zutre'
         </z-thead>
         <z-tbody>
           <z-tr>
-            <z-td><code>dataInitial</code></z-td>
+            <z-td><code>data</code></z-td>
             <z-td>
               initial data (eg. when you are not using icon)
             </z-td>

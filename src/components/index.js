@@ -49,6 +49,9 @@ import ZNavItem from './NavItem'
 import ZNavbar from './Navbar'
 import ZNavbarSection from './NavbarSection'
 
+import ZStep from './Step'
+import ZStepItem from './StepItem'
+
 import ZTable from './Table'
 import ZThead from './Thead'
 import ZTbody from './Tbody'
@@ -167,6 +170,8 @@ const Components = {
   ZNavItem,
   ZNavbar,
   ZNavbarSection,
+  ZStep,
+  ZStepItem,
   ZTable,
   ZThead,
   ZTbody,
@@ -225,6 +230,8 @@ export {
   ZNavItem,
   ZNavbar,
   ZNavbarSection,
+  ZStep,
+  ZStepItem,
   ZTable,
   ZThead,
   ZTbody,
