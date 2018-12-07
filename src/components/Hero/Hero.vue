@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZHero
+ * Hero
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/hero.html
  * 
@@ -15,7 +15,7 @@
  * @prop {String} size
  */
 export default {
-  name: 'ZHero',
+  name: 'Hero',
   props: {
     type: {
       type: String,

@@ -14,7 +14,7 @@ import ZToastTitle from './../ToastTitle'
 import ZToastBody from './../ToastBody'
 
 /**
- * ZToast
+ * Toast
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} show

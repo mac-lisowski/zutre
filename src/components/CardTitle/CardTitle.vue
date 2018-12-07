@@ -11,7 +11,7 @@
 
 <script>
 /**
- * ZCardTitle
+ * CardTitle
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
  * 
@@ -20,7 +20,7 @@
  * @prop {String} content title body content
  */
 export default {
-  name: 'ZCardTitle',
+  name: 'CardTitle',
   props: {
     size: {
       type: Number

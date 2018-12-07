@@ -4,7 +4,7 @@
 
 <script>
 /**
- * ZToastTitle
+ * ToastTitle
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */

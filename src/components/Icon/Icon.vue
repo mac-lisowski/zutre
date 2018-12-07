@@ -11,13 +11,13 @@
 
 <script>
 /**
- * ZIcon
+ * Icon
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} name
  */
 export default {
-  name: 'ZIcon',
+  name: 'Icon',
   props: {
     name: {
       type: String,

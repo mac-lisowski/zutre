@@ -14,7 +14,7 @@
 
 <script>
 /**
- * ZMenuItem
+ * MenuItem
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/menu.html#menus
  * 
@@ -29,7 +29,7 @@
 import ZLink from './../Link'
 
 export default {
-  name: 'ZMenuItem',
+  name: 'MenuItem',
   components: {
     ZLink
   },

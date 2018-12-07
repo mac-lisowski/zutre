@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZButtonGroup  
+ * ButtonGroup  
  * 
  * Spectre: https://picturepan2.github.io/spectre/elements/buttons.html
  * 
@@ -14,7 +14,7 @@
  * @prop {Boolean} block
  */
 export default {
-  name: 'ZButtonGroup',
+  name: 'ButtonGroup',
   props: {
     block: {
       type: Boolean,

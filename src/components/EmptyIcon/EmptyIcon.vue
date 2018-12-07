@@ -11,12 +11,12 @@
 
 <script>
 /**
- * ZEmptyIcon
+ * EmptyIcon
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZEmptyIcon',
+  name: 'EmptyIcon',
   props: {
     name: {
       type: String,

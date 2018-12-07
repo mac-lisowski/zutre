@@ -11,7 +11,7 @@
 
 <script>
 /**
- * ZLabel
+ * Label
  * 
  * Spectre: https://picturepan2.github.io/spectre/elements/labels.html
  * 
@@ -20,7 +20,7 @@
  * @prop {String} type Values: primary, secondary, success, warning, error
  */
 export default {
-  name: 'ZLabel',
+  name: 'Label',
   props: {
     rounded: {
       type: Boolean

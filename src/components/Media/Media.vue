@@ -14,7 +14,7 @@
 
 <script>
 /**
- * ZMedia
+ * Media
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} src 
@@ -27,7 +27,7 @@
  * @prop {Boolean} video
  */
 export default {
-  name: 'ZMedia',
+  name: 'Media',
   props: {
     type: {
       type: String,

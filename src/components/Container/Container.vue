@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZContainer
+ * Container
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/grid.html
  * 
@@ -14,7 +14,7 @@
  * @prop {String} size
  */
 export default {
-  name: 'ZContainer',
+  name: 'Container',
   props: {
     size: String
   },

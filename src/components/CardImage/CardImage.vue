@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZCardImage
+ * CardImage
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
  * 
@@ -14,7 +14,7 @@
  * @prop {String} src path to image
  */
 export default {
-  name: 'ZCard',
+  name: 'Card',
   props: {
     src: {
       type: String

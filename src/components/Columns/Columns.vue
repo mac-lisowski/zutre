@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZColumns
+ * Columns
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/grid.html
  * 
@@ -15,7 +15,7 @@
  * @prop {Boolean} oneline
  */
 export default {
-  name: 'ZColumns',
+  name: 'Columns',
   props: {
     gapless: {
       type: Boolean,

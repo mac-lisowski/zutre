@@ -52,9 +52,6 @@ import ZNavbarSection from './NavbarSection';
 import ZStep from './Step'
 import ZStepItem from './StepItem'
 
-import ZStep from './Step'
-import ZStepItem from './StepItem'
-
 import ZTable from './Table'
 import ZThead from './Thead'
 import ZTbody from './Tbody'

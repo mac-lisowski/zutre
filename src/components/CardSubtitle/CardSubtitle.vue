@@ -11,7 +11,7 @@
 
 <script>
 /**
- * ZCardSubtitle
+ * CardSubtitle
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
  * 
@@ -20,7 +20,7 @@
  * @prop {String} content
  */
 export default {
-  name: 'ZCardSubtitle',
+  name: 'CardSubtitle',
   props: {
     color: {
       type: String

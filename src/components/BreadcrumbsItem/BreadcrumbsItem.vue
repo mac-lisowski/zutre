@@ -19,7 +19,7 @@
 
 <script>
 /**
- * ZBreadcrumbsItem
+ * BreadcrumbsItem
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/breadcrumbs.html
  * 
@@ -29,7 +29,7 @@
  * @prop {String} href 
  */
 export default {
-  name: 'ZBreadcrumbsItem',
+  name: 'BreadcrumbsItem',
   props: {
     name: {
       type: String,

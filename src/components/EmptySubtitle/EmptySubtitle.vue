@@ -4,12 +4,12 @@
 
 <script>
 /**
- * ZEmptySubtitle
+ * EmptySubtitle
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZEmptySubtitle',
+  name: 'EmptySubtitle',
   props: {
   }
 }

@@ -4,7 +4,7 @@
 
 <script>
 /**
- * ZCode
+ * Code
  * 
  * Spectre: https://picturepan2.github.io/spectre/elements/code.html
  * 
@@ -12,7 +12,7 @@
  * @prop {String} lang
  */
 export default {
-  name: 'ZCode',
+  name: 'Code',
   props: {
     lang: {
       type: String,

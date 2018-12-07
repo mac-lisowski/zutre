@@ -4,12 +4,12 @@
 
 <script>
 /**
- * ZChip
+ * Chip
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZChip',
+  name: 'Chip',
   computed: {
     chipClass: function() {
       let css = {

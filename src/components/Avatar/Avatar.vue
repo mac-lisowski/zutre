@@ -17,7 +17,7 @@
 
 <script>
 /**
- * ZAvatar
+ * Avatar
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} data
@@ -28,7 +28,7 @@
  * @prop {String} badge
  */
 export default {
-  name: 'ZAvatar',
+  name: 'Avatar',
   props: {
     data: {
       type: String,

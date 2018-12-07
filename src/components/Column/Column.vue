@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZColumn
+ * Column
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/grid.html
  * 
@@ -21,7 +21,7 @@
  * @prop {Boolean} mrAuto
  */
 export default {
-  name: 'ZColumn',
+  name: 'Column',
   props: {
     size: {
       type: Number,

@@ -21,7 +21,7 @@
 
 <script>
 /**
- * ZModal
+ * Modal
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} title
@@ -34,7 +34,7 @@
  * @prop {Function} onClose fired on close 
  */
 export default {
-  name: 'ZModal',
+  name: 'Modal',
   props: {
     title: String,
     content: String,

@@ -18,7 +18,7 @@
 
 <script>
 /**
- * ZLink
+ * Link
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} href
@@ -29,7 +29,7 @@
  * @prop {Boolean} exact
  */
 export default {
-  name: 'ZLink',
+  name: 'Link',
   props: {
     href: {
       type: String

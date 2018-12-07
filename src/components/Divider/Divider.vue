@@ -4,7 +4,7 @@
 
 <script>
 /**
- * ZDivider
+ * Divider
  * 
  * Spectre: https://picturepan2.github.io/spectre/utilities/divider.html
  * 
@@ -13,7 +13,7 @@
  * @prop {Boolean} vert
  */
 export default {
-  name: 'ZDivider',
+  name: 'Divider',
   props: {
     content: {
       type: String,

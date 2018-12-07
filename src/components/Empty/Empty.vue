@@ -4,12 +4,12 @@
 
 <script>
 /**
- * ZEmpty
+ * Empty
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZEmpty',
+  name: 'Empty',
   props: {
   }
 }

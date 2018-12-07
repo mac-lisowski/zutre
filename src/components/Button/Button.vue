@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZButton  
+ * Button  
  * 
  * Spectre: https://picturepan2.github.io/spectre/elements/buttons.html
  * 
@@ -22,7 +22,7 @@
  * @prop {String} badge
  */
 export default {
-  name: 'ZButton',
+  name: 'Button',
   methods: {
     onClick (...args) {
       if (typeof this.click === 'function') {

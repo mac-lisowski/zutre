@@ -4,12 +4,12 @@
 
 <script>
 /**
- * ZNavItem
+ * NavItem
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZNavItem',
+  name: 'NavItem',
   props: {
     active: {
       type: Boolean

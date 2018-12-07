@@ -6,13 +6,13 @@
 
 <script>
 /**
- * ZHeroBody
+ * HeroBody
  * 
  * Spectre: https://picturepan2.github.io/spectre/layout/hero.html
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZHeroBody'
+  name: 'HeroBody'
 }
 </script>

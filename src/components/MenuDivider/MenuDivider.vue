@@ -4,7 +4,7 @@
 
 <script>
 /**
- * ZMenuDivider
+ * MenuDivider
  * 
  * Spectre: https://picturepan2.github.io/spectre/components/menu.html#menus
  * 
@@ -12,7 +12,7 @@
  * @prop {String} content
  */
 export default {
-  name: 'ZMenuDivider',
+  name: 'MenuDivider',
   props: {
     content: {
       type: String,

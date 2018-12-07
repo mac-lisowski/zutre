@@ -6,7 +6,7 @@
 
 <script>
 /**
- * ZToastBody
+ * ToastBody
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */

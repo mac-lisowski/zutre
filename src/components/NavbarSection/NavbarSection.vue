@@ -6,13 +6,13 @@
 
 <script>
 /**
- * ZNavbarSection
+ * NavbarSection
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} center
  */
 export default {
-  name: 'ZNavbarSection',
+  name: 'NavbarSection',
   props: {
     center: {
       type: Boolean,

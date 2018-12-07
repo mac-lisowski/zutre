@@ -4,12 +4,12 @@
 
 <script>
 /**
- * ZNav
+ * Nav
  * 
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZNav',
+  name: 'Nav',
   props: {
     items: {
       type: Array,
