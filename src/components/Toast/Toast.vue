@@ -172,6 +172,9 @@ export default {
           css['toast-bottom'] = true 
           css['toast-left'] = true
           break
+        default:
+          css['toast-notify'] = true 
+          css['toast-top'] = true
       }
 
       return css

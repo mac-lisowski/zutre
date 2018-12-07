@@ -25,7 +25,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-docs": "vue-cli-service build --dest ./docs",
-    "build-bundle": "vue-cli-service build --target lib --name zutre ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name zutre ./src/components/index.ts",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
@@ -40,11 +40,17 @@
   "dependencies": {
     "material-design-icons": "^3.0.1",
     "spectre.css": "^0.5.7",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.3.2",
+    "vue-property-decorator": "^7.2.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.4",
+    "@types/node": "^10.12.12",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-plugin-typescript": "^3.2.0",
     "@vue/cli-plugin-unit-mocha": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "@vue/test-utils": "^1.0.0-beta.20",
@@ -54,6 +60,8 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
   }

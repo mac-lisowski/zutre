@@ -92,7 +92,7 @@
   </div>
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody, ZMenu, ZMenuItem, ZMenuDivider } from './components'
+import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody, ZMenu, ZMenuItem, ZMenuDivider } from '@/components'
 
 export default {
   name: 'Demo',
