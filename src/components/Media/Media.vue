@@ -37,7 +37,6 @@ export default class Media extends Vue {
   @Prop(Boolean) private contain?: boolean;
   @Prop(Boolean) private video?: boolean;
 
-
   private isType(type: string): boolean {
     return this.type === type;
   }

@@ -7,7 +7,6 @@
     <slot v-if="hasDefaultSlot"></slot>
   </div>
 </template>
-
 <script lang="ts">
 /**
  * Toast
