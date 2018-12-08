@@ -63,7 +63,7 @@ export default class Step extends Vue {
 
   // call on click callback
   private itemOnClick(item: any[]): void {
-    this.onClick.apply(null, item);
+    this.onClick.apply(null, [arguments]);
   }
 
   // compute items

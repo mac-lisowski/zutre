@@ -7,7 +7,7 @@
           <button class="btn btn-clear float-right" aria-label="Close" v-if="canClose && hasCloseType('btn')" @click="cancel('btn')" />
           <div class="modal-title h5" v-if="title" v-text="title" />
         </div>
-        
+
         <div class="modal-body" v-if="content" v-html="content" />
         <div class="modal-body" v-else><slot /></div>
 
@@ -15,14 +15,13 @@
           <slot name="footer" />
         </div>
       </div>
-      
+
     </div>
 </template>
-
-<script>
+<script lang="ts">
 /**
  * Modal
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} title
  * @prop {String} content
@@ -31,112 +30,116 @@
  * @prop {String|Number} width
  * @prop {Boolean} overlay default: true
  * @prop {Boolean|Array} canClose default: true
- * @prop {Function} onClose fired on close 
+ * @prop {Function} onClose fired on close
  */
-export default {
-  name: 'Modal',
-  props: {
-    title: String,
-    content: String,
-    open: Boolean,
-    size: {
-      type: String,
-      default: () => ''
-    },
-    width: [String, Number],
-    overlay: {
-      type: Boolean,
-      default: () => true
-    },
-    canClose: {
-      type: [Boolean, Array],
-      default: () => true
-    },
-    onClose: {
-      type: Function,
-      default: () => {}
-    },
-  },
-  data () {
-    return {
-      isActive: this.open || false,
-    }
-  },
-  methods: {
-    close () {
-      this.$emit('close')
-      this.$emit('update:open', false)
-      
-      this.isActive = false
-    },
-    cancel (type) {
-      if (!this.hasCloseType(type)) return
+import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
 
-      this.onClose.apply(null, arguments)
-      this.close()
-    },
-    keyPress (key) {
-      if (this.isActive && key.keyCode === 27) this.cancel('esc')
-    },
-    hasCloseType(type) {
-      return (this.closeOptions.indexOf(type) < 0) ? false : true
-    }
-  },
-  watch: {
-    open (value) {
-      this.isActive = value
-    }
-  },
-  computed: {
-    hasDefaultSlot () {
-      return !!this.$slots.default
-    },
-    hasFooter () { 
-      return !!this.$slots.footer 
-    },
-    hasOverlay () {
-      return  this.overlay === true
-    },
-    hasCloseBtn: () => this.closeBtn === true,
-    closeOptions () {
-      return typeof this.canClose === 'boolean'
-        ? this.canClose
-            ? ['esc', 'btn', 'overlay'] : []
-        : this.canClose
-    },
-    modalStyle () {
-      let style = {}
+@Component
+export default class Modal extends Vue {
+  @Prop(Boolean) private open?: boolean;
+  @Prop(String) private title?: string;
+  @Prop(String) private content?: string;
+  @Prop(String) private size?: string;
+  @Prop([ Number, String ]) private width?: number | string;
+  @Prop({ type: Boolean, default: true }) private overlay?: boolean;
+  @Prop({ type: [ Boolean, Array ], default: true }) private canClose?: boolean | [string];
+  @Prop({ type: Function, default: () => { return; } }) private onClose?: (...args: any) => any;
 
-      if (typeof this.width !== 'undefined') {
-        style = {
-          maxWidth: 'none',
-          width: this.width + 'px'
-        }
-      }
+  private isActive: boolean | false = this.open || false;
 
-      return style
-    },
-    modalClass () {
-      let css = {
-        modal: true,
-        active: true
-      }
+  @Watch('open')
+  private checkOpenChanged(value: boolean): void {
+    this.isActive = value;
+  }
 
-      switch (this.size) {
-        case 'sm':
-          css['modal-sm'] = true
-          break
-        case 'lg':
-          css['modal-lg'] = true
-          break
-      }
-      return css
-    }
-  },
-  created() {
+  private created(): void {
     if (typeof window !== 'undefined') {
-      document.addEventListener('keyup', this.keyPress)
+      document.addEventListener('keyup', this.keyPress);
     }
-  },
+  }
+
+  // close emits events about closing modal
+  private close(): void {
+    this.$emit('close');
+    this.$emit('update:open', false);
+
+    this.isActive = false;
+  }
+
+  // cancel method -  called on close, calling onClose callback
+  private cancel(type: string): void {
+    if (!this.hasCloseType(type)) {
+      return;
+    }
+
+    this.onClose.apply(null, [arguments]);
+    this.close();
+  }
+
+  // on keyPress callback
+  private keyPress(key: any): void {
+    if (this.isActive && key.keyCode === 27) {
+      this.cancel('esc');
+    }
+  }
+
+  // check if has given close type option available
+  private hasCloseType(type: string): boolean {
+    return (this.closeOptions.indexOf(type) < 0) ? false : true;
+  }
+
+  // compute if has footer
+  get hasFooter(): boolean {
+    return !!this.$slots.footer;
+  }
+
+  // compute if has overlay
+  get hasOverlay(): boolean {
+    return this.overlay === true;
+  }
+
+  // compute available close options
+  get closeOptions(): any {
+    return typeof this.canClose === 'boolean'
+      ? this.canClose
+          ? ['esc', 'btn', 'overlay'] : []
+      : this.canClose;
+  }
+
+  // compute if has default slot
+  get hasDefaultSlot(): boolean {
+    return !!this.$slots.default;
+  }
+
+  // compute modal css style
+  get modalStyle(): CSSStyle {
+    const style: CSSStyle = {};
+
+    if (typeof this.width !== 'undefined') {
+      style.maxWidth = 'none';
+      style.width = this.width + 'px';
+    }
+
+    return style;
+  }
+
+  // compute modal css class
+  get modalClass(): CSSClass {
+    const css: CSSClass = {
+      modal: true,
+      active: true,
+    };
+
+    switch (this.size) {
+      case 'sm':
+        css['modal-sm'] = true;
+        break;
+      case 'lg':
+        css['modal-lg'] = true;
+        break;
+    }
+
+    return css;
+  }
 }
 </script>

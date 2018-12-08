@@ -3,6 +3,11 @@ interface CSSClass {
   [key: string]: any;
 }
 
+// CSSStyle interface definition
+interface CSSStyle {
+  [key: string]: any;
+}
+
 // StepItem interface definition
 interface StepItem {
   name?: string;
