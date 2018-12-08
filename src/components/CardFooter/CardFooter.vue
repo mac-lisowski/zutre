@@ -1,18 +1,19 @@
-<template>
-  <div class="card-footer">
-    <slot></slot>
-  </div>
-</template>
-
-<script>
+<script lang="ts">
 /**
  * CardFooter
- * 
+ *
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
-export default {
-  name: 'CardFooter'
-}
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({
+  template: `
+    <div class="card-footer">
+      <slot></slot>
+    </div>
+  `,
+})
+export default class CardFooter extends Vue {}
 </script>

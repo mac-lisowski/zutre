@@ -8,45 +8,44 @@
     </template>
   </div>
 </template>
-
-<script>
+<script lang="ts">
 /**
  * CardTitle
- * 
+ *
  * Spectre: https://picturepan2.github.io/spectre/components/cards.html
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Number} size Available sizes: 1 to 6
  * @prop {String} content title body content
  */
-export default {
-  name: 'CardTitle',
-  props: {
-    size: {
-      type: Number
-    },
-    content: {
-      type: String
-    }
-  },
-  computed: {
-    titleClass: function() {
-      let css = {
-        'card-title': true
-      }
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-      if (this.size > 0 && this.size <= 6) {
-        css['h' + this.size] = true
-      }
+@Component({
+  template: '<span class="chip"><slot></slot></span>',
+})
+export default class CardTitle extends Vue {
+  @Prop(Number) private size?: number;
+  @Prop(String) private content?: string;
 
-      return css
-    },
-    titleContent: function() {
-      return (typeof this.content !== 'undefined') ? this.content : ''
-    },
-    hasDefaultSlot () {
-      return !!this.$slots.default
+  // compute title css class
+  get titleClass(): CSSClass {
+    const css: CSSClass = { 'card-title': true };
+
+    if (this.size > 0 && this.size <= 6) {
+      css['h' + this.size] = true;
     }
+
+    return css;
+  }
+
+  // compute title content
+  get titleContent(): string {
+    return (typeof this.content !== 'undefined') ? this.content : '';
+  }
+
+  // compute if has defauot <slot>
+  get hasDefaultSlot(): boolean {
+    return !!this.$slots.default;
   }
 }
 </script>
