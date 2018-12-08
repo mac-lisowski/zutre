@@ -1,6 +1,6 @@
 {
   "name": "zutre",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "private": false,
   "homepage": "https://github.com/maclisowski/zutre",
   "description": "UI components for Vue.js based on Spectre CSS Framework",
@@ -13,7 +13,10 @@
     "spectre",
     "vue-spectre",
     "components",
-    "vue-ui"
+    "vue-ui",
+    "vue-components",
+    "vue-component",
+    "typescript"
   ],
   "repository": {
     "type": "git",
