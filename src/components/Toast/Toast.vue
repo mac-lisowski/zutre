@@ -37,16 +37,14 @@ export default class Toast extends Vue {
   @Prop(String) private title?: string;
   @Prop(String) private content?: string;
 
-  private showToast = false;
-
   @Watch('show')
-  private onShowChanged(newVal: boolean, oldVal: boolean) {
+  private onShowChanged(newVal: boolean, oldVal: boolean): void {
     if (newVal === false && oldVal === true) {
       this.destroy();
     }
   }
 
-  private mounted() {
+  private mounted(): void {
     this.$once('close', (val: boolean) => {
       if (val === true) {
         this.destroy();
@@ -54,7 +52,7 @@ export default class Toast extends Vue {
     });
   }
 
-  private created() {
+  private created(): void {
     if (this.show === true) {
       this.$emit('open', true);
       this.setShow(true);
@@ -67,36 +65,41 @@ export default class Toast extends Vue {
     }
   }
 
-  private destroyed() {
+  // if destroyed then remove node from DOM
+  private destroyed(): void {
     this.$el.parentNode.removeChild(this.$el);
   }
 
-  private destroy() {
+  // trigger destroy
+  private destroy(): void {
     this.$destroy();
   }
 
-  private setShow(show = false) {
+  // emit close event
+  private setShow(show: boolean = false): void {
     if (show === false) {
       this.$emit('close', true);
     }
-
-    this.showToast = show;
   }
-  ////
-  private toastTitle() {
+
+  // get toast title
+  private toastTitle(): string {
     return this.title;
   }
 
-  private toastContent() {
+  // get toast content
+  private toastContent(): string {
     return this.content;
   }
 
+  // compute if has default <slot>
   get hasDefaultSlot(): any {
     /* tslint:disable:no-string-literal */
     return !!this.$slots['default'];
     /* tslint:enable:no-string-literal */
   }
 
+  // compute if have close button
   get hasCloseBtn(): boolean | undefined {
     return this.closeBtn;
   }
