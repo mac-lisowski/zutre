@@ -10,36 +10,33 @@
 
   </ul>
 </template>
-
-<script>
+<script lang="ts">
 /**
  * Breadcrumbs
- * 
+ *
  * Spectre: https://picturepan2.github.io/spectre/components/breadcrumbs.html
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
- * @prop {Array} items each item is an JSON object with: name, link/href. <router-link :to="item.link" /> instaed of <a :href="item.href" />
+ * @prop {Array} items each item is an JSON object with: name, link/href.
+ * <router-link :to="item.link" /> instaed of <a :href="item.href" />
  */
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import ZBreadcrumbsItem from '@/components/BreadcrumbsItem';
 
-export default {
-  name: 'Breadcrumbs',
-  components: {
-    ZBreadcrumbsItem
-  },
-  props: {
-    items: {
-      type: Array,
-      default: () => []
-    }
-  },
-  computed: {
-    breadcrumbsItems () {
-      return this.items;
-    },
-    hasDefaultSlot () {
-      return !!this.$slots.default
-    }
+@Component({
+  components: { ZBreadcrumbsItem },
+})
+export default class Breadcrumbs extends Vue {
+  @Prop(Array) private items?: [BreadCrumbItem];
+
+  // compute items
+  get breadcrumbsItems(): [BreadCrumbItem] {
+    return this.items;
+  }
+
+  // compute if has default <slot>
+  get hasDefaultSlot(): boolean {
+    return !!this.$slots.default;
   }
 }
 </script>

@@ -21,6 +21,13 @@ interface StepItems {
   [key: number]: StepItem;
 }
 
+// BreadCrumbItem interface definition
+interface BreadCrumbItem {
+  name?: string;
+  link?: object;
+  href?: string;
+}
+
 // ToastOptions interface definition
 interface ToastOptions {
   title?: string;

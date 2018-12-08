@@ -1,38 +1,32 @@
-<template>
-  <div :class="groupClass">
-    <slot></slot>
-  </div>
-</template>
-
-<script>
+<script lang="ts">
 /**
- * ButtonGroup  
- * 
+ * ButtonGroup
+ *
  * Spectre: https://picturepan2.github.io/spectre/elements/buttons.html
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} block
  */
-export default {
-  name: 'ButtonGroup',
-  props: {
-    block: {
-      type: Boolean,
-      default: () => false
-    }
-  },
-  computed: {
-    groupClass: function() {
-      let css = {
-        'btn-group': true
-      }
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-      if (this.block === true) {
-        css['btn-group-block'] = true
-      }
+@Component({
+  template: `
+    <div :class="groupClass">
+      <slot></slot>
+    </div>
+  `,
+})
+export default class ButtonGroup extends Vue {
+  @Prop(Boolean) private block?: boolean;
 
-      return css
+  get groupClass(): CSSClass {
+    const css: CSSClass = { 'btn-group': true };
+
+    if (this.block === true) {
+      css['btn-group-block'] = true;
     }
+
+    return css;
   }
 }
 </script>
