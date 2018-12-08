@@ -92,27 +92,30 @@
   </div>
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody, ZMenu, ZMenuItem, ZMenuDivider } from '@/components'
+import {
+  ZContainer, ZColumns, ZColumn, ZHero, ZHeroBody,
+  ZMenu, ZMenuItem, ZMenuDivider,
+} from '@/components';
 
 export default {
   name: 'Demo',
-  data () {
+  data() {
     return {
-      size: ''
-    }
+      size: '',
+    };
   },
   components: {
-    ZContainer, ZHero, ZHeroBody, ZColumns, ZColumn, ZMenu, ZMenuItem, ZMenuDivider
+    ZContainer, ZHero, ZHeroBody, ZColumns, ZColumn, ZMenu, ZMenuItem, ZMenuDivider,
   },
-  created () {
-    this.size = (this.$router.currentRoute.name == 'home') ? 'lg' : 'sm'
+  created() {
+    this.size = (this.$router.currentRoute.name === 'home') ? 'lg' : 'sm';
   },
   watch: {
-    $route (){
-        this.size = (this.$router.currentRoute.name == 'home') ? 'lg' : 'sm'
-    }
-  }
-}
+    $route() {
+        this.size = (this.$router.currentRoute.name === 'home') ? 'lg' : 'sm';
+    },
+  },
+};
 </script>
 
 <style lang="scss">

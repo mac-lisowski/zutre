@@ -41,8 +41,7 @@
     "material-design-icons": "^3.0.1",
     "spectre.css": "^0.5.7",
     "vue": "^2.5.17",
-    "vue-class-component": "^6.3.2",
-    "vue-property-decorator": "^7.2.0"
+    "vue-class-component": "^6.3.2"
   },
   "devDependencies": {
     "@types/chai": "^4.1.0",
@@ -62,6 +61,7 @@
     "sass-loader": "^7.1.0",
     "ts-loader": "^5.3.1",
     "typescript": "^3.2.2",
+    "vue-property-decorator": "^7.2.0",
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
   }

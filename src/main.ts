@@ -127,12 +127,6 @@ const router = new Router({
       name: 'docsStep',
       component: () => import('./docs/DocsStep.vue'),
     },
-
-    {
-      path: '/components/steps',
-      name: 'docsStep',
-      component: () => import('./docs/DocsStep.vue')
-    },
     {
       path: '/components/tile',
       name: 'docsTile',

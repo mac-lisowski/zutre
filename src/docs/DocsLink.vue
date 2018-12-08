@@ -89,12 +89,16 @@
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZLink, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZLink, ZTable, ZThead, ZTbody,
+  ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
-  name: 'DocsDivider',
+  name: 'DocsLink',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZLink, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZLink, ZTable, ZThead,
+    ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

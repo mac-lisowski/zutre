@@ -231,12 +231,18 @@ import { ZCard, ZCardImage, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardBody, Z
     </z-container>
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZButton, ZButtonGroup, ZBreadcrumbs, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardFooter, ZCardBody, ZCardImage, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZColumns, ZColumn, ZButton, ZButtonGroup, ZBreadcrumbs, ZCode,
+  ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardFooter,
+  ZCardBody, ZCardImage, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsCards',
   components: {
-    ZContainer, ZBreadcrumbs, ZButton, ZButtonGroup, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZColumns, ZColumn, ZCardImage, ZCardFooter, ZCardBody, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZButton, ZButtonGroup, ZCode, ZDivider,
+    ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZColumns, ZColumn,
+    ZCardImage, ZCardFooter, ZCardBody, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

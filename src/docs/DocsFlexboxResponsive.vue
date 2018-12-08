@@ -234,12 +234,16 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZCode, ZDivider, ZBreadcrumbs, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZCode, ZDivider, ZBreadcrumbs, ZColumns, ZColumn, ZTable,
+  ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
-  name: 'DocsFlexbox',
+  name: 'DocsFlexboxResponsive',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZColumns, ZColumn, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZCode, ZColumns, ZColumn, ZDivider, ZTable,
+    ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

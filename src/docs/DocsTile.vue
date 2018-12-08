@@ -170,22 +170,22 @@ import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
     </z-container>
 </template>
 <script>
-import { 
+import {
   ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle
-  } from './../components'
+  ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
+  } from './../components';
 
 export default {
   name: 'DocsHero',
   components: {
     ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-    ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle
+    ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
   },
   methods: {
     onCloseAlert() {
-      alert('close event triggered')
+      alert('close event triggered');
     },
-    openToastTop () {
+    openToastTop() {
       this.$_zutre.toast({
         position: 'top',
         type: 'success',
@@ -193,9 +193,9 @@ export default {
         content: 'Seems like everything is fine. Vue is cool!',
         closeBtn: true,
         duration: 4000,
-      })
+      });
     },
-    openToastTopLeft () {
+    openToastTopLeft() {
       this.$_zutre.toast({
         position: 'top left',
         type: 'warning',
@@ -203,45 +203,45 @@ export default {
         content: 'Seems like everything is fine. Vue is cool!',
         closeBtn: true,
         duration: 3000,
-      })
+      });
     },
-    openToastTopRight () {
+    openToastTopRight() {
       this.$_zutre.toast({
         position: 'top right',
         type: 'warning',
         title: 'Custom warning toast',
         content: 'Seems like everything is fine. Vue is cool!',
         closeBtn: true,
-        duration: 2000
-      })
+        duration: 2000,
+      });
     },
-    openToastBottom () {
+    openToastBottom() {
       this.$_zutre.toast({
         position: 'bottom',
         type: 'error',
         title: 'Custom error toast',
         content: 'Seems like everything is fine. Vue is cool!',
         closeBtn: true,
-        duration: 4000
-      })
+        duration: 4000,
+      });
     },
-    openToastBottomLeft () {
+    openToastBottomLeft() {
       this.$_zutre.toast({
         position: 'bottom left',
         type: 'primary',
         title: 'Custom primary persistent toast',
         content: 'Seems like everything is fine. Vue is cool!',
-        closeBtn: true
-      })
+        closeBtn: true,
+      });
     },
-    openToastBottomRight () {
+    openToastBottomRight() {
       this.$_zutre.toast({
         position: 'bottom right',
         title: 'Custom bottom right toast',
         content: 'Seems like everything is fine. Vue is cool!',
-        duration: 2000
-      })
-    }
-  }
-}
+        duration: 2000,
+      });
+    },
+  },
+};
 </script>

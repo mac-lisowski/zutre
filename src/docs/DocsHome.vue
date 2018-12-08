@@ -5,15 +5,12 @@
     </z-container>
 </template>
 <script>
-import { ZContainer } from './../components'
+import { ZContainer } from './../components';
 
 export default {
   name: 'DocsHome',
   components: {
-    ZContainer
-  }
-}
+    ZContainer,
+  },
+};
 </script>
-
-<style lang="scss" scoped>
-</style>

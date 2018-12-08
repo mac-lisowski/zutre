@@ -77,12 +77,16 @@ import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZIcon, ZButton, ZLink, ZBreadcrumbs, ZCode, ZDivider, ZNavbar, ZNavbarSection, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZIcon, ZButton, ZLink, ZBreadcrumbs, ZCode, ZDivider,
+  ZNavbar, ZNavbarSection, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsNavbar',
   components: {
-    ZContainer, ZBreadcrumbs, ZButton, ZLink, ZIcon, ZCode, ZDivider, ZNavbar, ZNavbarSection, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZButton, ZLink, ZIcon, ZCode, ZDivider, ZNavbar,
+    ZNavbarSection, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

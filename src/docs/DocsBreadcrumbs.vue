@@ -135,19 +135,21 @@ import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
   </z-container>
 </template>
 <script>
-import { ZCode, ZBreadcrumbs, ZBreadcrumbsItem } from './../components'
-import { ZContainer, ZColumns, ZColumn, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import { ZCode, ZBreadcrumbs, ZBreadcrumbsItem } from './../components';
+import {
+  ZContainer, ZColumns, ZColumn, ZDivider, ZTable,
+  ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsAbout',
   components: {
-    ZCode, 
+    ZCode,
     ZBreadcrumbs, ZBreadcrumbsItem,
     ZContainer, ZColumns, ZColumn, ZDivider,
-    ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-    
-  }
-}
+    ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

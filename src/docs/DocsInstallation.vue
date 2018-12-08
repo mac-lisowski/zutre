@@ -14,15 +14,12 @@
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode } from './../components'
+import { ZContainer, ZBreadcrumbs, ZCode } from './../components';
 
 export default {
   name: 'DocsInstallation',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode
-  }
-}
+    ZContainer, ZBreadcrumbs, ZCode,
+  },
+};
 </script>
-
-<style lang="scss" scoped>
-</style>

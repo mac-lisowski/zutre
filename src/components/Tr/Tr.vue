@@ -1,31 +1,22 @@
-<template>
-  <tr :class="trClass"><slot></slot></tr>
-</template>
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-<script>
-/**
- * Tr
- * 
- * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
- * @prop {Boolean} active
- */
-export default {
-  name: 'Tr',
-  props: {
-    active: {
-      type: Boolean
+@Component({
+  template: '<tr :class="trClass"><slot></slot></tr>',
+})
+export default class Tr extends Vue {
+  // active dfines if row is marked as active, applies "active" css class
+  @Prop() private active!: boolean;
+
+  // compute css class for <tr> tag
+  get trClass(): object {
+    const css = { active: false };
+
+    if (this.active === true) {
+      css.active = true;
     }
-  },
-  computed: {
-    trClass: function() {
-      let css = {}
 
-      if (this.active === true) {
-        css.active = true
-      }
-
-      return css
-    }
+    return css;
   }
 }
 </script>

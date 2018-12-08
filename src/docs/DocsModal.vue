@@ -180,65 +180,69 @@ import { ZModal } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZModal, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZModal, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead,
+  ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsModal',
   components: {
-    ZContainer, ZBreadcrumbs, ZModal, ZButton, ZCode, ZDivider,  ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
+    ZContainer, ZBreadcrumbs, ZModal, ZButton, ZCode, ZDivider,  ZTable,
+    ZThead, ZTbody, ZTh, ZTr, ZTd,
   },
-  data () {
+  data() {
     return {
       open1: false,
       open2: false,
-      open3: false
-    }
+      open3: false,
+    };
   },
   methods: {
-    openModal1 () {
-      this.open1 = true
+    openModal1() {
+      this.open1 = true;
     },
-    openModal2 () {
-      this.open2 = true
+    openModal2() {
+      this.open2 = true;
     },
-    openModal3 () {
-      this.open3 = true
+    openModal3() {
+      this.open3 = true;
     },
-    closeModal1 () {
-      this.open1 = false
+    closeModal1() {
+      this.open1 = false;
     },
-    closeModal2 () {
-      this.open2 = false
+    closeModal2() {
+      this.open2 = false;
     },
-    closeModal3 () {
-      this.open3 = false
-    }
+    closeModal3() {
+      this.open3 = false;
+    },
   },
   computed: {
     open1Open: {
       get() {
-        return this.open1 === true
+        return this.open1 === true;
       },
-      set (val) {
-        this.open1 = val
-      }
+      set(val) {
+        this.open1 = val;
+      },
     },
     open2Open: {
       get() {
-        return this.open2 === true
+        return this.open2 === true;
       },
-      set (val) {
-        this.open2 = val
-      }
+      set(val) {
+        this.open2 = val;
+      },
     },
     open3Open: {
       get() {
-        return this.open3 === true
+        return this.open3 === true;
       },
-      set (val) {
-        this.open3 = val
-      }
-    }
-  }
-}
+      set(val) {
+        this.open3 = val;
+      },
+    },
+  },
+};
 </script>

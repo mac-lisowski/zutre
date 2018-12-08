@@ -146,18 +146,20 @@ import { ZStep, ZStemItem} from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZStep, ZStepItem, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZStep, ZStepItem, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead,
+  ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsStep',
   components: {
-    ZContainer, ZStep, ZStepItem, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
+    ZContainer, ZStep, ZStepItem, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
   },
   methods: {
     stepOnClick(item) {
-      alert('callback function on click - check console')
-      console.info(item)
-    }
-  }
-}
+      alert('callback function on click');
+    },
+  },
+};
 </script>

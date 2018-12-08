@@ -116,12 +116,12 @@ import { ZTable, ZThead, ZTbody, ZTh, Ztr, Ztd } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd, ZBreadcrumbs, ZCode, ZDivider } from './../components'
+import { ZContainer, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd, ZBreadcrumbs, ZCode, ZDivider } from './../components';
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsTable',
   components: {
-    ZContainer, ZBreadcrumbs, ZTable, ZThead, ZTh, ZTr, ZTd, ZTbody, ZCode, ZDivider
-  }
-}
+    ZContainer, ZBreadcrumbs, ZTable, ZThead, ZTh, ZTr, ZTd, ZTbody, ZCode, ZDivider,
+  },
+};
 </script>

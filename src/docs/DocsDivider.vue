@@ -81,15 +81,16 @@ import { ZColumn, ZDivider } from 'zutre'
     
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZColumns, ZColumn, ZBreadcrumbs, ZCode, ZDivider, ZTable,
+  ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsDivider',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable,
+    ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>
-
-<style lang="scss" scoped>
-</style>

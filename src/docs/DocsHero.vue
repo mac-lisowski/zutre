@@ -106,12 +106,16 @@ import { ZHero, ZHeroBody } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider, ZTable,
+  ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsHero',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider, ZTable,
+    ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

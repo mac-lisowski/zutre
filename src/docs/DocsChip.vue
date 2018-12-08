@@ -64,12 +64,16 @@ import { ZChip, ZButton, ZAvatar } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZAvatar, ZChip, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZAvatar, ZChip, ZButton, ZBreadcrumbs, ZCode, ZDivider,
+  ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsHero',
   components: {
-    ZContainer, ZBreadcrumbs, ZAvatar, ZButton, ZChip, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZAvatar, ZButton, ZChip, ZCode, ZDivider,
+    ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

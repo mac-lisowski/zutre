@@ -210,14 +210,18 @@ import { ZMedia } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZMedia, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZMedia, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable,
+  ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsMedia',
   components: {
-    ZContainer, ZBreadcrumbs, ZMedia, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZMedia, ZCode, ZDivider, ZColumns, ZColumn,
+    ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>
 <style lang="scss">
 .docs-container {

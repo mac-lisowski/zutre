@@ -88,12 +88,16 @@ import { ZLabel } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider, ZTable, ZThead,
+  ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
-  name: 'DocsHero',
+  name: 'DocsLabel',
   components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZCode, ZLabel, ZDivider, ZTable, ZThead,
+    ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

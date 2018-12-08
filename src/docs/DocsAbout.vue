@@ -15,18 +15,16 @@
   </z-container>
 </template>
 <script>
-import { ZButton } from './../components'
-import { ZBreadcrumbs } from './../components'
-import { ZContainer, ZColumns, ZColumn } from './../components'
+import { ZButton } from './../components';
+import { ZBreadcrumbs } from './../components';
+import { ZContainer, ZColumns, ZColumn } from './../components';
 
 export default {
   name: 'DocsAbout',
   components: {
-    ZButton, 
-    ZBreadcrumbs,
-    ZContainer, ZColumns, ZColumn
-  }
-}
+    ZButton, ZBreadcrumbs, ZContainer, ZColumns, ZColumn,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

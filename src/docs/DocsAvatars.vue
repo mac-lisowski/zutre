@@ -181,24 +181,16 @@ import { ZAvatar } from 'zutre'
     </z-container>
 </template>
 <script>
-// import avatar2 from './avatar2.png'
-
-import { 
-  ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  ZAvatar
-  } from './../components'
+import {
+  ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable,
+  ZThead, ZTbody, ZTh, ZTr, ZTd, ZAvatar,
+} from './../components';
 
 export default {
   name: 'DocsAvatars',
-  // data: {
-    // avatar2: avatar2
-  // },
   components: {
-    ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-    ZAvatar
+    ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable,
+    ZThead, ZTbody, ZTh, ZTr, ZTd, ZAvatar,
   },
-  methods: {
-    
-  }
-}
+};
 </script>

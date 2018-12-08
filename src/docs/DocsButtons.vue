@@ -226,14 +226,17 @@ import { ZButton } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZButton, ZButtonGroup } from './../components'
-import { ZContainer, ZColumns, ZCode, ZColumn, ZBreadcrumbs, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import { ZButton, ZButtonGroup } from './../components';
+import {
+  ZContainer, ZColumns, ZCode, ZColumn, ZBreadcrumbs, ZDivider,
+  ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsButtons',
   components: {
-    ZButton, ZButtonGroup, 
-    ZContainer, ZColumns, ZColumn, ZCode, ZBreadcrumbs, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZButton, ZButtonGroup, ZContainer, ZColumns, ZColumn, ZCode, ZBreadcrumbs,
+    ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>

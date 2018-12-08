@@ -20,7 +20,7 @@
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Array} items each item is an JSON object with: name, link/href. <router-link :to="item.link" /> instaed of <a :href="item.href" />
  */
-import BreadcrumbsItem from './../BreadcrumbsItem'
+import ZBreadcrumbsItem from '@/components/BreadcrumbsItem';
 
 export default {
   name: 'Breadcrumbs',

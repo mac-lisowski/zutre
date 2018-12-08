@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import './../scss/main.scss'
 
 import ZAvatar from './Avatar';
@@ -81,7 +82,7 @@ interface ToastOptions {
   position?: string,
   closeBtn?: boolean,
 }
-        
+
 Vue.prototype.$zutre = {
 
   toast (options: ToastOptions): void {
@@ -111,7 +112,7 @@ Vue.prototype.$zutre = {
 
         if (exist === false) {
           $listNotify = document.createElement('div')
-          $listNotify.className = 'toast-list '+ pos; 
+          $listNotify.className = 'toast-list '+ pos;
         }
       } else {
         $listNotify = $listNotify[0]
@@ -129,7 +130,7 @@ Vue.prototype.$zutre = {
 
     let componentClass = Vue.extend(ZToast)
     let $toast = new componentClass( { propsData: options } )
-    
+
     $toast.$mount('#zutre-toast');
   }
 }
@@ -139,7 +140,7 @@ const Components = {
   ZBadge,
   ZButton,
   ZButtonGroup,
-  ZBreadcrumbs, 
+  ZBreadcrumbs,
   ZBreadcrumbsItem,
   ZCard,
   ZCardHeader,

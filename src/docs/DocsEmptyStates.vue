@@ -95,19 +95,18 @@ import { ZEmpty, ZEmptyIcon, ZEmptyAction, ZEmptyTitle, ZEmptySubtitle, ZAvatar 
     </z-container>
 </template>
 <script>
-import { 
-  ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  ZEmpty, ZEmptyIcon, ZEmptyAction, ZEmptyTitle, ZEmptySubtitle
-  } from './../components'
+import {
+  ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider,
+  ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd, ZEmpty, ZEmptyIcon, ZEmptyAction,
+  ZEmptyTitle, ZEmptySubtitle,
+  } from './../components';
 
 export default {
   name: 'DocsEmptyStates',
   components: {
-    ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-    ZEmpty, ZEmptyIcon, ZEmptyAction, ZEmptyTitle, ZEmptySubtitle
+    ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider,
+    ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd, ZEmpty, ZEmptyIcon, ZEmptyAction,
+    ZEmptyTitle, ZEmptySubtitle,
   },
-  methods: {
-    
-  }
-}
+};
 </script>

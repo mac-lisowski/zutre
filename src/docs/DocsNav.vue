@@ -157,12 +157,16 @@ import { ZNav, ZNavItem, ZLink } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZNav, ZNavItem, ZLink, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
+import {
+  ZContainer, ZNav, ZNavItem, ZLink, ZBreadcrumbs, ZCode, ZDivider,
+  ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+} from './../components';
 
 export default {
   name: 'DocsHero',
   components: {
-    ZContainer, ZBreadcrumbs, ZNav, ZNavItem, ZLink, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
-}
+    ZContainer, ZBreadcrumbs, ZNav, ZNavItem, ZLink, ZCode, ZDivider, ZColumns,
+    ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
+  },
+};
 </script>
