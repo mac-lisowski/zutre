@@ -20,3 +20,12 @@ interface StepItem {
 interface StepItems {
   [key: number]: StepItem;
 }
+
+// ToastOptions interface definition
+interface ToastOptions {
+  title?: string;
+  content?: string;
+  type: string;
+  position?: string;
+  closeBtn?: boolean;
+}
