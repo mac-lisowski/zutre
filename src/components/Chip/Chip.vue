@@ -1,23 +1,13 @@
-<template>
-  <span :class="chipClass"><slot></slot></span>
-</template>
-
-<script>
+<script lang="ts">
 /**
  * Chip
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
-export default {
-  name: 'Chip',
-  computed: {
-    chipClass: function() {
-      let css = {
-        chip: true
-      }
+import { Component, Vue } from 'vue-property-decorator';
 
-      return css
-    }
-  }
-}
+@Component({
+  template: '<span class="chip"><slot></slot></span>',
+})
+export default class Chip extends Vue {}
 </script>
