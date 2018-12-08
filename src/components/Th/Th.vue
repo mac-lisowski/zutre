@@ -1,14 +1,13 @@
-<template>
-  <th><slot></slot></th>
-</template>
-
-<script>
+<script lang="ts">
 /**
  * Th
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
-export default {
-  name: 'Th'
-}
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({
+  template: '<th><slot></slot></th>',
+})
+export default class Th extends Vue {}
 </script>

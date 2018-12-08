@@ -1,16 +1,17 @@
-<template>
-  <p class="tile-title">
-    <slot></slot>
-  </p>
-</template>
-
-<script>
+<script lang="ts">
 /**
- * ZTileTitle
- * 
+ * TileTitle
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
-export default {
-  name: 'TileTitle'
-}
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({
+  template: `
+    <p class="tile-title">
+      <slot></slot>
+    </p>
+  `,
+})
+export default class TileTitle extends Vue {}
 </script>

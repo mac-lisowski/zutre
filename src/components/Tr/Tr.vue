@@ -6,12 +6,11 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 })
 export default class Tr extends Vue {
   // active dfines if row is marked as active, applies "active" css class
-  @Prop() private active!: boolean;
+  @Prop(Boolean) private active?: boolean;
 
   // compute css class for <tr> tag
-  get trClass(): object {
-    const css = { active: false };
-
+  get trClass(): CSSClass {
+    const css: CSSClass = { active: false };
     if (this.active === true) {
       css.active = true;
     }

@@ -1,31 +1,27 @@
-<template>
-  <td :class="tdClass"><slot></slot></td>
-</template>
-
-<script>
+<script lang="ts">
 /**
  * Td
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} active
  */
-export default {
-  name: 'Td',
-  props: {
-    active: {
-      type: Boolean
-    }
-  },
-  computed: {
-    tdClass: function() {
-      let css = {}
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-      if (this.active === true) {
-        css.active = true
-      }
+@Component({
+  template: `<td :class="tdClass"><slot></slot></td>`,
+})
+export default class Td extends Vue {
+  @Prop(Boolean) private active?: boolean;
 
-      return css
+  // compute td css class
+  get tdClass(): CSSClass {
+    const css: CSSClass = { active: false };
+
+    if (this.active === true) {
+      css.active = true;
     }
+
+    return css;
   }
 }
 </script>

@@ -1,16 +1,17 @@
-<template>
+<script lang="ts">
+/**
+ * THead
+ *
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ */
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({
+  template: `
   <thead>
     <slot></slot>
   </thead>
-</template>
-
-<script>
-/**
- * THead
- * 
- * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
- */
-export default {
-  name: 'THead'
-}
+  `,
+})
+export default class THead extends Vue {}
 </script>

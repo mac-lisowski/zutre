@@ -1,41 +1,35 @@
-<template>
-  <table :class="tableClass">
-    <slot></slot>
-  </table>
-</template>
-
-<script>
+<script lang="ts">
 /**
- * ZTable
- * 
+ * Table
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
-export default {
-  name: 'ZTable',
-  props: {
-    stripped: {
-      type: Boolean
-    },
-    hover: {
-      type: Boolean
-    }
-  },
-  computed: {
-    tableClass () {
-      let css = {
-        table: true
-      }
-      
-      if (this.stripped) {
-        css['table-striped'] = true
-      }
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-      if (this.hover) {
-        css['table-hover'] = true
-      }
+@Component({
+  template: `
+    <table :class="tableClass">
+      <slot></slot>
+    </table>
+  `,
+})
+export default class Table extends Vue {
+  @Prop(Boolean) private stripped?: boolean;
+  @Prop(Boolean) private hover?: boolean;
 
-      return css
+  // compute table css class
+  get tableClass(): CSSClass {
+    const css: CSSClass = { table: true };
+
+    if (this.stripped) {
+      css['table-striped'] = true;
     }
+
+    if (this.hover) {
+      css['table-hover'] = true;
+    }
+
+    return css;
   }
 }
 </script>

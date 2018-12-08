@@ -9,10 +9,6 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
-import ZButton from './../Button';
-import ZToastTitle from './../ToastTitle';
-import ZToastBody from './../ToastBody';
 /**
  * Toast
  *
@@ -25,6 +21,11 @@ import ZToastBody from './../ToastBody';
  * @prop {String} title
  * @prop {String} content
  */
+import { Component, Prop, Watch, Vue } from 'vue-property-decorator';
+import ZButton from './../Button';
+import ZToastTitle from './../ToastTitle';
+import ZToastBody from './../ToastBody';
+
 @Component({
   components: { ZButton, ZToastTitle, ZToastBody },
 })
@@ -115,10 +116,8 @@ export default class Toast extends Vue {
   }
 
   // compute css class
-  get toastClass(): object {
-    const css: CSSClass = {
-      toast: true,
-    };
+  get toastClass(): CSSClass {
+    const css: CSSClass = { toast: true };
 
     switch (this.type) {
       case 'primary':
