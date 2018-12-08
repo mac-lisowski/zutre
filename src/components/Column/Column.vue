@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * Column
  *
@@ -23,15 +23,15 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
     </div>
   `,
 })
-export default class Columns extends Vue {
+export default class Column extends Vue {
   @Prop(Number) private size?: number;
   @Prop(Number) private sizeXS?: number;
   @Prop(Number) private sizeSM?: number;
   @Prop(Number) private sizeLG?: number;
   @Prop(Number) private sizeXL?: number;
-  @Prop(Number) private mxAuto?: number;
-  @Prop(Number) private mlAuto?: number;
-  @Prop(Number) private mrAuto?: number;
+  @Prop(Boolean) private mxAuto?: boolean;
+  @Prop(Boolean) private mlAuto?: boolean;
+  @Prop(Boolean) private mrAuto?: boolean;
 
   // compute column css class
   get columnClass(): CSSClass {
