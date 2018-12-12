@@ -1,7 +1,16 @@
-import component from './Divider'
-import { registerPlugin, installPlugin } from './../../utils'
+import Divider from './Divider';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Divider);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Divider,
+};

@@ -1,7 +1,16 @@
-import component from './NavItem'
-import { registerPlugin, installPlugin } from './../../utils'
+import NavItem from './NavItem';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, NavItem);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    NavItem,
+};

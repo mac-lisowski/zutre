@@ -1,7 +1,16 @@
-import component from './Column'
-import { registerPlugin, installPlugin } from './../../utils'
+import Column from './Column';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Column);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Column,
+};

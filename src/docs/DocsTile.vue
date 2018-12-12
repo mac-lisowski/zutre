@@ -14,7 +14,7 @@
 
       <z-columns>
         <z-column>
-          
+
           <z-tile>
             <z-tile-icon>
               <figure class="avatar avatar-lg"><img src="./avatar.png" alt="Avatar"></figure>
@@ -170,17 +170,8 @@ import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
     </z-container>
 </template>
 <script>
-import { 
-  ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle
-  } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZButton, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-    ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle
-  },
   methods: {
     onCloseAlert() {
       alert('close event triggered')

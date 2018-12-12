@@ -1,7 +1,16 @@
-import component from './MenuItem'
-import { registerPlugin, installPlugin } from './../../utils'
+import MenuItem from './MenuItem';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, MenuItem);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    MenuItem,
+};

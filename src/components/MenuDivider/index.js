@@ -1,7 +1,16 @@
-import component from './MenuDivider'
-import { registerPlugin, installPlugin } from './../../utils'
+import MenuDivider from './MenuDivider';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, MenuDivider);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    MenuDivider,
+};

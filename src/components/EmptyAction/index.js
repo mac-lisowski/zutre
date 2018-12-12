@@ -1,7 +1,16 @@
-import component from './EmptyAction'
-import { registerPlugin, installPlugin } from './../../utils'
+import EmptyAction from './EmptyAction';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, EmptyAction);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    EmptyAction,
+};

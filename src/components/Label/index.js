@@ -1,7 +1,16 @@
-import component from './Label'
-import { registerPlugin, installPlugin } from './../../utils'
+import Label from './Label';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Label);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Label,
+};

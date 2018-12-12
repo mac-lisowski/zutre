@@ -1,7 +1,16 @@
-import component from './Thead'
-import { registerPlugin, installPlugin } from './../../utils'
+import Thead from './Thead';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Thead);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Thead,
+};

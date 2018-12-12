@@ -5,7 +5,7 @@
 <script>
 /**
  * Td
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} active
  */

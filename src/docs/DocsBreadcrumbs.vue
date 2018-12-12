@@ -5,7 +5,7 @@
     <h4>Breadcrumbs</h4>
 
     <p>
-      Components: 
+      Components:
       <code>&lt;z-breadcrumbs&gt;</code>,<code>&lt;z-breadcrumbs-item&gt;</code>
     </p>
 
@@ -34,14 +34,14 @@ import { ZBreadcrumbs } from 'zutre'
 
       </z-column>
     </z-columns>
-    
+
       <z-divider content="OR" />
       <br>
 
     <z-columns>
       <z-column>
-        <p>If you are using <a href="https://router.vuejs.org/" target="_blank"><strong>vue-router</strong></a> 
-        instead of <code>href</code> parameter you could use <code>link</code> and pass object as if you would be 
+        <p>If you are using <a href="https://router.vuejs.org/" target="_blank"><strong>vue-router</strong></a>
+        instead of <code>href</code> parameter you could use <code>link</code> and pass object as if you would be
         passing it to <code>&lt;router-link :to="" /&gt;</code></p>
 
         <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'About', link: { name: 'about' }}]" />
@@ -80,7 +80,7 @@ import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
             array of objects with information about items eg: <br>
             <small><code>
 [
-  { name: 'Home', link: { name: 'home' }}, 
+  { name: 'Home', link: { name: 'home' }},
   { name: 'About', href: '/about' }
 ]
 </code></small><br>
@@ -130,23 +130,13 @@ import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
           </z-tr>
         </z-tbody>
       </z-table>
-      
+
 
   </z-container>
 </template>
 <script>
-import { ZCode, ZBreadcrumbs, ZBreadcrumbsItem } from './../components'
-import { ZContainer, ZColumns, ZColumn, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsAbout',
-  components: {
-    ZCode, 
-    ZBreadcrumbs, ZBreadcrumbsItem,
-    ZContainer, ZColumns, ZColumn, ZDivider,
-    ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-    
-  }
 }
 </script>
 

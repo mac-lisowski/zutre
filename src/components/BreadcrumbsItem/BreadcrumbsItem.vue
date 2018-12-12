@@ -29,7 +29,7 @@
  * @prop {String} href 
  */
 export default {
-  name: 'ZBreadcrumbsItem',
+  name: 'BreadcrumbsItem',
   props: {
     name: {
       type: String,

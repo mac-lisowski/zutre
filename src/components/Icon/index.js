@@ -1,7 +1,16 @@
-import component from './Icon'
-import { registerPlugin, installPlugin } from './../../utils'
+import Icon from './Icon';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Icon);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Icon,
+};

@@ -1,7 +1,16 @@
-import component from './Chip'
-import { registerPlugin, installPlugin } from './../../utils'
+import Chip from './Chip';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Chip);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Chip,
+};

@@ -1,7 +1,16 @@
-import component from './StepItem'
-import { registerPlugin, installPlugin } from './../../utils'
+import StepItem from './StepItem';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, StepItem);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    StepItem,
+};

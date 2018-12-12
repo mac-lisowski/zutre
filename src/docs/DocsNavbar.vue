@@ -20,17 +20,17 @@
           <z-link :link="{ name: 'home'}">ZUTRE</z-link>
         </z-navbar-section>
         <z-navbar-section>
-          <z-button size="sm"><z-icon name="account_circle" /> Log In</z-button> &nbsp; <z-button size="sm" type="primary"><z-icon name="how_to_reg" /> Sign Up</z-button> 
+          <z-button size="sm"><z-icon name="account_circle" /> Log In</z-button> &nbsp; <z-button size="sm" type="primary"><z-icon name="how_to_reg" /> Sign Up</z-button>
         </z-navbar-section>
       </z-navbar>
-      
+
 <z-code lang="Vue">
 import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
 
 &lt;z-navbar&gt;
   &lt;z-navbar-section&gt;
-    &lt;z-link href=""&gt;Home&lt;/z-link&gt; 
-    &lt;z-link href=""&gt;About&lt;/z-link&gt; 
+    &lt;z-link href=""&gt;Home&lt;/z-link&gt;
+    &lt;z-link href=""&gt;About&lt;/z-link&gt;
     &lt;z-link href=""&gt;Contact&lt;/z-link&gt;
   &lt;/z-navbar-section&gt;
 
@@ -48,7 +48,7 @@ import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
   &lt;/z-navbar-section&gt;
 &lt;/z-navbar&gt;
 </z-code>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -77,12 +77,7 @@ import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZIcon, ZButton, ZLink, ZBreadcrumbs, ZCode, ZDivider, ZNavbar, ZNavbarSection, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZButton, ZLink, ZIcon, ZCode, ZDivider, ZNavbar, ZNavbarSection, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

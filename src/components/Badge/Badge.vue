@@ -9,7 +9,7 @@
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZBadge',
+  name: 'Badge',
   props: {
     badge: {
       type: String

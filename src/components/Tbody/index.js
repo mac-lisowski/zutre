@@ -1,7 +1,16 @@
-import component from './Tbody'
-import { registerPlugin, installPlugin } from './../../utils'
+import Tbody from './Tbody';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Tbody);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Tbody,
+};

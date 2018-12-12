@@ -5,7 +5,7 @@
 <script>
 /**
  * ZToastTitle
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {

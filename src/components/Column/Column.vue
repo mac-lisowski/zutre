@@ -21,7 +21,7 @@
  * @prop {Boolean} mrAuto
  */
 export default {
-  name: 'ZColumn',
+  name: 'Column',
   props: {
     size: {
       type: Number,

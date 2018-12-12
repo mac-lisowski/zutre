@@ -144,18 +144,13 @@ import { ZMenu, ZMenuItem, ZMenuDivider } from 'zutre'
           </z-tr>
         </z-tbody>
       </z-table>
-      
-      
+
+
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd, ZCode, ZDivider, ZMenuDivider, ZMenu, ZMenuItem } from './../components'
-
 export default {
   name: 'DocsMenu',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZMenu, ZMenuItem, ZMenuDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>
 

@@ -9,13 +9,9 @@
 </template>
 
 <script>
-import ZButton from './../Button'
-import ZToastTitle from './../ToastTitle'
-import ZToastBody from './../ToastBody'
-
 /**
  * ZToast
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Boolean} show
  * @prop {Number} duration default: 0 = persistent
@@ -27,11 +23,6 @@ import ZToastBody from './../ToastBody'
  */
 export default {
   name: 'Toast',
-  components: {
-    ZButton,
-    ZToastTitle,
-    ZToastBody
-  },
   mounted: function() {
     this.$once('close', val => {
       if (val === true) {
@@ -47,8 +38,8 @@ export default {
       this.$emit('open', true)
 
       this.setShow(true)
-    } 
-    
+    }
+
     if (this.duration > 0) {
       setTimeout(() => {
         this.destroy()
@@ -63,7 +54,7 @@ export default {
       if (show === false) {
         this.$emit('close', true);
       }
-      
+
       this.showToast = show
     }
   },
@@ -144,32 +135,32 @@ export default {
       }
 
       switch(this.position) {
-        case 'top': 
-          css['toast-notify'] = true 
+        case 'top':
+          css['toast-notify'] = true
           css['toast-top'] = true
           break
-        case 'top left': 
-          css['toast-notify'] = true 
+        case 'top left':
+          css['toast-notify'] = true
           css['toast-top'] = true
           css['toast-left'] = true
           break
-        case 'top right': 
-          css['toast-notify'] = true 
+        case 'top right':
+          css['toast-notify'] = true
           css['toast-top'] = true
           css['toast-right'] = true
           break
-        case 'bottom': 
-          css['toast-notify'] = true 
+        case 'bottom':
+          css['toast-notify'] = true
           css['toast-bottom'] = true
           break
-        case 'bottom right': 
-          css['toast-notify'] = true 
-          css['toast-bottom'] = true 
+        case 'bottom right':
+          css['toast-notify'] = true
+          css['toast-bottom'] = true
           css['toast-right'] = true
           break
-        case 'bottom left': 
-          css['toast-notify'] = true 
-          css['toast-bottom'] = true 
+        case 'bottom left':
+          css['toast-notify'] = true
+          css['toast-bottom'] = true
           css['toast-left'] = true
           break
       }

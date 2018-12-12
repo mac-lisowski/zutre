@@ -7,10 +7,10 @@
 <script>
 /**
  * THead
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'THead'
+  name: 'Thead'
 }
 </script>

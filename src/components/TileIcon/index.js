@@ -1,7 +1,16 @@
-import component from './TileIcon'
-import { registerPlugin, installPlugin } from './../../utils'
+import TileIcon from './TileIcon';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, TileIcon);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    TileIcon,
+};

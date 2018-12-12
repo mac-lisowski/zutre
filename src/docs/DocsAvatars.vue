@@ -4,7 +4,7 @@
       <h4>Avatars</h4>
 
       <p>
-        Avatars support presence indicators. You can add an <code>presence</code> property and 
+        Avatars support presence indicators. You can add an <code>presence</code> property and
         set <code>online</code>, <code>busy</code> or <code>away</code> for different status colors
       </p>
 
@@ -18,7 +18,7 @@
 
       <z-columns>
         <z-column>
-          
+
           <z-avatar size="xl" data="ML" /> &nbsp;
           <z-avatar size="lg" data="ML" /> &nbsp;
           <z-avatar data="ML" /> &nbsp;
@@ -37,13 +37,13 @@ import { ZAvatar } from 'zutre'
 &lt;z-avatar size="sm" data="ML" /&gt;
 &lt;z-avatar size="xs" data="ML" /&gt;
 </z-code>
-      
+
       <z-divider />
       <h4>Presence indicators</h4>
 
       <z-columns>
         <z-column>
-          
+
           <z-avatar size="xl" data="ML" presence="online" /> &nbsp;
           <z-avatar size="lg" data="ML" presence="busy" /> &nbsp;
           <z-avatar data="ML" presence="away" /> &nbsp;
@@ -181,24 +181,10 @@ import { ZAvatar } from 'zutre'
     </z-container>
 </template>
 <script>
-// import avatar2 from './avatar2.png'
-
-import { 
-  ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  ZAvatar
-  } from './../components'
-
 export default {
   name: 'DocsAvatars',
-  // data: {
-    // avatar2: avatar2
-  // },
-  components: {
-    ZContainer, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-    ZAvatar
-  },
   methods: {
-    
+
   }
 }
 </script>

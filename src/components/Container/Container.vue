@@ -14,7 +14,7 @@
  * @prop {String} size
  */
 export default {
-  name: 'ZContainer',
+  name: 'Container',
   props: {
     size: String
   },

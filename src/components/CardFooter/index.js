@@ -1,7 +1,16 @@
-import component from './CardFooter'
-import { registerPlugin, installPlugin } from './../../utils'
+import CardFooter from './CardFooter';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, CardFooter);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    CardFooter,
+};

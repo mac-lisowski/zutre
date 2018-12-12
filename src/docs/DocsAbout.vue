@@ -2,7 +2,7 @@
   <z-container>
     <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'About', link: { name: 'about' }}]" />
     <h4>About</h4>
-    
+
 
     <z-columns>
       <z-column>
@@ -15,17 +15,8 @@
   </z-container>
 </template>
 <script>
-import { ZButton } from './../components'
-import { ZBreadcrumbs } from './../components'
-import { ZContainer, ZColumns, ZColumn } from './../components'
-
 export default {
   name: 'DocsAbout',
-  components: {
-    ZButton, 
-    ZBreadcrumbs,
-    ZContainer, ZColumns, ZColumn
-  }
 }
 </script>
 

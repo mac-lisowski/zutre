@@ -6,7 +6,7 @@
       <p>Buttons include simple button styles for actions in different types and sizes.</p>
 
       <p>Components: <code>&lt;z-button /&gt;</code>, <code>&lt;z-button-group /&gt;</code></p>
-      
+
       <z-divider content="EXAMPLES" />
       <br>
       <z-button>button</z-button> &nbsp;
@@ -36,7 +36,7 @@ import { ZButton } from 'zutre'
           </z-button-group>
         </z-column>
         <z-column>
-          <z-button type="primary" right>right</z-button> 
+          <z-button type="primary" right>right</z-button>
         </z-column>
       </z-columns>
 
@@ -56,9 +56,9 @@ import { ZButton } from 'zutre'
           </z-button-group>
         </z-column>
         <z-column>
-          <z-button action>1</z-button> 
-          <z-button action>2</z-button> 
-          <z-button action>3</z-button> 
+          <z-button action>1</z-button>
+          <z-button action>2</z-button>
+          <z-button action>3</z-button>
         </z-column>
       </z-columns>
 
@@ -75,11 +75,11 @@ import { ZButton } from 'zutre'
       <z-divider content="BUTTON BADGES" />
       <h4>Button badges</h4>
 
-      <z-button badge="click">Button badge</z-button> 
+      <z-button badge="click">Button badge</z-button>
       <br><br>
       <z-button type="error" badge="5">System alerts</z-button>
       <br><br>
-      <z-button badge="">Button</z-button> 
+      <z-button badge="">Button</z-button>
 
 <z-code lang="Vue">
 import { ZButton } from 'zutre'
@@ -105,7 +105,7 @@ import { ZButton } from 'zutre'
           <z-tr>
             <z-td><code>type</code></z-td>
             <z-td>
-              set button color scheme 
+              set button color scheme
             </z-td>
             <z-td>String</z-td>
             <z-td><code>primary</code>, <code>link</code>, <code>success</code>, <code>error</code></z-td>
@@ -226,14 +226,7 @@ import { ZButton } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZButton, ZButtonGroup } from './../components'
-import { ZContainer, ZColumns, ZCode, ZColumn, ZBreadcrumbs, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsButtons',
-  components: {
-    ZButton, ZButtonGroup, 
-    ZContainer, ZColumns, ZColumn, ZCode, ZBreadcrumbs, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

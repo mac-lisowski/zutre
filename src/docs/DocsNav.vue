@@ -9,10 +9,10 @@
 
       <z-divider content="EXAMPLE" />
       <br>
-      
+
       <z-columns>
         <z-column :sizeLG="12">
-          
+
           <z-nav>
             <z-nav-item>
               <z-link href="">Element 1</z-link>
@@ -51,7 +51,7 @@ import { ZNav, ZNavItem, ZLink } from 'zutre'
 
 <z-columns>
         <z-column :sizeLG="12">
-          
+
           <z-nav>
             <z-nav-item>
               <z-link href="">Element 1</z-link>
@@ -100,14 +100,14 @@ import { ZNav, ZNavItem, ZLink } from 'zutre'
         &lt;z-link href=""&gt;Link 2&lt;/z-link&gt;
       &lt;/z-nav-item&gt;
     &lt;/z-nav&gt;
-    
+
   &lt;/z-nav-item&gt;
 &lt;/z-nav&gt;
 </z-code>
 
         </z-column>
       </z-columns>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -136,12 +136,7 @@ import { ZNav, ZNavItem, ZLink } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZNav, ZNavItem, ZLink, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZNav, ZNavItem, ZLink, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

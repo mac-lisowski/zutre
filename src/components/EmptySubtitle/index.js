@@ -1,7 +1,16 @@
-import component from './EmptySubtitle'
-import { registerPlugin, installPlugin } from './../../utils'
+import EmptySubtitle from './EmptySubtitle';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, EmptySubtitle);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    EmptySubtitle,
+};

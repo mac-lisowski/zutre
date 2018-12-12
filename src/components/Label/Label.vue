@@ -20,7 +20,7 @@
  * @prop {String} type Values: primary, secondary, success, warning, error
  */
 export default {
-  name: 'ZLabel',
+  name: 'Label',
   props: {
     rounded: {
       type: Boolean

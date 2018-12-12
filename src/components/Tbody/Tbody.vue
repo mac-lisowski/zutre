@@ -7,10 +7,10 @@
 <script>
 /**
  * TBody
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'TBody'
+  name: 'Tbody'
 }
 </script>

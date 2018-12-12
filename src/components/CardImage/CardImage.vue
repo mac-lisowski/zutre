@@ -14,7 +14,7 @@
  * @prop {String} src path to image
  */
 export default {
-  name: 'ZCard',
+  name: 'Card',
   props: {
     src: {
       type: String

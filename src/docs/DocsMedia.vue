@@ -13,13 +13,13 @@
 
       <z-divider content="EXAMPLE" />
       <br>
-      
+
       <z-columns>
         <z-column>
           <z-media src="https://images.unsplash.com/photo-1542034817-0a5672492f98?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5a4c1cad251345ee695dae2b7ca8ad50&auto=format&fit=crop&w=490&q=80" />
         </z-column>
       </z-columns>
-      
+
 <z-code lang="Vue">
 import { ZMedia } from 'zutre'
 
@@ -34,13 +34,13 @@ import { ZMedia } from 'zutre'
           <z-media responsive src="https://images.unsplash.com/photo-1542034817-0a5672492f98?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5a4c1cad251345ee695dae2b7ca8ad50&auto=format&fit=crop&w=1390&q=80" />
         </z-column>
       </z-columns>
-      
+
 <z-code lang="Vue">
 import { ZMedia } from 'zutre'
 
 &lt;z-media responsive src="..." /&gt;
 </z-code>
-      
+
       <z-divider content="COVER / CONTAN EXAMPLE" />
       <br>
 
@@ -73,11 +73,11 @@ import { ZMedia } from 'zutre'
 
       <z-columns>
         <z-column :size="12">
-          
+
           <z-media video>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </z-media>
-          
+
         </z-column>
       </z-columns>
 <z-code lang="Vue">
@@ -87,13 +87,13 @@ import { ZMedia } from 'zutre'
   &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/z-media&gt;
 
-OR 
+OR
 
 &lt;z-media video src="..."&gt;
   ...
 &lt;/z-media&gt;
 
-to generate: 
+to generate:
 
 &lt;video src="..."&gt;...&lt;/video&gt;
 </z-code>
@@ -102,11 +102,11 @@ to generate:
 
       <z-columns>
         <z-column :size="9" mxAuto>
-          
+
           <z-media video responsive>
             <iframe width="320" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </z-media>
-          
+
         </z-column>
       </z-columns>
 <z-code lang="Vue">
@@ -198,7 +198,7 @@ import { ZMedia } from 'zutre'
           <z-tr>
             <z-td><code>video</code></z-td>
             <z-td>
-              if media is a video 
+              if media is a video
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
@@ -210,13 +210,8 @@ import { ZMedia } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZMedia, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZMedia, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>
 <style lang="scss">

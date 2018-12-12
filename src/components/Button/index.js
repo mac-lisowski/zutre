@@ -1,7 +1,16 @@
-import component from './Button'
-import { registerPlugin, installPlugin } from './../../utils'
+import Button from './Button';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Button);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Button,
+};

@@ -1,7 +1,16 @@
-import component from './TileSubtitle'
-import { registerPlugin, installPlugin } from './../../utils'
+import TileSubtitle from './TileSubtitle';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, TileSubtitle);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    TileSubtitle,
+};

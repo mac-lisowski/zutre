@@ -13,7 +13,7 @@
  * @prop {Boolean} vert
  */
 export default {
-  name: 'ZDivider',
+  name: 'Divider',
   props: {
     content: {
       type: String,

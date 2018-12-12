@@ -1,7 +1,16 @@
-import component from './Modal'
-import { registerPlugin, installPlugin } from './../../utils'
+import Modal from './Modal';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Modal);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Modal,
+};

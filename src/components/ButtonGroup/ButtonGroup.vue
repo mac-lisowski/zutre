@@ -14,7 +14,7 @@
  * @prop {Boolean} block
  */
 export default {
-  name: 'ZButtonGroup',
+  name: 'ButtonGroup',
   props: {
     block: {
       type: Boolean,

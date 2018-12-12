@@ -1,7 +1,16 @@
-import component from './CardTitle'
-import { registerPlugin, installPlugin } from './../../utils'
+import CardTitle from './CardTitle';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, CardTitle);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    CardTitle,
+};

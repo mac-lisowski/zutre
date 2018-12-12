@@ -2,13 +2,13 @@
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Components' }, { name: 'Card', link: { name: 'docsCard' }}]" />
       <h4>Card</h4>
-      
+
       <p>
         Cards are flexible content containers.
       </p>
       <p>
-        Components: 
-        <code>&lt;z-card&gt;</code>,<code>&lt;z-card-image&gt;</code>, <code>&lt;z-card-header&gt;</code>, <code>&lt;z-card-body&gt;</code>, <code>&lt;z-card-footer&gt;</code>, 
+        Components:
+        <code>&lt;z-card&gt;</code>,<code>&lt;z-card-image&gt;</code>, <code>&lt;z-card-header&gt;</code>, <code>&lt;z-card-body&gt;</code>, <code>&lt;z-card-footer&gt;</code>,
         <code>&lt;z-card-title&gt;</code>, <code>&lt;z-card-subtitle&gt;</code>
       </p>
       <p>
@@ -231,12 +231,7 @@ import { ZCard, ZCardImage, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardBody, Z
     </z-container>
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZButton, ZButtonGroup, ZBreadcrumbs, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardFooter, ZCardBody, ZCardImage, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsCards',
-  components: {
-    ZContainer, ZBreadcrumbs, ZButton, ZButtonGroup, ZCode, ZDivider, ZCard, ZCardHeader, ZCardTitle, ZCardSubtitle, ZColumns, ZColumn, ZCardImage, ZCardFooter, ZCardBody, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

@@ -15,9 +15,9 @@
 <script>
 /**
  * ZMenuItem
- * 
+ *
  * Spectre: https://picturepan2.github.io/spectre/components/menu.html#menus
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} href
  * @prop {Object} link
@@ -26,13 +26,8 @@
  * @prop {Boolean} active
  * @prop {Boolean} exact
  */
-import ZLink from './../Link'
-
 export default {
-  name: 'ZMenuItem',
-  components: {
-    ZLink
-  },
+  name: 'MenuItem',
   props: {
     activeClass: {
       type: String,

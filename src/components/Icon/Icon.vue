@@ -17,7 +17,7 @@
  * @prop {String} name
  */
 export default {
-  name: 'ZIcon',
+  name: 'Icon',
   props: {
     name: {
       type: String,

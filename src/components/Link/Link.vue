@@ -29,7 +29,7 @@
  * @prop {Boolean} exact
  */
 export default {
-  name: 'ZLink',
+  name: 'Link',
   props: {
     href: {
       type: String

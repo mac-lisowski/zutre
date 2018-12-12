@@ -106,7 +106,7 @@ Vue.prototype.$zutre = {
 
         if (exist === false) {
           $listNotify = document.createElement('div')
-          $listNotify.className = 'toast-list '+ pos; 
+          $listNotify.className = 'toast-list '+ pos;
         }
       } else {
         $listNotify = $listNotify[0]
@@ -124,7 +124,7 @@ Vue.prototype.$zutre = {
 
     let componentClass = Vue.extend(ZToast)
     let $toast = new componentClass( { propsData: options } )
-    
+
     $toast.$mount('#zutre-toast')
   }
 }
@@ -134,7 +134,7 @@ const Components = {
   ZBadge,
   ZButton,
   ZButtonGroup,
-  ZBreadcrumbs, 
+  ZBreadcrumbs,
   ZBreadcrumbsItem,
   ZCard,
   ZCardHeader,
@@ -188,6 +188,17 @@ const Components = {
   ZToastTitle,
   ZToastBody
 }
+
+export const Zutre = {
+  install(vue) {
+    vue.$zutre = vue.$zutre || {};
+
+    for (let componentKey in Components) {
+      vue.use(Components[componentKey]);
+    }
+
+  }
+};
 
 export {
   ZAvatar,
@@ -247,6 +258,6 @@ export {
   ZToast,
   ZToastTitle,
   ZToastBody
-}
+};
 
-export default Components
+export default Components;

@@ -11,7 +11,7 @@
 
       <z-divider content="EXAMPLE" />
       <br>
-      
+
       <z-columns>
         <z-column>
           <z-icon>g_translate</z-icon>
@@ -23,7 +23,7 @@
           <z-button action right><z-icon name="favorite" /></z-button>
         </z-column>
       </z-columns>
-      
+
 <z-code lang="Vue">
 import { ZIcon, ZButton } from 'zutre'
 
@@ -35,7 +35,7 @@ import { ZIcon, ZButton } from 'zutre'
   &lt;z-icon name="favorite" /&gt;
 &lt;/z-button&gt;
 </z-code>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -64,12 +64,7 @@ import { ZIcon, ZButton } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZIcon, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZButton, ZIcon, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

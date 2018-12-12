@@ -15,7 +15,7 @@
  * @prop {Boolean} oneline
  */
 export default {
-  name: 'ZColumns',
+  name: 'Columns',
   props: {
     gapless: {
       type: Boolean,

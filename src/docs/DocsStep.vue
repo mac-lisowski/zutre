@@ -11,7 +11,7 @@
 
       <z-divider content="EXAMPLE" />
       <br>
-      
+
       <z-step :items="[
         { name: 'Step 1', tooltip: 'Hi in first step!'},
         { name: 'Step 2', tooltip: 'Second step!', active: true},
@@ -50,7 +50,7 @@ import { ZStep, ZStemItem} from 'zutre'
   &lt;z-step-item name="Step 5" /&gt;
 &lt;/z-step&gt;
 </z-code>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -146,13 +146,8 @@ import { ZStep, ZStemItem} from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZStep, ZStepItem, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZStep, ZStepItem, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  },
   methods: {
     stepOnClick(item) {
       alert('callback function on click - check console')

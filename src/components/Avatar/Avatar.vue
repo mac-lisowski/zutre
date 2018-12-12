@@ -28,7 +28,7 @@
  * @prop {String} badge
  */
 export default {
-  name: 'ZAvatar',
+  name: 'Avatar',
   props: {
     data: {
       type: String,

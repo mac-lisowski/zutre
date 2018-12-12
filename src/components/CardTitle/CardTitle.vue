@@ -20,7 +20,7 @@
  * @prop {String} content title body content
  */
 export default {
-  name: 'ZCardTitle',
+  name: 'CardTitle',
   props: {
     size: {
       type: Number

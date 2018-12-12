@@ -34,7 +34,7 @@
  * @prop {Function} onClose fired on close 
  */
 export default {
-  name: 'ZModal',
+  name: 'Modal',
   props: {
     title: String,
     content: String,

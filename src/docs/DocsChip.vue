@@ -11,7 +11,7 @@
 
       <z-divider content="EXAMPLE" />
       <br>
-      
+
       <z-columns>
         <z-column>
           <z-chip>Romance</z-chip> <z-chip>Action</z-chip> <z-chip>Fantasy <z-button clear/></z-chip>
@@ -35,7 +35,7 @@ import { ZChip, ZButton, ZAvatar } from 'zutre'
 &lt;z-chip presence="offline" :src="require('./avatar.png')" size="sm"&gt;Brian Doe&lt;/z-chip&gt;
 &lt;z-chip size="sm" :src="require('./avatar2.png')"&gt;Steve Rogers &lt;z-button clear/&gt;&lt;/z-chip&gt;
 </z-code>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -64,12 +64,7 @@ import { ZChip, ZButton, ZAvatar } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZAvatar, ZChip, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZAvatar, ZButton, ZChip, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

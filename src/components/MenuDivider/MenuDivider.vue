@@ -12,7 +12,7 @@
  * @prop {String} content
  */
 export default {
-  name: 'ZMenuDivider',
+  name: 'MenuDivider',
   props: {
     content: {
       type: String,

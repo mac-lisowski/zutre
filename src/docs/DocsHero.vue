@@ -4,10 +4,10 @@
       <h4>Hero</h4>
 
       <p>
-        Components: 
+        Components:
         <code>&lt;z-hero&gt;</code>,<code>&lt;z-hero-body&gt;</code>
       </p>
-      
+
       <z-hero type="gray">
         <z-hero-body>
           <h1>Hero title</h1>
@@ -25,7 +25,7 @@ import { ZHero, ZHeroBody } from 'zutre'
   &lt;/z-hero-body&gt;
 &lt;/z-hero&gt;
 </z-code>
-      
+
       <br>
       <z-divider content="OR" />
       <br>
@@ -51,7 +51,7 @@ import { ZHero, ZHeroBody } from 'zutre'
       <br>
       <z-divider content="OR" />
       <br>
-      
+
       <z-hero type="primary" size="lg">
         <z-hero-body>
           <h1>Hero title</h1>
@@ -106,12 +106,7 @@ import { ZHero, ZHeroBody } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZHero, ZHeroBody, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

@@ -20,7 +20,7 @@
  * @prop {String} content
  */
 export default {
-  name: 'ZCardSubtitle',
+  name: 'CardSubtitle',
   props: {
     color: {
       type: String

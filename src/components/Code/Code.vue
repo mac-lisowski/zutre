@@ -12,7 +12,7 @@
  * @prop {String} lang
  */
 export default {
-  name: 'ZCode',
+  name: 'Code',
   props: {
     lang: {
       type: String,

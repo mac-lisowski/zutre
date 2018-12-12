@@ -15,7 +15,7 @@
  * @prop {String} size
  */
 export default {
-  name: 'ZHero',
+  name: 'Hero',
   props: {
     type: {
       type: String,

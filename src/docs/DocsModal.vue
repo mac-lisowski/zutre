@@ -4,7 +4,7 @@
       <h4>Modals</h4>
 
       <p>
-        Components: 
+        Components:
         <code>&lt;z-modal&gt;</code>
       </p>
 
@@ -19,7 +19,7 @@
           <z-button :click="closeModal1" type="primary">OK</z-button> <z-button :click="closeModal1" type="link">Cancel</z-button>
         </template>
       </z-modal>
-      
+
 <z-code lang="Vue">
 import { ZModal, ZButton } from 'zutre'
 
@@ -43,7 +43,7 @@ import { ZModal, ZButton } from 'zutre'
       <z-modal :open.sync="open2Open" title="Example Modal Title" size="sm">
         <p>Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.</p>
       </z-modal>
-      
+
 <z-code lang="Vue">
 import { ZModal } from 'zutre'
 
@@ -59,7 +59,7 @@ import { ZModal } from 'zutre'
       <z-modal :open.sync="open3Open" title="Example Modal Title" size="lg" :canClose="false">
         <h2>Suspendisse potenti</h2>
         <p>Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.</p>
-        
+
         <h2>Suspendisse potenti</h2>
         <p>Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.</p>
 
@@ -70,7 +70,7 @@ import { ZModal } from 'zutre'
           <z-button :click="closeModal3">Close</z-button>
         </template>
       </z-modal>
-      
+
 <z-code lang="Vue">
 import { ZModal } from 'zutre'
 
@@ -87,7 +87,7 @@ import { ZModal } from 'zutre'
 &lt;/z-modal&gt;
 </z-code>
 
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -180,13 +180,8 @@ import { ZModal } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZModal, ZButton, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsModal',
-  components: {
-    ZContainer, ZBreadcrumbs, ZModal, ZButton, ZCode, ZDivider,  ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  },
   data () {
     return {
       open1: false,

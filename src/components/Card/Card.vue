@@ -13,6 +13,6 @@
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZCard'
+  name: 'Card'
 }
 </script>

@@ -12,13 +12,13 @@
       <z-divider content="EXAMPLE" />
       <br>
       <z-code>code</z-code>
-      
+
 <z-code lang="Vue">
 import { ZCode } from 'zutre'
 
 &lt;z-code&gt;code&lt;/z-code&gt;
 </z-code>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -47,12 +47,7 @@ import { ZCode } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

@@ -33,22 +33,22 @@ import { ZBadge } from 'zutre'
 &lt;z-badge badge="3"&gt;Notifications&lt;/z-badge&gt;
 </z-code>
       <br>
-      
+
       <z-divider content="BUTTON BADGES" />
       <h4>Button badges (<router-link :to="{ name: 'docsButtons' }">Buttons</router-link>)</h4>
 
       <z-columns>
         <z-column>
-          <z-button badge="">Button</z-button> 
+          <z-button badge="">Button</z-button>
         </z-column>
         <z-column>
-           <z-button badge="3">Button</z-button> 
+           <z-button badge="3">Button</z-button>
         </z-column>
         <z-column>
-           <z-button badge="97">Button</z-button> 
+           <z-button badge="97">Button</z-button>
         </z-column>
         <z-column>
-           <z-button badge="9999">Button</z-button> 
+           <z-button badge="9999">Button</z-button>
         </z-column>
       </z-columns>
 <z-code lang="Vue">
@@ -63,16 +63,16 @@ import { ZBadge } from 'zutre'
 
       <z-columns>
         <z-column>
-          <z-avatar size="lg" presence="offline" data="ML" badge="" /> 
+          <z-avatar size="lg" presence="offline" data="ML" badge="" />
         </z-column>
         <z-column>
-           <z-avatar size="lg" presence="online" data="ML" badge="3" /> 
+           <z-avatar size="lg" presence="online" data="ML" badge="3" />
         </z-column>
         <z-column>
-           <z-avatar size="lg" data="ML" badge="97" /> 
+           <z-avatar size="lg" data="ML" badge="97" />
         </z-column>
         <z-column>
-           <z-avatar size="lg" data="ML" badge="9999" /> 
+           <z-avatar size="lg" data="ML" badge="9999" />
         </z-column>
       </z-columns>
 <z-code lang="Vue">
@@ -111,15 +111,8 @@ import { ZBadge } from 'zutre'
     </z-container>
 </template>
 <script>
-import { 
-  ZContainer, ZButton, ZAvatar, ZBadge, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  } from './../components'
-
 export default {
   name: 'DocsHero',
-  components: {
-    ZContainer, ZButton, ZAvatar, ZBadge, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd,
-  },
   methods: {
     onCloseAlert() {
       alert('close event triggered')

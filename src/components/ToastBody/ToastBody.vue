@@ -7,7 +7,7 @@
 <script>
 /**
  * ZToastBody
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {

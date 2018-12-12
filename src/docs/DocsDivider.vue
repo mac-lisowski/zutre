@@ -53,7 +53,7 @@ import { ZColumn, ZDivider } from 'zutre'
         </z-column>
 
       </z-columns>
-      
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -78,16 +78,11 @@ import { ZColumn, ZDivider } from 'zutre'
       </z-table>
 
     </z-container>
-    
+
 </template>
 <script>
-import { ZContainer, ZColumns, ZColumn, ZBreadcrumbs, ZCode, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsDivider',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZDivider, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>
 

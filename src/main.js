@@ -4,13 +4,14 @@ import Router from 'vue-router'
 
 import DocsAbout from './docs/DocsAbout.vue'
 import DocsHome from './docs/DocsHome.vue'
-
 import Docs from './Docs.vue'
 
+import { Zutre } from '@/components';
 
 Vue.config.productionTip = false
 
-Vue.use(Router)
+Vue.use(Zutre);
+Vue.use(Router);
 let router = new Router({
   // mode:'history',
   routes: [
@@ -81,7 +82,7 @@ let router = new Router({
       name: 'docsNavbar',
       component: () => import('./docs/DocsNavbar.vue')
     },
-    
+
     {
       path: '/components/avatars',
       name: 'docsAvatars',

@@ -1,7 +1,16 @@
-import component from './Table'
-import { registerPlugin, installPlugin } from './../../utils'
+import Table from './Table';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Table);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Table,
+};

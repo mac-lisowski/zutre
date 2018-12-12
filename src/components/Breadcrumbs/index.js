@@ -1,7 +1,16 @@
-import component from './Breadcrumbs'
-import { registerPlugin, installPlugin } from './../../utils'
+import Breadcrumbs from './Breadcrumbs';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Breadcrumbs);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Breadcrumbs,
+};

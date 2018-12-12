@@ -6,7 +6,7 @@
       <p>Layout includes flexbox based responsive grid system with 12 columns.</p>
 
       <p>
-        Components: 
+        Components:
         <code>&lt;z-container&gt;</code>,<code>&lt;z-columns&gt;</code>,<code>&lt;z-column&gt;</code>
       </p>
 
@@ -80,14 +80,14 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
 
 &lt;z-container&gt;
   &lt;z-columns&gt;
-    &lt;z-column :size="12"&gt;col-12&lt;/z-column&gt;  
-    &lt;z-column :size="9"&gt;col-9&lt;/z-column&gt;  
-    &lt;z-column :size="6"&gt;col-6&lt;/z-column&gt;  
+    &lt;z-column :size="12"&gt;col-12&lt;/z-column&gt;
+    &lt;z-column :size="9"&gt;col-9&lt;/z-column&gt;
+    &lt;z-column :size="6"&gt;col-6&lt;/z-column&gt;
     &lt;z-column :size="3"&gt;col-3&lt;/z-column&gt;
   &lt;/z-columns&gt;
 &lt;/z-container&gt;
       </z-code>
-      
+
       <h4>Gapless grid</h4>
 
       <z-columns gapless>
@@ -104,8 +104,8 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
 
 &lt;z-container gapless&gt;
   &lt;z-columns&gt;
-    &lt;z-column :size="6"&gt;col-6 (gapless)&lt;/z-column&gt;  
-    &lt;z-column :size="6"&gt;col-6 (gapless)&lt;/z-column&gt;  
+    &lt;z-column :size="6"&gt;col-6 (gapless)&lt;/z-column&gt;
+    &lt;z-column :size="6"&gt;col-6 (gapless)&lt;/z-column&gt;
   &lt;/z-columns&gt;
 &lt;/z-container&gt;
       </z-code>
@@ -140,7 +140,7 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
       <h4>Grid offset</h4>
 
       <p>
-        The Flexbox grid provides margin auto utilities to set offset. There are properties: <code>mxAuto</code>, 
+        The Flexbox grid provides margin auto utilities to set offset. There are properties: <code>mxAuto</code>,
         <code>mlAuto</code> and <code>mrAuto</code> to set margins between columns without using empty columns.
       </p>
 
@@ -403,12 +403,7 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZCode, ZDivider, ZBreadcrumbs, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsFlexbox',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZColumns, ZColumn, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>

@@ -12,7 +12,7 @@
  * @prop {Boolean} center
  */
 export default {
-  name: 'ZNavbarSection',
+  name: 'NavbarSection',
   props: {
     center: {
       type: Boolean,

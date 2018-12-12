@@ -27,7 +27,7 @@
  * @prop {Boolean} video
  */
 export default {
-  name: 'ZMedia',
+  name: 'Media',
   props: {
     type: {
       type: String,

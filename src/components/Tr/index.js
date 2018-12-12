@@ -1,7 +1,16 @@
-import component from './Tr'
-import { registerPlugin, installPlugin } from './../../utils'
+import Tr from './Tr';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Tr);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Tr,
+};

@@ -22,7 +22,7 @@
  * @prop {String} badge
  */
 export default {
-  name: 'ZButton',
+  name: 'Button',
   methods: {
     onClick (...args) {
       if (typeof this.click === 'function') {

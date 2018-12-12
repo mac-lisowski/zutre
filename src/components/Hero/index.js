@@ -1,7 +1,16 @@
-import component from './Hero'
-import { registerPlugin, installPlugin } from './../../utils'
+import Hero from './Hero';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Hero);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Hero,
+};

@@ -4,7 +4,7 @@
       <h4>Toast</h4>
 
       <p>
-        Components: 
+        Components:
         <code>&lt;z-toast&gt;</code>
       </p>
 
@@ -20,7 +20,7 @@
       <br>
 
       <z-toast closeBtn v-on:close="onCloseAlert" type="success" title="Success toast" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
-      
+
       <br>
       <z-divider content="FLOATING TOASTS" />
       <br>
@@ -186,13 +186,8 @@ export default {
     </z-container>
 </template>
 <script>
-import { ZContainer, ZButton, ZButtonGroup, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZToast, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsToast',
-  components: {
-    ZContainer, ZButton, ZButtonGroup, ZBreadcrumbs, ZColumns, ZColumn, ZCode, ZToast, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  },
   methods: {
     onCloseAlert() {
       alert('close event triggered')

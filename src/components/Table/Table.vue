@@ -7,11 +7,11 @@
 <script>
 /**
  * ZTable
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
 export default {
-  name: 'ZTable',
+  name: 'Table',
   props: {
     stripped: {
       type: Boolean
@@ -25,7 +25,7 @@ export default {
       let css = {
         table: true
       }
-      
+
       if (this.stripped) {
         css['table-striped'] = true
       }

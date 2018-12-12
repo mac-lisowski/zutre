@@ -1,7 +1,24 @@
-import component from './Toast'
-import { registerPlugin, installPlugin } from './../../utils'
+import Toast from './Toast';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Toast);
 
-export default component;
+    Vue.$zutre.toast = (options) => {
+      console.log(options);
+    };
+    console.log(Vue.$zutre);
+      // toast(options) {
+      //   console.log(options);
+      // },
+  },
+};
+
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Toast,
+};

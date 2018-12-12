@@ -1,7 +1,16 @@
-import component from './Badge'
-import { registerPlugin, installPlugin } from './../../utils'
+import Badge from './Badge';
+import { usePlugin, installPlugin } from '@/utils';
 
-export var install = installPlugin
-registerPlugin({ install })
+const VuePlugin = {
+  install(Vue) {
+    installPlugin(Vue, Badge);
+  },
+};
 
-export default component;
+usePlugin(VuePlugin);
+
+export default VuePlugin;
+
+export {
+    Badge,
+};

@@ -14,13 +14,8 @@
     </z-container>
 </template>
 <script>
-import { ZContainer, ZBreadcrumbs, ZCode } from './../components'
-
 export default {
   name: 'DocsInstallation',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode
-  }
 }
 </script>
 

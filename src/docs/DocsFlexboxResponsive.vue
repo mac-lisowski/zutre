@@ -7,7 +7,7 @@
 
       <p>More detaied info about responsive grid and viewports please read at Spectre documentation <a href="https://picturepan2.github.io/spectre/layout/responsive.html" target="_blank">here</a>.</p>
       <p>
-        Components: 
+        Components:
         <code>&lt;z-container&gt;</code>,<code>&lt;z-columns&gt;</code>,<code>&lt;z-column&gt;</code>
       </p>
 
@@ -24,7 +24,7 @@
           <div class="bg-primary text-secondary docs-block">col-4 col-xl-12</div>
         </z-column>
       </z-columns>
-      
+
       <z-code lang="Vue">
 import { ZContainer, ZColumns, ZColumn } from 'zutre'
 
@@ -36,7 +36,7 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
   &lt;/z-columns&gt;
 &lt;/z-container&gt;
       </z-code>
-      
+
 
       <z-divider content="API" />
       <h4>API</h4>
@@ -234,12 +234,7 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
     </z-container>
 </template>
 <script>
-import { ZContainer, ZCode, ZDivider, ZBreadcrumbs, ZColumns, ZColumn, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd } from './../components'
-
 export default {
   name: 'DocsFlexbox',
-  components: {
-    ZContainer, ZBreadcrumbs, ZCode, ZColumns, ZColumn, ZDivider, ZTable, ZThead, ZTbody, ZTh, ZTr, ZTd
-  }
 }
 </script>
