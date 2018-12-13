@@ -30,7 +30,9 @@ export default {
     })
   },
   destroyed: function() {
-    this.$el.parentNode.removeChild(this.$el)
+    if (this.$el.parentNode !== null) {
+      this.$el.parentNode.removeChild(this.$el);
+    }
   },
   created () {
     if (this.show === true) {
