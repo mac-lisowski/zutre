@@ -23,8 +23,8 @@
     "url": "https://github.com/maclisowski/zutre/issues"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build-docs": "vue-cli-service build --dest ./docs",
+    "serve": "vue-cli-service serve ./src/docs/index.js",
+    "build-docs": "vue-cli-service build --dest ./docs ./src/docs/index.js",
     "build-bundle": "vue-cli-service build --target lib --name zutre ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"

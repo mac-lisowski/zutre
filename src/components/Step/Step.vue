@@ -12,22 +12,22 @@
 <script>
 /**
  * Step
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {Array} items eg: [{ name: 'Step 1', tooltip: 'Hi in first step!'}]
- * @prop {Function} onClick 
+ * @prop {Function} onClick
  */
 export default {
   name: 'Step',
   props: {
-    items: { 
+    items: {
       type: Array,
       default: () => []
     },
     onClick: Function,
   },
   methods: {
-    hasSlot (name) { 
+    hasSlot (name) {
       return !!this.$slots[name]
     },
     itemTooltip (tooltip) {
@@ -37,12 +37,13 @@ export default {
       return {
         'active': typeof item.active !== 'undefined' && item.active === true
       }
-    }, 
+    },
     itemLinkClass(item) {
       return {
         'tooltip': this.itemTooltip(item.tooltip) !== false
       }
     },
+    // eslint-disable-next-line
     itemOnClick(item) {
       this.onClick.apply(null, arguments)
     }
