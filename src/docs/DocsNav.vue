@@ -13,6 +13,53 @@
       <z-columns>
         <z-column :sizeLG="12">
 
+          <z-nav :items="[
+            { name: 'Page 1', href: '/page-1' },
+            { name: 'Page 2', href: '/page-2' },
+            { name: 'Page 3', href: '/page-3', active: true, items: [
+              { name: 'Subpage 1', link: { name: 'router-link-routeName' } },
+              { name: 'Subpage 2', link: { name: 'routeName' }, active: true },
+              { name: 'Subpage 3', link: { name: 'routeName' } },
+            ] },
+            { name: 'Page 4', href: '/page-4' },
+          ]" />
+
+        </z-column>
+        <z-column :sizeLG="12">
+
+<z-code lang="Vue">
+import { ZNav } from 'zutre'
+
+&lt;z-nav :items="navItems" /&gt;
+
+...
+  data() {
+    return {
+      navItems: [
+        { name: 'Page 1', href: '/page-1' },
+        { name: 'Page 2', href: '/page-2' },
+        { name: 'Page 3', href: '/page-3', active: true, items: [
+          { name: 'Subpage 1', link: { name: 'router-link-routeName' } },
+          { name: 'Subpage 2', link: { name: 'routeName' }, active: true },
+          { name: 'Subpage 3', link: { name: 'routeName' } },
+        ] },
+        { name: 'Page 4', href: '/page-4' },
+      ],
+    };
+  },
+...
+</z-code>
+
+        </z-column>
+      </z-columns>
+
+      <z-divider />
+
+      <br>
+
+      <z-columns>
+        <z-column :sizeLG="12">
+
           <z-nav>
             <z-nav-item>
               <z-link href="">Element 1</z-link>
