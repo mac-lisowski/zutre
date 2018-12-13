@@ -28,8 +28,6 @@
         <z-column :sizeLG="12">
 
 <z-code lang="Vue">
-import { ZNav } from 'zutre'
-
 &lt;z-nav :items="navItems" /&gt;
 
 ...
@@ -79,8 +77,6 @@ import { ZNav } from 'zutre'
         <z-column :sizeLG="12">
 
 <z-code lang="Vue">
-import { ZNav, ZNavItem, ZLink } from 'zutre'
-
 &lt;z-nav&gt;
   &lt;z-nav-item&gt;
     &lt;z-link href=""&gt;Element 1&lt;/z-link&gt;
@@ -127,8 +123,6 @@ import { ZNav, ZNavItem, ZLink } from 'zutre'
         <z-column :sizeLG="12">
 
 <z-code lang="Vue">
-import { ZNav, ZNavItem, ZLink } from 'zutre'
-
 &lt;z-nav&gt;
   &lt;z-nav-item&gt;
     &lt;z-link href=""&gt;Element 1&lt;/z-link&gt;

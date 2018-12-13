@@ -8,7 +8,6 @@
       <section class="navbar-center"></section>
       <section class="navbar-section">
         <router-link :to="{ name: 'home'}" class="btn btn-link text-secondary">Home</router-link> &nbsp;|&nbsp;
-        <router-link :to="{ name: 'about'}" class="btn btn-link text-secondary">About</router-link> &nbsp;|&nbsp;
 
         <a href="https://twitter.com/maclisowski" class="btn btn-link text-secondary">Twitter</a> &nbsp;|&nbsp;
         <a href="https://github.com/maclisowski/zutre" class="btn btn-link text-secondary">GitHub</a>
@@ -34,7 +33,6 @@
             <z-menu-divider content="MENU" />
 
             <z-menu-item :link="{ name: 'home' }" name="Home" activeClass="active" exact/>
-            <z-menu-item :link="{ name: 'installation' }" activeClass="active">Installation</z-menu-item>
 
             <z-menu-divider content="ELEMENTS" />
             <z-menu-item :link="{ name: 'docsTable' }" name="Tables" activeClass="active" />
