@@ -4,7 +4,7 @@ import Router from 'vue-router'
 
 import DocsAbout from './docs/DocsAbout.vue'
 import DocsHome from './docs/DocsHome.vue'
-import Docs from './Docs.vue'
+import Docs from './docs/Docs.vue'
 
 import { Zutre } from '@/components';
 
