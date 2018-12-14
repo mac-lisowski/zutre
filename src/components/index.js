@@ -19,6 +19,7 @@ import ZContainer from './Container'
 import ZColumns from './Columns'
 import ZColumn from './Column'
 import ZDivider from './Divider'
+import ZDrawer from './Drawer';
 
 import ZEmpty from './Empty'
 import ZEmptyIcon from './EmptyIcon'
@@ -87,7 +88,7 @@ const Components = {
   ZColumns,
   ZColumn,
   ZDivider,
-
+  ZDrawer,
   ZEmpty,
   ZEmptyIcon,
   ZEmptyAction,
@@ -156,14 +157,13 @@ export {
   ZContainer,
   ZColumns,
   ZColumn,
-
   ZEmpty,
   ZEmptyIcon,
   ZEmptyAction,
   ZEmptyTitle,
   ZEmptySubtitle,
-
   ZDivider,
+  ZDrawer,
   ZHero,
   ZHeroBody,
   ZIcon,

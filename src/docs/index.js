@@ -96,6 +96,11 @@ let router = new Router({
       component: () => import('@/docs/DocsChip.vue')
     },
     {
+      path: '/components/drawer',
+      name: 'docsDrawer',
+      component: () => import('@/docs/DocsDrawer.vue')
+    },
+    {
       path: '/components/empty-states',
       name: 'docsEmptyStates',
       component: () => import('@/docs/DocsEmptyStates.vue')

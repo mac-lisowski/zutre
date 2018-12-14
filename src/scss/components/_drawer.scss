@@ -1,0 +1,52 @@
+$drawerWidth: 300px;
+$drawerMinWidth: 60px;
+$drawerMaxWidth: 300px;
+
+.drawer--container {
+  position: relative;
+  overflow-x: hidden;
+
+  &.drawer--container--open--left {
+    padding-left: $drawerWidth;
+  }
+  &.drawer--container--open--right {
+    padding-right: $drawerWidth;
+  }
+
+  .drawer {
+    background: $primary-color;
+    color: $secondary-color;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    width: $drawerWidth;
+    max-width: $drawerMaxWidth;
+  }
+
+  & > .drawer--open {
+    &.drawer--position--left {
+      left: 0;
+    }
+    &.drawer--position--right {
+      right: 0;
+    }
+  }
+
+  .drawer--full--height {
+    height: 100%;
+  }
+
+  // & > :not(.drawer--open) {
+  .drawer--position--left {
+    left: -$drawerWidth;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 2px 0px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.08) 2px 0px 5px 0px;
+  }
+
+  .drawer--position--right {
+    right: -$drawerWidth;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 5px 2px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 5px 2px;
+  }
+// }
+}
