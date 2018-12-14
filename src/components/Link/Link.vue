@@ -1,13 +1,13 @@
 <template>
 
-    <a v-if="hasHref && !hasLink" :href="linkHref" :class="linkClass">
+    <a v-if="hasHref && !hasLink" :href="linkHref" :class="linkClass" v-bind:data-tooltip="tooltip">
       <template v-if="hasDefaultSlot">
         <slot></slot>
       </template>
       <template v-else-if="!hasDefaultSlot">{{ linkName }}</template>
     </a>
 
-    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-bind:active-class="activeClass" v-bind:exact="exact">
+    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-bind:active-class="activeClass" v-bind:exact="exact" v-bind:data-tooltip="tooltip">
       <template v-if="hasDefaultSlot">
         <slot></slot>
       </template>
@@ -19,7 +19,7 @@
 <script>
 /**
  * ZLink
- * 
+ *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} href
  * @prop {Object} link
@@ -27,6 +27,8 @@
  * @prop {String} activeClass
  * @prop {Boolean} active
  * @prop {Boolean} exact
+ * @prop {string} tooltip
+ * @prop {string} tooltipPosition
  */
 export default {
   name: 'Link',
@@ -51,12 +53,20 @@ export default {
     exact: {
       type: Boolean,
       default: () => false
-    }
+    },
+    tooltip: String,
+    tooltipPosition: String,
   },
   computed: {
     linkClass: function() {
-      let css = {
-        'menu-item': true
+      let css = { 'menu-item': true, tooltip: false };
+
+      if (typeof this.tooltip !== 'undefined') {
+        css.tooltip = true;
+      }
+
+      if (typeof this.tooltipPosition !== 'undefined') {
+        css['tooltip-' + this.tooltipPosition] = true;
       }
 
       if (this.active === true && typeof this.activeClass === 'string') {
