@@ -1,9 +1,16 @@
 <template>
   <div :class="drawerClass">
-    <slot />
+    <div class="drawer--body">
+      <div class="drawer--body--content">
+        <slot />
+      </div>
+
+      <div class="drawer--body--footer" v-if="hasFooter">
+        <slot name="footer" />
+      </div>
+    </div>
   </div>
 </template>
-
 <script>
 /**
  * ZDrawer
@@ -32,22 +39,25 @@ export default {
     }
   },
   mounted() {
-    this.$parent.$el.classList.add('drawer--container');
+    this.$el.parentNode.classList.add('drawer--container');
 
     if (this.open === true) {
-      this.$parent.$el.classList.add('drawer--container--open--' + this.position);
+      this.$el.parentNode.classList.add('drawer--container--open--' + this.position);
     }
   },
   watch: {
     open(value) {
-      if (this.open === true) {
-        this.$parent.$el.classList.add('drawer--container--open--' + this.position);
+      if (value === true) {
+        this.$el.parentNode.classList.add('drawer--container--open--' + this.position);
       } else {
-        this.$parent.$el.classList.remove('drawer--container--open--' + this.position );
+        this.$el.parentNode.classList.remove('drawer--container--open--' + this.position );
       }
     },
   },
   computed: {
+    hasFooter() { 
+      return !!this.$slots.footer;
+    },
     drawerClass: function() {
       let css = { drawer: true };
 

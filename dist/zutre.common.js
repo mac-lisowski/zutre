@@ -2061,15 +2061,6 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
-var es6_array_iterator = __webpack_require__("cadf");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
-var es6_promise = __webpack_require__("551c");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.promise.finally.js
-var es7_promise_finally = __webpack_require__("097d");
-
 // EXTERNAL MODULE: ./src/scss/main.scss
 var main = __webpack_require__("b107");
 
@@ -2556,6 +2547,15 @@ var Badgevue_type_template_id_5e7aab1e_staticRenderFns = []
 
 
 // CONCATENATED MODULE: ./src/components/Badge/Badge.vue?vue&type=template&id=5e7aab1e&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
+var es6_array_iterator = __webpack_require__("cadf");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
+var es6_promise = __webpack_require__("551c");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.promise.finally.js
+var es7_promise_finally = __webpack_require__("097d");
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Badge/Badge.vue?vue&type=script&lang=js&
 
@@ -3997,6 +3997,161 @@ var Divider_VuePlugin = {
 };
 Object(utils["b" /* usePlugin */])(Divider_VuePlugin);
 /* harmony default export */ var components_Divider = (Divider_VuePlugin);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"cffca526-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Drawer/Drawer.vue?vue&type=template&id=cfff9152&
+var Drawervue_type_template_id_cfff9152_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{class:_vm.drawerClass},[_c('div',{staticClass:"drawer--body"},[_c('div',{staticClass:"drawer--body--content"},[_vm._t("default")],2),(_vm.hasFooter)?_c('div',{staticClass:"drawer--body--footer"},[_vm._t("footer")],2):_vm._e()])])}
+var Drawervue_type_template_id_cfff9152_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Drawer/Drawer.vue?vue&type=template&id=cfff9152&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Drawer/Drawer.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/**
+ * ZDrawer
+ *
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Boolean} open
+ */
+/* harmony default export */ var Drawervue_type_script_lang_js_ = ({
+  name: 'Drawer',
+  props: {
+    open: {
+      type: Boolean,
+      default: function _default() {
+        return true;
+      }
+    },
+    type: {
+      type: String,
+      default: function _default() {
+        return 'dock';
+      } // dock , fixed
+
+    },
+    position: {
+      type: String,
+      default: function _default() {
+        return 'left';
+      } // left, right
+
+    },
+    fullHeight: {
+      type: Boolean,
+      default: function _default() {
+        return true;
+      }
+    }
+  },
+  mounted: function mounted() {
+    this.$el.parentNode.classList.add('drawer--container');
+
+    if (this.open === true) {
+      this.$el.parentNode.classList.add('drawer--container--open--' + this.position);
+    }
+  },
+  watch: {
+    open: function open(value) {
+      if (value === true) {
+        this.$el.parentNode.classList.add('drawer--container--open--' + this.position);
+      } else {
+        this.$el.parentNode.classList.remove('drawer--container--open--' + this.position);
+      }
+    }
+  },
+  computed: {
+    hasFooter: function hasFooter() {
+      return !!this.$slots.footer;
+    },
+    drawerClass: function drawerClass() {
+      var css = {
+        drawer: true
+      };
+
+      if (this.open === true) {
+        css['drawer--open'] = true;
+      }
+
+      switch (this.type) {
+        case 'dock':
+          css['drawer--type--dock'] = true;
+          break;
+
+        case 'fixed':
+          css['drawer--type--fixed'] = true;
+          break;
+
+        default:
+          css['drawer--type--dock'] = true;
+      }
+
+      switch (this.position) {
+        case 'left':
+          css['drawer--position--left'] = true;
+          break;
+
+        case 'right':
+          css['drawer--position--right'] = true;
+          break;
+
+        default:
+          css['drawer--position--left'] = true;
+      }
+
+      if (this.fullHeight === true) {
+        css['drawer--full--height'] = true;
+      }
+
+      return css;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Drawer/Drawer.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Drawer_Drawervue_type_script_lang_js_ = (Drawervue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/Drawer/Drawer.vue
+
+
+
+
+
+/* normalize component */
+
+var Drawer_component = normalizeComponent(
+  Drawer_Drawervue_type_script_lang_js_,
+  Drawervue_type_template_id_cfff9152_render,
+  Drawervue_type_template_id_cfff9152_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+Drawer_component.options.__file = "Drawer.vue"
+/* harmony default export */ var Drawer = (Drawer_component.exports);
+// CONCATENATED MODULE: ./src/components/Drawer/index.js
+
+
+var Drawer_VuePlugin = {
+  install: function install(Vue) {
+    Object(utils["a" /* installPlugin */])(Vue, Drawer);
+  }
+};
+Object(utils["b" /* usePlugin */])(Drawer_VuePlugin);
+/* harmony default export */ var components_Drawer = (Drawer_VuePlugin);
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"cffca526-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Empty/Empty.vue?vue&type=template&id=9bc7f272&
 var Emptyvue_type_template_id_9bc7f272_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"empty"},[_vm._t("default")],2)}
@@ -5476,18 +5631,16 @@ var Modal_VuePlugin = {
 Object(utils["b" /* usePlugin */])(Modal_VuePlugin);
 /* harmony default export */ var components_Modal = (Modal_VuePlugin);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"cffca526-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Nav/Nav.vue?vue&type=template&id=18e655e1&
-var Navvue_type_template_id_18e655e1_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{class:_vm.navClass},[(_vm.hasSlot)?_vm._t("default"):_vm._e(),_vm._l((_vm.items),function(item,idx){return _c('z-nav-item',{key:idx,attrs:{"name":item.name,"href":item.href,"link":item.link,"active":item.active,"items":item.items}})})],2)}
-var Navvue_type_template_id_18e655e1_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"cffca526-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Nav/Nav.vue?vue&type=template&id=6ba07e22&
+var Navvue_type_template_id_6ba07e22_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{class:_vm.navClass},[(_vm.hasSlot)?_vm._t("default"):_vm._e(),_vm._l((_vm.items),function(item,idx){return _c('z-nav-item',{key:idx,attrs:{"name":item.name,"href":item.href,"link":item.link,"active":item.active,"items":item.items}})})],2)}
+var Navvue_type_template_id_6ba07e22_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Nav/Nav.vue?vue&type=template&id=18e655e1&
+// CONCATENATED MODULE: ./src/components/Nav/Nav.vue?vue&type=template&id=6ba07e22&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Nav/Nav.vue?vue&type=script&lang=js&
 
-
-
-
+//
 //
 //
 //
@@ -5544,8 +5697,8 @@ var Navvue_type_template_id_18e655e1_staticRenderFns = []
 
 var Nav_component = normalizeComponent(
   Nav_Navvue_type_script_lang_js_,
-  Navvue_type_template_id_18e655e1_render,
-  Navvue_type_template_id_18e655e1_staticRenderFns,
+  Navvue_type_template_id_6ba07e22_render,
+  Navvue_type_template_id_6ba07e22_staticRenderFns,
   false,
   null,
   null,
@@ -5579,9 +5732,6 @@ function _typeof(obj) {
   return _typeof(obj);
 }
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Nav/NavItem.vue?vue&type=script&lang=js&
-
-
-
 
 //
 //
@@ -7216,8 +7366,6 @@ Object(utils["b" /* usePlugin */])(ToastBody_VuePlugin);
 
 
 
-
-
 var Components = {
   ZAvatar: components_Avatar,
   ZBadge: components_Badge,
@@ -7238,6 +7386,7 @@ var Components = {
   ZColumns: components_Columns,
   ZColumn: components_Column,
   ZDivider: components_Divider,
+  ZDrawer: components_Drawer,
   ZEmpty: components_Empty,
   ZEmptyIcon: components_EmptyIcon,
   ZEmptyAction: components_EmptyAction,

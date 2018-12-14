@@ -2,9 +2,13 @@ $drawerWidth: 300px;
 $drawerMinWidth: 60px;
 $drawerMaxWidth: 300px;
 
+$drawerTransitionTime: 0.3s;
+
 .drawer--container {
   position: relative;
   overflow-x: hidden;
+  -webkit-transition: padding-left $drawerTransitionTime, padding-right $drawerTransitionTime; /* Safari */
+  transition: padding-left $drawerTransitionTime, padding-right $drawerTransitionTime;
 
   &.drawer--container--open--left {
     padding-left: $drawerWidth;
@@ -21,6 +25,17 @@ $drawerMaxWidth: 300px;
     top: 0;
     width: $drawerWidth;
     max-width: $drawerMaxWidth;
+
+    -webkit-transition: left $drawerTransitionTime ease-out, right $drawerTransitionTime ease-out; 
+    transition: left $drawerTransitionTime ease-out, right $drawerTransitionTime ease-out;
+  }
+
+  @-webkit-keyframes slide {
+    100% { left: 0; }
+  }
+
+  @keyframes slide {
+    100% { left: 0; }
   }
 
   & > .drawer--open {
@@ -36,7 +51,6 @@ $drawerMaxWidth: 300px;
     height: 100%;
   }
 
-  // & > :not(.drawer--open) {
   .drawer--position--left {
     left: -$drawerWidth;
     -webkit-box-shadow: rgba(0, 0, 0, 0.08) 2px 0px 5px 0px;
@@ -48,5 +62,27 @@ $drawerMaxWidth: 300px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 5px 2px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 5px 2px;
   }
-// }
+
+  .drawer--body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .drawer--body--content {
+      flex-grow: 1;
+    }
+ 
+    .drawer--body--footer {
+      padding: 0.3rem;
+
+      a {
+        font-weight: 700;
+        color: $secondary-color;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
 }

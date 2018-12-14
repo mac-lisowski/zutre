@@ -14,6 +14,10 @@
 
         <z-drawer :open.sync="drawerOpen">
           DRAWER
+
+          <template slot="footer">
+            bottom
+          </template>
         </z-drawer>
       </z-container>
 
