@@ -16,18 +16,11 @@ import ZColumn from './Column';
 
 import ZDivider from './Divider';
 import ZDrawer from './Drawer';
-
 import ZEmpty from './Empty';
-import ZEmptyIcon from './EmptyIcon';
-import ZEmptyAction from './EmptyAction';
-import ZEmptyTitle from './EmptyTitle';
-import ZEmptySubtitle from './EmptySubtitle';
-
 import ZHero from './Hero';
 import ZIcon from './Icon';
 import ZLabel from './Label';
 import ZLink from './Link';
-
 import ZMedia from './Media';
 
 import ZMenu from './Menu';
@@ -77,11 +70,6 @@ const Components = {
   ZDivider,
   ZDrawer,
   ZEmpty,
-  ZEmptyIcon,
-  ZEmptyAction,
-  ZEmptyTitle,
-  ZEmptySubtitle,
-
   ZHero,
   ZIcon,
   ZLink,
