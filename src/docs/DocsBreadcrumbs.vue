@@ -1,6 +1,6 @@
 <template>
   <z-container>
-    <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }, icon: 'home' }, { name: 'Components' }, { name: 'Breadcrumbs', link: { name: 'docsBreadcrumbs' }}]" />
+    <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' } }, { name: 'Components' }, { name: 'Breadcrumbs', link: { name: 'docsBreadcrumbs' }}]" />
 
     <h4>Breadcrumbs</h4>
 

@@ -22,7 +22,7 @@ import { ZCode } from 'zutre'
       <z-divider content="API" />
       <h4>API</h4>
 
-      <h5>Hero <code>&lt;z-code /&gt;</code></h5>
+      <h5>Code <code>&lt;z-code /&gt;</code></h5>
       <z-table>
         <z-thead>
           <z-th>Name</z-th>

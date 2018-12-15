@@ -34,13 +34,14 @@ npm install --save zutre
 
 | Name | Status |
 |---|---|
-| Accordions |  |
+| Accordions | Done |
 | Avatars | Done |
 | Badges | Done |
 | Bars | |
 | Breadcrumbs | Done | 
 | Cards | Done |
 | Chips | Done |
+| Drawer | Done |
 | Empty states | Done |
 | Menu | Done |
 | Modals | Done |
