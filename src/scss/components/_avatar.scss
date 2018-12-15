@@ -4,4 +4,9 @@
   .material-icons {
     line-height: 2.4rem;
   }
+
+  &.avatar--block {
+    margin: 0 auto;
+    display: block;
+  }
 }

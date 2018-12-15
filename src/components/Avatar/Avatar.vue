@@ -26,6 +26,7 @@
  * @prop {String} presence values: online, busy, away, offline
  * @prop {String} presenceSrc
  * @prop {String} badge
+ * @prop {Boolean} block
  */
 export default {
   name: 'Avatar',
@@ -34,21 +35,12 @@ export default {
       type: String,
       default: () => ''
     },
-    src: {
-      type: String
-    },
-    size: {
-      type: String
-    },
-    presence: {
-      type: String
-    },
-    presenceSrc: {
-      type: String
-    },
-    badge: {
-      type: String
-    }
+    src: String,
+    size: String,
+    presence: String,
+    presenceSrc: String,
+    badge: String,
+    block: Boolean,
   },
   computed: {
     hasPresence () {
@@ -83,7 +75,7 @@ export default {
           break
       }
 
-      return css
+      return css;
     },
     avatarClass () {
       let css = {
@@ -109,6 +101,10 @@ export default {
         css.badge = true
       }
 
+      if (this.block === true) {
+        css['avatar--block'] = true;
+      }
+      
       return css
     }
   }
