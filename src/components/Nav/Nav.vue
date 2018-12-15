@@ -9,7 +9,8 @@
       :link="item.link"
       :active="item.active"
       :items="item.items"
-    />
+      :icon="item.icon"
+    /> 
   </ul>
 </template>
 

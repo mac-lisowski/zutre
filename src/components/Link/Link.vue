@@ -2,16 +2,16 @@
 
     <a v-if="hasHref && !hasLink" :href="linkHref" :class="linkClass" v-bind:data-tooltip="tooltip">
       <template v-if="hasDefaultSlot">
-        <slot></slot>
+        <z-icon v-if="hasIcon" :name="icon" /> <slot></slot>
       </template>
-      <template v-else-if="!hasDefaultSlot">{{ linkName }}</template>
+      <template v-else-if="!hasDefaultSlot"><z-icon v-if="hasIcon" :name="icon" /> {{ linkName }}</template>
     </a>
 
     <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-bind:active-class="activeClass" v-bind:exact="exact" v-bind:data-tooltip="tooltip">
       <template v-if="hasDefaultSlot">
-        <slot></slot>
+        <z-icon v-if="hasIcon" :name="icon" /> <slot></slot>
       </template>
-      <template v-else-if="!hasDefaultSlot">{{ linkName }}</template>
+      <template v-else-if="!hasDefaultSlot"><z-icon v-if="hasIcon" :name="icon" /> {{ linkName }}</template>
     </router-link>
 
 </template>
@@ -24,6 +24,7 @@
  * @prop {String} href
  * @prop {Object} link
  * @prop {String} name
+ * @prop {String} icon
  * @prop {String} activeClass
  * @prop {Boolean} active
  * @prop {Boolean} exact
@@ -39,12 +40,11 @@ export default {
     link: {
       type: Object
     },
-    name: {
-      type: String
-    },
+    name: String,
+    icon: String,
     activeClass: {
       type: String,
-      default: () => ''
+      default: () => 'active'
     },
     active: {
       type: Boolean,
@@ -74,23 +74,26 @@ export default {
       }
       return css
     },
-    hasHref () {
-      return (typeof this.href !== 'undefined') ? true : false
+    hasIcon() {
+      return (typeof this.icon !== 'undefined') ? true : false;
     },
-    hasLink () {
-      return (typeof this.link !== 'undefined') ? true : false
+    hasHref() {
+      return (typeof this.href !== 'undefined') ? true : false;
     },
-    hasDefaultSlot () {
-      return !!this.$slots.default
+    hasLink() {
+      return (typeof this.link !== 'undefined') ? true : false;
     },
-    linkName () {
-      return this.name
+    hasDefaultSlot() {
+      return !!this.$slots.default;
     },
-    linkHref () {
-      return this.href
+    linkName() {
+      return this.name;
     },
-    linkRouter () {
-      return this.link
+    linkHref() {
+      return this.href;
+    },
+    linkRouter() {
+      return this.link;
     }
   }
 }

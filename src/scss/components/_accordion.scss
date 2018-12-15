@@ -1,0 +1,9 @@
+.accordion-header {
+  cursor: pointer;
+}
+
+.accordion[open=""] {
+  .accordion-header {
+    font-weight: 700;
+  }
+}

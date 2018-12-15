@@ -71,6 +71,11 @@ let router = new Router({
     },
 
     {
+      path: '/components/accordions',
+      name: 'docsAccordion',
+      component: () => import('@/docs/DocsAccordion.vue')
+    },
+    {
       path: '/components/avatars',
       name: 'docsAvatars',
       component: () => import('@/docs/DocsAvatars.vue')

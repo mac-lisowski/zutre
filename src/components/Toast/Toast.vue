@@ -30,7 +30,7 @@ export default {
     })
   },
   destroyed: function() {
-    if (this.$el.parentNode !== null) {
+    if (typeof this.$el !== 'undefined' && this.$el.parentNode !== null) {
       this.$el.parentNode.removeChild(this.$el);
     }
   },

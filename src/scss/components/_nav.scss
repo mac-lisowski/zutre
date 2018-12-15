@@ -1,7 +1,59 @@
+$navTransitionTime: 0.5s;
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// -webkit-animation: fadein $navTransitionTime;
+// -moz-animation: fadein $navTransitionTime;
+// -ms-animation: fadein $navTransitionTime;
+// -o-animation: fadein $navTransitionTime;
+// animation: fadein $navTransitionTime;
+
 .nav {
+  display: block;
+  // -webkit-transition: height $navTransitionTime linear;
+  // transition: height $navTransitionTime linear;
+  transition: height $navTransitionTime cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+  &.nav--closed {
+    height: 0;
+    overflow: hidden;
+    margin: 0 inherit;
+  }
+
+  &.nav--open {
+    overflow: auto;
+    height: 100px;
+  }
+
   .nav-item { 
-    a.menu-item {
+    margin-top:0;
+
+    .menu-item {
       display: block;
+      padding: 0.2rem 0.3rem;
+      cursor: pointer;
+
+      &.active {
+        font-weight: 700;
+      }
     }
   }
 }
