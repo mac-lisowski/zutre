@@ -44,15 +44,38 @@ export default {
     if (this.open === true) {
       this.$el.parentNode.classList.add('drawer--container--open--' + this.position);
     }
+
+    if (this.type === 'fixed') {
+      this.$root.$el.classList.add('body__drawer--type--fixed');
+
+      if (this.open === true) {
+        this.$root.$el.classList.add('body__drawer--open');
+      }
+    }
   },
   watch: {
     open(value) {
       if (value === true) {
         this.$el.parentNode.classList.add('drawer--container--open--' + this.position);
+
+        if (this.type === 'fixed') {
+          this.$root.$el.classList.add('body__drawer--open');
+        }
       } else {
         this.$el.parentNode.classList.remove('drawer--container--open--' + this.position );
+
+        if (this.type === 'fixed') {
+          this.$root.$el.classList.remove('body__drawer--open');
+        }
       }
     },
+    type(value) {
+      if (this.type === value) {
+        this.$root.$el.classList.add('body__drawer--type--fixed');
+      } else {
+        this.$root.$el.classList.remove('body__drawer--type--fixed');
+      }
+    }
   },
   computed: {
     hasFooter() { 

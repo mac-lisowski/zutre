@@ -4,6 +4,21 @@ $drawerMaxWidth: 300px;
 
 $drawerTransitionTime: 0.3s;
 
+.body__drawer--type--fixed {
+  &.body__drawer--open {
+    padding-left: $drawerWidth;
+
+    .drawer--container {
+      &.drawer--container--open--left {
+        padding-left: 0;
+      }
+      &.drawer--container--open--right {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
 .drawer--container {
   position: relative;
   overflow-x: hidden;
@@ -28,6 +43,10 @@ $drawerTransitionTime: 0.3s;
 
     -webkit-transition: left $drawerTransitionTime ease-out, right $drawerTransitionTime ease-out; 
     transition: left $drawerTransitionTime ease-out, right $drawerTransitionTime ease-out;
+
+    &.drawer--type--fixed {
+      position: fixed;
+    }
   }
 
   @-webkit-keyframes slide {
