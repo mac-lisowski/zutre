@@ -1,0 +1,11 @@
+.breadcrumb {
+  .breadcrumb-item {
+    * {
+      vertical-align: middle;
+    }
+
+    &:not(:first-child)::before {
+      vertical-align: middle;
+    }
+  }
+}

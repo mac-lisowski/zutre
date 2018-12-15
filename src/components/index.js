@@ -6,7 +6,7 @@ import ZButton from './Button';
 import ZBadge from './Badge';
 import ZButtonGroup from './ButtonGroup';
 import ZBreadcrumbs from './Breadcrumbs';
-import ZBreadcrumbsItem from './BreadcrumbsItem';
+
 import ZCard from './Card';
 import ZCardTitle from './CardTitle';
 import ZCardSubtitle from './CardSubtitle';
@@ -76,7 +76,6 @@ const Components = {
   ZButton,
   ZButtonGroup,
   ZBreadcrumbs,
-  ZBreadcrumbsItem,
   ZCard,
   ZCardHeader,
   ZCardTitle,
@@ -138,65 +137,6 @@ export const Zutre = {
     }
 
   }
-};
-
-export {
-  ZAccordion,
-  ZAvatar,
-  ZBadge,
-  ZButton,
-  ZButtonGroup,
-  ZBreadcrumbs,
-  ZBreadcrumbsItem,
-  ZCard,
-  ZCardTitle,
-  ZCardSubtitle,
-  ZCardHeader,
-  ZCardBody,
-  ZCardFooter,
-  ZCardImage,
-  ZChip,
-  ZCode,
-  ZContainer,
-  ZColumns,
-  ZColumn,
-  ZEmpty,
-  ZEmptyIcon,
-  ZEmptyAction,
-  ZEmptyTitle,
-  ZEmptySubtitle,
-  ZDivider,
-  ZDrawer,
-  ZHero,
-  ZHeroBody,
-  ZIcon,
-  ZLink,
-  ZLabel,
-  ZMedia,
-  ZMenu,
-  ZMenuDivider,
-  ZMenuItem,
-  ZModal,
-  ZNav,
-  ZNavbar,
-  ZNavbarSection,
-  ZStep,
-  ZStepItem,
-  ZTable,
-  ZThead,
-  ZTbody,
-  ZTr,
-  ZTd,
-  ZTh,
-  ZTile,
-  ZTileIcon,
-  ZTileContent,
-  ZTileAction,
-  ZTileTitle,
-  ZTileSubtitle,
-  ZToast,
-  ZToastTitle,
-  ZToastBody
 };
 
 export default Components;

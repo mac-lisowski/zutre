@@ -5,13 +5,19 @@
     </template>
 
     <template v-if="!hasDefaultSlot && breadcrumbsItems.length > 0">
-      <z-breadcrumbs-item v-bind:key="item.name" v-for="item in breadcrumbsItems" :name="item.name" :link="item.link" :href="item.href" />
+      <z-breadcrumbs-item 
+        v-bind:key="item.name" 
+        v-for="item in breadcrumbsItems" 
+        :name="item.name" 
+        :link="item.link" 
+        :href="item.href"
+        :icon="item.icon"
+      />
     </template>
 
   </ul>
 </template>
-
-<script>
+  <script>
 /**
  * ZBreadcrumbs
  *

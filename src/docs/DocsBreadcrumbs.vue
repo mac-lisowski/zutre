@@ -1,6 +1,6 @@
 <template>
   <z-container>
-    <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Components' }, { name: 'Breadcrumbs', link: { name: 'docsBreadcrumbs' }}]" />
+    <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }, icon: 'home' }, { name: 'Components' }, { name: 'Breadcrumbs', link: { name: 'docsBreadcrumbs' }}]" />
 
     <h4>Breadcrumbs</h4>
 
@@ -11,24 +11,20 @@
 
     <z-columns>
       <z-column>
-        <z-breadcrumbs :items="[{ name: 'Dashboard', href: '/'}, { name: 'Settings', href: '/settings'}]" />
+        <z-breadcrumbs :items="[{ name: 'Dashboard', href: '/', icon: 'home'}, { name: 'Settings', href: '/settings'}]" />
 
         <z-code lang="Vue">
-import { ZBreadcrumbs } from 'zutre'
-
-&lt;z-breadcrumbs :items="[{ name: 'Dashboard', href: '/'}, { name: 'Settings', href: '/settings'}]" /&gt;
+&lt;z-breadcrumbs :items="[{ name: 'Dashboard', href: '/', icon: 'home'}, { name: 'Settings', href: '/settings'}]" /&gt;
 </z-code>
 
         <z-breadcrumbs>
-          <z-breadcrumbs-item name="Dashboard" href="/" />
+          <z-breadcrumbs-item name="Dashboard" href="/" icon="home" />
           <z-breadcrumbs-item name="Settings" href="/settings" />
         </z-breadcrumbs>
 
 <z-code lang="Vue">
-import { ZBreadcrumbs } from 'zutre'
-
 &lt;z-breadcrumbs&gt;
-  &lt;z-breadcrumbs-item na me="Dashboard" href="/" /&gt;
+  &lt;z-breadcrumbs-item na me="Dashboard" href="/" icon="home" /&gt;
   &lt;z-breadcrumbs-item name="Settings" href="/settings" /&gt;
 &lt;/z-breadcrumbs&gt;</z-code>
 
@@ -47,12 +43,9 @@ import { ZBreadcrumbs } from 'zutre'
         <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'About', link: { name: 'about' }}]" />
 
         <z-code lang="Vue">
-import { ZBreadcrumbs } from 'zutre'
-
 &lt;z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'About', link: { name: 'about' }}]" /&gt;</z-code>
-<z-code lang="Vue">
-import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
 
+<z-code lang="Vue">
 &lt;z-breadcrumbs&gt;
   &lt;z-breadcrumbs-item name="Dashboard" href="/" /&gt;
   &lt;z-breadcrumbs-item name="Settings" href="/settings" /&gt;
@@ -80,13 +73,12 @@ import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
             array of objects with information about items eg: <br>
             <small><code>
 [
-  { name: 'Home', link: { name: 'home' }},
+  { name: 'Home', link: { name: 'home' }, icon: 'home' },
   { name: 'About', href: '/about' }
 ]
 </code></small><br>
 <br>
-          <small><code>href</code> - url</small><br>
-          <small><code>link</code> - use instead of <code>href</code> if you want to generate <code>router-link</code> component from vue-router</small>
+          each item can have same properties as <code>&lt;z-breadcrumbs-item /&gt;</code>
           </z-td>
           <z-td>Array[Object]</z-td>
           <z-td>---</z-td>
@@ -128,6 +120,13 @@ import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
+          <z-tr>
+            <z-td><code>icon</code></z-td>
+            <z-td><a href="https://material.io/tools/icons/?style=baseline" target="_blank">Material icon</a> name</z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
         </z-tbody>
       </z-table>
 
@@ -136,9 +135,5 @@ import { ZBreadcrumbs, ZBreadcrumbsItem } from 'zutre'
 </template>
 <script>
 export default {
-  name: 'DocsAbout',
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

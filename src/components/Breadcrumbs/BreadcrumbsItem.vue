@@ -1,22 +1,23 @@
 <template>
   <li class="breadcrumb-item">
     <router-link v-if="hasLink" :to=itemLink>
+      <z-icon v-if="hasIcon" :name="icon" /> 
       <template v-if="hasDefaultSlot">
-        <slot></slot>
+        <span><slot></slot></span>
       </template>
-      <template v-if="!hasDefaultSlot">{{ itemName }}</template>
+      <template v-if="!hasDefaultSlot"><span>{{ itemName }}</span></template>
     </router-link>
 
     <a v-if="!hasLink" :href="itemHref">
+      <z-icon v-if="hasIcon" :name="icon" /> 
       <template v-if="hasDefaultSlot">
         <slot></slot>
       </template>
-      <template v-if="!hasDefaultSlot">{{ itemName }}</template>
+      <template v-if="!hasDefaultSlot"><span>{{ itemName }}</span></template>
     </a>
     
   </li>
 </template>
-
 <script>
 /**
  * ZBreadcrumbsItem
@@ -27,6 +28,7 @@
  * @prop {String} name
  * @prop {JSON} link
  * @prop {String} href 
+ * @prop {String} icon 
  */
 export default {
   name: 'BreadcrumbsItem',
@@ -42,30 +44,34 @@ export default {
     href: {
       type: String,
       default: () => null
-    }
+    },
+    icon: String,
   },
   computed: {
-    itemName () {
-      return this.name
+    itemName() {
+      return this.name;
     },
-    itemLink () {
-      return this.link
+    itemLink() {
+      return this.link;
     },
-    itemHref () {
-      return this.href
+    itemHref() {
+      return this.href;
     },
-    hasName () {
-      return typeof this.name !== 'undefined' && this.name !== null
+    hasName() {
+      return typeof this.name !== 'undefined' && this.name !== null;
     },
-    hasLink () {
-      return typeof this.link !== 'undefined' && this.link !== null
+    hasLink() {
+      return typeof this.link !== 'undefined' && this.link !== null;
     },
-    hasHref () {
-      return typeof this.href !== 'undefined' && this.href !== null 
+    hasHref() {
+      return typeof this.href !== 'undefined' && this.href !== null;
     },
-    hasDefaultSlot () {
-      return !!this.$slots.default
-    }
+    hasDefaultSlot() {
+      return !!this.$slots.default;
+    },
+    hasIcon() {
+      return !!this.icon;
+    },
   }
 }
 </script>
