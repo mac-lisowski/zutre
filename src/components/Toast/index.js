@@ -1,9 +1,14 @@
 import Toast from './Toast';
+import ToastBody from './ToastBody';
+import ToastTitle from './ToastTitle';
+
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
   install(Vue) {
     installPlugin(Vue, Toast);
+    installPlugin(Vue, ToastBody);
+    installPlugin(Vue, ToastTitle);
 
     const ZToast = Toast;
     
@@ -71,4 +76,6 @@ export default VuePlugin;
 
 export {
     Toast,
+    ToastBody,
+    ToastTitle,
 };

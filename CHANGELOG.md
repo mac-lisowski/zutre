@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file.
 * Moved CardBody, CardImage, CardSubtitle, CardTitle to Card
 * Moved EmptyAction, EmptyIcon, EmptySubtitle, EmptyTitle to Empty
 * Moved HeroBody to Hero
+* Moved MenuItem and MenuDivider to Menu
+* Moved NavbarSection to Navbar
+* Moved StepItem to Step
+* Moved Tbody, Thead, Td, Th, Tr to Table
+* Moved TileAction, TileContent, TileIcon, TileSubtitle, TitleTitle to Title
+* Moved ToastBody, ToastTitle to Toast
 
 #### Added
 * New component [Drawer](https://maclisowski.github.io/zutre/#/components/drawer)
