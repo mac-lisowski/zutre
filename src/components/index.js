@@ -24,10 +24,7 @@ import ZEmptyTitle from './EmptyTitle';
 import ZEmptySubtitle from './EmptySubtitle';
 
 import ZHero from './Hero';
-import ZHeroBody from './HeroBody';
-
 import ZIcon from './Icon';
-
 import ZLabel from './Label';
 import ZLink from './Link';
 
@@ -86,7 +83,6 @@ const Components = {
   ZEmptySubtitle,
 
   ZHero,
-  ZHeroBody,
   ZIcon,
   ZLink,
   ZLabel,

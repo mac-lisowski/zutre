@@ -11,6 +11,8 @@ All notable changes to this project will be documented in this file.
 
 * Moved BreadcrumbsItem to Breadcrumbs
 * Moved CardBody, CardImage, CardSubtitle, CardTitle to Card
+* Moved EmptyAction, EmptyIcon, EmptySubtitle, EmptyTitle to Empty
+* Moved HeroBody to Hero
 
 #### Added
 * New component [Drawer](https://maclisowski.github.io/zutre/#/components/drawer)

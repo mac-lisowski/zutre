@@ -1,9 +1,11 @@
 import Hero from './Hero';
+import HeroBody from './HeroBody';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
   install(Vue) {
     installPlugin(Vue, Hero);
+    installPlugin(Vue, HeroBody);
   },
 };
 
@@ -13,4 +15,5 @@ export default VuePlugin;
 
 export {
     Hero,
+    HeroBody,
 };
