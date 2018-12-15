@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 #### Changed
 
 * Moved BreadcrumbsItem to Breadcrumbs
+* Moved CardBody, CardImage, CardSubtitle, CardTitle to Card
 
 #### Added
 * New component [Drawer](https://maclisowski.github.io/zutre/#/components/drawer)

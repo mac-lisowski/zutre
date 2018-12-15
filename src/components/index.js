@@ -6,19 +6,14 @@ import ZButton from './Button';
 import ZBadge from './Badge';
 import ZButtonGroup from './ButtonGroup';
 import ZBreadcrumbs from './Breadcrumbs';
-
 import ZCard from './Card';
-import ZCardTitle from './CardTitle';
-import ZCardSubtitle from './CardSubtitle';
-import ZCardHeader from './CardHeader';
-import ZCardBody from './CardBody';
-import ZCardFooter from './CardFooter';
-import ZCardImage from './CardImage';
 import ZChip from './Chip';
 import ZCode from './Code';
+
 import ZContainer from './Container';
 import ZColumns from './Columns';
 import ZColumn from './Column';
+
 import ZDivider from './Divider';
 import ZDrawer from './Drawer';
 
@@ -77,12 +72,6 @@ const Components = {
   ZButtonGroup,
   ZBreadcrumbs,
   ZCard,
-  ZCardHeader,
-  ZCardTitle,
-  ZCardSubtitle,
-  ZCardBody,
-  ZCardFooter,
-  ZCardImage,
   ZChip,
   ZCode,
   ZContainer,
