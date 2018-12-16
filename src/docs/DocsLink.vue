@@ -21,9 +21,9 @@
 
       <z-divider content="OR" />
 
-      Go to: <z-link :link="{ name: 'home' }">Home</z-link>, <z-link :link="{ name: 'about' }" name="About" />
+      Go to: <z-link :link="{ name: 'home' }">Home</z-link>, <z-link :link="{ name: 'about' }" name="About" />, <z-link href="#" name="Messages" badge="10" />
       <z-code lang="Vue">
-&lt;z-link :link="{ name: 'about ' }" name="About /&gt;
+&lt;z-link href="#" name="Messages" badge="10" /&gt;
 </z-code>
 
       <z-divider content="API" />
@@ -81,7 +81,15 @@
             <z-td>false</z-td>
             <z-td>---</z-td>
           </z-tr>
-
+          <z-tr>
+            <z-td><code>badge</code></z-td>
+            <z-td>
+              badge text
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
           <z-tr>
             <z-td><code>tooltip</code></z-td>
             <z-td>
@@ -91,7 +99,6 @@
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
-
           <z-tr>
             <z-td><code>tooltipPosition</code></z-td>
             <z-td>
@@ -99,6 +106,14 @@
             </z-td>
             <z-td>String</z-td>
             <z-td><code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>onClick</code></z-td>
+            <z-td>
+            </z-td>
+            <z-td>Function</z-td>
+            <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
         </z-tbody>

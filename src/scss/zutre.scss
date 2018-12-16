@@ -38,6 +38,9 @@
 @import "components/drawer";
 @import "components/accordion";
 
+a {
+  cursor: pointer;
+}
 .hide {
   display: none;
 }

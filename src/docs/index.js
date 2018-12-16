@@ -125,11 +125,15 @@ let router = new Router({
       name: 'docsNav',
       component: () => import('@/docs/DocsNav.vue')
     },
-
     {
       path: '/components/steps',
       name: 'docsStep',
       component: () => import('@/docs/DocsStep.vue')
+    },
+    {
+      path: '/components/tabs',
+      name: 'docsTabs',
+      component: () => import('@/docs/DocsTabs.vue')
     },
     {
       path: '/components/tile',
