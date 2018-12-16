@@ -14,8 +14,6 @@
       <z-code>code</z-code>
 
 <z-code lang="Vue">
-import { ZCode } from 'zutre'
-
 &lt;z-code&gt;code&lt;/z-code&gt;
 </z-code>
 

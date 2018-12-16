@@ -25,8 +25,6 @@
       </z-navbar>
 
 <z-code lang="Vue">
-import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
-
 &lt;z-navbar&gt;
   &lt;z-navbar-section&gt;
     &lt;z-link href=""&gt;Home&lt;/z-link&gt;
@@ -78,6 +76,6 @@ import { ZNavbar, ZNavbarSection, ZLink, ZButton, ZIcon } from 'zutre'
 </template>
 <script>
 export default {
-  name: 'DocsHero',
+  name: 'DocsNavbar',
 }
 </script>

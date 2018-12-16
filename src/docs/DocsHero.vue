@@ -16,8 +16,6 @@
       </z-hero>
       <br>
 <z-code lang="Vue">
-import { ZHero, ZHeroBody } from 'zutre'
-
 &lt;z-hero type="gray" &gt;
   &lt;z-hero-body&gt;
     &lt;h1&gt;Hero title&lt;/h1&gt;
@@ -38,8 +36,6 @@ import { ZHero, ZHeroBody } from 'zutre'
       </z-hero>
       <br>
 <z-code lang="Vue">
-import { ZHero, ZHeroBody } from 'zutre'
-
 &lt;z-hero type="dark" size="sm" &gt;
   &lt;z-hero-body&gt;
     &lt;h1&gt;Hero title&lt;/h1&gt;
@@ -59,8 +55,6 @@ import { ZHero, ZHeroBody } from 'zutre'
         </z-hero-body>
       </z-hero>
 <z-code lang="Vue">
-import { ZHero, ZHeroBody } from 'zutre'
-
 &lt;z-hero type="primary" size="lg" &gt;
   &lt;z-hero-body&gt;
     &lt;h1&gt;Hero title&lt;/h1&gt;

@@ -21,8 +21,6 @@
       </z-modal>
 
 <z-code lang="Vue">
-import { ZModal, ZButton } from 'zutre'
-
 &lt;z-button :click="openDefaultModal"&gt;Open modal&lt;/z-button&gt;
 
 &lt;z-modal :open.sync="openModal" title="Example Modal Title"&gt;
@@ -45,8 +43,6 @@ import { ZModal, ZButton } from 'zutre'
       </z-modal>
 
 <z-code lang="Vue">
-import { ZModal } from 'zutre'
-
 &lt;z-modal :open.sync="openModal" title="Example Modal Title" size="sm"&gt;
   &lt;p&gt;Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.&lt;/p&gt;
 &lt;/z-modal&gt;
@@ -72,8 +68,6 @@ import { ZModal } from 'zutre'
       </z-modal>
 
 <z-code lang="Vue">
-import { ZModal } from 'zutre'
-
 &lt;z-modal :open.sync="openModal" title="Example Modal Title" size="lg" :canClose="false"&gt;
   &lt;h2&gt;Suspendisse potenti&lt;/h2&gt;
   &lt;p&gt;Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.&lt;/p&gt;

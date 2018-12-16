@@ -29,8 +29,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZAvatar } from 'zutre'
-
 &lt;z-avatar size="xl" data="ML" /&gt;
 &lt;z-avatar size="lg" data="ML" /&gt;
 &lt;z-avatar data="ML" /&gt;
@@ -54,8 +52,6 @@ import { ZAvatar } from 'zutre'
       </z-columns>
 
 <z-code lang="Vue">
-import { ZAvatar } from 'zutre'
-
 &lt;z-avatar size="xl" data="ML" presence="online" /&gt;
 &lt;z-avatar size="lg" data="ML" presence="busy" /&gt;
 &lt;z-avatar data="ML" presence="away" /&gt;
@@ -82,8 +78,6 @@ import { ZAvatar } from 'zutre'
       </z-columns>
 
       <z-code lang="Vue">
-import { ZAvatar } from 'zutre'
-
 &lt;z-avatar size="lg" presence="online" :src="require('./avatar.png')" /&gt;
 &lt;z-avatar size="lg" :src="require('./avatar2.png')" :presenceSrc="require('./avatar.png')" /&gt;
 </z-code>
@@ -100,8 +94,6 @@ import { ZAvatar } from 'zutre'
       </z-columns>
 
       <z-code lang="Vue">
-import { ZAvatar } from 'zutre'
-
 &lt;z-avatar size="lg" presence="online" data="ML" badge="1" /&gt;
 &lt;z-avatar size="lg" presence="busy" :src="require('./avatar.png')" badge="999" /&gt;
 </z-code>

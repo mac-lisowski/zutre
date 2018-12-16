@@ -25,8 +25,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZChip, ZButton, ZAvatar } from 'zutre'
-
 &lt;z-chip&gt;Romance&lt;/z-chip&gt;
 &lt;z-chip&gt;Action&lt;/z-chip&gt;
 &lt;z-chip&gt;Fantasy &lt;z-button clear/&gt;&lt;/z-chip&gt;

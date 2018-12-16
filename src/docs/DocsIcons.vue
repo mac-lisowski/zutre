@@ -25,8 +25,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZIcon, ZButton } from 'zutre'
-
 &lt;z-icon&gt;g_translate&lt;/z-icon&gt;
 &lt;z-button type="primary"&gt;
   &lt;z-icon&gt;feedback&lt;/z-icon&gt; Feedback

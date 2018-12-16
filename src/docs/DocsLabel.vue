@@ -20,8 +20,6 @@
       <z-label type="error" content="error label" />
 
 <z-code lang="Vue">
-import { ZLabel } from 'zutre'
-
 &lt;z-label&gt;default label&lt;/z-label&gt;
 &lt;z-label type="primary" content="primary label" /&gt;
 &lt;z-label type="secondary" content="secondary label" /&gt;
@@ -36,8 +34,6 @@ import { ZLabel } from 'zutre'
     <z-label type="primary" content="primary label" rounded />
 
 <z-code lang="Vue">
-import { ZLabel } from 'zutre'
-
 &lt;z-label rounded&gt;default label&lt;/z-label&gt;
 &lt;z-label type="primary" content="primary label" rounded /&gt;
 </z-code>

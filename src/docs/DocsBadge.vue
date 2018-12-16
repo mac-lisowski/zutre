@@ -28,8 +28,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZBadge } from 'zutre'
-
 &lt;z-badge badge="3"&gt;Notifications&lt;/z-badge&gt;
 </z-code>
       <br>
@@ -52,8 +50,6 @@ import { ZBadge } from 'zutre'
         </z-column>
       </z-columns>
 <z-code lang="Vue">
-import { ZBadge } from 'zutre'
-
 &lt;z-button badge=""&gt;Button&lt;/z-button&gt;
 &lt;z-button badge="97"&gt;Button&lt;/z-button&gt;
 </z-code>
@@ -76,8 +72,6 @@ import { ZBadge } from 'zutre'
         </z-column>
       </z-columns>
 <z-code lang="Vue">
-import { ZBadge } from 'zutre'
-
 &lt;z-avatar size="lg" presence="offline" data="ML" badge="" /&gt;
 &lt;z-avatar size="lg" data="ML" badge="9999"&gt;
 </z-code>

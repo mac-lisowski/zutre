@@ -13,8 +13,6 @@
       <z-button type="primary">primary</z-button> &nbsp;
       <z-button type="link">link</z-button>
 <z-code lang="Vue">
-import { ZButton } from 'zutre'
-
 &lt;z-button&gt;button&lt;/z-button&gt;
 &lt;z-button type="primary"&gt;primary&lt;/z-button&gt;
 &lt;z-button type="link"&gt;link&lt;/z-button&gt;
@@ -63,8 +61,6 @@ import { ZButton } from 'zutre'
       </z-columns>
 
 <z-code lang="Vue">
-import { ZButton } from 'zutre'
-
 &lt;z-button-group block&gt;
   &lt;z-button type="primary" circle&gt;12&lt;/z-button&gt;
   &lt;z-button disabled&gt;button&lt;/z-button&gt;
@@ -82,8 +78,6 @@ import { ZButton } from 'zutre'
       <z-button badge="">Button</z-button>
 
 <z-code lang="Vue">
-import { ZButton } from 'zutre'
-
 &lt;z-button badge="click"&gt;Button badge&lt;/z-button&gt;
 &lt;z-button type="error" badge="5"&gt;System alerts&lt;/z-button&gt;
 &lt;z-button badge=""&gt;Button&lt;/z-button&gt;

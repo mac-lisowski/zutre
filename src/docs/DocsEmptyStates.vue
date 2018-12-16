@@ -55,8 +55,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZEmpty, ZEmptyIcon, ZEmptyAction, ZEmptyTitle, ZEmptySubtitle, ZAvatar } from 'zutre'
-
 &lt;z-empty&gt;
   &lt;z-empty-icon name="done_outline" /&gt;
   &lt;z-empty-title&gt;Task completed!&lt;/z-empty-title&gt;

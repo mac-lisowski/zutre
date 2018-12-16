@@ -26,8 +26,6 @@
       </z-columns>
 
       <z-code lang="Vue">
-import { ZContainer, ZColumns, ZColumn } from 'zutre'
-
 &lt;z-container&gt;
   &lt;z-columns&gt;
     &lt;z-column :sizeXL="12" :size="4"&gt;col-4 col-xl-12&lt;/z-column&gt;

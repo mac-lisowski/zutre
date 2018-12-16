@@ -50,8 +50,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle, ZAvatar } from 'zutre'
-
 &lt;z-tile&gt;
   &lt;z-tile-icon&gt;
     &lt;z-avatar src="./avatar.png" alt="Avatar" /&gt;
@@ -125,8 +123,6 @@ import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
 
       </z-columns>
 <z-code lang="Vue">
-import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle, ZAvatar } from 'zutre'
-
 &lt;z-tile centered&gt;
   &lt;z-tile-icon&gt;
     &lt;z-avatar src="./avatar.png" alt="Avatar" /&gt;
@@ -171,7 +167,7 @@ import { ZTile, ZTileIcon, ZTileContent, ZTileAction, ZTileTitle, ZTileSubtitle,
 </template>
 <script>
 export default {
-  name: 'DocsHero',
+  name: 'DocsTile',
   methods: {
     onCloseAlert() {
       alert('close event triggered')

@@ -76,8 +76,6 @@
       </z-columns>
 
       <z-code lang="Vue">
-import { ZContainer, ZColumns, ZColumn } from 'zutre'
-
 &lt;z-container&gt;
   &lt;z-columns&gt;
     &lt;z-column :size="12"&gt;col-12&lt;/z-column&gt;
@@ -100,8 +98,6 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
       </z-columns>
 
       <z-code lang="Vue">
-import { ZContainer, ZColumns, ZColumn } from 'zutre'
-
 &lt;z-container gapless&gt;
   &lt;z-columns&gt;
     &lt;z-column :size="6"&gt;col-6 (gapless)&lt;/z-column&gt;
@@ -125,8 +121,6 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
       </z-columns>
 
       <z-code lang="Vue">
-import { ZContainer, ZColumns, ZColumn } from 'zutre'
-
 &lt;z-container oneline&gt;
   &lt;z-columns&gt;
     &lt;z-column :size="6"&gt;col-6&lt;/z-column&gt;
@@ -196,8 +190,6 @@ import { ZContainer, ZColumns, ZColumn } from 'zutre'
       </z-columns>
 
       <z-code lang="Vue">
-import { ZContainer, ZColumns, ZColumn } from 'zutre'
-
 &lt;z-container&gt;
   &lt;z-columns&gt;
     &lt;z-column :size="4" mrAuto&gt;col-4 mrAuto&lt;/z-column&gt;

@@ -14,8 +14,6 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque, dui eu hendrerit interdum, erat ante hendrerit purus, sit amet dictum felis ex eu tortor. Sed vitae sapien turpis. Maecenas sagittis massa quis lectus vehicula convallis non eu sapien. Mauris sollicitudin nec magna nec consectetur. Morbi hendrerit vitae lacus nec vulputate.</p>
 
       <z-code lang="Vue">
-import { ZDivider } from 'zutre'
-
 &lt;z-divider /&gt;</z-code>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque, dui eu hendrerit interdum, erat ante hendrerit purus, sit amet dictum felis ex eu tortor. Sed vitae sapien turpis. Maecenas sagittis massa quis lectus vehicula convallis non eu sapien. Mauris sollicitudin nec magna nec consectetur. Morbi hendrerit vitae lacus nec vulputate.</p>
@@ -23,8 +21,6 @@ import { ZDivider } from 'zutre'
       <z-divider content="OR" />
 
       <z-code lang="Vue">
-import { ZDivider } from 'zutre'
-
 &lt;z-divider content="OR" /&gt;</z-code>
 
       <z-columns>
@@ -38,8 +34,6 @@ import { ZDivider } from 'zutre'
 
         <z-column :size="12">
           <z-code lang="Vue">
-import { ZColumn, ZDivider } from 'zutre'
-
 &lt;z-column&gt;
   &lt;!-- content --&gt;
 &lt;/z-column &gt;

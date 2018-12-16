@@ -132,8 +132,6 @@
       <z-divider content="EXAMPLE" />
 
       <z-code lang="Vue">
-import { ZCard, ZCardImage, ZCardHeader, ZCardTitle, ZCardSubtitle, ZCardBody, ZCardFooter, ZButton } from 'zutre'
-
 &lt;z-card&gt;
   &lt;z-card-image src="/photo.jpg" /&gt;
   &lt;z-card-header&gt;

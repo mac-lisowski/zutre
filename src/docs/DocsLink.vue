@@ -15,16 +15,14 @@
 
       Go to: <z-link href="/">Home</z-link>, <z-link href="/about" name="About" />
 
-      <z-code lang="Vue">import { ZLink } from 'zutre'
-
+      <z-code lang="Vue">
 &lt;z-link href="/about" name="About /&gt;
 </z-code>
 
       <z-divider content="OR" />
 
       Go to: <z-link :link="{ name: 'home' }">Home</z-link>, <z-link :link="{ name: 'about' }" name="About" />
-      <z-code lang="Vue">import { ZLink } from 'zutre'
-
+      <z-code lang="Vue">
 &lt;z-link :link="{ name: 'about ' }" name="About /&gt;
 </z-code>
 

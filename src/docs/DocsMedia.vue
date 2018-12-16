@@ -21,8 +21,6 @@
       </z-columns>
 
 <z-code lang="Vue">
-import { ZMedia } from 'zutre'
-
 &lt;z-media src="..." /&gt;
 </z-code>
 
@@ -36,8 +34,6 @@ import { ZMedia } from 'zutre'
       </z-columns>
 
 <z-code lang="Vue">
-import { ZMedia } from 'zutre'
-
 &lt;z-media responsive src="..." /&gt;
 </z-code>
 
@@ -63,8 +59,6 @@ import { ZMedia } from 'zutre'
         </z-column>
       </z-columns>
 <z-code lang="Vue">
-import { ZMedia } from 'zutre'
-
 &lt;z-media responsive caption="responsive image with caption on the right" captionPosition="right" src="..." /&gt;
 </z-code>
 
@@ -81,8 +75,6 @@ import { ZMedia } from 'zutre'
         </z-column>
       </z-columns>
 <z-code lang="Vue">
-import { ZMedia } from 'zutre'
-
 &lt;z-media video&gt;
   &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/z-media&gt;
@@ -110,8 +102,6 @@ to generate:
         </z-column>
       </z-columns>
 <z-code lang="Vue">
-import { ZMedia } from 'zutre'
-
 &lt;z-media video responsive&gt;
   &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/z6hQqgvGI4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/z-media&gt;

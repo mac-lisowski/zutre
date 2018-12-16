@@ -26,8 +26,6 @@
       </z-menu>
 
       <z-code lang="Vue">
-import { ZMenu, ZMenuItem, ZMenuDivider, ZAvatar, ZTile, ZTileContent, ZTileIcon } from 'zutre'
-
 &lt;z-menu&gt;
   &lt;tile :center="true"&gt;
     &lt;z-tile-icon&gt;
@@ -55,8 +53,6 @@ import { ZMenu, ZMenuItem, ZMenuDivider, ZAvatar, ZTile, ZTileContent, ZTileIcon
       </z-menu>
 
       <z-code lang="Vue">
-import { ZMenu, ZMenuItem, ZMenuDivider } from 'zutre'
-
 &lt;z-menu&gt;
   &lt;z-menu-divider content="LINKS" /&gt;
 

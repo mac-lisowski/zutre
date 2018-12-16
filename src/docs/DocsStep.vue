@@ -19,8 +19,6 @@
       ]" :onClick="stepOnClick" />
 
 <z-code lang="Vue">
-import { ZStep } from 'zutre'
-
 &lt;z-step :items="[
   { name: 'Step 1', tooltip: 'Hi in first step!'},
   { name: 'Step 2', tooltip: 'Second step!', active: true},
@@ -40,8 +38,6 @@ import { ZStep } from 'zutre'
       </z-step>
 
       <z-code lang="Vue">
-import { ZStep, ZStemItem} from 'zutre'
-
 &lt;z-step&gt;
   &lt;z-step-item name="Step 1" tooltip="Tooltip 1" /&gt;
   &lt;z-step-item name="Step 2" tooltip="Tooltip 2" /&gt;

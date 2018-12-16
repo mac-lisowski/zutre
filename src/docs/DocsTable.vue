@@ -41,8 +41,6 @@
       <br>
 
 <z-code lang="Vue">
-import { ZTable, ZThead, ZTbody, ZTh, Ztr, Ztd } from 'zutre'
-
 &lt;z-table stripped hover&gt;
   &lt;z-thead&gt;
     &lt;z-tr&gt;
