@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file.
 
 #### Added
 * New component [Drawer](https://maclisowski.github.io/zutre/#/components/drawer)
-* New component [Accordion](https://maclisowski.github.io/zutre/#/components/accordion)
+* New component [Accordion](https://maclisowski.github.io/zutre/#/components/accordions)
 * General cleanups in the code
 * New property in Avatar - `{Boolean} block`, when set to `true`, css properties will be added: `display: block` and auto left/right margins plus centered position inside the block  
 * Added tooltip suppeort: `tooltip` and `tooltipPosition = left/right/bottom/top` for components: Link, Button
