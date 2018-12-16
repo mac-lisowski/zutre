@@ -46,11 +46,11 @@ npm install --save zutre
 | Menu | Done |
 | Modals | Done |
 | Nav | Done |
-| Pagination | |
-| Panels | |
-| Popovers | |
+| Pagination |  |
+| Panels |  |
+| Popovers |  |
 | Steps | Done |
-| Tabs | |
+| Tabs | Done |
 | Tiles | Done |
 | Toasts | Done |
 | Tooltips |  |
