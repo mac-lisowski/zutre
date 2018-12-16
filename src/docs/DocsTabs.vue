@@ -6,14 +6,14 @@
       <z-divider />
 
       <z-button :click="() => changeTab(2)">Change to Tab 3</z-button>
-      <z-tab :items="items" :active.sync="activeTab">
+      <z-tab :items="items" :active.sync="activeTab" :height="200">
         <template slot="action">
           <z-button size="sm" >Action Button</z-button>
         </template>
       </z-tab>
 
       <br/>
-      
+
       <z-divider content="DISPLAY AS BLOCK" />
 
       <z-tab :items="items"  block/>

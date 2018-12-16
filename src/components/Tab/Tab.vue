@@ -14,13 +14,15 @@
       </li>
     </ul>
     
-    <!-- <template v-if="hasComponent(item.content)">
-    </template>
-    <template v-else>
-    </template> -->
-
-    <!-- <component v-if="hasComponent(item.content)" :is="extractContent(item.content, 'component')" /> -->
-    <div v-for="(item, idx) in items" v-bind:key="idx" :style="{display: (activeTab === idx) ? 'block' : 'none' }">
+    <div 
+      v-for="(item, idx) in items" 
+      v-bind:key="idx" 
+      :style="{
+        display: (activeTab === idx) ? 'block' : 'none',
+        height: (height > 0) ? height + 'px' : 'auto',
+        overflow: (height > 0) ? 'auto' : 'initial',
+      }"
+    >
       <div v-html="item.content" v-if="!hasComponent(item.content, 'component')" />
       <component v-if="hasComponent(item.content)" :is="item.content" />
     </div>
@@ -41,6 +43,10 @@ export default {
       default: () => [],
     },
     active: {
+      type: Number,
+      default: () => 0,
+    },
+    height: {
       type: Number,
       default: () => 0,
     },
