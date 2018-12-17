@@ -170,7 +170,6 @@ export default {
       this.displayResults = res;
     },
     generateItems() {
-      console.log(this.totalResults);
       let newItems = [];
       let i = 1;
 
@@ -179,9 +178,6 @@ export default {
       }
 
       this.items = newItems;
-    },
-    processResults(results) {
-      console.log(results);
     }
   },
   watch: {

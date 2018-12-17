@@ -77,7 +77,11 @@ export default {
       this.dataItems = this.items;
     }
 
-    this.maxPage = Math.ceil(this.totalResults / this.showPerPage);
+    this.countMaxPage();
+
+    if (typeof this.onPageChange === 'function') {
+      this.onPageChange.apply(null, [this.currentPage, this.dataResults, this.maxPage]);
+    }
   },
   methods: {
     pageClick(page) {
@@ -85,7 +89,7 @@ export default {
       this.$emit('update:page', page);
 
       if (typeof this.onPageChange === 'function') {
-        this.onPageChange.apply(null, [page, this.dataResults]);
+        this.onPageChange.apply(null, [page, this.dataResults, this.maxPage]);
       }
     },
     prevPage() {
@@ -105,6 +109,10 @@ export default {
   watch: {
     page(val) {
       this.currentPage = val;
+
+      if (typeof this.onPageChange === 'function') {
+        this.onPageChange.apply(null, [this.currentPage, this.dataResults, this.maxPage]);
+      }
     },
     total(val) {
       this.totalResults = val;
