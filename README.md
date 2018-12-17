@@ -15,7 +15,7 @@ npm install --save zutre
 |---|---|
 | Tables | Done |
 | Buttons | Done |
-| Forms | |
+| Forms | In progress |
 | Icons | Done |
 | Labels | Done |
 | Code | Done |
@@ -37,7 +37,7 @@ npm install --save zutre
 | Accordions | Done |
 | Avatars | Done |
 | Badges | Done |
-| Bars | |
+| Bars | In progress |
 | Breadcrumbs | Done | 
 | Cards | Done |
 | Chips | Done |
@@ -46,14 +46,14 @@ npm install --save zutre
 | Menu | Done |
 | Modals | Done |
 | Nav | Done |
-| Pagination |  |
-| Panels |  |
-| Popovers |  |
+| Pagination | Done |
+| Panels | In progress |
+| Popovers | In progress |
 | Steps | Done |
 | Tabs | Done |
 | Tiles | Done |
 | Toasts | Done |
-| Tooltips |  |
+| Tooltips | In progress |
 
 ## Utilities
 
