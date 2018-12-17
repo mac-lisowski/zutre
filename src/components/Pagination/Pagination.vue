@@ -108,6 +108,12 @@ export default {
   },
   watch: {
     page(val) {
+      if (val < 1) {
+        val = 1;
+      } else if (val > this.maxPage) {
+        val = this.maxPage;
+      }
+      
       this.currentPage = val;
 
       if (typeof this.onPageChange === 'function') {
@@ -115,6 +121,10 @@ export default {
       }
     },
     total(val) {
+      if (val < 0) {
+        val = 0;
+      }
+
       this.totalResults = val;
 
       this.countMaxPage();
@@ -122,6 +132,9 @@ export default {
       this.pageClick(1);
     },
     perPage(val) {
+      if (val < 1) {
+        val = 20;
+      }
       this.showPerPage = val;
       
       this.countMaxPage();
