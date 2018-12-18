@@ -14,18 +14,9 @@
       </li>
     </ul>
     
-    <div 
-      v-for="(item, idx) in items" 
-      v-bind:key="idx" 
-      :style="{
-        display: (activeTab === idx) ? 'block' : 'none',
-        height: (height > 0) ? height + 'px' : 'auto',
-        overflow: (height > 0) ? 'auto' : 'initial',
-      }"
-    >
-      <div v-html="item.content" v-if="!hasComponent(item.content, 'component')" />
-      <component v-if="hasComponent(item.content)" :is="item.content" />
-    </div>
+    <template v-if="!hasTargetContainer">
+      <z-tab-controller :items="items" :active="activeTab" :height="height" />
+    </template>
   </div>
 </template>
 <script>
@@ -34,6 +25,9 @@
  *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
+import Vue from 'vue';
+import TabController from './TabController';
+
 export default {
   name: 'Tab',
   props: {
@@ -50,6 +44,7 @@ export default {
       type: Number,
       default: () => 0,
     },
+    containerId: String,
     onClick: Function,
   },
   data() {
@@ -59,6 +54,9 @@ export default {
   },
   created() {
     this.activeTab = this.active;
+  },
+  mounted() {
+    this.mountToTargetContainer();
   },
   watch: {
     active(val) {
@@ -77,8 +75,28 @@ export default {
       this.$emit('update:active', idx);
       this.activeTab = idx;
     },
-    hasComponent(item) {
-      return typeof item === 'object' || typeof item === 'function';
+    // mountToTargetContainer - if containerId exist, mount z-tab-controller there
+    mountToTargetContainer() {
+      if (this.hasTargetContainer) {
+        let containerEl = document.getElementById(this.containerId);
+
+        if (!containerEl) {
+          throw '[zutre:z-tab] containerId: '+ this.containerId + ' - HTMLElement with such ID does not exist';
+        } else {
+          // ZTabController
+          let newTarget = new Vue({
+            ...TabController,
+            parent: this,
+            propsData: {
+              items: this.items,
+              active: this.activeTab,
+              height: this.height,
+            },
+          });
+
+          newTarget.$mount(containerEl);
+        }
+      }
     },
   },
   computed: {
@@ -87,7 +105,10 @@ export default {
     },
     hasActionSlot() {
       return !!this.$slots.action;
-    }
+    },
+    hasTargetContainer() {
+      return !!this.containerId;
+    },
   }
 }
 </script>

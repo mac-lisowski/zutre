@@ -1,9 +1,11 @@
 import Tab from './Tab';
+import TabController from './TabController';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
   install(Vue) {
     installPlugin(Vue, Tab);
+    installPlugin(Vue, TabController);
   },
 };
 
@@ -13,4 +15,5 @@ export default VuePlugin;
 
 export {
   Tab,
+  TabController,
 };

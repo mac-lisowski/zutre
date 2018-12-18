@@ -146,6 +146,11 @@ let router = new Router({
       component: () => import('@/docs/DocsPagination.vue')
     },
     {
+      path: '/components/panels',
+      name: 'docsPanels',
+      component: () => import('@/docs/DocsPanels.vue')
+    },
+    {
       path: '/components/toast',
       name: 'docsToast',
       component: () => import('@/docs/DocsToast.vue')
