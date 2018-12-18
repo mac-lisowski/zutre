@@ -47,7 +47,7 @@ npm install --save zutre
 | Modals | Done |
 | Nav | Done |
 | Pagination | Done |
-| Panels | In progress |
+| Panels | Panels |
 | Popovers | In progress |
 | Steps | Done |
 | Tabs | Done |
