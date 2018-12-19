@@ -2068,15 +2068,6 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
-var es6_array_iterator = __webpack_require__("cadf");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
-var es6_promise = __webpack_require__("551c");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.promise.finally.js
-var es7_promise_finally = __webpack_require__("097d");
-
 // EXTERNAL MODULE: ./src/scss/main.scss
 var main = __webpack_require__("b107");
 
@@ -2614,6 +2605,15 @@ var Badgevue_type_template_id_5e7aab1e_staticRenderFns = []
 
 
 // CONCATENATED MODULE: ./src/components/Badge/Badge.vue?vue&type=template&id=5e7aab1e&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.array.iterator.js
+var es6_array_iterator = __webpack_require__("cadf");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.promise.js
+var es6_promise = __webpack_require__("551c");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es7.promise.finally.js
+var es7_promise_finally = __webpack_require__("097d");
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Badge/Badge.vue?vue&type=script&lang=js&
 
@@ -7858,9 +7858,108 @@ var Toast_VuePlugin = {
 Object(utils["b" /* usePlugin */])(Toast_VuePlugin);
 /* harmony default export */ var components_Toast = (Toast_VuePlugin);
 
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Tooltip/Tooltip.vue?vue&type=script&lang=js&
+/* harmony default export */ var Tooltipvue_type_script_lang_js_ = ({
+  functional: true,
+  name: 'Tooltip',
+  props: {
+    content: {
+      type: String,
+      default: function _default() {
+        return '';
+      }
+    },
+    position: {
+      type: String,
+      default: function _default() {
+        return '';
+      }
+    }
+  },
+  // mounted() {
+  //   let el = this.$slots.default[0].elm;
+  //   el.classList.add('tooltip');
+  //   el.setAttribute('data-tooltip', this.content);
+  // },
+  created: function created() {
+    console.log("X");
+  },
+  render: function render(create, context) {
+    if (typeof context.children[0].elm !== 'undefined') {
+      var el = context.children[0].elm;
+      el.classList.add('tooltip');
+      el.setAttribute('data-tooltip', this.content);
+    }
+
+    console.log(context.props);
+    return context.children;
+  },
+  computed: {
+    hasDefaultSlot: function hasDefaultSlot() {
+      return !!this.$slots.default;
+    },
+    css: function css() {
+      var css = {
+        tooltip: true
+      };
+
+      switch (this.position) {
+        case 'top':
+          css['tooltip-top'] = true;
+          break;
+
+        case 'bottom':
+          css['tooltip-bottom'] = true;
+          break;
+
+        case 'left':
+          css['tooltip-left'] = true;
+          break;
+
+        case 'right':
+          css['tooltip-right'] = true;
+          break;
+      }
+
+      return css;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/Tooltip/Tooltip.vue?vue&type=script&lang=js&
+ /* harmony default export */ var Tooltip_Tooltipvue_type_script_lang_js_ = (Tooltipvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/Tooltip/Tooltip.vue
+var Tooltip_render, Tooltip_staticRenderFns
+
+
+
+
+/* normalize component */
+
+var Tooltip_component = normalizeComponent(
+  Tooltip_Tooltipvue_type_script_lang_js_,
+  Tooltip_render,
+  Tooltip_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+Tooltip_component.options.__file = "Tooltip.vue"
+/* harmony default export */ var Tooltip = (Tooltip_component.exports);
+// CONCATENATED MODULE: ./src/components/Tooltip/index.js
+
+
+var Tooltip_VuePlugin = {
+  install: function install(Vue) {
+    Object(utils["a" /* installPlugin */])(Vue, Tooltip);
+  }
+};
+Object(utils["b" /* usePlugin */])(Tooltip_VuePlugin);
+/* harmony default export */ var components_Tooltip = (Tooltip_VuePlugin);
+
 // CONCATENATED MODULE: ./src/components/index.js
-
-
 
 
 
@@ -7925,7 +8024,8 @@ var Components = {
   ZTab: components_Tab,
   ZTable: components_Table,
   ZTile: components_Tile,
-  ZToast: components_Toast
+  ZToast: components_Toast,
+  ZTooltip: components_Tooltip
 };
 var Zutre = {
   install: function install(vue) {
