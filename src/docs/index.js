@@ -151,6 +151,11 @@ let router = new Router({
       component: () => import('@/docs/DocsPanels.vue')
     },
     {
+      path: '/components/popovers',
+      name: 'docsPopovers',
+      component: () => import('@/docs/DocsPopovers.vue')
+    },
+    {
       path: '/components/toast',
       name: 'docsToast',
       component: () => import('@/docs/DocsToast.vue')

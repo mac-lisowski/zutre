@@ -26,6 +26,7 @@ import ZNav from './Nav';
 import ZNavbar from './Navbar';
 import ZPagination from './Pagination';
 import ZPanel from './Panel';
+import ZPopover from './Popover';
 import ZStep from './Step';
 import ZTab from './Tab';
 import ZTable from './Table';
@@ -60,6 +61,7 @@ const Components = {
   ZNavbar,
   ZPagination,
   ZPanel,
+  ZPopover,
   ZStep,
   ZTab,
   ZTable,

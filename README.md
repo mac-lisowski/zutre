@@ -35,8 +35,6 @@ Once it is done, you can use **zutre** components in your Vue project. For more 
 ### Zutre Components 
 * #### In progress
   * Forms
-  * Tooltips
-  * Popovers
   * Bars
 * #### Elements
   * [Tables](https://maclisowski.github.io/zutre/#/elements/table)
@@ -64,10 +62,12 @@ Once it is done, you can use **zutre** components in your Vue project. For more 
   * [Nav](https://maclisowski.github.io/zutre/#/components/nav)
   * [Pagination](https://maclisowski.github.io/zutre/#/components/pagination)
   * [Panels](https://maclisowski.github.io/zutre/#/components/panels)
+  * [Popovers](https://maclisowski.github.io/zutre/#/components/popovers)
   * [Steps](https://maclisowski.github.io/zutre/#/components/steps)
   * [Tabs](https://maclisowski.github.io/zutre/#/components/tabs)
   * [Tiles](https://maclisowski.github.io/zutre/#/components/tiles)
   * [Toasts](https://maclisowski.github.io/zutre/#/components/toasts)
+  * [Tooltips](https://maclisowski.github.io/zutre/#/components/tooltips)
 * #### Utilities
   * [Divider](https://maclisowski.github.io/zutre/#/utilities/divider)
   * [Link](https://maclisowski.github.io/zutre/#/utilities/link)

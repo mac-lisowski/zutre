@@ -63,6 +63,7 @@
             <z-menu-item :link="{ name: 'docsNav' }" name="Nav" activeClass="active" />
             <z-menu-item :link="{ name: 'docsPagination' }" name="Pagination" activeClass="active" />
             <z-menu-item :link="{ name: 'docsPanels' }" name="Panels" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsPopovers' }" name="Popovers" activeClass="active" />
             <z-menu-item :link="{ name: 'docsStep' }" name="Steps" activeClass="active" />
             <z-menu-item :link="{ name: 'docsTabs' }" name="Tabs" activeClass="active" />
             <z-menu-item :link="{ name: 'docsTile' }" name="Tile" activeClass="active" />
