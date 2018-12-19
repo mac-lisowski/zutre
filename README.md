@@ -39,39 +39,38 @@ Once it is done, you can use **zutre** components in your Vue project. For more 
   * Popovers
   * Bars
 * #### Elements
-  * Tables
-  * Buttons
-  * Icons
-  * Labels
-  * Code
-  * Media
+  * [Tables](https://maclisowski.github.io/zutre/#/elements/table)
+  * [Buttons](https://maclisowski.github.io/zutre/#/elements/buttons)
+  * [Icons](https://maclisowski.github.io/zutre/#/elements/icons)
+  * [Labels](https://maclisowski.github.io/zutre/#/elements/label)
+  * [Code](https://maclisowski.github.io/zutre/#/elements/code)
+  * [Media](https://maclisowski.github.io/zutre/#/elements/media)
 * #### Layout
-  * Flexbox grid
-  * Responsive
-  * Hero
-  * Navbar
+  * [Flexbox grid](https://maclisowski.github.io/zutre/#/layout/flexbox)
+  * [Responsive](https://maclisowski.github.io/zutre/#/layout/responsive)
+  * [Hero](https://maclisowski.github.io/zutre/#/layout/hero)
+  * [Navbar](https://maclisowski.github.io/zutre/#/layout/navbar)
 * #### Components
-  * Accordions
-  * Avatars
-  * Badges
-  * Breadcrumbs
-  * Cards
-  * Chips
-  * Drawer
-  * Empty states
-  * Menu
-  * Modals
-  * Nav
-  * Pagination
-  * Panels
-  * Steps
-  * Tabs
-  * Tiles
-  * Toasts
-  * Tooltips
+  * [Accordions](https://maclisowski.github.io/zutre/#/components/accordions)
+  * [Avatars](https://maclisowski.github.io/zutre/#/components/avatars)
+  * [Badges](https://maclisowski.github.io/zutre/#/components/badges)
+  * [Breadcrumbs](https://maclisowski.github.io/zutre/#/components/breadcrumbs)
+  * [Cards](https://maclisowski.github.io/zutre/#/components/cards)
+  * [Chips](https://maclisowski.github.io/zutre/#/components/chips)
+  * [Drawer](https://maclisowski.github.io/zutre/#/components/drawer)
+  * [Empty states](https://maclisowski.github.io/zutre/#/components/empty-states)
+  * [Menu](https://maclisowski.github.io/zutre/#/components/menu)
+  * [Modals](https://maclisowski.github.io/zutre/#/components/modals)
+  * [Nav](https://maclisowski.github.io/zutre/#/components/nav)
+  * [Pagination](https://maclisowski.github.io/zutre/#/components/pagination)
+  * [Panels](https://maclisowski.github.io/zutre/#/components/panels)
+  * [Steps](https://maclisowski.github.io/zutre/#/components/steps)
+  * [Tabs](https://maclisowski.github.io/zutre/#/components/tabs)
+  * [Tiles](https://maclisowski.github.io/zutre/#/components/tiles)
+  * [Toasts](https://maclisowski.github.io/zutre/#/components/toasts)
 * #### Utilities
-  * Divider
-  * Link
+  * [Divider](https://maclisowski.github.io/zutre/#/utilities/divider)
+  * [Link](https://maclisowski.github.io/zutre/#/utilities/link)
 
 ---
 
