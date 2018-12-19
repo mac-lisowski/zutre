@@ -1,7 +1,7 @@
 <template>
     <z-container>
       <z-breadcrumbs :items="[{ name: 'Home', link: { name: 'home' }}, { name: 'Elements' }, { name: 'Media', link: { name: 'docsMedia' }}]" />
-      <h4>Icons</h4>
+      <h4>Media</h4>
 
       <p>Media includes responsive images, figures and video classes.</p>
 

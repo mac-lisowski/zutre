@@ -31,6 +31,7 @@ import ZTab from './Tab';
 import ZTable from './Table';
 import ZTile from './Tile';
 import ZToast from './Toast';
+import ZTooltip from './Tooltip';
 
 const Components = {
   ZAccordion,
@@ -64,6 +65,7 @@ const Components = {
   ZTable,
   ZTile,
   ZToast,
+  ZTooltip,
 }
 
 export const Zutre = {

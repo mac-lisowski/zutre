@@ -11,8 +11,9 @@
 
       <z-divider content="EXAMPLE" />
       <br>
-
+  <z-tooltip position="top" content="Dziala">
       <z-label>default label</z-label>
+  </z-tooltip>
       <z-label type="primary" content="primary label" />
       <z-label type="secondary" content="secondary label" />
       <z-label type="success" content="success label" />

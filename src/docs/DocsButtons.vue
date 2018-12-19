@@ -11,7 +11,8 @@
       <br>
       <z-button>button</z-button> &nbsp;
       <z-button type="primary">primary</z-button> &nbsp;
-      <z-button type="link">link</z-button>
+      <z-button type="link">link</z-button> &nbsp;
+      <z-button tooltip="Button Tooltip">with tooltip</z-button>
 <z-code lang="Vue">
 &lt;z-button&gt;button&lt;/z-button&gt;
 &lt;z-button type="primary"&gt;primary&lt;/z-button&gt;
