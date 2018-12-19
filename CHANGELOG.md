@@ -5,7 +5,20 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3 Unreleased
+## 0.1.3-alpha.1 Unreleased
+
+#### Added
+
+* New component [Tooltips](https://maclisowski.github.io/zutre/#/components/tooltips)
+
+#### Removed
+* Support for tooltips through props for Buttons - Tooltip component should be used instead
+
+---
+
+## Released 
+
+## 0.1.3-alpha.0
 
 #### Changed
 
@@ -31,9 +44,6 @@ All notable changes to this project will be documented in this file.
 * Added tooltip suppeort: `tooltip` and `tooltipPosition = left/right/bottom/top` for components: Link, Button
 * Nav - added `items` property to support passign nav elements as an array of objects, read more in [docs](https://maclisowski.github.io/zutre/#/components/nav)
 * Added support for icons in Breadcrumbs
-
----
-## Released 
 
 ## 0.1.2
 
