@@ -1,5 +1,5 @@
 <template>
-  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick" v-bind:data-badge="badge" v-bind:data-tooltip="tooltip">
+  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick" v-bind:data-badge="badge">
     <slot />
   </button>
 </template>
@@ -20,8 +20,6 @@
  * @prop {Boolean} disabled
  * @prop {Boolean} right
  * @prop {String} badge
- * @prop {string} tooltip
- * @prop {string} tooltipPosition
  */
 export default {
   name: 'Button',
@@ -32,9 +30,6 @@ export default {
       }
       return
     }
-  },
-  watch: {
-
   },
   props: {
     click: Function,
@@ -73,23 +68,13 @@ export default {
       type: Boolean
     },
     badge: String,
-    tooltip: String,
-    tooltipPosition: String,
   },
   computed: {
     isDisabled: function() {
       return this.disabled
     },
     btnClass: function() {
-      let css = { btn: true, tooltip: false };
-
-      if (typeof this.tooltip !== 'undefined') {
-        css.tooltip = true;
-      }
-
-      if (typeof this.tooltipPosition !== 'undefined') {
-        css['tooltip-' + this.tooltipPosition] = true;
-      }
+      let css = { btn: true };
 
       if (this.size !== '') {
         switch (this.size) {

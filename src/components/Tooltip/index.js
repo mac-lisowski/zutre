@@ -4,6 +4,8 @@ import { usePlugin, installPlugin } from './../../utils';
 const VuePlugin = {
   install(Vue) {
     installPlugin(Vue, Tooltip);
+
+    
   },
 };
 

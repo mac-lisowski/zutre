@@ -1,55 +1,50 @@
+<template>
+  <span><slot /></span>
+</template>
 <script>
 export default {
-  functional:true,
   name: 'Tooltip',
   props: {
     content: { type: String, default: () => '' },
     position: { type: String, default: () => '' },
   },
-  // mounted() {
-  //   let el = this.$slots.default[0].elm;
-
-  //   el.classList.add('tooltip');
-  //   el.setAttribute('data-tooltip', this.content);
-  // },
-  created() {
-    console.log("X")
-  },
-  render(create, context) {
-    if (typeof context.children[0].elm !== 'undefined') {
-      let el = context.children[0].elm;
+  mounted() {
+    if (this.hasDefaultSlot) {
+      let el = this.$slots.default[0].elm;
 
       el.classList.add('tooltip');
       el.setAttribute('data-tooltip', this.content);
+
+      if (this.tooltipPosition !== '') {
+        el.classList.add(this.tooltipPosition);
+      }
+
+      this.$el.replaceWith(el);
     }
-
-    console.log(context.props)
-
-    return context.children;
   },
   computed: {
     hasDefaultSlot() {
       return !!this.$slots.default;
     },
-    css() {
-      let css = { tooltip: true };
+    tooltipPosition() {
+      let pos = '';
       
       switch(this.position) {
         case 'top':
-          css['tooltip-top'] = true;
+          pos = 'tooltip-top';
           break;
         case 'bottom':
-          css['tooltip-bottom'] = true;
+          pos = 'tooltip-bottom';
           break;
         case 'left':
-          css['tooltip-left'] = true;
+          pos = 'tooltip-left';
           break;
         case 'right':
-          css['tooltip-right'] = true;
+          pos = 'tooltip-right';
           break;
       }
 
-      return css;
+      return pos;
     },
   },
 };

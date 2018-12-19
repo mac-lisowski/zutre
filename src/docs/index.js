@@ -155,6 +155,11 @@ let router = new Router({
       name: 'docsToast',
       component: () => import('@/docs/DocsToast.vue')
     },
+    {
+      path: '/components/tooltips',
+      name: 'docsTooltips',
+      component: () => import('@/docs/DocsTooltips.vue')
+    },
 
     {
       path: '/utilities/divider',
