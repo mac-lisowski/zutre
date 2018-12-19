@@ -1,75 +1,86 @@
-# Zutre
-[https://maclisowski.github.io/zutre/](https://maclisowski.github.io/zutre/)
+# Zutre [![](https://img.shields.io/npm/v/zutre.svg)](https://www.npmjs.com/package/zutre) [![](https://img.shields.io/github/package-json/v/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre) 
 
-## NOTE: Project in development, do not use at production
+#### NOTE: Project in development, do not use at production
 
-**zutre** is an implementation of [Spectre CSS Framework](https://github.com/picturepan2/spectre) into Vue compontents. 
+**zutre** is a set of UI components for VueJS based on [Spectre CSS Framework](https://github.com/picturepan2/spectre) with some modifications and provided new features which are not available in Spectre.
 
-### Install
-```
+Demo and documentation: [https://maclisowski.github.io/zutre/](https://maclisowski.github.io/zutre/)
+
+If you want to see what is coming next, please see [Changelog](https://github.com/maclisowski/zutre/blob/master/CHANGELOG.md).
+
+[![](https://img.shields.io/github/issues/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/issues) ![](https://img.shields.io/github/languages/top/maclisowski/zutre.svg) [![GitHub license](https://img.shields.io/github/license/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/blob/master/LICENSE) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/maclisowski/zutre/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://twitter.com/maclisowski) [![](https://img.shields.io/npm/dt/zutre.svg)](https://www.npmjs.com/package/zutre) 
+
+
+### Installation
+
+In order to install and use **zutre** in your Vue app, you have to install it through npm: 
+
+```bash
 npm install --save zutre
 ```
-## Elements
 
-| Name | Status |
-|---|---|
-| Tables | Done |
-| Buttons | Done |
-| Forms | In progress |
-| Icons | Done |
-| Labels | Done |
-| Code | Done |
-| Media | Done |
+In your main js file import **zutre** and use it in your Vue instance  
 
-## Layout
+```js
+import Vue from 'vue';
+import Zutre from 'zutre';
 
-| Name | Status |
-|---|---|
-| Flexbox grid | Done |
-| Responsive | Done |
-| Hero | Done |
-| Navbar | Done |
+Vue.use(Zutre);
+```
 
-## Components
+Once it is done, you can use **zutre** components in your Vue project. For more informations, components examples and API please see **[documentation](https://maclisowski.github.io/zutre/)**.
 
-| Name | Status |
-|---|---|
-| Accordions | Done |
-| Avatars | Done |
-| Badges | Done |
-| Bars | In progress |
-| Breadcrumbs | Done | 
-| Cards | Done |
-| Chips | Done |
-| Drawer | Done |
-| Empty states | Done |
-| Menu | Done |
-| Modals | Done |
-| Nav | Done |
-| Pagination | Done |
-| Panels | Panels |
-| Popovers | In progress |
-| Steps | Done |
-| Tabs | Done |
-| Tiles | Done |
-| Toasts | Done |
-| Tooltips | In progress |
-
-## Utilities
-
-| Name | Status |
-|---|---|
-| Divider | Done |
-| Link | Done |
+### Zutre Components 
+* #### In progress
+  * Forms
+  * Tooltips
+  * Popovers
+  * Bars
+* #### Elements
+  * Tables
+  * Buttons
+  * Icons
+  * Labels
+  * Code
+  * Media
+* #### Layout
+  * Flexbox grid
+  * Responsive
+  * Hero
+  * Navbar
+* #### Components
+  * Accordions
+  * Avatars
+  * Badges
+  * Breadcrumbs
+  * Cards
+  * Chips
+  * Drawer
+  * Empty states
+  * Menu
+  * Modals
+  * Nav
+  * Pagination
+  * Panels
+  * Steps
+  * Tabs
+  * Tiles
+  * Toasts
+  * Tooltips
+* #### Utilities
+  * Divider
+  * Link
 
 ---
 
-## Project setup
+## Developing
+### Project setup
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+Runs dev server with documentation 
 ```
 npm run serve
 ```
