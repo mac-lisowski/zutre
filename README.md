@@ -10,6 +10,8 @@ If you want to see what is coming next, please see [Changelog](https://github.co
 
 [![](https://img.shields.io/github/issues/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/issues) ![](https://img.shields.io/github/languages/top/maclisowski/zutre.svg) [![GitHub license](https://img.shields.io/github/license/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/blob/master/LICENSE) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/maclisowski/zutre/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://twitter.com/maclisowski) [![](https://img.shields.io/npm/dt/zutre.svg)](https://www.npmjs.com/package/zutre) 
 
+[![https://nodei.co/npm/zutre.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/zutre.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/zutre)
+
 
 ### Installation
 
