@@ -45,8 +45,7 @@
   ],
   "dependencies": {
     "material-design-icons": "^3.0.1",
-    "spectre.css": "^0.5.7",
-    "vue": "^2.5.17"
+    "spectre.css": "^0.5.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
@@ -60,6 +59,7 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
+    "vue": "^2.5.21",
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
   }
