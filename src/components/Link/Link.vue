@@ -1,13 +1,13 @@
 <template>
 
-    <a v-if="!hasLink" :href="linkHref" :class="linkClass" v-bind:data-tooltip="tooltip" v-bind:data-badge="badge" v-on:click="onClick">
+    <a v-if="!hasLink" :href="linkHref" :class="linkClass" v-bind:data-badge="badge" v-on:click="onClick">
       <template v-if="hasDefaultSlot">
         <z-icon v-if="hasIcon" :name="icon" /> <slot></slot>
       </template>
       <template v-else-if="!hasDefaultSlot"><z-icon v-if="hasIcon" :name="icon" /> {{ linkName }}</template>
     </a>
 
-    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-on:click="onClick" v-bind:active-class="activeClass" v-bind:exact="exact" v-bind:data-tooltip="tooltip" v-bind:data-badge="badge">
+    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-on:click="onClick" v-bind:active-class="activeClass" v-bind:exact="exact" v-bind:data-badge="badge">
       <template v-if="hasDefaultSlot">
         <z-icon v-if="hasIcon" :name="icon" /> <slot></slot>
       </template>
@@ -28,8 +28,6 @@
  * @prop {String} activeClass
  * @prop {Boolean} active
  * @prop {Boolean} exact
- * @prop {string} tooltip
- * @prop {string} tooltipPosition
  * @prop {Function} onClick
  */
 export default {
@@ -56,8 +54,6 @@ export default {
       default: () => false
     },
     badge: String,
-    tooltip: String,
-    tooltipPosition: String,
     onClick: {
       type: Function,
       default: function() {},
@@ -65,15 +61,7 @@ export default {
   },
   computed: {
     linkClass: function() {
-      let css = { 'menu-item': true, tooltip: false, badge: false };
-
-      if (typeof this.tooltip !== 'undefined') {
-        css.tooltip = true;
-      }
-
-      if (typeof this.tooltipPosition !== 'undefined') {
-        css['tooltip-' + this.tooltipPosition] = true;
-      }
+      let css = { 'menu-item': true, badge: false };
 
       if (this.active === true && typeof this.activeClass === 'string') {
         css[this.activeClass] = true

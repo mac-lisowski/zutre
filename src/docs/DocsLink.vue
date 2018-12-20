@@ -91,24 +91,6 @@
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
-            <z-td><code>tooltip</code></z-td>
-            <z-td>
-              tooltip text
-            </z-td>
-            <z-td>String</z-td>
-            <z-td>---</z-td>
-            <z-td>---</z-td>
-          </z-tr>
-          <z-tr>
-            <z-td><code>tooltipPosition</code></z-td>
-            <z-td>
-              set tooltip position
-            </z-td>
-            <z-td>String</z-td>
-            <z-td><code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code></z-td>
-            <z-td>---</z-td>
-          </z-tr>
-          <z-tr>
             <z-td><code>onClick</code></z-td>
             <z-td>
             </z-td>

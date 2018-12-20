@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 * New component [Popovers](https://maclisowski.github.io/zutre/#/components/popovers)
 
 #### Removed
-* Support for tooltips through props for Buttons - Tooltip component should be used instead
+* Support for tooltips through props for Buttons and Links - Tooltip component should be used instead
 
 ---
 
