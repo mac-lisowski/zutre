@@ -25,9 +25,6 @@
  *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  */
-import Vue from 'vue';
-import TabController from './TabController';
-
 export default {
   name: 'Tab',
   props: {
@@ -83,18 +80,7 @@ export default {
         if (!containerEl) {
           throw '[zutre:z-tab] containerId: '+ this.containerId + ' - HTMLElement with such ID does not exist';
         } else {
-          // ZTabController
-          let newTarget = new Vue({
-            ...TabController,
-            parent: this,
-            propsData: {
-              items: this.items,
-              active: this.activeTab,
-              height: this.height,
-            },
-          });
-
-          newTarget.$mount(containerEl);
+          this.$zutre.newTabController(this).$mount(containerEl);
         }
       }
     },

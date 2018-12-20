@@ -12,6 +12,9 @@ All notable changes to this project will be documented in this file.
 * New component [Tooltips](https://maclisowski.github.io/zutre/#/components/tooltips)
 * New component [Popovers](https://maclisowski.github.io/zutre/#/components/popovers)
 
+#### Changed
+* Tabs: Moved creation of tab controller instance to **$zutre** API `Vue.$zutre.newTabController` method
+
 #### Removed
 * Support for tooltips through props for Buttons and Links - Tooltip component should be used instead
 
