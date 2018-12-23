@@ -12,8 +12,6 @@ const VuePlugin = {
 
     const ZToast = Toast;
     
-    Vue.mixin(ZToast);
-
     Vue.prototype.$zutre.toast = function(options) {
           let $elNotify = document.getElementById('zutre-toast')
           let body = document.getElementsByTagName('body')[0]
