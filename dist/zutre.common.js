@@ -7889,7 +7889,6 @@ var Toast_VuePlugin = {
     Object(utils["a" /* installPlugin */])(Vue, ToastBody);
     Object(utils["a" /* installPlugin */])(Vue, ToastTitle);
     var ZToast = Toast;
-    Vue.mixin(ZToast);
 
     Vue.prototype.$zutre.toast = function (options) {
       var $elNotify = document.getElementById('zutre-toast');
