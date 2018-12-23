@@ -5,11 +5,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.3 Unreleased
+## 0.1.3-alpha.4 Unreleased
 
 ---
 
 ## Released 
+
+## 0.1.3-alpha.3 Unreleased
+
+#### Added
+* New feature in Toast - provided ability to set global default settings for toasts
+
+```
+this.$zutre.toast.settings = {
+  position: 'top right',
+  type: 'info',
+  duration: 3000,
+  closeBtn: true  
+};
+```
 
 ## 0.1.3-alpha.2
 
