@@ -45,22 +45,22 @@
   ],
   "dependencies": {
     "material-design-icons": "^3.0.1",
-    "spectre.css": "^0.5.7"
+    "spectre.css": "^0.5.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-plugin-unit-mocha": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
-    "@vue/test-utils": "^1.0.0-beta.20",
+    "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "chai": "^4.1.2",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
-    "node-sass": "^4.10.0",
+    "eslint": "^5.11.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.21",
     "vue-router": "^3.0.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.21"
   }
 }
