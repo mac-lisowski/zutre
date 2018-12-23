@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file.
 
 ## Released 
 
-## 0.1.3-alpha.3 Unreleased
+## 0.1.3-alpha.3
 
 #### Added
 * New feature in Toast - provided ability to set global default settings for toasts
