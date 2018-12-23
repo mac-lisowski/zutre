@@ -238,7 +238,8 @@ export default {
         type: 'primary',
         title: 'Custom primary persistent toast',
         content: 'Seems like everything is fine. Vue is cool!',
-        closeBtn: true
+        closeBtn: true,
+        duration: 0,
       })
     },
     openToastBottomRight () {

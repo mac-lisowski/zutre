@@ -104,6 +104,16 @@ export default {
       size: ''
     }
   },
+  beforeCreate() {
+    
+    this.$zutre.toast.settings = {
+      position: 'top right',
+      type: 'info',
+      duration: 3000,
+      closeBtn: true  
+    };
+
+  },
   created () {
     this.size = (this.$router.currentRoute.name == 'home') ? 'lg' : 'sm'
   },
