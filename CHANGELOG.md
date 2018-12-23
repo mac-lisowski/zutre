@@ -5,11 +5,17 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.2 Unreleased
+## 0.1.3-alpha.3 Unreleased
 
 ---
 
 ## Released 
+
+## 0.1.3-alpha.2
+
+#### Fixed
+* Breadcrumbs: when there is no items, do not render empty HTML element
+* Toast: revmoed loading toast as mixin
 
 ## 0.1.3-alpha.1
 
