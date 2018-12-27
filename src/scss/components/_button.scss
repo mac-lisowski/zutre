@@ -1,11 +1,22 @@
 .btn {
-  
-
+  position: relative;
   &:not(.btn-action) {
     .material-icons {
       vertical-align: middle;
       margin-right: 5px;
     }
   }
-  
+
+  > .menu {
+    position: absolute;
+    display: none;
+    padding: 0;
+  }
+
+  &:hover {
+    > .menu {
+      display: block;
+      top: 0;
+    }
+  }
 }

@@ -9,4 +9,39 @@
     margin: 0 auto;
     display: block;
   }
+
+  .avatar--presence-container {
+    position: absolute;
+    z-index: 1;
+    right: 14.64%;
+    bottom: 14.64%;
+    height: .5em;
+    width: .5em;
+
+    .menu {
+      position:absolute;
+      top: 0.2rem;
+      left: 0.8rem;
+      z-index: 20;
+      display: none;
+      font-size: 0.7rem;
+      margin: 0 -0.4rem;
+      padding: 0;
+      min-width: 120px;
+
+      .menu-item {
+        display: block;
+      }
+      .menu-item > a {
+        color: $primary-color;
+        font-style: normal;
+      }
+    }
+    .avatar-presence {
+      display: block;
+    }
+    .avatar-presence:hover  .menu {
+     display: block; 
+    }
+  }
 }

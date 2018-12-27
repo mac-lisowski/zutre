@@ -4,14 +4,23 @@
     <template v-if="hasSrc">
       <img :src="srcPath">
     </template>
-
-    <template v-if="hasPresenceSrc">
-      <img :src="presenceSrcPath" class="avatar-icon">
-    </template>
-    <template v-else-if="hasPresence">
-      <i :class="presenceClass"></i>
-    </template>
     
+    <div class="avatar--presence-container">
+      <template v-if="hasPresenceSrc">
+        <img :src="presenceSrcPath" class="avatar-icon">
+      </template>
+      <template v-else-if="hasPresence">
+        <i :class="presenceClass">
+          <template v-if="hasMenu">
+            <z-menu>
+              <z-menu-item v-for="(item, idx) in menuItems" v-bind:key="idx" :name="item.name" :href="item.href" :link="item.link" :onClick="item.onClick" />
+            </z-menu>
+          </template>
+        </i>
+      </template>
+      
+    </div>
+
   </figure>
 </template>
 
@@ -41,6 +50,7 @@ export default {
     presenceSrc: String,
     badge: String,
     block: Boolean,
+    menu: Array,
   },
   computed: {
     hasPresence () {
@@ -51,6 +61,12 @@ export default {
     },
     hasSrc () {
       return (typeof this.src !== 'undefined') ? true : false
+    },
+    hasMenu() {
+      return (typeof this.menu !== 'undefined') ? true : false
+    },
+    menuItems() {
+      return this.menu;
     },
     presenceSrcPath () {
       return this.presenceSrc
