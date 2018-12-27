@@ -11,12 +11,15 @@
     position: absolute;
     display: none;
     padding: 0;
+    text-align: left;
+    min-width: 100%;
   }
 
   &:hover {
     > .menu {
       display: block;
-      top: 0;
+      // top: 0;
+      left: 0;
     }
   }
 }

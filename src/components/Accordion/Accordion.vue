@@ -10,6 +10,9 @@
 </template>
 <script>
 export default {
-  name: 'Accordion'
+  name: 'Accordion',
+  props: {
+    title: String,
+  },
 }
 </script>

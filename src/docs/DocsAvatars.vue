@@ -98,6 +98,27 @@
 &lt;z-avatar size="lg" presence="busy" :src="require('./avatar.png')" badge="999" /&gt;
 </z-code>
 
+      <z-divider />
+      <h4>Avatar dropdown</h4>
+      <p>Avatar supports capability for dropdown menu for presence indicator.</p>
+
+      <z-avatar size="xl" data="ML" :presence="presenceStatus" :onClick="avatarClick" :menu="[
+        { name: 'online', onClick: () => change('online')},
+        { name: 'away', onClick: () => change('away')},
+        { name: 'busy', onClick: () => change('busy')},
+        { name: 'invisible', onClick: () => change('invisible')},
+      ]" />
+      <br>
+
+      <z-code lang="Vue">
+&lt;z-avatar size="xl" data="ML" :presence="status" :onClick="avatarClick" :menu="[
+  { name: 'online', onClick: () => change('online')},
+  { name: 'away', onClick: () => change('away')},
+  { name: 'busy', onClick: () => change('busy')},
+  { name: 'invisible', onClick: () => change('invisible')},
+]" /&gt;
+      </z-code>
+
 
       <z-divider content="API" />
       <h4>API</h4>
@@ -175,8 +196,18 @@
 <script>
 export default {
   name: 'DocsAvatars',
+  data() {
+    return {
+      presenceStatus: 'online',
+    };
+  },
   methods: {
-
-  }
+    avatarClick() {
+      console.log('avatar click');
+    },
+    change(val) {
+      this.presenceStatus = val;
+    }
+  },
 }
 </script>

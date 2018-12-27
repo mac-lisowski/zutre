@@ -4,34 +4,65 @@
       <h4>Dropdowns</h4>
 
       <z-button>
-        sdfdsf
+        Dropdown Button
         <z-menu>
-          <z-menu-item href="#" name="Online" />
-          <z-menu-item href="#" name="Away" />
-          <z-menu-item href="#" name="Busy" />
-          <z-menu-item href="#" name="Invisible" />
+          <z-menu-item href="" name="Page 1" />
+          <z-menu-item href="" name="Page 2" />
+          <z-menu-item href="" name="Page 3" />
+          <z-menu-item href="" name="Page 4" />
         </z-menu>
       </z-button>
+      <br>
+      <z-code lang="Vue">
+&lt;z-button&gt;
+  Dropdown Button
 
-      <br><br>
+  &lt;z-menu&gt;
+    &lt;z-menu-item href="" name="Page 1" /&gt;
+    &lt;z-menu-item href="" name="Page 2" /&gt;
+    &lt;z-menu-item href="" name="Page 3" /&gt;
+    &lt;z-menu-item href="" name="Page 4" /&gt;
+  &lt;/z-menu&gt;
+&lt;/z-button&gt;  
+      </z-code>
+
+      <br>
       <z-divider />
       <br>
 
-      <z-avatar size="xl" data="ML" presence="online" :menu="[
-        { name: 'Online', onClick: () => change('online')},
-        { name: 'Away', href: '#', onClick: () => alert('on click')},
-        { name: 'Busy', href: '#', onClick: () => alert('on click')},
-        { name: 'Invisible', href: '#', onClick: () => alert('on click')},
+      <z-avatar size="xl" data="ML" :presence="status" :onClick="avatarClick" :menu="[
+        { name: 'online', onClick: () => change('online')},
+        { name: 'away', onClick: () => change('away')},
+        { name: 'busy', onClick: () => change('busy')},
+        { name: 'invisible', onClick: () => change('invisible')},
       ]" />
+      <br>
+
+      <z-code lang="Vue">
+&lt;z-avatar size="xl" data="ML" :presence="status" :onClick="avatarClick" :menu="[
+  { name: 'online', onClick: () => change('online')},
+  { name: 'away', onClick: () => change('away')},
+  { name: 'busy', onClick: () => change('busy')},
+  { name: 'invisible', onClick: () => change('invisible')},
+]" /&gt;
+      </z-code>
 
     </z-container>
 </template>
 <script>
 export default {
   name: 'DocsDropdowns',
+  data() {
+    return {
+      status: 'online',
+    };
+  },
   methods: {
+    avatarClick() {
+      console.log('avatar click');
+    },
     change(val) {
-      console.log(val);
+      this.status = val;
     }
   },
 }

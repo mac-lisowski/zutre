@@ -83,6 +83,31 @@
 &lt;z-button badge=""&gt;Button&lt;/z-button&gt;
 </z-code>
 
+      <z-divider content="BUTTON DROPDOWNS" />
+
+      <z-button>
+        Dropdown Button
+        <z-menu>
+          <z-menu-item href="" name="Page 1" />
+          <z-menu-item href="" name="Page 2" />
+          <z-menu-item href="" name="Page 3" />
+          <z-menu-item href="" name="Page 4" />
+        </z-menu>
+      </z-button>
+      <br>
+      <z-code lang="Vue">
+&lt;z-button&gt;
+  Dropdown Button
+
+  &lt;z-menu&gt;
+    &lt;z-menu-item href="" name="Page 1" /&gt;
+    &lt;z-menu-item href="" name="Page 2" /&gt;
+    &lt;z-menu-item href="" name="Page 3" /&gt;
+    &lt;z-menu-item href="" name="Page 4" /&gt;
+  &lt;/z-menu&gt;
+&lt;/z-button&gt;  
+      </z-code>
+
       <z-divider content="API" />
       <h4>API</h4>
 
