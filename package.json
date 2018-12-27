@@ -30,6 +30,7 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve ./src/docs/index.js",
+    "build": "npm run build-bundle && npm run build-docs",
     "build-docs": "vue-cli-service build --dest ./docs ./src/docs/index.js",
     "build-bundle": "vue-cli-service build --target lib --name zutre ./src/main.js",
     "lint": "vue-cli-service lint",
