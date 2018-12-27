@@ -5,11 +5,21 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.4 Unreleased
+## 0.1.3-alpha.5 Unreleased
 
 ---
 
 ## Released 
+
+## 0.1.3-alpha.4
+
+#### Added
+* Dropdowns - support for dropdowns in Buttons and Avatar presence icon
+* Avatars - new prop `onClick`, if set will be called once user is going to click avatar icon (can be useful to provide capability to change avatar icon),
+* Menus - new prop `onClick` in `<z-menu-item>` component, if set fired when user is going to click on menu item
+
+#### Fixed
+* Error on render in Accordions
 
 ## 0.1.3-alpha.3
 
