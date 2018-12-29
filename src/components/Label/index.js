@@ -1,4 +1,4 @@
-import Label from './Label';
+import Label from './label';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

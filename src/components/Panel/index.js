@@ -1,4 +1,4 @@
-import Panel from './Panel';
+import Panel from './panel';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

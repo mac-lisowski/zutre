@@ -1,4 +1,4 @@
-import Modal from './Modal';
+import Modal from './modal';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

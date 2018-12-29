@@ -1,5 +1,5 @@
-import Navbar from './Navbar';
-import NavbarSection from './NavbarSection';
+import Navbar from './navbar';
+import NavbarSection from './navbar-section';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

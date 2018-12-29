@@ -1,4 +1,4 @@
-import Chip from './Chip';
+import Chip from './chip';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

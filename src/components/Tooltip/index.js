@@ -1,11 +1,9 @@
-import Tooltip from './Tooltip';
-import { usePlugin, installPlugin } from './../../utils';
+import Tooltip from './tooltip';
+import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
   install(Vue) {
     installPlugin(Vue, Tooltip);
-
-    
   },
 };
 

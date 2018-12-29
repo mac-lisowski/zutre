@@ -1,6 +1,6 @@
-import Toast from './Toast';
-import ToastBody from './ToastBody';
-import ToastTitle from './ToastTitle';
+import Toast from './toast';
+import ToastBody from './toast-body';
+import ToastTitle from './toast-title';
 
 import { usePlugin, installPlugin } from '@/utils';
 

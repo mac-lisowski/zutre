@@ -1,5 +1,5 @@
-import Hero from './Hero';
-import HeroBody from './HeroBody';
+import Hero from './hero';
+import HeroBody from './hero-body';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

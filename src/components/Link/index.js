@@ -1,4 +1,4 @@
-import Link from './Link';
+import Link from './link';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

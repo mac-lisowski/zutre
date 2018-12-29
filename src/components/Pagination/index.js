@@ -1,4 +1,4 @@
-import Pagination from './Pagination';
+import Pagination from './pagination';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

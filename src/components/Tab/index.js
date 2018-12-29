@@ -1,5 +1,5 @@
-import Tab from './Tab';
-import TabController from './TabController';
+import Tab from './tab';
+import TabController from './tab-controller';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

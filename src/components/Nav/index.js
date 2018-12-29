@@ -1,5 +1,5 @@
-import Nav from './Nav';
-import NavItem from './NavItem';
+import Nav from './nav';
+import NavItem from './nav-item';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

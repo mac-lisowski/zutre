@@ -1,4 +1,4 @@
-import Media from './Media';
+import Media from './media';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

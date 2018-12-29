@@ -1,53 +1,47 @@
 import './../scss/main.scss';
 
-import ZAccordion from './Accordion';
-import ZAvatar from './Avatar';
-import ZButton from './Button';
-import ZBadge from './Badge';
-import ZButtonGroup from './ButtonGroup';
-import ZBreadcrumbs from './Breadcrumbs';
-import ZCard from './Card';
-import ZChip from './Chip';
-import ZCode from './Code';
-import ZContainer from './Container';
-import ZColumns from './Columns';
-import ZColumn from './Column';
-import ZDivider from './Divider';
-import ZDrawer from './Drawer';
-import ZEmpty from './Empty';
+import ZAccordion from './accordion';
+import ZAvatar from './avatar';
+import ZBadge from './badge';
+import ZButton from './button';
+import ZBreadcrumbs from './breadcrumbs';
+import ZCard from './card';
+import ZChip from './chip';
+import ZCode from './code';
+import ZContainer from './container';
+import ZDivider from './divider';
+import ZDrawer from './drawer';
+import ZEmpty from './empty';
 import ZForm from './form';
-import ZHero from './Hero';
-import ZIcon from './Icon';
-import ZLabel from './Label';
-import ZLink from './Link';
-import ZMedia from './Media';
-import ZMenu from './Menu';
-import ZModal from './Modal';
-import ZNav from './Nav';
-import ZNavbar from './Navbar';
-import ZPagination from './Pagination';
-import ZPanel from './Panel';
-import ZPopover from './Popover';
-import ZStep from './Step';
-import ZTab from './Tab';
-import ZTable from './Table';
-import ZTile from './Tile';
-import ZToast from './Toast';
-import ZTooltip from './Tooltip';
+import ZHero from './hero';
+import ZIcon from './icon';
+import ZLabel from './label';
+import ZLink from './link';
+import ZMedia from './media';
+import ZMenu from './menu';
+import ZModal from './modal';
+import ZNav from './nav';
+import ZNavbar from './navbar';
+import ZPagination from './pagination';
+import ZPanel from './panel';
+import ZPopover from './popover';
+import ZStep from './step';
+import ZTab from './tab';
+import ZTable from './table';
+import ZTile from './tile';
+import ZToast from './toast';
+import ZTooltip from './tooltip';
 
 const Components = {
   ZAccordion,
   ZAvatar,
   ZBadge,
   ZButton,
-  ZButtonGroup,
   ZBreadcrumbs,
   ZCard,
   ZChip,
   ZCode,
   ZContainer,
-  ZColumns,
-  ZColumn,
   ZDivider,
   ZDrawer,
   ZEmpty,

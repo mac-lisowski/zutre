@@ -1,6 +1,6 @@
-import Menu from './Menu';
-import MenuItem from './MenuItem';
-import MenuDivider from './MenuDivider';
+import Menu from './menu';
+import MenuItem from './menu-item';
+import MenuDivider from './menu-divider';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

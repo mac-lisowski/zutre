@@ -1,9 +1,9 @@
-import Table from './Table';
-import Thead from './Thead';
-import Tbody from './Tbody';
-import Th from './Th';
-import Tr from './Tr';
-import Td from './Td';
+import Table from './table';
+import Thead from './thead';
+import Tbody from './tbody';
+import Th from './th';
+import Tr from './tr';
+import Td from './td';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

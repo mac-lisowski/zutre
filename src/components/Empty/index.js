@@ -1,8 +1,8 @@
-import Empty from './Empty';
-import EmptyAction from './EmptyAction';
-import EmptyIcon from './EmptyIcon';
-import EmptySubtitle from './EmptySubtitle';
-import EmptyTitle from './EmptyTitle';
+import Empty from './empty';
+import EmptyAction from './empty-action';
+import EmptyIcon from './empty-icon';
+import EmptySubtitle from './empty-subtitle';
+import EmptyTitle from './empty-title';
 
 import { usePlugin, installPlugin } from '@/utils';
 

@@ -1,4 +1,4 @@
-import Code from './Code';
+import Code from './code';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

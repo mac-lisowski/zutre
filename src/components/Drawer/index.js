@@ -1,4 +1,4 @@
-import Drawer from './Drawer';
+import Drawer from './drawer';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

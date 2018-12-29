@@ -1,5 +1,5 @@
-import Breadcrumbs from './Breadcrumbs';
-import BreadcrumbsItem from './BreadcrumbsItem';
+import Breadcrumbs from './breadcrumbs';
+import BreadcrumbsItem from './breadcrumbs-item';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

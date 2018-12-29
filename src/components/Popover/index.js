@@ -1,5 +1,5 @@
-import Popover from './Popover';
-import { usePlugin, installPlugin } from './../../utils';
+import Popover from './popover';
+import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
   install(Vue) {

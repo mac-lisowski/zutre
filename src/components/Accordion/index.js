@@ -1,5 +1,5 @@
-import Accordion from './Accordion'
-import { usePlugin, installPlugin } from './../../utils'
+import Accordion from './accordion';
+import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
   install(Vue) {

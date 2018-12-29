@@ -1,5 +1,5 @@
-import Avatar from './Avatar'
-import { usePlugin, installPlugin } from './../../utils'
+import Avatar from './avatar'
+import { usePlugin, installPlugin } from '@/utils'
 
 const VuePlugin = {
   install(Vue) {

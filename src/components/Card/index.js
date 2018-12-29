@@ -1,10 +1,10 @@
-import Card from './Card';
-import CardBody from './CardBody';
-import CardFooter from './CardFooter';
-import CardHeader from './CardHeader';
-import CardImage from './CardImage';
-import CardSubtitle from './CardSubtitle';
-import CardTitle from './CardTitle';
+import Card from './card';
+import CardBody from './card-body';
+import CardFooter from './card-footer';
+import CardHeader from './card-header';
+import CardImage from './card-image';
+import CardSubtitle from './card-subtitle';
+import CardTitle from './card-title';
 
 import { usePlugin, installPlugin } from '@/utils';
 

@@ -1,9 +1,9 @@
-import Tile from './Tile';
-import TileAction from './TileAction';
-import TileContent from './TileContent';
-import TileIcon from './TileIcon';
-import TileSubtitle from './TileSubtitle';
-import TileTitle from './TileTitle';
+import Tile from './tile';
+import TileAction from './tile-action';
+import TileContent from './tile-content';
+import TileIcon from './tile-icon';
+import TileSubtitle from './tile-subtitle';
+import TileTitle from './tile-title';
 
 import { usePlugin, installPlugin } from '@/utils';
 

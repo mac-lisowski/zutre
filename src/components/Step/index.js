@@ -1,5 +1,5 @@
-import Step from './Step';
-import StepItem from './StepItem';
+import Step from './step';
+import StepItem from './step-item';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

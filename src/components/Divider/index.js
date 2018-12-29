@@ -1,4 +1,4 @@
-import Divider from './Divider';
+import Divider from './divider';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {

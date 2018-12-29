@@ -1,4 +1,4 @@
-import Icon from './Icon';
+import Icon from './icon';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
