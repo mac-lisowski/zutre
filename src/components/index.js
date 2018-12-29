@@ -15,6 +15,7 @@ import ZColumn from './Column';
 import ZDivider from './Divider';
 import ZDrawer from './Drawer';
 import ZEmpty from './Empty';
+import ZForm from './form';
 import ZHero from './Hero';
 import ZIcon from './Icon';
 import ZLabel from './Label';
@@ -50,6 +51,7 @@ const Components = {
   ZDivider,
   ZDrawer,
   ZEmpty,
+  ZForm,
   ZHero,
   ZIcon,
   ZLink,
