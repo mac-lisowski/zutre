@@ -1,5 +1,5 @@
 <template>
-    <div class="form-group">
+    <div class="form-group" :class="formGroupClass">
         <!-- render label if passed in props -->
         <label 
             v-if="hasLabel" 
@@ -12,7 +12,9 @@
             v-if="type !== 'textarea'"
             v-bind="$attrs"
             ref="input"
+            :id="forID"
             class="form-input"
+            :class="inputClass"
             :type="inputType" 
             :value="inputValue"
             :maxlength="maxlength"
@@ -27,6 +29,8 @@
             v-bind="$attrs"
             ref="textarea"
             class="form-input"
+            :id="forID"
+            :class="inputClass"
             :value="inputValue"
             :maxlength="maxlength"
             @input="onInput"
@@ -50,7 +54,7 @@
  * @prop {String} label if set, renders label for input
  * @prop {String|Number} value field value
  */
-import { genID, formElMixin } from './../../utils';
+import { formElMixin } from '@/utils';
 
 export default {
     name: 'Input',
@@ -61,41 +65,15 @@ export default {
             type: String, 
             default: 'text'
         },
-        label: {
-            type: String,
-            default: '' 
-        },
         value: [String, Number],
-    },
-    created() {
-        if ((typeof this.$attrs.id === 'undefined' || this.$attrs.id.length < 1) && this.hasLabel) {
-            this.forID = genID();
-            this.$attrs.id = this.forID;
-        }
     },
     data() {
         return {
             inputValue: this.value,
             inputType: this.type,
-            forID: null,
         };
     },
     computed: {
-        /**
-         * hasLabel checks if label was passed in props
-         * @return {boolean}
-         */
-        hasLabel() {
-            return this.label !== '';
-        },
-        /**
-         * labelFor check if id is set in input attributes by user, 
-         * then will use it, if not then then will generate new id for field
-         * @return {string}
-         */
-        labelFor() {
-            return (this.forID !== null) ? this.forID : this.$attrs.id;
-        },
         /**
          * valueLength counts length of current value
          */
@@ -106,6 +84,9 @@ export default {
 
             return 0;
         },
+        inputClass() {
+            return {};
+        }
     },
     watch: {
         value(val) {
@@ -113,12 +94,14 @@ export default {
         },
         inputValue(val) {
             this.$emit('input', val);
-        }
+        },
     },
     methods: {
         onInput(event) {
-           this.$nextTick(() => { this.inputValue = event.target.value })
-        }
+            this.$nextTick(() => { 
+               this.inputValue = event.target.value
+            });
+        },
     },
 };
 </script>

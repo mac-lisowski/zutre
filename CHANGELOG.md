@@ -8,13 +8,13 @@ All notable changes to this project will be documented in this file.
 ## 0.1.3-alpha.5 Unreleased
 
 #### Added
-* New component [Input]()
+* New component [Input](https://maclisowski.github.io/zutre/#/elements/forms)
+* New component [Select](https://maclisowski.github.io/zutre/#/elements/forms)
 
 #### Changed
 * All component directories and files names changed to lower case
 * Moved ButtonGroup to Button
 * Moved Columns and Column to Container
-* 
 
 ---
 
