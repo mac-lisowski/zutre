@@ -44,7 +44,7 @@ export default {
         },
         selectValue: {
             get() {
-                return this.selected
+                return this.selected;
             },
             set(val) {
                 this.selected = val;
@@ -62,8 +62,5 @@ export default {
             this.selected = val;
         }
     },
-    created() {
-        
-    }
 }
 </script>
