@@ -97,6 +97,14 @@
 
       Switch value: {{switchValue}}
 
+      <br>
+      <z-divider content="CHECKBOX" />
+      <br>
+
+      <z-checkbox v-model="checkboxValue" z-value="1">Remember me</z-checkbox>
+
+      Checkbox value: {{checkboxValue}}
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -332,6 +340,106 @@
         </z-tbody>
       </z-table>
 
+      <!-- SWITCH -->
+      <br><br>
+      <h5>Switch <code>&lt;z-switch /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+
+          <z-tr>
+            <z-td><code>v-model</code></z-td>
+            <z-td>
+              to bind value to your data
+            </z-td>
+            <z-td>String</z-td>
+            <z-td><code>true</code> / <code>false</code></z-td>
+            <z-td>---</z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td colspan="5">
+              <strong>Events</strong>
+            </z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td><code>blur</code></z-td>
+            <z-td>
+              emits on blur
+            </z-td>
+            <z-td>Event</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>focus</code></z-td>
+            <z-td>
+              emits on focus
+            </z-td>
+            <z-td>Event</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+
+      <!-- CHECKBOX -->
+      <br><br>
+      <h5>Checkbox <code>&lt;z-checkbox /&gt;</code></h5>
+      <z-table>
+        <z-thead>
+          <z-th>Name</z-th>
+          <z-th>Description</z-th>
+          <z-th>Type</z-th>
+          <z-th>Values</z-th>
+          <z-th>Default</z-th>
+        </z-thead>
+        <z-tbody>
+
+          <z-tr>
+            <z-td><code>v-model</code></z-td>
+            <z-td>
+              to bind value to your data
+            </z-td>
+            <z-td>String</z-td>
+            <z-td><code>true</code> / <code>false</code></z-td>
+            <z-td>---</z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td colspan="5">
+              <strong>Events</strong>
+            </z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td><code>blur</code></z-td>
+            <z-td>
+              emits on blur
+            </z-td>
+            <z-td>Event</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>focus</code></z-td>
+            <z-td>
+              emits on focus
+            </z-td>
+            <z-td>Event</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+
     </z-container>
 </template>
 <script>
@@ -343,6 +451,7 @@ export default {
       selectValue: '',
       radioInputValue: 'male',
       switchValue: false,
+      checkboxValue: false,
     }
   },
   methods: {
