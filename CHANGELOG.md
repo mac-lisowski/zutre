@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.5 Unreleased
+## 0.1.3-alpha.6 Unreleased
+
+
+---
+
+## Released 
+
+## 0.1.3-alpha.5
 
 #### Added
 * New component [Input](https://maclisowski.github.io/zutre/#/elements/forms)
@@ -17,10 +24,6 @@ All notable changes to this project will be documented in this file.
 * All component directories and files names changed to lower case
 * Moved ButtonGroup to Button
 * Moved Columns and Column to Container
-
----
-
-## Released 
 
 ## 0.1.3-alpha.4
 
