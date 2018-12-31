@@ -89,6 +89,14 @@
 
       Selected: {{ radioInputValue }}
 
+      <br>
+      <z-divider content="SWITCH" />
+      <br>
+
+      <z-switch v-model="switchValue" z-value="yes">Agree with terms and privacy policy</z-switch>
+
+      Switch value: {{switchValue}}
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -334,6 +342,7 @@ export default {
       input2Value: '',
       selectValue: '',
       radioInputValue: 'male',
+      switchValue: false,
     }
   },
   methods: {

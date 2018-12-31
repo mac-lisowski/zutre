@@ -1,6 +1,7 @@
 import Input from './input';
 import Select from './select';
 import Radio from './radio';
+import Switch from './switch';
 import { usePlugin, installPlugin } from '@/utils';
 
 const VuePlugin = {
@@ -8,6 +9,7 @@ const VuePlugin = {
     installPlugin(Vue, Input);
     installPlugin(Vue, Select);
     installPlugin(Vue, Radio);
+    installPlugin(Vue, Switch);
   },
 };
 
@@ -18,4 +20,6 @@ export default VuePlugin;
 export {
     Input,
     Select,
+    Radio,
+    Switch,
 };

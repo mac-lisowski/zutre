@@ -20,7 +20,9 @@ export function installPlugin(vue, component) {
 	if (component._installed) return;
 	component._installed = true;
 
-	vue.component('Z' + component.name, component);
+  let newComponentName = (component.name.startsWith('Z')) ? component.name : 'Z' + component.name;
+  
+	vue.component(newComponentName, component);
 }
 
 /**
