@@ -15,6 +15,7 @@
       <z-columns>
         <z-column>
           <z-chip>Romance</z-chip> <z-chip>Action</z-chip> <z-chip>Fantasy <z-button clear/></z-chip>
+          <z-chip @click="chipClick('love')" class="clickable">Love</z-chip>
         </z-column>
       </z-columns>
       <br>
@@ -56,6 +57,18 @@
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
+          <z-tr>
+            <z-td colspan="5"><strong>Events</strong></z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
+            <z-td>
+              emited on click
+            </z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
         </z-tbody>
       </z-table>
 
@@ -64,5 +77,10 @@
 <script>
 export default {
   name: 'DocsHero',
+  methods: {
+    chipClick(val) {
+      console.log(val);
+    }
+  },
 }
 </script>
