@@ -5,12 +5,17 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.6 Unreleased
+## 0.1.3-alpha.7 Unreleased
 
 
 ---
 
 ## Released 
+
+## 0.1.3-alpha.6
+
+#### Added
+* Chips - emit `click` event on click 
 
 ## 0.1.3-alpha.5
 
