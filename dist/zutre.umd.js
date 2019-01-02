@@ -3161,12 +3161,12 @@ var card_VuePlugin = {
 Object(utils["d" /* usePlugin */])(card_VuePlugin);
 /* harmony default export */ var components_card = (card_VuePlugin);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"752d9a0d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/chip/chip.vue?vue&type=template&id=436e2590&
-var chipvue_type_template_id_436e2590_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{class:_vm.chipClass},[_vm._t("default")],2)}
-var chipvue_type_template_id_436e2590_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"752d9a0d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/chip/chip.vue?vue&type=template&id=3f69c013&
+var chipvue_type_template_id_3f69c013_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{class:_vm.chipClass,on:{"click":_vm.clicked}},[_vm._t("default")],2)}
+var chipvue_type_template_id_3f69c013_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/chip/chip.vue?vue&type=template&id=436e2590&
+// CONCATENATED MODULE: ./src/components/chip/chip.vue?vue&type=template&id=3f69c013&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/chip/chip.vue?vue&type=script&lang=js&
 //
@@ -3181,6 +3181,11 @@ var chipvue_type_template_id_436e2590_staticRenderFns = []
  */
 /* harmony default export */ var chipvue_type_script_lang_js_ = ({
   name: 'Chip',
+  methods: {
+    clicked: function clicked() {
+      this.$emit('click');
+    }
+  },
   computed: {
     chipClass: function chipClass() {
       var css = {
@@ -3202,8 +3207,8 @@ var chipvue_type_template_id_436e2590_staticRenderFns = []
 
 var chip_component = normalizeComponent(
   chip_chipvue_type_script_lang_js_,
-  chipvue_type_template_id_436e2590_render,
-  chipvue_type_template_id_436e2590_staticRenderFns,
+  chipvue_type_template_id_3f69c013_render,
+  chipvue_type_template_id_3f69c013_staticRenderFns,
   false,
   null,
   null,
