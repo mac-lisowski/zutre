@@ -1,0 +1,9 @@
+.table {
+  &.table--shrink {
+    font-size: 0.6rem;
+
+    td, th {
+      padding: 0.4rem;
+    }
+  }
+}

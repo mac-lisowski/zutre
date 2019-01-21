@@ -11,7 +11,34 @@
       </p>
       <z-divider content="EXAMPLE" />
 
-      <z-table stripped hover>
+      <z-table stripped hover shrink>
+        <z-thead>
+          <z-tr>
+            <z-th>name</z-th>
+            <z-th>genre</z-th>
+            <z-th>release date</z-th>
+          </z-tr>
+        </z-thead>
+        <z-tbody>
+          <z-tr >
+            <z-td>The Shawshank Redemption</z-td>
+            <z-td>Crime, Drama</z-td>
+            <z-td>14 October 1994</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td>The Shawshank Redemption</z-td>
+            <z-td>Crime, Drama</z-td>
+            <z-td>14 October 1994</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td>The Shawshank Redemption</z-td>
+            <z-td>Crime, Drama</z-td>
+            <z-td>14 October 1994</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+<br>
+      <z-table  hover>
         <z-thead>
           <z-tr>
             <z-th>name</z-th>

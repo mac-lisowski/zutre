@@ -9,15 +9,18 @@
  * ZTable
  *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Boolean} stripped
+ * @prop {Boolean} hover
+ * @prop {Boolean} shrink default: false
  */
 export default {
   name: 'Table',
   props: {
-    stripped: {
-      type: Boolean
-    },
-    hover: {
-      type: Boolean
+    stripped: Boolean,
+    hover: Boolean,
+    shrink: {
+      type: Boolean,
+      default: false,
     }
   },
   computed: {
@@ -32,6 +35,10 @@ export default {
 
       if (this.hover) {
         css['table-hover'] = true
+      }
+
+      if (this.shrink) {
+        css['table--shrink'] = true;
       }
 
       return css

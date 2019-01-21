@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 
 ## 0.1.3-alpha.7 Unreleased
 
+## Added
+* Tables
+  * New prop `shrink` to set smaller paddings ans font size
+  * New prop `scrollable` to display horizontal scroll if necessary
+  
+## Changed
+* Buttons
+  * prop `type` changed to be `color`
+  * removed `v-on:click`
+  * emmiting event `click` when button is clicked
+* Chip - update in code, removed method `clicked` and moved emitting event to template scope
 
 ---
 
