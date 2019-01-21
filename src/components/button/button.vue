@@ -1,5 +1,5 @@
 <template>
-  <button :class="btnClass" :disabled="isDisabled" v-on:click="onClick" v-bind:data-badge="badge">
+  <button :class="btnClass" :disabled="isDisabled" @click="$emit('click')" v-bind:data-badge="badge">
     <slot />
   </button>
 </template>
@@ -12,7 +12,7 @@
  *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} size Values: sm, lg
- * @prop {String} type
+ * @prop {String} color
  * @prop {Boolean} active
  * @prop {Boolean} action
  * @prop {Boolean} circle
@@ -23,21 +23,13 @@
  */
 export default {
   name: 'Button',
-  methods: {
-    onClick (...args) {
-      if (typeof this.click === 'function') {
-        return this.click(...args)
-      }
-      return
-    }
-  },
   props: {
     click: Function,
     size: {
       type: String,
       default: () => ''
     },
-    type: {
+    color: {
       type: String,
       default: () => ''
     },
@@ -87,8 +79,8 @@ export default {
         }
       }
 
-      if (this.type !== '') {
-        switch (this.type) {
+      if (this.color !== '') {
+        switch (this.color) {
           case 'primary':
             css['btn-primary'] = true
             break

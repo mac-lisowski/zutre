@@ -44,11 +44,10 @@
     "*.json",
     "*.js"
   ],
-  "dependencies": {
-    "material-design-icons": "^3.0.1",
-    "spectre.css": "^0.5.8"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "material-design-icons": "^3.0.1",
+    "spectre.css": "^0.5.8",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-plugin-unit-mocha": "^3.2.0",

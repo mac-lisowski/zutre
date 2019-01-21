@@ -10,31 +10,31 @@
       <z-divider content="EXAMPLES" />
       <br>
       <z-button>button</z-button> &nbsp;
-      <z-button type="primary">primary</z-button> &nbsp;
-      <z-button type="link">link</z-button> &nbsp;
+      <z-button color="primary">primary</z-button> &nbsp;
+      <z-button color="link">link</z-button> &nbsp;
 <z-code lang="Vue">
 &lt;z-button&gt;button&lt;/z-button&gt;
-&lt;z-button type="primary"&gt;primary&lt;/z-button&gt;
-&lt;z-button type="link"&gt;link&lt;/z-button&gt;
+&lt;z-button color="primary"&gt;primary&lt;/z-button&gt;
+&lt;z-button color="link"&gt;link&lt;/z-button&gt;
 </z-code>
 
       <z-divider content="OR" />
 
       <z-columns>
         <z-column>
-          <z-button type="success" size="lg">success</z-button> &nbsp;
-          <z-button type="error">error</z-button> &nbsp;
+          <z-button color="success" size="lg" @click="btnClicked">success</z-button> &nbsp;
+          <z-button color="error">error</z-button> &nbsp;
           <z-button size="sm">default</z-button>
         </z-column>
         <z-column>
           <z-button-group block>
             <z-button >button</z-button>
-            <z-button type="primary" :active="true">button</z-button>
-            <z-button type="primary">button</z-button>
+            <z-button color="primary" :active="true">button</z-button>
+            <z-button color="primary">button</z-button>
           </z-button-group>
         </z-column>
         <z-column>
-          <z-button type="primary" right>right</z-button>
+          <z-button color="primary" right>right</z-button>
         </z-column>
       </z-columns>
 
@@ -42,15 +42,15 @@
 
       <z-columns>
         <z-column>
-          <z-button type="primary" circle>12</z-button> &nbsp;
-          <z-button type="error" circle>error</z-button> &nbsp;
+          <z-button color="primary" circle>12</z-button> &nbsp;
+          <z-button color="error" circle>error</z-button> &nbsp;
           <z-button size="sm" circle loading>10</z-button>
         </z-column>
         <z-column>
           <z-button-group block>
             <z-button disabled>button</z-button>
-            <z-button type="primary" disabled>button</z-button>
-            <z-button type="primary" disabled>button</z-button>
+            <z-button color="primary" disabled>button</z-button>
+            <z-button color="primary" disabled>button</z-button>
           </z-button-group>
         </z-column>
         <z-column>
@@ -62,7 +62,7 @@
 
 <z-code lang="Vue">
 &lt;z-button-group block&gt;
-  &lt;z-button type="primary" circle&gt;12&lt;/z-button&gt;
+  &lt;z-button color="primary" circle&gt;12&lt;/z-button&gt;
   &lt;z-button disabled&gt;button&lt;/z-button&gt;
   &lt;z-button action&gt;1&lt;/z-button&gt;
 &lt;/z-button-group&gt;
@@ -73,13 +73,13 @@
 
       <z-button badge="click">Button badge</z-button>
       <br><br>
-      <z-button type="error" badge="5">System alerts</z-button>
+      <z-button color="error" badge="5">System alerts</z-button>
       <br><br>
       <z-button badge="">Button</z-button>
 
 <z-code lang="Vue">
 &lt;z-button badge="click"&gt;Button badge&lt;/z-button&gt;
-&lt;z-button type="error" badge="5"&gt;System alerts&lt;/z-button&gt;
+&lt;z-button color="error" badge="5"&gt;System alerts&lt;/z-button&gt;
 &lt;z-button badge=""&gt;Button&lt;/z-button&gt;
 </z-code>
 
@@ -122,7 +122,7 @@
         </z-thead>
         <z-tbody>
           <z-tr>
-            <z-td><code>type</code></z-td>
+            <z-td><code>color</code></z-td>
             <z-td>
               set button color scheme
             </z-td>
@@ -215,6 +215,19 @@
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
+          
+          <z-tr>
+            <z-td colspan="5"><strong>EVENTS</strong></z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
+            <z-td>
+              emmited when button is clicked
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
         </z-tbody>
       </z-table>
       <br>
@@ -247,5 +260,10 @@
 <script>
 export default {
   name: 'DocsButtons',
+  methods: {
+    btnClicked() {
+      console.log('Button Clicked');
+    }
+  },
 }
 </script>
