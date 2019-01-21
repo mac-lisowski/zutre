@@ -1,5 +1,5 @@
 <template>
-  <span :class="chipClass" @click="clicked"><slot /></span>
+  <span :class="chipClass" @click="$emit('click')"><slot /></span>
 </template>
 
 <script>
@@ -10,11 +10,6 @@
  */
 export default {
   name: 'Chip',
-  methods: {
-    clicked() {
-      this.$emit('click');
-    },
-  },
   computed: {
     chipClass: function() {
       let css = {
