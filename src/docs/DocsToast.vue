@@ -79,13 +79,13 @@ export default {
       <h4>API</h4>
 
       <h5>Toast <code>&lt;z-toast /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
           <z-th>Type</z-th>
           <z-th>Values</z-th>
-          <z-th>Default</z-th>
+          <z-th width="100">Default</z-th>
         </z-thead>
         <z-tbody>
           <z-tr>
@@ -100,7 +100,8 @@ export default {
           <z-tr>
             <z-td><code>duration</code></z-td>
             <z-td>
-              set duration in ms after which toast component will be destroyed, <code>0</code> - persistent toast
+              set duration in ms after which toast component will be destroyed,<br>
+              <code>0</code> - persistent toast
             </z-td>
             <z-td>Number</z-td>
             <z-td>---</z-td>
@@ -113,7 +114,8 @@ export default {
               By default will display inline if no <code>position</code> is provided
             </z-td>
             <z-td>String</z-td>
-            <z-td><code>top</code>, <code>top left</code>, <code>top right</code>, <code>bottom</code>, <code>bottom left</code>, <code>bottom right</code></z-td>
+            <z-td><code>top</code>, <code>top left</code>, <code>top right</code>,<br>
+            <code>bottom</code>, <code>bottom left</code>, <code>bottom right</code></z-td>
             <z-td>---</z-td>
           </z-tr>
 
@@ -158,7 +160,7 @@ export default {
           </z-tr>
 
           <z-tr>
-            <z-th>EVENTS</z-th>
+            <z-th colspan="5">EVENTS</z-th>
           </z-tr>
 
           <z-tr>
@@ -167,7 +169,7 @@ export default {
               triggered when close button is pressed
             </z-td>
             <z-td>Boolean</z-td>
-            <z-td>true</z-td>
+            <z-td><code>true</code></z-td>
             <z-td>---</z-td>
           </z-tr>
 
@@ -177,7 +179,7 @@ export default {
               triggered on open
             </z-td>
             <z-td>Boolean</z-td>
-            <z-td>true</z-td>
+            <z-td><code>true</code></z-td>
             <z-td>---</z-td>
           </z-tr>
         </z-tbody>

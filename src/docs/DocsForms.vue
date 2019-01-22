@@ -109,7 +109,7 @@
       <h4>API</h4>
 
       <h5>Input <code>&lt;z-input /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -210,7 +210,7 @@
 
       <br><br>
       <h5>Select <code>&lt;z-select /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -276,7 +276,7 @@
 
       <br><br>
       <h5>Radio <code>&lt;z-radio /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -343,7 +343,7 @@
       <!-- SWITCH -->
       <br><br>
       <h5>Switch <code>&lt;z-switch /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -393,7 +393,7 @@
       <!-- CHECKBOX -->
       <br><br>
       <h5>Checkbox <code>&lt;z-checkbox /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>

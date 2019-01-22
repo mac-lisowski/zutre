@@ -17,7 +17,7 @@
         <z-columns>
           <z-column :size="6">
             <z-container style="height: 300px; border: 1px solid #ebebeb;">
-              <z-button :click="toggleDrawer">Toggle drawer</z-button>
+              <z-button @click="toggleDrawer">Toggle drawer</z-button>
 
               <z-drawer :open.sync="drawerOpen">
                 DRAWER
@@ -30,7 +30,7 @@
           </z-column>
           <z-column :size="6">
             <z-code>
-&lt;z-button :click="toggleDrawer"&gt;Toggle drawer&lt;/z-button&gt;
+&lt;z-button @click="toggleDrawer"&gt;Toggle drawer&lt;/z-button&gt;
 
 &lt;z-drawer :open.sync="drawerOpen"&gt;
   DRAWER
@@ -49,7 +49,7 @@
       <z-columns>
         <z-column :size="6">
           <z-container style="height: 300px; border: 1px solid #ebebeb;">
-            <z-button :click="toggleDrawer2">Toggle drawer</z-button>
+            <z-button @click="toggleDrawer2">Toggle drawer</z-button>
 
             <z-drawer :open.sync="drawerOpen2" position="right">
               DRAWER
@@ -58,7 +58,7 @@
         </z-column>
         <z-column :size="6">
             <z-code>
-&lt;z-button :click="toggleDrawer"&gt;Toggle drawer&lt;/z-button&gt;
+&lt;z-button @click="toggleDrawer"&gt;Toggle drawer&lt;/z-button&gt;
 
 &lt;z-drawer :open.sync="drawerOpen"&gt;
   DRAWER
@@ -75,7 +75,7 @@
       <h4>API</h4>
 
       <h5>Drawer <code>&lt;z-drawer&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>

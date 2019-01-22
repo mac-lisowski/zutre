@@ -57,7 +57,7 @@
       <h4>API</h4>
 
       <h5>Popover <code>&lt;z-popover /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -69,7 +69,8 @@
           <z-tr>
             <z-td><code>content</code></z-td>
             <z-td>
-              popover content can be string which will be displayed as HTML or Vue component
+              popover content can be string which will be<br>
+              displayed as HTML or Vue component
             </z-td>
             <z-td>String, Object, Function</z-td>
             <z-td>---</z-td>

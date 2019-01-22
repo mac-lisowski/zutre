@@ -63,13 +63,13 @@ items: [
       <h4>API</h4>
 
       <h5>Tab <code>&lt;z-tab /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
           <z-th>Type</z-th>
           <z-th>Values</z-th>
-          <z-th>Default</z-th>
+          <z-th width="100">Default</z-th>
         </z-thead>
         <z-tbody>
           <z-tr>
@@ -116,7 +116,9 @@ items: [
           <z-tr>
             <z-td><code>containerId</code></z-td>
             <z-td>
-              id of HTML element where tabs content will be mounted, if not set - component is going to create such container in current parent element
+              id of HTML element where tabs content will be mounted,<br>
+              if not set - component is going to create such container <br>
+              in current parent element
             </z-td>
             <z-td>String</z-td>
             <z-td>---</z-td>

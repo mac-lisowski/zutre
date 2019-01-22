@@ -151,7 +151,7 @@
       <h4>API</h4>
 
       <h5>CardImage <code>&lt;z-card-image /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -172,7 +172,7 @@
       <br>
 
       <h5>CardTitle <code>&lt;z-card-title /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -200,7 +200,7 @@
       <br>
 
       <h5>CardSubtitle <code>&lt;z-card-subtitle /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -213,7 +213,8 @@
             <z-td><code>color</code></z-td>
             <z-td>subtitle color</z-td>
             <z-td>String</z-td>
-            <z-td>Values: <code>primary</code>, <code>secondary</code>, <code>gark</code>, <code>gray</code>, <code>light</code>, <code>success</code>, <code>warning</code>, <code>error</code></z-td>
+            <z-td>Values: <code>primary</code>, <code>secondary</code>, <code>gark</code>,<br>
+            <code>gray</code>, <code>light</code>, <code>success</code>, <code>warning</code>, <code>error</code></z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>

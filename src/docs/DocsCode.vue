@@ -21,7 +21,7 @@
       <h4>API</h4>
 
       <h5>Code <code>&lt;z-code /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -33,7 +33,7 @@
           <z-tr>
             <z-td><code>lang</code></z-td>
             <z-td>
-              name of language eg. <code>HTML</code>, <code>Vue</code>, <code>javascript</code>, <code>bash</code> etc.
+              name of language eg. <code>HTML</code>, <code>Vue</code>,<br><code>javascript</code>, <code>bash</code> etc.
             </z-td>
             <z-td>String</z-td>
             <z-td>---</z-td>

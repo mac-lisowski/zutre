@@ -113,7 +113,7 @@ to generate:
       <h4>API</h4>
 
       <h5>Media <code>&lt;z-media /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -156,7 +156,7 @@ to generate:
             </z-td>
             <z-td>String</z-td>
             <z-td><code>left</code>, <code>right</code>, <code>center</code></z-td>
-            <z-td>center</z-td>
+            <z-td><code>center</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>responsive</code></z-td>
@@ -165,7 +165,7 @@ to generate:
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>cover</code></z-td>
@@ -174,7 +174,7 @@ to generate:
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>contain</code></z-td>
@@ -183,7 +183,7 @@ to generate:
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>video</code></z-td>
@@ -192,7 +192,7 @@ to generate:
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
         </z-tbody>
       </z-table>

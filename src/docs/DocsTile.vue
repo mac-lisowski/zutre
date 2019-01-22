@@ -142,13 +142,13 @@
       <h4>API</h4>
 
       <h5>Tile <code>&lt;z-tile /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
           <z-th>Type</z-th>
           <z-th>Values</z-th>
-          <z-th>Default</z-th>
+          <z-th width="100">Default</z-th>
         </z-thead>
         <z-tbody>
           <z-tr>
@@ -158,7 +158,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
         </z-tbody>
       </z-table>

@@ -122,13 +122,13 @@
     <h4>API</h4>
 
     <h5>Table <code>&lt;z-table&gt;&lt;/z-table&gt;</code></h5>
-    <z-table>
+    <z-table scrollable shrink>
       <z-thead>
         <z-th>Name</z-th>
         <z-th>Description</z-th>
         <z-th>Type</z-th>
         <z-th>Values</z-th>
-        <z-th>Default</z-th>
+        <z-th width="100">Default</z-th>
       </z-thead>
       <z-tbody>
         <z-tr>
@@ -164,13 +164,13 @@
 
     <br>
     <h5>Tr <code>&lt;z-tr&gt;&lt;/z-tr&gt;</code></h5>
-    <z-table>
+    <z-table scrollable shrink>
       <z-thead>
         <z-th>Name</z-th>
         <z-th>Description</z-th>
         <z-th>Type</z-th>
         <z-th>Values</z-th>
-        <z-th>Default</z-th>
+        <z-th width="100">Default</z-th>
       </z-thead>
       <z-tbody>
         <z-tr>

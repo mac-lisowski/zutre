@@ -58,7 +58,7 @@
     <h4>API</h4>
 
     <h5>Breadcrumbs <code>&lt;z-breadcrumbs /&gt;</code></h5>
-    <z-table>
+    <z-table scrollable shrink>
       <z-thead>
         <z-th>Name</z-th>
         <z-th>Description</z-th>
@@ -90,7 +90,7 @@
     <br>
 
       <h5>BreadcrumbsItem <code>&lt;z-breadcrumbs-item /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>

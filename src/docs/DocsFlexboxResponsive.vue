@@ -40,7 +40,7 @@
       <h4>API</h4>
 
       <h5>Columns <code>&lt;z-columns /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -56,7 +56,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>oneline</code></z-td>
@@ -65,7 +65,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>size</code></z-td>
@@ -79,8 +79,9 @@
         </z-tbody>
       </z-table>
       <br>
+
       <h5>Column <code>&lt;z-column /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -141,7 +142,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>mlAuto</code></z-td>
@@ -149,7 +150,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>mrAuto</code></z-td>
@@ -157,7 +158,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
 
           <z-tr>
@@ -166,7 +167,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>hideSM</code></z-td>
@@ -174,7 +175,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>hideLG</code></z-td>
@@ -182,7 +183,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>hideXL</code></z-td>
@@ -190,7 +191,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
 
           <z-tr>
@@ -199,7 +200,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>showSM</code></z-td>
@@ -207,7 +208,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>showLG</code></z-td>
@@ -215,7 +216,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
           <z-tr>
             <z-td><code>showXL</code></z-td>
@@ -223,7 +224,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code> / <code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
 
         </z-tbody>

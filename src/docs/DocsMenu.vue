@@ -66,7 +66,7 @@
       <h4>API</h4>
 
       <h5>MenuDivider <code>&lt;z-menu-divider /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -87,7 +87,7 @@
       <br>
 
       <h5>MenuItem <code>&lt;z-menu-item /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>

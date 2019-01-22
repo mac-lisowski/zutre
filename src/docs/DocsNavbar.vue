@@ -51,7 +51,7 @@
       <h4>API</h4>
 
       <h5>NavbarSection <code>&lt;z-navbar-section /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -67,7 +67,7 @@
             </z-td>
             <z-td>Boolean</z-td>
             <z-td><code>true</code>/<code>false</code></z-td>
-            <z-td>false</z-td>
+            <z-td><code>false</code></z-td>
           </z-tr>
         </z-tbody>
       </z-table>

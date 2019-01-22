@@ -51,7 +51,7 @@
       <h4>API</h4>
 
       <h5>Step <code>&lt;z-step /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -65,11 +65,13 @@
             <z-td>
               array with steps items - each item is an JSON object, eg:<br>
               <small>
-                <code>[
-        { name: 'Step 1', tooltip: 'Hi in first step!'},
-        { name: 'Step 2', tooltip: 'Second step!', active: true},
-        { name: 'Step 3'}
-      ]</code>
+<z-code>
+[
+  { name: 'Step 1', tooltip: 'Hi in first step!'},
+  { name: 'Step 2', tooltip: 'Second step!', active: true},
+  { name: 'Step 3'}
+]
+</z-code>
               </small>
             </z-td>
             <z-td>Array</z-td>
@@ -91,7 +93,7 @@
       <br>
 
       <h5>StepItem <code>&lt;z-step-item /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>

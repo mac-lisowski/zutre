@@ -57,7 +57,7 @@
       <h4>API</h4>
 
       <h5>Pagination <code>&lt;z-pagination /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
@@ -85,9 +85,10 @@
           <z-tr>
             <z-td><code>items</code></z-td>
             <z-td>
-              if set, no need to pass <code>total</code>, it will be computed inside component, 
-              if items are passed then <code>onPageChange</code> callback as a second parameter will receive 
-              array of items which should be displayed on current page
+              if set, no need to pass <code>total</code>, it will be computed <br>
+              inside component, if items are passed then <code>onPageChange</code><br>
+              callback as a second parameter will receive array of items which<br>
+              should be displayed on current page
             </z-td>
             <z-td>Array</z-td>
             <z-td>---</z-td>

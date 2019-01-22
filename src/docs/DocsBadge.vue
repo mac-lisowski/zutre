@@ -81,7 +81,7 @@
       <h4>API</h4>
 
       <h5>Tile <code>&lt;z-badge /&gt;</code></h5>
-      <z-table>
+      <z-table scrollable shrink>
         <z-thead>
           <z-th>Name</z-th>
           <z-th>Description</z-th>
