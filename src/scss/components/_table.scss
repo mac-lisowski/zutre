@@ -1,3 +1,11 @@
+.table--scrollable--container {
+  overflow-x: auto; 
+  width: 100%;
+
+  .table {
+    white-space: nowrap;
+  }
+}
 .table {
   &.table--shrink {
     font-size: 0.6rem;

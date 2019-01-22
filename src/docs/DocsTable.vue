@@ -38,6 +38,8 @@
         </z-tbody>
       </z-table>
 <br>
+      
+      <!-- <div style="overflow-x: auto; width: 100%"> -->
       <z-table  hover>
         <z-thead>
           <z-tr>
@@ -48,6 +50,35 @@
         </z-thead>
         <z-tbody>
           <z-tr active>
+            <z-td>The Shawshank Redemption</z-td>
+            <z-td>Crime, Drama</z-td>
+            <z-td>14 October 1994</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td>The Shawshank Redemption</z-td>
+            <z-td>Crime, Drama</z-td>
+            <z-td>14 October 1994</z-td>
+          </z-tr>
+          <z-tr>
+            <z-td>The Shawshank Redemption</z-td>
+            <z-td>Crime, Drama</z-td>
+            <z-td>14 October 1994</z-td>
+          </z-tr>
+        </z-tbody>
+      </z-table>
+      <!-- </div> -->
+      <br>
+
+      <z-table hover scrollable>
+        <z-thead>
+          <z-tr>
+            <z-th>name</z-th>
+            <z-th>genre</z-th>
+            <z-th>release date</z-th>
+          </z-tr>
+        </z-thead>
+        <z-tbody>
+          <z-tr>
             <z-td>The Shawshank Redemption</z-td>
             <z-td>Crime, Drama</z-td>
             <z-td>14 October 1994</z-td>
@@ -110,6 +141,20 @@
         <z-tr>
           <z-td><code>hover</code></z-td>
           <z-td>applies hoverable table rows</z-td>
+          <z-td>Boolean</z-td>
+          <z-td>--</z-td>
+          <z-td><code>false</code></z-td>
+        </z-tr>
+        <z-tr>
+          <z-td><code>shrink</code></z-td>
+          <z-td>applies styles to shrink font size and paddings</z-td>
+          <z-td>Boolean</z-td>
+          <z-td>--</z-td>
+          <z-td><code>false</code></z-td>
+        </z-tr>
+        <z-tr>
+          <z-td><code>scrollable</code></z-td>
+          <z-td>table scrollable horizontally</z-td>
           <z-td>Boolean</z-td>
           <z-td>--</z-td>
           <z-td><code>false</code></z-td>

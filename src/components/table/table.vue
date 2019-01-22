@@ -12,6 +12,7 @@
  * @prop {Boolean} stripped
  * @prop {Boolean} hover
  * @prop {Boolean} shrink default: false
+ * @prop {Boolean} scrollable dafult: false
  */
 export default {
   name: 'Table',
@@ -21,6 +22,20 @@ export default {
     shrink: {
       type: Boolean,
       default: false,
+    },
+    scrollable: {
+      type: Boolean,
+      default: false,
+    }
+  },
+  mounted() {
+    if (this.scrollable === true) {
+      let parentEl = this.$el.parentNode;
+      let wrapper = document.createElement('div');
+      wrapper.classList.add('table--scrollable--container');
+
+      parentEl.replaceChild(wrapper, this.$el);
+      wrapper.appendChild(this.$el);
     }
   },
   computed: {
