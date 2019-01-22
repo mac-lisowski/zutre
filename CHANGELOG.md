@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.7 Unreleased
+## 0.1.3-alpha.8 Unreleased
+
+---
+
+## Released 
+
+## 0.1.3-alpha.7
 
 ## Added
 * Tables
@@ -18,10 +24,6 @@ All notable changes to this project will be documented in this file.
   * removed `v-on:click`
   * emmiting event `click` when button is clicked
 * Chip - update in code, removed method `clicked` and moved emitting event to template scope
-
----
-
-## Released 
 
 ## 0.1.3-alpha.6
 
