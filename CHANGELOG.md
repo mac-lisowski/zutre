@@ -5,12 +5,14 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 0.1.3-alpha.8 Unreleased
+## 0.1.3-alpha.9 Unreleased
 
 ---
 
 ## Released 
+## 0.1.3-alpha.8
 
+Moved back spectre.css and material-icons to dependencies
 ## 0.1.3-alpha.7
 
 ## Added
