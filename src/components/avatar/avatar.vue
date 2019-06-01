@@ -3,7 +3,7 @@
     :class="avatarClass" 
     v-bind:data-initial="data" v-bind:data-badge="badge">
 
-    <a class="avatar--onclick-overlay" v-if="onClick" v-on:click="callOnClick" />
+    <a class="avatar--onclick-overlay" @click="$emit('click')" />
      
 
     <template v-if="hasSrc">
@@ -18,7 +18,7 @@
         <i :class="presenceClass" :style="{ cursor: (hasMenu) ? 'pointer' :'initial' }">
           <template v-if="hasMenu">
             <z-menu>
-              <z-menu-item v-for="(item, idx) in menuItems" v-bind:key="idx" :name="item.name" :href="item.href" :link="item.link" :onClick="item.onClick" />
+              <z-menu-item v-for="(item, idx) in menuItems" v-bind:key="idx" :name="item.name" :href="item.href" :link="item.link" v-on:click="item.onClick" />
             </z-menu>
           </template>
         </i>
@@ -42,7 +42,6 @@
  * @prop {String} badge
  * @prop {Boolean} block
  * @prop {Array} menu
- * @prop {Function} onClick
  */
 export default {
   name: 'Avatar',
@@ -57,20 +56,7 @@ export default {
     presenceSrc: String,
     badge: String,
     block: Boolean,
-    menu: Array,
-    onClick: Function,
-  },
-  mounted() {
-    // console.log(this.onClick);
-  },
-  methods: {
-    callOnClick() {
-      if (typeof this.onClick !== 'function') {
-        return;
-      }
-      
-      this.onClick.apply(null, arguments);
-    }
+    menu: Array
   },
   computed: {
     hasPresence () {
