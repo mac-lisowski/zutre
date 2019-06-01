@@ -1,15 +1,15 @@
 <template>
   <li :class="itemClass">
-    <z-link v-if="hasHref && !hasLink && !hasDefaultSlot" :href="linkHref" :name="linkName" v-bind:activeClass="activeClass" :onClick="onClick" />
-    <z-link v-else-if="hasHref && !hasLink && hasDefaultSlot" :href="linkHref" v-bind:activeClass="activeClass">
+    <z-link v-if="hasHref && !hasLink && !hasDefaultSlot" :href="linkHref" :name="linkName" v-bind:activeClass="activeClass" @click="$emit('click')" />
+    <z-link v-else-if="hasHref && !hasLink && hasDefaultSlot" :href="linkHref" v-bind:activeClass="activeClass" @click="$emit('click')" >
       <slot></slot>
     </z-link>
-    <z-link v-else-if="!hasHref && hasLink && !hasDefaultSlot" :link="linkRouter" :name="linkName" v-bind:activeClass="activeClass" v-bind:exact="exact" :onClick="onClick" />
-    <z-link v-else-if="!hasHref && hasLink && hasDefaultSlot" :link="linkRouter" v-bind:activeClass="activeClass" v-bind:exact="exact" :onClick="onClick">
+    <z-link v-else-if="!hasHref && hasLink && !hasDefaultSlot" :link="linkRouter" :name="linkName" v-bind:activeClass="activeClass" v-bind:exact="exact" @click="$emit('click')" />
+    <z-link v-else-if="!hasHref && hasLink && hasDefaultSlot" :link="linkRouter" v-bind:activeClass="activeClass" v-bind:exact="exact" @click="$emit('click')">
       <slot></slot>
     </z-link>
-    <z-link v-else-if="!hasHref && !hasLink && !hasDefaultSlot" :link="linkRouter" :name="linkName" v-bind:activeClass="activeClass" v-bind:exact="exact" :onClick="onClick" />
-    <z-link v-else-if="!hasHref && !hasLink && hasDefaultSlot" :link="linkRouter" v-bind:activeClass="activeClass" v-bind:exact="exact" :onClick="onClick">
+    <z-link v-else-if="!hasHref && !hasLink && !hasDefaultSlot" :link="linkRouter" :name="linkName" v-bind:activeClass="activeClass" v-bind:exact="exact" @click="$emit('click')" />
+    <z-link v-else-if="!hasHref && !hasLink && hasDefaultSlot" :link="linkRouter" v-bind:activeClass="activeClass" v-bind:exact="exact" @click="$emit('click')">
       <slot></slot>
     </z-link>
   </li>
@@ -28,7 +28,6 @@
  * @prop {String} activeClass
  * @prop {Boolean} active
  * @prop {Boolean} exact
- * @prop {Function} onClick
  */
 export default {
   name: 'MenuItem',
@@ -54,7 +53,6 @@ export default {
     name: {
       type: String
     },
-    onClick: Function,
   },
   computed: {
     itemClass: function() {
@@ -75,9 +73,6 @@ export default {
     },
     hasLink () {
       return (typeof this.link !== 'undefined') ? true : false
-    },
-    hasOnClick() {
-      return (typeof this.onClick !== 'undefined') ? true : false
     },
     hasDefaultSlot () {
       return !!this.$slots.default
