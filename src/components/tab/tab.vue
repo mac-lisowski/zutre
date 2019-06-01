@@ -7,7 +7,7 @@
         class="tab-item"
         :class="{ active: activeTab === idx }"
       >
-        <z-link :badge="item.badge" :name="item.name" :onClick="() => itemOnClick(item,idx)" />
+        <z-link :badge="item.badge" :name="item.name" v-on:click="() => itemOnClick(item, idx)" />
       </li>
       <li v-if="hasActionSlot" class="tab-item tab-action">
           <slot name="action"/>
@@ -41,8 +41,7 @@ export default {
       type: Number,
       default: () => 0,
     },
-    containerId: String,
-    onClick: Function,
+    containerId: String
   },
   data() {
     return {
@@ -63,9 +62,6 @@ export default {
   methods: {
     // eslint-disable-next-line
     itemOnClick(item, idx) {
-      if (typeof this.onClick === 'function') {
-        this.onClick.apply(null, arguments);
-      }
       this.setActive(idx);
     },
     setActive(idx) {

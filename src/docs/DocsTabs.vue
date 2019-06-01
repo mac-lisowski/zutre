@@ -10,7 +10,7 @@
 
           <z-tab :items="items" :active.sync="activeTab" :height="200">
             <template slot="action">
-              <z-button size="sm" :click="() => changeTab(2)">Change to Tab 3</z-button>
+              <z-button size="sm" v-on:click="() => changeTab(2)">Change to Tab 3</z-button>
             </template>
           </z-tab>
 
@@ -19,7 +19,7 @@
 <z-code lang="Vue">
 &lt;z-tab :items="items" :active.sync="activeTab" :height="200"&gt;
   &lt;template slot="action"&gt;
-    &lt;z-button size="sm" :click="() => changeTab(2)"&gt;Change to Tab 3&lt;/z-button&gt;
+    &lt;z-button size="sm" v-on:click="() => changeTab(2)"&gt;Change to Tab 3&lt;/z-button&gt;
   &lt;/template&gt;
 &lt;/z-tab&gt;
 
@@ -121,15 +121,6 @@ items: [
               in current parent element
             </z-td>
             <z-td>String</z-td>
-            <z-td>---</z-td>
-            <z-td>---</z-td>
-          </z-tr>
-          <z-tr>
-            <z-td><code>onClick</code></z-td>
-            <z-td>
-              callback method invoked when user change
-            </z-td>
-            <z-td>Function</z-td>
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>

@@ -1,6 +1,6 @@
 <template>
   <li class="step-item" :class="itemClass">
-    <a @click="itemOnClick" :class="itemLinkClass" :data-tooltip="itemTooltip">{{ name }}</a>
+    <a @click="$emit('click', { name: name, tooltip: tooltip, active: active })" :class="itemLinkClass" :data-tooltip="itemTooltip">{{ name }}</a>
   </li>
 </template>
 
@@ -12,7 +12,6 @@
  * @prop {Boolean} active
  * @prop {String} name
  * @prop {Strig} tooltip
- * @prop {Function} onClick 
  */
 export default {
   name: 'StepItem',
@@ -22,15 +21,7 @@ export default {
       type: String,
       default: ''
     },
-    tooltip: String,
-    onClick: Function,
-  },
-  methods: {
-    itemOnClick() {
-      if (typeof this.onClick === 'function') {
-        this.onClick({ name: this.name, tooltip: this.tooltip, active: this.active })
-      }
-    }
+    tooltip: String
   },
   computed: {
     itemName() {

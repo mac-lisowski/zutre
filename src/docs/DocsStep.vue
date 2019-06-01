@@ -16,14 +16,14 @@
         { name: 'Step 1', tooltip: 'Hi in first step!'},
         { name: 'Step 2', tooltip: 'Second step!', active: true},
         { name: 'Step 3'}
-      ]" :onClick="stepOnClick" />
+      ]" v-on:click="stepOnClick" />
 
 <z-code lang="Vue">
 &lt;z-step :items="[
   { name: 'Step 1', tooltip: 'Hi in first step!'},
   { name: 'Step 2', tooltip: 'Second step!', active: true},
   { name: 'Step 3'}
-]" :onClick="stepOnClick" /&gt;
+]" v-on:click="stepOnClick" /&gt;
 </z-code>
 
       <z-divider content="OR" />
@@ -32,7 +32,7 @@
       <z-step>
         <z-step-item name="Step 1" tooltip="Tooltip 1" />
         <z-step-item name="Step 2" tooltip="Tooltip 2" />
-        <z-step-item name="Step 3" tooltip="Tooltip 3" :onClick="stepOnClick" active />
+        <z-step-item name="Step 3" tooltip="Tooltip 3" v-on:click="stepOnClick" active />
         <z-step-item name="Step 4" />
         <z-step-item name="Step 5" />
       </z-step>
@@ -41,7 +41,7 @@
 &lt;z-step&gt;
   &lt;z-step-item name="Step 1" tooltip="Tooltip 1" /&gt;
   &lt;z-step-item name="Step 2" tooltip="Tooltip 2" /&gt;
-  &lt;z-step-item name="Step 3" tooltip="Tooltip 3" :onClick="stepOnClick" active /&gt;
+  &lt;z-step-item name="Step 3" tooltip="Tooltip 3" v-on:click="stepOnClick" active /&gt;
   &lt;z-step-item name="Step 4" /&gt;
   &lt;z-step-item name="Step 5" /&gt;
 &lt;/z-step&gt;
@@ -78,15 +78,19 @@
             <z-td>---</z-td>
             <z-td><code>[]</code></z-td>
           </z-tr>
+
           <z-tr>
-            <z-td><code>onClick</code></z-td>
-            <z-td>
-              method called on click on step item, as an argument it passes clicked <code>item</code>
-            </z-td>
-            <z-td>Function</z-td>
-            <z-td>---</z-td>
-            <z-td>---</z-td>
+            <z-td colspan="5"><strong>EVENTS</strong></z-td>
           </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
+            <z-td>
+              emmited when step is clicked
+            </z-td>
+            <z-td><code>Event</code></z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr> 
         </z-tbody>
       </z-table>
 
@@ -129,12 +133,16 @@
             <z-td><code>true</code>/<code>false</code></z-td>
             <z-td><code>false</code></z-td>
           </z-tr>
+
           <z-tr>
-            <z-td><code>onClick</code></z-td>
+            <z-td colspan="5"><strong>EVENTS</strong></z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
             <z-td>
-              method called on click on step item
+              emmited when step item is clicked
             </z-td>
-            <z-td>Function</z-td>
+            <z-td><code>Event</code></z-td>
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>

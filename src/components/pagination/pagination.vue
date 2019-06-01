@@ -2,7 +2,7 @@
   <div>
     <ul class="pagination">
       <li v-if="showNavButtons" class="page-item" :class="{disabled: !hasPrev}">
-        <z-link tabindex="-1" :onClick="() => prevPage()">{{prevText}}</z-link>
+        <z-link tabindex="-1" v-on:click="() => prevPage()">{{prevText}}</z-link>
       </li>
       
       <li 
@@ -11,12 +11,12 @@
         class="page-item"
         :class="{active: currentPage === page}"
       >
-        <z-link :onClick="() => pageClick(page)" v-if="page !== 'dots'">{{page}}</z-link>
+        <z-link v-on:click="() => pageClick(page)" v-if="page !== 'dots'">{{page}}</z-link>
         <span v-else>...</span>
       </li>
 
       <li v-if="showNavButtons" class="page-item" :class="{disabled: !hasNext}">
-        <z-link tabindex="-1" :onClick="() => nextPage()">{{nextText}}</z-link>
+        <z-link tabindex="-1" v-on:click="() => nextPage()">{{nextText}}</z-link>
       </li>
     </ul>
   </div>
