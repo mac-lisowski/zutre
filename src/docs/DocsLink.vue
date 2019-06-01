@@ -26,6 +26,9 @@
 &lt;z-link href="#" name="Messages" badge="10" /&gt;
 </z-code>
 
+      <z-divider content="EVENT ON CLiCK" />
+      <z-link v-on:click="alertLink ">Click Me</z-link>
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -42,43 +45,43 @@
           <z-tr>
             <z-td><code>name</code></z-td>
             <z-td>menu item name (link name)</z-td>
-            <z-td>String</z-td>
+            <z-td><code>String</code></z-td>
             <z-td>--</z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
             <z-td><code>href</code></z-td>
             <z-td>href link, use if you are not using vue-router</z-td>
-            <z-td>String</z-td>
+            <z-td><code>String</code></z-td>
             <z-td>--</z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
             <z-td><code>link</code></z-td>
             <z-td>object, as you would be passing one to vue-router <br>component <code>&lt;router-link :to="{}"/&gt;</code></z-td>
-            <z-td>Object</z-td>
+            <z-td><code>Object</code></z-td>
             <z-td>--</z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
             <z-td><code>exact</code></z-td>
             <z-td>have effect when used with <code>link</code> and <code>activeClass</code>, match exact route</z-td>
-            <z-td>Boolean</z-td>
-            <z-td>false</z-td>
+            <z-td><code>Boolean</code></z-td>
+            <z-td><code>false</code></z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
             <z-td><code>activeClass</code></z-td>
             <z-td>name of css class for active menu item, have effect when used with <code>link</code> or <code>active</code></z-td>
-            <z-td>String</z-td>
+            <z-td><code>String</code></z-td>
             <z-td>--</z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
             <z-td><code>active</code></z-td>
             <z-td>applies css class from <code>activeClass</code></z-td>
-            <z-td>Boolean</z-td>
-            <z-td>false</z-td>
+            <z-td><code>Boolean</code></z-td>
+            <z-td><code>false</code></z-td>
             <z-td>---</z-td>
           </z-tr>
           <z-tr>
@@ -86,15 +89,20 @@
             <z-td>
               badge text
             </z-td>
-            <z-td>String</z-td>
+            <z-td><code>String</code></z-td>
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
+
           <z-tr>
-            <z-td><code>onClick</code></z-td>
+            <z-td colspan="5"><strong>EVENTS</strong></z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
             <z-td>
+              emmited when link is clicked
             </z-td>
-            <z-td>Function</z-td>
+            <z-td><code>Event</code></z-td>
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
@@ -106,5 +114,10 @@
 <script>
 export default {
   name: 'DocsDivider',
+  methods: {
+    alertLink() {
+      alert("link clicked");
+    }
+  },
 }
 </script>

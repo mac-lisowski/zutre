@@ -1,13 +1,13 @@
 <template>
 
-    <a v-if="!hasLink" :href="linkHref" :class="linkClass" v-bind:data-badge="badge" v-on:click="onClick">
+    <a v-if="!hasLink" :href="linkHref" :class="linkClass" v-bind:data-badge="badge" @click="$emit('click')">
       <template v-if="hasDefaultSlot">
         <z-icon v-if="hasIcon" :name="icon" /> <slot></slot>
       </template>
       <template v-else-if="!hasDefaultSlot"><z-icon v-if="hasIcon" :name="icon" /> {{ linkName }}</template>
     </a>
 
-    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" v-on:click="onClick" v-bind:active-class="activeClass" v-bind:exact="exact" v-bind:data-badge="badge">
+    <router-link v-else-if="!hasHref && hasLink" :to="linkRouter" :class="linkClass" @click="$emit('click')" v-bind:active-class="activeClass" v-bind:exact="exact" v-bind:data-badge="badge">
       <template v-if="hasDefaultSlot">
         <z-icon v-if="hasIcon" :name="icon" /> <slot></slot>
       </template>
@@ -28,7 +28,6 @@
  * @prop {String} activeClass
  * @prop {Boolean} active
  * @prop {Boolean} exact
- * @prop {Function} onClick
  */
 export default {
   name: 'Link',
@@ -53,11 +52,7 @@ export default {
       type: Boolean,
       default: () => false
     },
-    badge: String,
-    onClick: {
-      type: Function,
-      default: function() {},
-    },
+    badge: String
   },
   computed: {
     linkClass: function() {
