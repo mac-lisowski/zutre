@@ -6,12 +6,22 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## 0.1.3-alpha.9 Unreleased
-* [Links](https://maclisowski.github.io/zutre/#/utilities/link) 
+* [Link](https://maclisowski.github.io/zutre/#/utilities/link) 
   * prop `onClick` removed
   * removed `v-on:click`
   * emmiting event `click` when link is clicked
   * updated docs
-  
+* [Avatar](https://maclisowski.github.io/zutre/#/components/avatars)
+  * prop `onClick` removed
+  * removed `v-on:click`
+  * emmiting event `click` when link is clicked
+  * updated docs
+* [Menu Item](https://maclisowski.github.io/zutre/#/components/menu)
+  * prop `onClick` removed
+  * removed `v-on:click`
+  * emmiting event `click` when link is clicked
+  * updated docs
+
 ---
 
 ## Released 
