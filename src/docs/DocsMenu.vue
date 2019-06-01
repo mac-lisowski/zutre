@@ -138,6 +138,19 @@
             <z-td>false</z-td>
             <z-td>---</z-td>
           </z-tr>
+
+          <z-tr>
+            <z-td colspan="5"><strong>EVENTS</strong></z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
+            <z-td>
+              emmited when menu item is clicked
+            </z-td>
+            <z-td><code>Event</code></z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
         </z-tbody>
       </z-table>
 
