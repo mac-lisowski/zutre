@@ -1,5 +1,10 @@
 # Zutre [![](https://img.shields.io/npm/v/zutre.svg)](https://www.npmjs.com/package/zutre) [![](https://img.shields.io/github/package-json/v/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre) 
 
+
+[![](https://img.shields.io/github/issues/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/issues) ![](https://img.shields.io/github/languages/top/maclisowski/zutre.svg) [![Known Vulnerabilities](https://snyk.io/test/github/maclisowski/zutre/badge.svg?targetFile=package.json)](https://snyk.io/test/github/maclisowski/zutre?targetFile=package.json) [![GitHub license](https://img.shields.io/github/license/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/blob/master/LICENSE) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/maclisowski/zutre/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://twitter.com/maclisowski) [![](https://img.shields.io/npm/dt/zutre.svg)](https://www.npmjs.com/package/zutre) 
+
+![](./carbon-sizes.png)
+
 #### NOTE: Project in development, do not use at production
 
 **zutre** is a set of UI components for VueJS based on [Spectre CSS Framework](https://github.com/picturepan2/spectre) with some modifications and provided new features which are not available in Spectre.
@@ -8,10 +13,8 @@ Demo and documentation: [https://maclisowski.github.io/zutre/](https://maclisows
 
 If you want to see what is coming next, please see [Changelog](https://github.com/maclisowski/zutre/blob/master/CHANGELOG.md).
 
-[![](https://img.shields.io/github/issues/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/issues) ![](https://img.shields.io/github/languages/top/maclisowski/zutre.svg) [![Known Vulnerabilities](https://snyk.io/test/github/maclisowski/zutre/badge.svg?targetFile=package.json)](https://snyk.io/test/github/maclisowski/zutre?targetFile=package.json) [![GitHub license](https://img.shields.io/github/license/maclisowski/zutre.svg)](https://github.com/maclisowski/zutre/blob/master/LICENSE) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/maclisowski/zutre/) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://twitter.com/maclisowski) [![](https://img.shields.io/npm/dt/zutre.svg)](https://www.npmjs.com/package/zutre) 
 
 [![https://nodei.co/npm/zutre.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/zutre.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/zutre)
-
 
 ### Installation
 
@@ -55,6 +58,7 @@ Once it is done, you can use **zutre** components in your Vue project. For more 
   * [Accordions](https://maclisowski.github.io/zutre/#/components/accordions)
   * [Avatars](https://maclisowski.github.io/zutre/#/components/avatars)
   * [Badges](https://maclisowski.github.io/zutre/#/components/badges)
+  * [Bars](https://maclisowski.github.io/zutre/#/components/bars)
   * [Breadcrumbs](https://maclisowski.github.io/zutre/#/components/breadcrumbs)
   * [Cards](https://maclisowski.github.io/zutre/#/components/cards)
   * [Chips](https://maclisowski.github.io/zutre/#/components/chips)
@@ -66,6 +70,7 @@ Once it is done, you can use **zutre** components in your Vue project. For more 
   * [Pagination](https://maclisowski.github.io/zutre/#/components/pagination)
   * [Panels](https://maclisowski.github.io/zutre/#/components/panels)
   * [Popovers](https://maclisowski.github.io/zutre/#/components/popovers)
+  * [Snackbar](https://maclisowski.github.io/zutre/#/components/snackbar)
   * [Steps](https://maclisowski.github.io/zutre/#/components/steps)
   * [Tabs](https://maclisowski.github.io/zutre/#/components/tabs)
   * [Tiles](https://maclisowski.github.io/zutre/#/components/tiles)
@@ -119,6 +124,12 @@ npm run test:unit
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 --- 
+
+## Contributors
+Please let me know if you would like to contribute to this project.
+
+<a href="https://sourcerer.io/maclisowski" title="Maciej Lisowski"><img src="https://sourcerer.io/assets/avatar/maclisowski" height="80px" width="80px" alt=""/></a>
+
 
 ## License
 

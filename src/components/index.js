@@ -3,6 +3,7 @@ import './../scss/main.scss';
 import ZAccordion from './accordion';
 import ZAvatar from './avatar';
 import ZBadge from './badge';
+import ZBar from './bar';
 import ZButton from './button';
 import ZBreadcrumbs from './breadcrumbs';
 import ZCard from './card';
@@ -36,6 +37,7 @@ const Components = {
   ZAccordion,
   ZAvatar,
   ZBadge,
+  ZBar,
   ZButton,
   ZBreadcrumbs,
   ZCard,
