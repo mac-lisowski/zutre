@@ -33,22 +33,25 @@ Vue.use(Zutre);
 Once it is done, you can use **zutre** components in your Vue project. For more informations, components examples and API please see **[documentation](https://maclisowski.github.io/zutre/)**.
 
 ### Zutre Components 
-* #### In progress
-  * Forms
-  * Bars
-* #### Elements
+* ### Elements
   * [Tables](https://maclisowski.github.io/zutre/#/elements/table)
   * [Buttons](https://maclisowski.github.io/zutre/#/elements/buttons)
+  * Forms
+    * [Input](https://maclisowski.github.io/zutre/#/elements/forms)
+    * [Select](https://maclisowski.github.io/zutre/#/elements/forms)
+    * [Radio](https://maclisowski.github.io/zutre/#/elements/forms)
+    * [Switch](https://maclisowski.github.io/zutre/#/elements/forms)
+    * [Checkbox](https://maclisowski.github.io/zutre/#/elements/forms)
   * [Icons](https://maclisowski.github.io/zutre/#/elements/icons)
   * [Labels](https://maclisowski.github.io/zutre/#/elements/label)
   * [Code](https://maclisowski.github.io/zutre/#/elements/code)
   * [Media](https://maclisowski.github.io/zutre/#/elements/media)
-* #### Layout
+* ### Layout
   * [Flexbox grid](https://maclisowski.github.io/zutre/#/layout/flexbox)
   * [Responsive](https://maclisowski.github.io/zutre/#/layout/responsive)
   * [Hero](https://maclisowski.github.io/zutre/#/layout/hero)
   * [Navbar](https://maclisowski.github.io/zutre/#/layout/navbar)
-* #### Components
+* ### Components
   * [Accordions](https://maclisowski.github.io/zutre/#/components/accordions)
   * [Avatars](https://maclisowski.github.io/zutre/#/components/avatars)
   * [Badges](https://maclisowski.github.io/zutre/#/components/badges)
@@ -68,7 +71,8 @@ Once it is done, you can use **zutre** components in your Vue project. For more 
   * [Tiles](https://maclisowski.github.io/zutre/#/components/tiles)
   * [Toasts](https://maclisowski.github.io/zutre/#/components/toasts)
   * [Tooltips](https://maclisowski.github.io/zutre/#/components/tooltips)
-* #### Utilities
+  
+* ### Utilities
   * [Divider](https://maclisowski.github.io/zutre/#/utilities/divider)
   * [Link](https://maclisowski.github.io/zutre/#/utilities/link)
 
