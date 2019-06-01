@@ -66,6 +66,7 @@ Moved back spectre.css and material-icons to dependencies
 * New component [Select](https://maclisowski.github.io/zutre/#/elements/forms)
 * New component [Radio](https://maclisowski.github.io/zutre/#/elements/forms)
 * New component [Switch](https://maclisowski.github.io/zutre/#/elements/forms)
+* New component [Checkbox](https://maclisowski.github.io/zutre/#/elements/forms)
 
 #### Changed
 * All component directories and files names changed to lower case
