@@ -6,16 +6,16 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## 0.1.3-alpha.9 Unreleased
-
----
-
-## Released 
-## 0.1.3-alpha.8
 * [Links](https://maclisowski.github.io/zutre/#/utilities/link) 
   * prop `onClick` removed
   * removed `v-on:click`
   * emmiting event `click` when link is clicked
   * updated docs
+  
+---
+
+## Released 
+## 0.1.3-alpha.8
 
 Moved back spectre.css and material-icons to dependencies
 ## 0.1.3-alpha.7
