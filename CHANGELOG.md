@@ -6,20 +6,30 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## 0.1.3-alpha.9 Unreleased
-* [Link](https://maclisowski.github.io/zutre/#/utilities/link) 
+* [Links](https://maclisowski.github.io/zutre/#/utilities/link) 
   * prop `onClick` removed
   * removed `v-on:click`
   * emmiting event `click` when link is clicked
   * updated docs
-* [Avatar](https://maclisowski.github.io/zutre/#/components/avatars)
+* [Avatars](https://maclisowski.github.io/zutre/#/components/avatars)
   * prop `onClick` removed
   * removed `v-on:click`
-  * emmiting event `click` when link is clicked
+  * emmiting event `click` when avatar is clicked
   * updated docs
-* [Menu Item](https://maclisowski.github.io/zutre/#/components/menu)
+* [Menu Items](https://maclisowski.github.io/zutre/#/components/menu)
   * prop `onClick` removed
   * removed `v-on:click`
-  * emmiting event `click` when link is clicked
+  * emmiting event `click` when menu item is clicked
+  * updated docs
+* [Steps and Steps Items](https://maclisowski.github.io/zutre/#/components/steps)
+  * prop `onClick` removed
+  * removed `v-on:click`
+  * emmiting event `click` when step/step item is clicked
+  * updated docs
+* [Tabs](https://maclisowski.github.io/zutre/#/components/tabs)
+  * prop `onClick` removed
+  * removed `v-on:click`
+  * emmiting event `click` when tab item is clicked
   * updated docs
 
 ---
