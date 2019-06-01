@@ -102,7 +102,7 @@
       <h4>Avatar dropdown</h4>
       <p>Avatar supports capability for dropdown menu for presence indicator.</p>
 
-      <z-avatar size="xl" data="ML" :presence="presenceStatus" :onClick="avatarClick" :menu="[
+      <z-avatar size="xl" data="ML" :presence="presenceStatus" v-on:click="avatarClick" :menu="[
         { name: 'online', onClick: () => change('online')},
         { name: 'away', onClick: () => change('away')},
         { name: 'busy', onClick: () => change('busy')},
@@ -111,7 +111,7 @@
       <br>
 
       <z-code lang="Vue">
-&lt;z-avatar size="xl" data="ML" :presence="status" :onClick="avatarClick" :menu="[
+&lt;z-avatar size="xl" data="ML" :presence="status" v-on:click="avatarClick" :menu="[
   { name: 'online', onClick: () => change('online')},
   { name: 'away', onClick: () => change('away')},
   { name: 'busy', onClick: () => change('busy')},
@@ -188,6 +188,29 @@
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
+
+          <z-tr>
+            <z-td><code>menu</code></z-td>
+            <z-td>
+              dropdown menu items, can have properties as defined in <z-link :link="{ name: 'docsMenu' }" name="Menu Item" />
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td colspan="5"><strong>EVENTS</strong></z-td>
+          </z-tr>
+          <z-tr>
+            <z-td><code>click</code></z-td>
+            <z-td>
+              emmited when avatar is clicked
+            </z-td>
+            <z-td><code>Event</code></z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
         </z-tbody>
       </z-table>
 
@@ -203,7 +226,7 @@ export default {
   },
   methods: {
     avatarClick() {
-      console.log('avatar click');
+      alert('avatar click');
     },
     change(val) {
       this.presenceStatus = val;
