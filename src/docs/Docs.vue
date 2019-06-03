@@ -54,6 +54,7 @@
             <z-menu-item :link="{ name: 'docsAccordion' }" name="Accordions" activeClass="active" />
             <z-menu-item :link="{ name: 'docsAvatars' }" name="Avatars" activeClass="active" />
             <z-menu-item :link="{ name: 'docsBadges' }" name="Badges" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsBars' }" name="Bars" activeClass="active" />
             <z-menu-item :link="{ name: 'docsBreadcrumbs' }" name="Breadcrumbs" activeClass="active" />
             <z-menu-item :link="{ name: 'docsCard' }" name="Cards" activeClass="active" />
             <z-menu-item :link="{ name: 'docsChip' }" name="Chips" activeClass="active" />

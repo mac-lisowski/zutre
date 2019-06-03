@@ -5,15 +5,15 @@
     </template>
 
     <template v-if="!hasDefaultSlot && barItems.length > 0">
-      <!-- <z-breadcrumbs-item 
-        v-bind:key="item.name" 
-        v-for="item in barItems" 
-        :name="item.name" 
-        :link="item.link" 
-        :href="item.href"
-        :icon="item.icon"
-      /> -->
-      x
+      <z-bar-item
+        v-for="(idx, item) in barItems" 
+        v-bind:key="idx" 
+        :min="item.min" 
+        :max="item.max" 
+        :value="item.value"
+        :tooltip="(typeof item.tooltip === 'string') ? item.tooltip : null"
+        :content="(typeof item.content === 'string') ? item.content : null"
+      />
     </template>
   </div>
 </template>
@@ -37,6 +37,10 @@ export default {
     items: {
       type: Array,
       default: () => []
+    },
+    slider: {
+      type: Boolean,
+      default: () => false,
     }
   },
   computed: {
@@ -52,12 +56,16 @@ export default {
       if (this.size !== '') {
         switch (this.size) {
           case 'sm':
-            css['bar-sm'] = true
-            break
+            css['bar-sm'] = true;
+            break;
           case 'lg':
-            css['bar-lg'] = true
-            break
+            css['bar-lg'] = true;
+            break;
         }
+      }
+
+      if (this.slider === true) {
+        css['bar-slider'] = true; 
       }
 
       return css;
