@@ -23,7 +23,11 @@
  * Spectre: https://picturepan2.github.io/spectre/components/bars.html
  *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
- * @prop {String} size sm/lg or empty for normal size
+ * @prop {Number} min
+ * @prop {Number} max
+ * @prop {Number} value
+ * @prop {String} tooltip
+ * @prop {String} content
  */
 export default {
   name: 'BarItem',
