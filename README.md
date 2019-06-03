@@ -126,8 +126,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 --- 
 
 ## Roadmap
-* Release beta version 0.1.3-beta
-* Release production version 0.1.3 - supporting all featuers from Spectre CSS Framework
+* Release beta version 0.1.3-beta - supporting all features from Spectre CSS Framework
+* Release production version 0.1.3
 * Develop **zutre.css** Framework due lack of support for Spectre
 * Release version 0.1.4-beta - integrate **zutre.css**, drop Spectre 
 * Release production ready version 1.0.0
