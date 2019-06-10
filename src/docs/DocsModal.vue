@@ -10,24 +10,24 @@
 
       <z-divider content="DEFAULT MODAL EXAMPLE" />
       <br>
-      <z-button :click="openModal1">Open modal</z-button>
+      <z-button @click="openModal1">Open modal</z-button>
 
       <z-modal :open.sync="open1Open" title="Example Modal Title">
         <p>Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.</p>
 
         <template slot="footer">
-          <z-button :click="closeModal1" type="primary">OK</z-button> <z-button :click="closeModal1" type="link">Cancel</z-button>
+          <z-button @click="closeModal1" type="primary">OK</z-button> <z-button @click="closeModal1" type="link">Cancel</z-button>
         </template>
       </z-modal>
 
 <z-code lang="Vue">
-&lt;z-button :click="openDefaultModal"&gt;Open modal&lt;/z-button&gt;
+&lt;z-button @click="openDefaultModal"&gt;Open modal&lt;/z-button&gt;
 
 &lt;z-modal :open.sync="openModal" title="Example Modal Title"&gt;
   &lt;p&gt;Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.&lt;/p&gt;
 
   &lt;template slot="footer"&gt;
-    &lt;z-button :click="closeModal" type="primary"&gt;OK&lt;/z-button&gt; &lt;z-button :click="closeModal" type="link"&gt;Cancel&lt;/z-button&gt;
+    &lt;z-button @click="closeModal" type="primary"&gt;OK&lt;/z-button&gt; &lt;z-button @click="closeModal" type="link"&gt;Cancel&lt;/z-button&gt;
   &lt;/template&gt;
 &lt;/z-modal&gt;
 </z-code>
@@ -36,7 +36,7 @@
 
       <z-divider content="SMALL MODAL EXAMPLE"/>
       <br>
-      <z-button :click="openModal2">Open small modal</z-button>
+      <z-button @click="openModal2">Open small modal</z-button>
 
       <z-modal :open.sync="open2Open" title="Example Modal Title" size="sm">
         <p>Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.</p>
@@ -50,7 +50,7 @@
 
       <z-divider content="LARGE MODAL EXAMPLE"/>
       <br>
-      <z-button :click="openModal3">Open large modal</z-button>
+      <z-button @click="openModal3">Open large modal</z-button>
 
       <z-modal :open.sync="open3Open" title="Example Modal Title" size="lg" :canClose="false">
         <h2>Suspendisse potenti</h2>
@@ -63,7 +63,7 @@
         <p>Ut quis vehicula ante, scelerisque laoreet mi. Suspendisse potenti. Nulla nibh ex, lobortis eget justo consequat, ultrices aliquam orci. Ut tellus est, finibus in felis vitae, convallis egestas nisl. Pellentesque sit amet magna ac quam mollis vehicula. Vestibulum nec ornare neque. Suspendisse quis convallis dui.</p>
 
         <template slot="footer">
-          <z-button :click="closeModal3">Close</z-button>
+          <z-button @click="closeModal3">Close</z-button>
         </template>
       </z-modal>
 

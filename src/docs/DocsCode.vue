@@ -46,6 +46,6 @@
 </template>
 <script>
 export default {
-  name: 'DocsHero',
+  name: 'DocsCode',
 }
 </script>

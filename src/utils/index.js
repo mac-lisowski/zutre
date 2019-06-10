@@ -31,3 +31,7 @@ export function installPlugin(vue, component) {
 export function genID() {
   return '_' + Math.random().toString(36).substr(2, 9);
 }
+
+export function timeNow() {
+  return window.performance && window.performance.now ? (window.performance.now() + window.performance.timing.navigationStart) : +new Date();
+}

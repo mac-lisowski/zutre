@@ -3,17 +3,16 @@
     <template v-if="hasDefaultSlot">
       <slot></slot>
     </template>
-
     <template v-if="!hasDefaultSlot && barItems.length > 0">
-      <!-- <z-breadcrumbs-item 
-        v-bind:key="item.name" 
-        v-for="item in barItems" 
-        :name="item.name" 
-        :link="item.link" 
-        :href="item.href"
-        :icon="item.icon"
-      /> -->
-      x
+      <z-bar-item
+        v-for="(item, idx) in barItems" 
+        v-bind:key="idx" 
+        :min="item.min" 
+        :max="item.max" 
+        :value="item.value"
+        :tooltip="(typeof item.tooltip === 'string') ? item.tooltip : null"
+        :content="(typeof item.content === 'string') ? item.content : null"
+      />
     </template>
   </div>
 </template>
@@ -25,7 +24,7 @@
  *
  * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
  * @prop {String} size sm/lg or empty for normal size
- * @prop {Array} items each item is an JSON object with: 
+ * @prop {Array} items each item is an JSON object with: min, max, value, tooltip, content
  */
 export default {
   name: 'Bar',
@@ -37,6 +36,10 @@ export default {
     items: {
       type: Array,
       default: () => []
+    },
+    slider: {
+      type: Boolean,
+      default: () => false,
     }
   },
   computed: {
@@ -52,12 +55,16 @@ export default {
       if (this.size !== '') {
         switch (this.size) {
           case 'sm':
-            css['bar-sm'] = true
-            break
+            css['bar-sm'] = true;
+            break;
           case 'lg':
-            css['bar-lg'] = true
-            break
+            css['bar-lg'] = true;
+            break;
         }
+      }
+
+      if (this.slider === true) {
+        css['bar-slider'] = true; 
       }
 
       return css;

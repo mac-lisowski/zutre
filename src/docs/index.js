@@ -91,6 +91,11 @@ let router = new Router({
       component: () => import('@/docs/DocsBadge.vue')
     },
     {
+      path: '/components/bars',
+      name: 'docsBars',
+      component: () => import('@/docs/DocsBars.vue')
+    },
+    {
       path: '/components/breadcrumbs',
       name: 'docsBreadcrumbs',
       component: () => import('@/docs/DocsBreadcrumbs.vue')

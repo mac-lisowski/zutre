@@ -28,16 +28,16 @@
       <z-columns>
         <z-column>
           <z-button-group block>
-            <z-button size="sm" :click="openToastTop">Open (top)</z-button>
-            <z-button size="sm" :click="openToastTopLeft">Open (top left)</z-button>
-            <z-button size="sm" :click="openToastTopRight">Open (top right)</z-button>
+            <z-button size="sm" @click="openToastTop">Open (top)</z-button>
+            <z-button size="sm" @click="openToastTopLeft">Open (top left)</z-button>
+            <z-button size="sm" @click="openToastTopRight">Open (top right)</z-button>
           </z-button-group>
         </z-column>
         <z-column>
           <z-button-group block>
-            <z-button size="sm" :click="openToastBottom">Open (bottom)</z-button>
-            <z-button size="sm" :click="openToastBottomLeft">Open (bottom left)</z-button>
-            <z-button size="sm" :click="openToastBottomRight">Open (bottom right)</z-button>
+            <z-button size="sm" @click="openToastBottom">Open (bottom)</z-button>
+            <z-button size="sm" @click="openToastBottomLeft">Open (bottom left)</z-button>
+            <z-button size="sm" @click="openToastBottomRight">Open (bottom right)</z-button>
           </z-button-group>
         </z-column>
       </z-columns>
