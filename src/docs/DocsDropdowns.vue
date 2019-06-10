@@ -30,7 +30,7 @@
       <z-divider />
       <br>
 
-      <z-avatar size="xl" data="ML" :presence="status" v-on:click="avatarClick" :menu="[
+      <z-avatar size="xl" data="ML" :presence="status" @click="avatarClick" :menu="[
         { name: 'online', onClick: () => change('online')},
         { name: 'away', onClick: () => change('away')},
         { name: 'busy', onClick: () => change('busy')},
@@ -39,7 +39,7 @@
       <br>
 
       <z-code lang="Vue">
-&lt;z-avatar size="xl" data="ML" :presence="status" v-on:click="avatarClick" :menu="[
+&lt;z-avatar size="xl" data="ML" :presence="status" @click="avatarClick" :menu="[
   { name: 'online', onClick: () => change('online')},
   { name: 'away', onClick: () => change('away')},
   { name: 'busy', onClick: () => change('busy')},

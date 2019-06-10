@@ -16,14 +16,14 @@
         { name: 'Step 1', tooltip: 'Hi in first step!'},
         { name: 'Step 2', tooltip: 'Second step!', active: true},
         { name: 'Step 3'}
-      ]" v-on:click="stepOnClick" />
+      ]" @click="stepOnClick" />
 
 <z-code lang="Vue">
 &lt;z-step :items="[
   { name: 'Step 1', tooltip: 'Hi in first step!'},
   { name: 'Step 2', tooltip: 'Second step!', active: true},
   { name: 'Step 3'}
-]" v-on:click="stepOnClick" /&gt;
+]" @click="stepOnClick" /&gt;
 </z-code>
 
       <z-divider content="OR" />
@@ -32,7 +32,7 @@
       <z-step>
         <z-step-item name="Step 1" tooltip="Tooltip 1" />
         <z-step-item name="Step 2" tooltip="Tooltip 2" />
-        <z-step-item name="Step 3" tooltip="Tooltip 3" v-on:click="stepOnClick" active />
+        <z-step-item name="Step 3" tooltip="Tooltip 3" @click="stepOnClick" active />
         <z-step-item name="Step 4" />
         <z-step-item name="Step 5" />
       </z-step>
@@ -41,7 +41,7 @@
 &lt;z-step&gt;
   &lt;z-step-item name="Step 1" tooltip="Tooltip 1" /&gt;
   &lt;z-step-item name="Step 2" tooltip="Tooltip 2" /&gt;
-  &lt;z-step-item name="Step 3" tooltip="Tooltip 3" v-on:click="stepOnClick" active /&gt;
+  &lt;z-step-item name="Step 3" tooltip="Tooltip 3" @click="stepOnClick" active /&gt;
   &lt;z-step-item name="Step 4" /&gt;
   &lt;z-step-item name="Step 5" /&gt;
 &lt;/z-step&gt;

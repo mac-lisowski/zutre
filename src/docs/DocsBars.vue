@@ -11,7 +11,12 @@
       <br>
 
       <z-bar size="sm">
-        <z-bar-item :min="0" :max="35" :value="35" tooltip="35%" />
+        <z-bar-item :min="0" :max="100" :value="35" tooltip="35%" />
+      </z-bar>
+
+      <br>
+      <z-bar size="sm">
+        <z-bar-item :min="0" :max="350" :value="350" tooltip="100%" />
       </z-bar>
       
       <br>
@@ -19,7 +24,11 @@
         <z-bar-item :min="20" :max="65" :value="35" />
       </z-bar>
       <z-code lang="Vue">&lt;z-bar size="sm"&gt;
-  &lt;z-bar-item :min="0" :max="35" :value="35" tooltip="35%" /&gt;
+  &lt;z-bar-item :min="0" :max="100" :value="35" tooltip="35%" /&gt;
+&lt;/z-bar&gt;
+
+&lt;z-bar size="sm"&gt;
+  &lt;z-bar-item :min="0" :max="350" :value="350" tooltip="100%" /&gt;
 &lt;/z-bar&gt;
 
 &lt;z-bar size="sm"&gt;
@@ -29,33 +38,33 @@
 
       <br>
       <z-bar :items='[
-        {"min": 0, "max": 15, "value": 15, "tooltip": "15%", content: "15%"},
-        {"min": 0, "max": 30, "value": 30, "tooltip": "30%", content: "30%"}
+        {"min": 0, "max": 15, "value": 5, "tooltip": "33%", content: "33%"},
+        {"min": 0, "max": 15, "value": 5, "tooltip": "33%", content: "33%"}
       ]' />
       <z-code lang="Vue">&lt;z-bar :items='[
-  {"min": 0, "max": 15, "value": 15, "tooltip": "15%", content: "15%"},
-  {"min": 0, "max": 30, "value": 30, "tooltip": "30%", content: "30%"}
+  {"min": 0, "max": 15, "value": 5, "tooltip": "33%", content: "33%"},
+  {"min": 0, "max": 15, "value": 5, "tooltip": "33%", content: "33%"}
 ]' /&gt;
 
       </z-code>
       <br>
 
       <z-bar>
-        <z-bar-item :min="0" :max="35" :value="35" tooltip="35%" content="35%" />
-        <z-bar-item :min="0" :max="20" :value="20" tooltip="20%" style="background:#818bd5;">20%</z-bar-item>
+        <z-bar-item :min="0" :max="100" :value="35" tooltip="35%" content="35%" />
+        <z-bar-item :min="0" :max="100" :value="20" tooltip="20%" style="background:#818bd5;">20%</z-bar-item>
       </z-bar>
       <z-code lang="Vue">&lt;z-bar&gt;
-  &lt;z-bar-item :min="0" :max="35" :value="35" tooltip="35%" content="35%" /&gt;
-  &lt;z-bar-item :min="0" :max="20" :value="20" tooltip="20%" style="background:#818bd5;"&gt;20%&lt;/z-bar-item&gt;
+  &lt;z-bar-item :min="0" :max="100" :value="35" tooltip="35%" content="35%" /&gt;
+  &lt;z-bar-item :min="0" :max="100" :value="20" tooltip="20%" style="background:#818bd5;"&gt;20%&lt;/z-bar-item&gt;
 &lt;/z-bar&gt;     
       </z-code>
       <br>
       
       <z-bar>
-        <z-bar-item :min="0" :max="35" :value="65" tooltip="65%"/>
+        <z-bar-item :min="0" :max="350" :value="300" tooltip="85%"/>
       </z-bar>
       <z-code lang="Vue">&lt;z-bar&gt;
-  &lt;z-bar-item :min="0" :max="35" :value="65" tooltip="65%" /&gt;
+  &lt;z-bar-item :min="0" :max="350" :value="300" tooltip="85%" /&gt;
 &lt;/z-bar&gt;
       </z-code>
       <br>
@@ -64,6 +73,9 @@
       <br>
 
       <z-bar :slider="true">
+        <z-bar-item :min="0" :max="1000" :value="500">
+          <z-bar-btn />
+        </z-bar-item>
       </z-bar>
 
 <z-code lang="Vue">

@@ -27,7 +27,11 @@
 </z-code>
 
       <z-divider content="EVENT ON CLiCK" />
-      <z-link v-on:click="alertLink ">Click Me</z-link>
+      <z-link @click="alertLink ">Click Me</z-link>
+
+      <z-code lang="Vue">
+&lt;z-link @click="alertLink"&gt;Click Me&lt;/z-link&gt;
+</z-code>
 
       <z-divider content="API" />
       <h4>API</h4>
