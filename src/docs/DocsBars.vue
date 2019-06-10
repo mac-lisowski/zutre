@@ -69,21 +69,6 @@
       </z-code>
       <br>
 
-      <z-divider content="SLIDER" />
-      <br>
-
-      <z-bar :slider="true">
-        <z-bar-item :min="0" :max="1000" :value="500">
-          <z-bar-btn />
-        </z-bar-item>
-      </z-bar>
-
-<z-code lang="Vue">
-&lt;z-bar&gt;
-  code
-&lt;/z-bar&gt;
-</z-code>
-
       <z-divider content="API" />
       <h4>API</h4>
 

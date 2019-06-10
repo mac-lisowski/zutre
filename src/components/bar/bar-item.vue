@@ -3,7 +3,7 @@
     class="bar-item"
     :class="barItemClass" 
     :data-tooltip="tooltipString" 
-    :style="{ width: value + '%', 'margin-left': min + '%' }" 
+    :style="{ width: 'calc(' + position + ')', 'margin-left': 'calc(' + min + '%)' }" 
     :aria-valuenow="value" 
     :aria-valuemin="min" 
     :aria-valuemax="max"
@@ -47,7 +47,23 @@ export default {
     tooltip: String,
     content: String,
   },
+  data () {
+    return {
+    };
+  },
+  mounted () {
+    this.$root.$on('bar-btn:move', (event) => {
+      console.log(event.component.distX)
+      
+      // this.$root.$emit('update:value', )
+      // this.position = this.value + '%' + event.component.distX + 'px';
+      // console.log(this.position)
+    })
+  },
   computed: {
+    position () {
+      return ((100 / (this.max - this.min)) * this.value) + '%';
+    },
     hasDefaultSlot () {
       return !!this.$slots.default
     },
