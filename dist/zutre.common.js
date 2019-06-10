@@ -3178,6 +3178,7 @@ var meta = module.exports = {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return usePlugin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return installPlugin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return genID; });
+/* unused harmony export timeNow */
 /* harmony import */ var core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("6b54");
 /* harmony import */ var core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es6_regexp_to_string__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es6_function_name__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("7f7f");
@@ -3216,6 +3217,9 @@ function installPlugin(vue, component) {
 
 function genID() {
   return '_' + Math.random().toString(36).substr(2, 9);
+}
+function timeNow() {
+  return window.performance && window.performance.now ? window.performance.now() + window.performance.timing.navigationStart : +new Date();
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("c8ba")))
 
@@ -3769,6 +3773,403 @@ var badge_VuePlugin = {
 };
 Object(utils["d" /* usePlugin */])(badge_VuePlugin);
 /* harmony default export */ var components_badge = (badge_VuePlugin);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72ca1264-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bar/bar.vue?vue&type=template&id=9cee2592&
+var barvue_type_template_id_9cee2592_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"bar",class:_vm.barClass},[(_vm.hasDefaultSlot)?[_vm._t("default")]:_vm._e(),(!_vm.hasDefaultSlot && _vm.barItems.length > 0)?_vm._l((_vm.barItems),function(item,idx){return _c('z-bar-item',{key:idx,attrs:{"min":item.min,"max":item.max,"value":item.value,"tooltip":(typeof item.tooltip === 'string') ? item.tooltip : null,"content":(typeof item.content === 'string') ? item.content : null}})}):_vm._e()],2)}
+var barvue_type_template_id_9cee2592_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/bar/bar.vue?vue&type=template&id=9cee2592&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bar/bar.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/**
+ * ZBar
+ *
+ * Spectre: https://picturepan2.github.io/spectre/components/bars.html
+ *
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {String} size sm/lg or empty for normal size
+ * @prop {Array} items each item is an JSON object with: min, max, value, tooltip, content
+ */
+/* harmony default export */ var barvue_type_script_lang_js_ = ({
+  name: 'Bar',
+  props: {
+    size: {
+      type: String,
+      default: function _default() {
+        return '';
+      }
+    },
+    items: {
+      type: Array,
+      default: function _default() {
+        return [];
+      }
+    },
+    slider: {
+      type: Boolean,
+      default: function _default() {
+        return false;
+      }
+    }
+  },
+  computed: {
+    hasDefaultSlot: function hasDefaultSlot() {
+      return !!this.$slots.default;
+    },
+    barItems: function barItems() {
+      return this.items;
+    },
+    barClass: function barClass() {
+      var css = {};
+
+      if (this.size !== '') {
+        switch (this.size) {
+          case 'sm':
+            css['bar-sm'] = true;
+            break;
+
+          case 'lg':
+            css['bar-lg'] = true;
+            break;
+        }
+      }
+
+      if (this.slider === true) {
+        css['bar-slider'] = true;
+      }
+
+      return css;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/bar/bar.vue?vue&type=script&lang=js&
+ /* harmony default export */ var bar_barvue_type_script_lang_js_ = (barvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/bar/bar.vue
+
+
+
+
+
+/* normalize component */
+
+var bar_component = normalizeComponent(
+  bar_barvue_type_script_lang_js_,
+  barvue_type_template_id_9cee2592_render,
+  barvue_type_template_id_9cee2592_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var bar = (bar_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72ca1264-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bar/bar-item.vue?vue&type=template&id=2a61598c&
+var bar_itemvue_type_template_id_2a61598c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"bar-item",class:_vm.barItemClass,style:({ width: 'calc(' + _vm.position + ')', 'margin-left': 'calc(' + _vm.min + '%)' }),attrs:{"data-tooltip":_vm.tooltipString,"aria-valuenow":_vm.value,"aria-valuemin":_vm.min,"aria-valuemax":_vm.max}},[(_vm.hasDefaultSlot)?[_vm._t("default")]:_vm._e(),(!_vm.hasDefaultSlot)?[_vm._v("\n    "+_vm._s(_vm.content)+"\n  ")]:_vm._e()],2)}
+var bar_itemvue_type_template_id_2a61598c_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/bar/bar-item.vue?vue&type=template&id=2a61598c&
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.number.constructor.js
+var es6_number_constructor = __webpack_require__("c5f6");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bar/bar-item.vue?vue&type=script&lang=js&
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/**
+ * ZBarItem
+ *
+ * Spectre: https://picturepan2.github.io/spectre/components/bars.html
+ *
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ * @prop {Number} min
+ * @prop {Number} max
+ * @prop {Number} value
+ * @prop {String} tooltip
+ * @prop {String} content
+ */
+/* harmony default export */ var bar_itemvue_type_script_lang_js_ = ({
+  name: 'BarItem',
+  props: {
+    min: {
+      type: Number,
+      default: function _default() {
+        return 0;
+      }
+    },
+    max: {
+      type: Number,
+      default: function _default() {
+        return 100;
+      }
+    },
+    value: {
+      type: Number,
+      default: function _default() {
+        return 0;
+      }
+    },
+    tooltip: String,
+    content: String
+  },
+  data: function data() {
+    return {};
+  },
+  mounted: function mounted() {
+    this.$root.$on('bar-btn:move', function (event) {
+      console.log(event.component.distX); // this.$root.$emit('update:value', )
+      // this.position = this.value + '%' + event.component.distX + 'px';
+      // console.log(this.position)
+    });
+  },
+  computed: {
+    position: function position() {
+      return 100 / (this.max - this.min) * this.value + '%';
+    },
+    hasDefaultSlot: function hasDefaultSlot() {
+      return !!this.$slots.default;
+    },
+    barItems: function barItems() {
+      return this.items;
+    },
+    tooltipString: function tooltipString() {
+      return typeof this.tooltip === "string" && this.tooltip.length > 0 ? this.tooltip : null;
+    },
+    barItemClass: function barItemClass() {
+      var css = {};
+
+      if (typeof this.tooltip === "string" && this.tooltip.length > 0) {
+        css['tooltip'] = true;
+      }
+
+      return css;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/bar/bar-item.vue?vue&type=script&lang=js&
+ /* harmony default export */ var bar_bar_itemvue_type_script_lang_js_ = (bar_itemvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/bar/bar-item.vue
+
+
+
+
+
+/* normalize component */
+
+var bar_item_component = normalizeComponent(
+  bar_bar_itemvue_type_script_lang_js_,
+  bar_itemvue_type_template_id_2a61598c_render,
+  bar_itemvue_type_template_id_2a61598c_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var bar_item = (bar_item_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72ca1264-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bar/bar-btn.vue?vue&type=template&id=93dd44f2&
+var bar_btnvue_type_template_id_93dd44f2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"bar-slider-btn btn",attrs:{"role":"slider"},on:{"touchstart":_vm.start,"mousedown":_vm.start,"touchmove":_vm.move,"mousemove":_vm.move,"touchend":_vm.end,"mouseup":_vm.end,"touchcancel":_vm.end,"mousecancel":_vm.end,"mouseleave":_vm.end}})}
+var bar_btnvue_type_template_id_93dd44f2_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/bar/bar-btn.vue?vue&type=template&id=93dd44f2&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/bar/bar-btn.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/**
+ * ZBarBtn
+ *
+ * Spectre: https://picturepan2.github.io/spectre/components/bars.html
+ *
+ * @author Maciej Lisowski <maciej.lisowski.elk@gmail.com>
+ */
+// import { timeNow } from '@/utils';
+var TOUCH_EVENT = 1;
+var MOUSE_EVENT = 2;
+var eventType = {
+  touchstart: TOUCH_EVENT,
+  touchmove: TOUCH_EVENT,
+  touchend: TOUCH_EVENT,
+  mousedown: MOUSE_EVENT,
+  mousemove: MOUSE_EVENT,
+  mouseup: MOUSE_EVENT,
+  mouseleave: MOUSE_EVENT
+};
+/* harmony default export */ var bar_btnvue_type_script_lang_js_ = ({
+  name: 'BarBtn',
+  props: {},
+  data: function data() {
+    return {
+      x: 0,
+      distX: 0,
+      duration: 0
+    };
+  },
+  computed: {},
+  methods: {
+    start: function start(event) {
+      var _eventType = eventType[event.type];
+
+      if (_eventType !== TOUCH_EVENT) {
+        if (event.button !== 0) {
+          return;
+        }
+      }
+
+      if (this.initiated && this.initiated !== _eventType) {
+        return;
+      }
+
+      this.initiated = _eventType;
+      this.$emit('bar-btn:start', {
+        event: event,
+        component: this
+      }); // this.duration = this.slideTime;
+
+      this.distX = 0; // this.startTime = timeNow();
+
+      var touch = event.touches ? event.touches[0] : event;
+      this.x = touch.pageX; // this.startX = this.x;
+      // this.absStartX = this.x
+      // this.touchX = touch.pageX;
+    },
+    move: function move(event) {
+      if (eventType[event.type] !== this.initiated) {
+        return;
+      }
+
+      var touch = event.touches ? event.touches[0] : event;
+      console.log(touch);
+      this.distX = touch.pageX - this.x; // const deltaX = touch.pageX - this.touchX
+      // this.touchX = touch.pageX
+      // this.distX += deltaX
+      // const absDistX = Math.abs(this.distX);
+      // const timestamp = timeNow()
+      // if (timestamp - this.endTime > this.momentumLimitTime && absDistX < this.momentumLimitDistance) {
+      //   return
+      // }
+      // let newX = this.x + deltaX
+      // if ((this.left === 0 && newX > this.maxScrollX) || (this.right === 0 && newX < this.minScrollX)) {
+      //   return
+      // }
+      // if (newX < this.minScrollX || newX > this.maxScrollX) {
+      //   if (this.bounce) {
+      //     newX = this.x + deltaX / 3
+      //   } else {
+      //     newX = newX < this.minScrollX ? this.minScrollX : this.maxScrollX
+      //   }
+      // }
+      // this.x = newX
+
+      this.$root.$emit('bar-btn:move', {
+        event: event,
+        component: this
+      });
+    },
+    end: function end(event) {
+      if (eventType[event.type] !== this.initiated) {
+        return;
+      }
+
+      this.x = 0;
+      this.$emit('bar-btn:end', {
+        event: event,
+        component: this
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/bar/bar-btn.vue?vue&type=script&lang=js&
+ /* harmony default export */ var bar_bar_btnvue_type_script_lang_js_ = (bar_btnvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/bar/bar-btn.vue
+
+
+
+
+
+/* normalize component */
+
+var bar_btn_component = normalizeComponent(
+  bar_bar_btnvue_type_script_lang_js_,
+  bar_btnvue_type_template_id_93dd44f2_render,
+  bar_btnvue_type_template_id_93dd44f2_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var bar_btn = (bar_btn_component.exports);
+// CONCATENATED MODULE: ./src/components/bar/index.js
+
+
+
+
+var bar_VuePlugin = {
+  install: function install(Vue) {
+    Object(utils["c" /* installPlugin */])(Vue, bar);
+    Object(utils["c" /* installPlugin */])(Vue, bar_item);
+    Object(utils["c" /* installPlugin */])(Vue, bar_btn);
+  }
+};
+Object(utils["d" /* usePlugin */])(bar_VuePlugin);
+/* harmony default export */ var components_bar = (bar_VuePlugin);
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"72ca1264-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/button/button.vue?vue&type=template&id=dfed3d26&
 var buttonvue_type_template_id_dfed3d26_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{class:_vm.btnClass,attrs:{"disabled":_vm.isDisabled,"data-badge":_vm.badge},on:{"click":function($event){return _vm.$emit('click')}}},[_vm._t("default")],2)}
@@ -4605,9 +5006,6 @@ var card_titlevue_type_template_id_0001f75e_staticRenderFns = []
 
 
 // CONCATENATED MODULE: ./src/components/card/card-title.vue?vue&type=template&id=0001f75e&
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es6.number.constructor.js
-var es6_number_constructor = __webpack_require__("c5f6");
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/card/card-title.vue?vue&type=script&lang=js&
 
@@ -9841,10 +10239,12 @@ Object(utils["d" /* usePlugin */])(tooltip_VuePlugin);
 
 
 
+
 var Components = {
   ZAccordion: components_accordion,
   ZAvatar: components_avatar,
   ZBadge: components_badge,
+  ZBar: components_bar,
   ZButton: components_button,
   ZBreadcrumbs: components_breadcrumbs,
   ZCard: components_card,
