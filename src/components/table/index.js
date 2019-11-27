@@ -1,6 +1,6 @@
 import Table from './table';
 import Thead from './thead';
-import Tfoot from './thead';
+import Tfoot from './tfoot';
 import Tbody from './tbody';
 import Th from './th';
 import Tr from './tr';

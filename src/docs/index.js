@@ -53,7 +53,11 @@ let router = new Router({
       name: 'docsTable',
       component: () => import('@/docs/DocsTable.vue')
     },
-
+    {
+      path: '/elements/datatable',
+      name: 'docsDataTable',
+      component: () => import('@/docs/DocsTableData.vue')
+    },
     {
       path: '/layout/hero',
       name: 'docsHero',
