@@ -59,6 +59,11 @@ let router = new Router({
       component: () => import('@/docs/DocsTableData.vue')
     },
     {
+      path: '/elements/circularprogress',
+      name: 'docsProgressCircular',
+      component: () => import('@/docs/DocsCircularProgress.vue')
+    },
+    {
       path: '/layout/hero',
       name: 'docsHero',
       component: () => import('@/docs/DocsHero.vue')

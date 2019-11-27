@@ -30,6 +30,7 @@ import ZStep from './step';
 import ZTab from './tab';
 import ZTable from './table';
 import ZTableData from './tabledata';
+import ZCurcularProgress from './circularprogress'
 import ZTile from './tile';
 import ZToast from './toast';
 import ZTooltip from './tooltip';
@@ -68,6 +69,7 @@ const Components = {
   ZTile,
   ZToast,
   ZTooltip,
+  ZCurcularProgress,
 }
 
 export const Zutre = {

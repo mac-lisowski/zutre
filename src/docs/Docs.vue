@@ -73,6 +73,7 @@
             <z-menu-item :link="{ name: 'docsTile' }" name="Tile" activeClass="active" />
             <z-menu-item :link="{ name: 'docsToast' }" name="Toast" activeClass="active" />
             <z-menu-item :link="{ name: 'docsTooltips' }" name="Tooltips" activeClass="active" />
+            <z-menu-item :link="{ name: 'docsProgressCircular' }" name="Progress circular" activeClass="active" />
 
             <z-menu-divider content="UTILITIES" />
 
