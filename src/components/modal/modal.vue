@@ -3,19 +3,23 @@
       <div @click="cancel('overlay')" class="modal-overlay" v-if="hasOverlay" />
 
       <div class="modal-container" :style="modalStyle">
-        <div class="modal-header">
-          <button class="btn btn-clear float-right" aria-label="Close" v-if="canClose && hasCloseType('btn')" @click="cancel('btn')" />
-          <div class="modal-title h5" v-if="title" v-text="title" />
+        <div class="fl-center" v-if='stripped'>
+          <slot v-if='stripped' />
         </div>
-        
-        <div class="modal-body" v-if="content" v-html="content" />
-        <div class="modal-body" v-else><slot /></div>
+        <template v-else>
+          <div class="modal-header">
+            <button class="btn btn-clear float-right" aria-label="Close" v-if="canClose && hasCloseType('btn')" @click="cancel('btn')" />
+            <div class="modal-title h5" v-if="title" v-text="title" />
+          </div>
+          
+          <div class="modal-body" v-if="content" v-html="content" />
+          <div class="modal-body" v-else><slot v-if='!stripped'/></div>
 
-        <div class="modal-footer" v-if="hasFooter">
-          <slot name="footer" />
-        </div>
+          <div class="modal-footer" v-if="hasFooter">
+            <slot name="footer" />
+          </div>
+        </template>
       </div>
-      
     </div>
 </template>
 
@@ -32,6 +36,7 @@
  * @prop {Boolean} overlay default: true
  * @prop {Boolean|Array} canClose default: true
  * @prop {Function} onClose fired on close 
+ * @prop {Boolean} stripped show modal header body and footer if false
  */
 export default {
   name: 'Modal',
@@ -56,6 +61,10 @@ export default {
       type: Function,
       default: () => {}
     },
+    stripped: {
+      type: Boolean,
+      default: false
+    }
   },
   data () {
     return {
@@ -113,6 +122,11 @@ export default {
           width: this.width + 'px'
         }
       }
+      if(this.stripped){
+        style.background = 'transparent';
+        style['box-shadow'] = 'none';
+        style.width = '1%';
+      }
 
       return style
     },
@@ -140,3 +154,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.fl-center{
+  align-self: center;
+}
+</style>

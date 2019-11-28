@@ -49,7 +49,7 @@ export default {
     },
     strokeColor: {
       type: String,
-      default: "#aaff00"
+      default: "#498eff"
     },
     value: {
       validator: function(value) {

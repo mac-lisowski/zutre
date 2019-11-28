@@ -82,6 +82,19 @@
 </z-code>
 
 
+      <z-divider content="STRIPPED MODAL EXAMPLE"/>
+      <br>
+      <z-button @click="open4=true">Open stripped modal</z-button>
+
+      <z-modal :open.sync="open4" stripped>
+        <z-circular-progress :value="16.88"></z-circular-progress>
+      </z-modal>
+
+<z-code lang="Vue">&lt;z-modal :open.sync="open4" stripped&gt;
+    &lt;z-circular-progress :value="16.88"&gt;&lt;/z-circular-progress&gt;
+  &lt;/z-modal&gt;
+</z-code>
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -180,7 +193,8 @@ export default {
     return {
       open1: false,
       open2: false,
-      open3: false
+      open3: false,
+      open4: false
     }
   },
   methods: {
