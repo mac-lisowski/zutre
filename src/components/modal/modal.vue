@@ -3,7 +3,7 @@
       <div @click="cancel('overlay')" class="modal-overlay" v-if="hasOverlay" />
 
       <div class="modal-container" :style="modalStyle">
-        <div class="fl-center" v-if='stripped'>
+        <div class="modal-stripped-content" v-if='stripped'>
           <slot v-if='stripped' />
         </div>
         <template v-else>
@@ -125,7 +125,6 @@ export default {
       if(this.stripped){
         style.background = 'transparent';
         style['box-shadow'] = 'none';
-        style.width = '1%';
       }
 
       return style
@@ -156,7 +155,8 @@ export default {
 </script>
 
 <style>
-.fl-center{
+.modal-stripped-content{
   align-self: center;
+  background-color: white;
 }
 </style>
