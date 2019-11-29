@@ -153,10 +153,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.modal-stripped-content{
-  align-self: center;
-  background-color: white;
-}
-</style>
