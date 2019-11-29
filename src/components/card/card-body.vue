@@ -16,3 +16,9 @@ export default {
   name: 'CardBody'
 }
 </script>
+
+<style>
+.card-body {
+  overflow-x: auto;
+}
+</style>
