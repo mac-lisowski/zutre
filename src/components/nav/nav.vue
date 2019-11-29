@@ -7,6 +7,7 @@
       :name="item.name"
       :href="item.href"
       :link="item.link"
+      :badge="item.badge"
       :active="item.active"
       :items="item.items"
       :icon="item.icon"

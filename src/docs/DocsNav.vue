@@ -19,8 +19,8 @@
             { name: 'Page 3', href: '/page-3', active: true, items: [
               { name: 'Subpage 1', link: { name: 'router-link-routeName' } },
               { name: 'Subpage 2', link: { name: 'routeName' }, active: true },
-              { name: 'Subpage 3', link: { name: 'routeName' } },
-              { name: 'Subpage 4', link: { name: 'routeName' } },
+              { name: 'Subpage 3', link: { name: 'routeName' }, badge: () => (34) },
+              { name: 'Subpage 4', link: { name: 'routeName' }, badge: 't' },
               { name: 'Subpage 5', link: { name: 'routeName' } },
               { name: 'Subpage 6', link: { name: 'routeName' } },
             ] },
@@ -42,8 +42,8 @@
         { name: 'Page 3', href: '/page-3', active: true, items: [
           { name: 'Subpage 1', link: { name: 'router-link-routeName' } },
           { name: 'Subpage 2', link: { name: 'routeName' }, active: true },
-          { name: 'Subpage 3', link: { name: 'routeName' } },
-          { name: 'Subpage 4', link: { name: 'routeName' } },
+          { name: 'Subpage 3', link: { name: 'routeName' }, badge: () => (34) },
+          { name: 'Subpage 4', link: { name: 'routeName' }, badge: 't' },
           { name: 'Subpage 5', link: { name: 'routeName' } },
           { name: 'Subpage 6', link: { name: 'routeName' } },
         ] },

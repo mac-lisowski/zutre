@@ -1,7 +1,7 @@
 <template>
   <li :class="itemClass">
     <slot v-if="hasSlot" />
-    <z-link v-else-if="!hasItems()" :name="name" :href="href" :link="link" :active="showItems" :icon="icon" :exact="exact" />
+    <z-link v-else-if="!hasItems()" :name="name" :href="href" :link="link" :active="showItems" :icon="icon" :exact="exact" :class="{badge:badge}" :data-badge="badgeDis" />
     <label :class="{ 'menu-item': true, active: showItems }" v-else-if="hasItems()" v-on:click="toggleItems()">
       <z-icon v-if="hasIcon" :name="icon" /> {{name}}
     </label>
@@ -26,6 +26,7 @@ export default {
     items: Array,
     exact: Boolean,
     icon: String,
+    badge: [String,Number,Function],
   },
   data() {
     return {
@@ -65,6 +66,11 @@ export default {
       }
 
       return css
+    },
+    badgeDis(){
+      if(typeof this.badge === 'function')
+        return this.badge();
+      else return this.badge;
     }
   }
 }
