@@ -13,7 +13,7 @@
 
       <z-divider content="INPUT / TEXTAREA" />
       <br>
-      
+
       <z-input id="familyName" v-model="input1Value" label="Family name" maxlength="10" counter />
 
       <z-input list="langs" autocomplete="off" label="Autocomplete field" />
@@ -105,6 +105,25 @@
 
       Checkbox value: {{checkboxValue}}
 
+      <br>
+      <z-divider content="INPUT GROUP" />
+      <br>
+
+      <z-input label="small input with prepend label" small />
+      <br>
+      <z-input label="small input with prepend label and button" small buttonText="Example button" v-on:append-click="btnExampleState = !btnExampleState" />
+      <span>{{ btnExampleState ? 'Press 1' : 'Press again' }}</span>
+
+      <z-code lang="Vue">
+&lt;z-input
+  label="small input with prepend label and button"
+  small
+  buttonText="Example button"
+  v-on:append-click="btnExampleState = !btnExampleState"
+/&gt;
+&lt;span&gt;&#123;&nbsp;&#123; btnExampleState &#063; &quot;Press 1&quot; &#058; &quot;Press again&quot; &#125; &#125;&lt;/span&gt;
+      </z-code>
+
       <z-divider content="API" />
       <h4>API</h4>
 
@@ -182,6 +201,28 @@
           </z-tr>
 
           <z-tr>
+            <z-td><code>small</code></z-td>
+            <z-td>
+              set <code>true</code> to display label as <code>.input-group-addon</code>
+            </z-td>
+            <z-td>Boolean</z-td>
+            <z-td><code>true</code>/<code>false</code></z-td>
+            <z-td><code>false</code></z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td><code>buttonText</code></z-td>
+            <z-td>
+              Text for append button if <code>small</code> is <code>true</code> and<br/>
+              <code>buttonText</code> is set. Renders with class <code>.input-group-btn</code><br/>
+              in <code>button-append</code> slot.
+            </z-td>
+            <z-td>String</z-td>
+            <z-td>---</z-td>
+            <z-td><code>null</code></z-td>
+          </z-tr>
+
+          <z-tr>
             <z-td colspan="5">
               <strong>Events</strong>
             </z-td>
@@ -205,6 +246,23 @@
             <z-td>---</z-td>
             <z-td>---</z-td>
           </z-tr>
+
+          <z-tr>
+            <z-td colspan="5">
+              <strong>Slots</strong>
+            </z-td>
+          </z-tr>
+
+          <z-tr>
+            <z-td><code>button-append</code></z-td>
+            <z-td>
+              Slot for append button
+            </z-td>
+            <z-td>slot</z-td>
+            <z-td>---</z-td>
+            <z-td>---</z-td>
+          </z-tr>
+
         </z-tbody>
       </z-table>
 
@@ -452,6 +510,7 @@ export default {
       radioInputValue: 'male',
       switchValue: false,
       checkboxValue: false,
+      btnExampleState: false,
     }
   },
   methods: {

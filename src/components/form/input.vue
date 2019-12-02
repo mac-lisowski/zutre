@@ -1,8 +1,10 @@
 <template>
-    <div class="form-group" :class="formGroupClass">
+    <div :class="[small ? 'input-group' : 'form-group', formGroupClass]">
+        <span class="input-group-addon" v-if='small && hasLabel'>{{ label }}</span>
+
         <!-- render label if passed in props -->
         <label 
-            v-if="hasLabel" 
+            v-if="hasLabel && !small" 
             class="form-label" 
             :for="labelFor"
         >{{ label }}</label>
@@ -42,6 +44,11 @@
         <small v-if="type !== 'number' && maxlength && counter === true">
             {{ valueLength }} / {{ maxlength }}
         </small>
+
+        <slot name="button-append">
+            <z-button class="input-group-btn" @click="$emit('append-click')" v-if='buttonText && small'>{{ buttonText }}</z-button>
+        </slot>
+
     </div>
 </template>
 
@@ -53,6 +60,8 @@
  * @prop {String} type input type, all html input types plus textarea
  * @prop {String} label if set, renders label for input
  * @prop {String|Number} value field value
+ * @prop {Boolean} small is use input group addon
+ * @prop {String} buttonText button text for input group button
  */
 import { formElMixin } from '@/utils';
 
@@ -66,6 +75,14 @@ export default {
             default: 'text'
         },
         value: [String, Number],
+        small: {
+            type: Boolean,
+            default: false
+        },
+        buttonText: {
+            type: String,
+            default: null
+        }
     },
     data() {
         return {
